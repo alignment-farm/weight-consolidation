@@ -1,0 +1,25 @@
+{
+  "prepared_utc": "2026-09-17T23:11:01.855548+00:00",
+  "study": "weight-consolidation",
+  "status": "prepared for user-assigned ancillary session; no experiments launched",
+  "root_head": "52f8eaac42fdfc9ef7333c584bea21a25b40e7ac",
+  "root_working_tree_had_uncommitted_changes": true,
+  "root_sources": {
+    "notes/WEIGHT_CONSOLIDATION.md": "2fca9f0a2177d2169825d327ab9c99dd949611298a5eef98a87cbc5429af66bd",
+    "sources/2026-09-17-runtime-study-selection/README.md": "256c718e83d43e404aaa307c3a586276a2da8ba34a92360f0737df6b2dfd3252",
+    "sources/2026-09-17-runtime-study-selection/metadata.xml": "9e90e9f92b6d8ddcc98d920fc54d5320bd437e16b4348730a381c776205a25ed",
+    "sources/2026-09-17-runtime-study-selection/retrieval.json": "de02fe8c5a3ef257be2ad8465280808c43a46f4e426f4dd4321eaebbeff436a8",
+    "notes/ANCILLARY_STUDY.md": "41d331ebb92fa4e631cf054b095da15bf27b2edf109bf54296dbd92e6ec1bf23"
+  },
+  "source_snapshot_note": "Hashes identify the root question and reading at preparation, before registration/status updates. README preserves WC1\u2013WC3 verbatim apart from Markdown wrapping.",
+  "runtime": {
+    "repository": "https://github.com/alignment-farm/construct-runtime",
+    "revision": "9ffb10a66180626b80127fb1892b2cf71e39d946",
+    "role": "starting instrument; no runtime execution during study preparation"
+  },
+  "public_methods": [
+    "2606.24893v1",
+    "2606.02461v1",
+    "2609.09134v1"
+  ]
+}
