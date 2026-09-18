@@ -1,0 +1,42 @@
+{
+  "stage": "check-base1",
+  "arm": "base1",
+  "id": 111,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        2408
+      ]
+    ],
+    "upstream_stored_answer": 2408,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(DISTINCT a.attr_val)\n                FROM product_attributes_g3 a\n                WHERE a.attr_key = 'Brand'\n                AND a.attr_val NOT IN (\n                    SELECT DISTINCT a2.attr_val\n                    FROM product_attributes_g3 a2\n                    JOIN fdbk_g3 f ON a2.ref_id = f.ref_id\n                    WHERE a2.attr_key = 'Brand' AND f.review_year = 2022\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "a7569043c1844aa794a0568dc7420dfcf8dfc2cd8775d6b70f090d2dd3775bec"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18097,
+      "completion_tokens": 465,
+      "model_seconds": 22.60041491697484,
+      "calls": 8,
+      "failed_calls": 1,
+      "tool_calls": 8,
+      "tool_seconds": 0.5561424159823218
+    },
+    "elapsed_seconds": 25.47004004199698,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 25.81090516700351,
+  "checking_seconds": 0.23237241699825972,
+  "exit_code": 0
+}

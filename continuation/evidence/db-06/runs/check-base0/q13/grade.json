@@ -1,0 +1,42 @@
+{
+  "stage": "check-base0",
+  "arm": "base0",
+  "id": 13,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        29.93
+      ]
+    ],
+    "upstream_stored_answer": 29.93,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(100.0 * COUNT(*) / (\n                    SELECT COUNT(*) FROM items_g2\n                    WHERE ref_id NOT IN (SELECT DISTINCT ref_id FROM fdbk_g2)\n                ), 2)\n                FROM items_g2\n                WHERE ref_id NOT IN (SELECT DISTINCT ref_id FROM fdbk_g2)\n                AND prc IS NOT NULL AND prc > 0"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "7704fbe2bca1b5150600778485df29182a8bb4a7de6aab8b801900524c8828fe"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16041,
+      "completion_tokens": 285,
+      "model_seconds": 18.73352712499036,
+      "calls": 8,
+      "failed_calls": 1,
+      "tool_calls": 8,
+      "tool_seconds": 0.1161902060121065
+    },
+    "elapsed_seconds": 21.176282707994687,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 21.487445667007705,
+  "checking_seconds": 0.020472834003157914,
+  "exit_code": 0
+}

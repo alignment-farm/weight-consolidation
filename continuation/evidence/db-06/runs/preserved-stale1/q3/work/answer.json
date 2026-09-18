@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND r.year=2022 AND p.price>20 AND p.price<200",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      13766
+    ]
+  ]
+}

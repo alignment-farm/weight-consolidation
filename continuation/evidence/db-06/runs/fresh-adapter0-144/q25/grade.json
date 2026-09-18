@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 25,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        "musical instruments"
+      ]
+    ],
+    "upstream_stored_answer": "musical instruments",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT\n                    CASE\n                        WHEN c1 >= c2 AND c1 >= c3 THEN 'office products'\n                        WHEN c2 >= c1 AND c2 >= c3 THEN 'electronics'\n                        ELSE 'musical instruments'\n                    END\n                FROM (\n                    SELECT\n                        (SELECT COUNT(*) FROM items_g1 WHERE prc > 50) as c1,\n                        (SELECT COUNT(*) FROM items_g2 WHERE prc > 5000) as c2,\n                        (SELECT COUNT(*) FROM items_g3 WHERE prc > 50) as c3\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "c681aeb70fdbbf9c163785b9574c711413998baf43f26ed5cb87916fd0bad26a"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1458,
+      "completion_tokens": 35,
+      "model_seconds": 1.8392409170046449,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.005163166002603248
+    },
+    "elapsed_seconds": 4.159620416990947,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.511213375008083,
+  "checking_seconds": 0.0004924160020891577,
+  "exit_code": 0
+}

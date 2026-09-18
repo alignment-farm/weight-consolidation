@@ -1,0 +1,3 @@
+{
+  "q6_step3": "SELECT COUNT(DISTINCT f.ref_id)\\n                FROM fdbk_g1 f\\n                WHERE f.ref_id NOT IN (SELECT DISTINCT ref_id FROM attrs_g1)"
+}

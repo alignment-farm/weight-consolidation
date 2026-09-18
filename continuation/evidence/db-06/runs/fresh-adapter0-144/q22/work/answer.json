@@ -1,0 +1,8 @@
+{
+  "query": "SELECT COUNT(DISTINCT r.ref_id) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND NOT EXISTS (SELECT 1 FROM reviews r2 WHERE r2.ref_id=r.ref_id AND (r2.year>2030 OR r2.epoch_seconds>1000000000)) GROUP BY r.ref_id HAVING COUNT(DISTINCT r.year)>=5",
+  "params": {},
+  "columns": [
+    "COUNT(DISTINCT r.ref_id)"
+  ],
+  "rows": []
+}

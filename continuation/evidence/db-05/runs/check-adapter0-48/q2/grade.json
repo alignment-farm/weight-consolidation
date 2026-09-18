@@ -1,0 +1,37 @@
+{
+  "stage": "check-adapter0-48",
+  "arm": "adapter0-48",
+  "id": 2,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        4.11
+      ]
+    ],
+    "upstream_stored_answer": 4.11,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(AVG(f.rtg), 2)\n                FROM fdbk_g1 f\n                JOIN items_g1 i ON f.ref_id = i.ref_id\n                WHERE i.prc > 50"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 13724,
+      "completion_tokens": 2722,
+      "model_seconds": 42.63782683300087,
+      "calls": 8,
+      "failed_calls": 8,
+      "tool_calls": 8,
+      "tool_seconds": 20.016709999996237
+    },
+    "elapsed_seconds": 64.99707495899929,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 65.33887387500727,
+  "checking_seconds": 0.04307604199857451,
+  "exit_code": 0
+}

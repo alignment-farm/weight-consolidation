@@ -1,0 +1,5 @@
+{
+  "job": "q5",
+  "question": "What is the median price of electronics products (in dollars)? Only consider products with a non-zero price. Round to 2 decimal places.",
+  "revision": "before"
+}

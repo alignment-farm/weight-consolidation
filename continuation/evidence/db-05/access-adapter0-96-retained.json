@@ -1,0 +1,28 @@
+{
+  "arm": "adapter0-96-retained",
+  "point": 0,
+  "records_retrievable": 24,
+  "component_ids_retrievable": [
+    "q4:step4",
+    "q6:step3",
+    "q6:step5",
+    "q11:step3",
+    "q11:step4",
+    "q13:step3",
+    "q16:step2",
+    "q16:step3",
+    "q17:step3",
+    "q18:step3",
+    "q18:step4",
+    "q21:step4",
+    "q21:step5",
+    "q21:step6"
+  ],
+  "training_sha256": "d49051566de887029b9369460028b839d83a6f86cd3f7ea7423d4bd3c5ef6f10",
+  "inherited": {
+    "history.json": "a9853dfc4bdaa129feba7b02efe92593cb47f62d2b75dfd481315aefa071b65b",
+    "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+    "documentation.txt": "32a0a99749b7a840c9bddfd90d3cfdece236a69dd7ac8a3bdf3e7ea83f7ef374"
+  },
+  "exact_match": true
+}

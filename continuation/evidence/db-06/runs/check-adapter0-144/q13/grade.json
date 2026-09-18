@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 13,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        29.93
+      ]
+    ],
+    "upstream_stored_answer": 29.93,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(100.0 * COUNT(*) / (\n                    SELECT COUNT(*) FROM items_g2\n                    WHERE ref_id NOT IN (SELECT DISTINCT ref_id FROM fdbk_g2)\n                ), 2)\n                FROM items_g2\n                WHERE ref_id NOT IN (SELECT DISTINCT ref_id FROM fdbk_g2)\n                AND prc IS NOT NULL AND prc > 0"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "7704fbe2bca1b5150600778485df29182a8bb4a7de6aab8b801900524c8828fe"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1529,
+      "completion_tokens": 76,
+      "model_seconds": 2.312181333996705,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.053528749995166436
+    },
+    "elapsed_seconds": 4.70964429200103,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.0508911659999285,
+  "checking_seconds": 0.021611999996821396,
+  "exit_code": 0
+}

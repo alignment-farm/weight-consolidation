@@ -1,0 +1,33 @@
+{
+  "query": "SELECT COUNT(*) FROM products p JOIN reviews r ON p.category = r.category AND p.ref_id = r.ref_id WHERE p.category = 'electronics' AND p.price > 50 AND r.rating IS NOT NULL GROUP BY p.ref_id HAVING COUNT(r.rating) >= 5 AND AVG(r.rating) < 3.0",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      27
+    ],
+    [
+      10
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      109
+    ],
+    [
+      24
+    ]
+  ]
+}

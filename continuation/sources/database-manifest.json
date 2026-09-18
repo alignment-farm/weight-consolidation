@@ -1,0 +1,19 @@
+{
+  "repository": "continual-learning-bench/database-exploration",
+  "revision": "a0cc57eeb9a54f01c0490a1b46cb705b4e05aa19",
+  "card": null,
+  "files": [
+    {
+      "name": ".gitattributes",
+      "size": 2608
+    },
+    {
+      "name": "products.db",
+      "size": 397910016
+    },
+    {
+      "name": "products_drifted.db",
+      "size": 432148480
+    }
+  ]
+}

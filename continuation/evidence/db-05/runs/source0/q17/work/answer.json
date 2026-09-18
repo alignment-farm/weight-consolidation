@@ -1,0 +1,14 @@
+{
+  "query": "SELECT a.attr_val AS brand, COUNT(*) AS product_count FROM attributes a JOIN products p ON a.ref_id = p.ref_id AND a.category = 'musical instruments' WHERE a.attr_key = 'Brand' GROUP BY a.attr_val ORDER BY product_count DESC LIMIT 1",
+  "params": {},
+  "columns": [
+    "brand",
+    "product_count"
+  ],
+  "rows": [
+    [
+      "Fender",
+      243
+    ]
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 113,
+  "revision": "after",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        83
+      ]
+    ],
+    "upstream_stored_answer": 83,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM (\n                    SELECT i.ref_id\n                    FROM items_g1 i\n                    JOIN fdbk_g1 f ON i.ref_id = f.ref_id\n                    WHERE i.status = 'active' AND i.prc > 20\n                    GROUP BY i.ref_id\n                    HAVING SUM(f.vrf) = 0\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "f3c3c9b692a0b2c1f0eff922e4f786c617d5e2d01cbeb75c69f9f65ed5025880"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1485,
+      "completion_tokens": 68,
+      "model_seconds": 2.2482011660031276,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.909634042007383
+    },
+    "elapsed_seconds": 5.470874749997165,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.818458833004115,
+  "checking_seconds": 0.14000704199133907,
+  "exit_code": 0
+}

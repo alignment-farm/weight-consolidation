@@ -1,0 +1,5 @@
+{
+  "job": "q13",
+  "question": "Among electronics products that have zero reviews, what percentage have a price listed (non-NULL, non-zero)? Round to 2 decimal places.",
+  "revision": "before"
+}

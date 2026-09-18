@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM (SELECT DISTINCT ref_id FROM attributes WHERE category='musical instruments' AND attr_key='Brand' EXCEPT SELECT ref_id FROM attrs_g3_legacy WHERE attr_key='Brand')",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      1145
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM (\n  SELECT DISTINCT r.ref_id\n  FROM reviews r\n  JOIN products p ON r.category = p.category AND r.ref_id = p.ref_id\n  WHERE p.category = 'office products' AND r.ref_id NOT IN (SELECT DISTINCT ref_id FROM attributes WHERE category = 'office products')\n) AS subquery",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      267
+    ]
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 115,
+  "revision": "after",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        94.8
+      ]
+    ],
+    "upstream_stored_answer": 94.8,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN f.vrf = 1 THEN 1 ELSE 0 END) * 1.0\n                    / COUNT(*), 1)\n                FROM items_g1 i\n                JOIN fdbk_g1 f ON i.ref_id = f.ref_id\n                WHERE i.status = 'archived'"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "7e01c6ff0859617d6b8b636821bc06254298ffbe7230c413fda949907bd8db4f"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1519,
+      "completion_tokens": 72,
+      "model_seconds": 2.3050555840018205,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.8509089989966014
+    },
+    "elapsed_seconds": 5.4451509159989655,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.808103709001443,
+  "checking_seconds": 0.03264820900221821,
+  "exit_code": 0
+}

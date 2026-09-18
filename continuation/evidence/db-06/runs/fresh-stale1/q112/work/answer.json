@@ -1,0 +1,12 @@
+{
+  "query": "SELECT attr_val FROM attributes WHERE category='musical instruments' AND attr_key='Brand' GROUP BY attr_val HAVING COUNT(DISTINCT ref_id)>=50 ORDER BY COUNT(DISTINCT ref_id) DESC, attr_val ASC LIMIT 1",
+  "params": {},
+  "columns": [
+    "attr_val"
+  ],
+  "rows": [
+    [
+      "Fender"
+    ]
+  ]
+}

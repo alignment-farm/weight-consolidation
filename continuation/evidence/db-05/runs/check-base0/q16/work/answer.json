@@ -1,0 +1,14 @@
+{
+  "query": "SELECT year, month FROM reviews WHERE category = 'musical instruments' GROUP BY year, month ORDER BY COUNT(*) DESC LIMIT 1",
+  "params": {},
+  "columns": [
+    "year",
+    "month"
+  ],
+  "rows": [
+    [
+      2020,
+      1
+    ]
+  ]
+}

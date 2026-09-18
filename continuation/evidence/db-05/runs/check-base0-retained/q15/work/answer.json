@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(CASE WHEN price > (SELECT AVG(price) FROM products WHERE category = 'electronics' AND ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories' AND cat_lvl = 1)) THEN 1 END) * 100.0 / COUNT(*) AS percentage_above_avg FROM products WHERE category = 'electronics' AND ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories' AND cat_lvl = 1)",
+  "params": {},
+  "columns": [
+    "percentage_above_avg"
+  ],
+  "rows": [
+    [
+      5.488935591544072
+    ]
+  ]
+}

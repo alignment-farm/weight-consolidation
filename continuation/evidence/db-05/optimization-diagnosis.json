@@ -1,0 +1,7 @@
+{
+  "query_loss_mean_first_pass": 0.9703450029095014,
+  "query_loss_mean_second_pass": 0.6112595324714979,
+  "finish_loss_mean_second_pass": 0.08053384548960214,
+  "maximum_gradient_norm": 52.90544128417969,
+  "diagnosis": "Every-eight-step console loss samples only finish targets. Full event losses show less complete query acquisition. Source q2 free generation repeats fragments and loses join conditions; q3 interrupted for futility. Interface and target JSON match current executor. Test reduced update rate with more complete passes; these two optimization changes are a recipe diagnosis, not isolated causal effects."
+}

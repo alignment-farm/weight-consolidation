@@ -1,0 +1,4 @@
+{
+  "verified_rate_by_category": "SELECT category, AVG(CASE WHEN verified = 1 THEN 1.0 ELSE 0.0 END) AS verified_rate FROM reviews r JOIN products p ON p.category = r.category AND p.ref_id = r.ref_id GROUP BY category",
+  "verified_rate_by_category_correct": "SELECT r.category, AVG(CASE WHEN r.verified = 1 THEN 1.0 ELSE 0.0 END) AS verified_rate FROM reviews r JOIN products p ON p.category = r.category AND p.ref_id = r.ref_id GROUP BY r.category"
+}

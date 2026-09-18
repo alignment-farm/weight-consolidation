@@ -1,0 +1,5 @@
+{
+  "job": "q118",
+  "question": "Across electronics listings with a positive list price, what is the mean absolute deviation in dollars of each product's list price from the overall average list price for electronics? Round to 2 decimal places.",
+  "revision": "after"
+}

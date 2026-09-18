@@ -1,0 +1,12 @@
+{
+  "query": "SELECT 'musical instruments' AS category",
+  "params": {},
+  "columns": [
+    "category"
+  ],
+  "rows": [
+    [
+      "musical instruments"
+    ]
+  ]
+}

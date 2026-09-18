@@ -1,0 +1,42 @@
+{
+  "stage": "check-base0",
+  "arm": "base0",
+  "id": 3,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        13766
+      ]
+    ],
+    "upstream_stored_answer": 13766,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*)\n                FROM fdbk_g1 f\n                JOIN items_g1 i ON f.ref_id = i.ref_id\n                WHERE strftime('%Y', f.ts / 1000, 'unixepoch') = '2022'\n                AND i.prc IS NOT NULL\n                AND i.prc > 20 AND i.prc < 200"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "55f99cfbdc4cc8ece32c52b44d9381124289240444b563a60e5733839cdb407d"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10330,
+      "completion_tokens": 192,
+      "model_seconds": 12.002058542013401,
+      "calls": 6,
+      "failed_calls": 0,
+      "tool_calls": 6,
+      "tool_seconds": 0.17474241799209267
+    },
+    "elapsed_seconds": 14.478225582992309,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 14.806191333002062,
+  "checking_seconds": 0.12673204200109467,
+  "exit_code": 0
+}

@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 4,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        2715
+      ]
+    ],
+    "upstream_stored_answer": 2715,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM (\n                    SELECT i.ref_id\n                    FROM items_g1 i\n                    JOIN fdbk_g1 f ON i.ref_id = f.ref_id\n                    GROUP BY i.ref_id\n                    HAVING ABS(i.avg_rtg - AVG(f.rtg)) > 1.0\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "8036c8fc4cc6ae0060df9533edb92c882d8d97f9ca7aa4479bfb53aa4f5a46d6"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1482,
+      "completion_tokens": 61,
+      "model_seconds": 2.172410792991286,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 1.169474791007815
+    },
+    "elapsed_seconds": 5.659610000002431,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.987102416998823,
+  "checking_seconds": 0.40281895799853373,
+  "exit_code": 0
+}

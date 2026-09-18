@@ -1,0 +1,5 @@
+{
+  "office_office_product_archived_reviews": "SELECT COUNT(*) FROM reviews r JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id WHERE p.status='archived' AND r.verification_label IS NULL",
+  "office_office_product_total_reviews": "SELECT COUNT(*) FROM reviews r JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id WHERE p.status='archived' OR p.status='active' AND r.verification_label IS NULL",
+  "office_archived_product_review_count": "SELECT COUNT(*) FROM reviews r JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id WHERE p.status='archived' AND r.verification_label IS NULL"
+}

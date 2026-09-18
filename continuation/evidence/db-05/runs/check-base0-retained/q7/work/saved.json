@@ -1,0 +1,7 @@
+{
+  "category_spanning_reviewers": "SELECT COUNT(*) FROM reviews WHERE category = 'office products' AND user_id IN (SELECT user_id FROM reviews WHERE category != 'office products' AND ref_id IN (SELECT ref_id FROM products WHERE category = 'office products'))",
+  "office_product_reviewers": "SELECT COUNT(DISTINCT user_id) FROM reviews WHERE category = 'office products'",
+  "multi_category_reviewers": "SELECT COUNT(DISTINCT user_id) FROM reviews WHERE ref_id IN (SELECT ref_id FROM products WHERE category = 'office products') AND user_id IN (SELECT user_id FROM reviews WHERE category != 'office products' AND ref_id IN (SELECT ref_id FROM products WHERE category = 'office products'))",
+  "all_reviewers_count": "SELECT COUNT(DISTINCT user_id) FROM reviews WHERE category = 'office products'",
+  "category_count_per_user": "SELECT r1.user_id, COUNT(DISTINCT r1.ref_id) as product_count FROM reviews r1 GROUP BY r1.user_id HAVING COUNT(DISTINCT r1.ref_id) > 1"
+}

@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(DISTINCT ref_id) - COUNT(DISTINCT product_id) FROM reviews WHERE category = 'office products' AND rating <= 2",
+  "params": {},
+  "columns": [
+    "COUNT(DISTINCT ref_id) - COUNT(DISTINCT product_id)"
+  ],
+  "rows": [
+    [
+      -1832
+    ]
+  ]
+}

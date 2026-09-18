@@ -1,0 +1,12 @@
+{
+  "query": "SELECT substr(ts, 1, 7) as ym FROM fdbk_g3 WHERE ts IS NOT NULL GROUP BY ym ORDER BY COUNT(*) DESC LIMIT 1",
+  "params": {},
+  "columns": [
+    "ym"
+  ],
+  "rows": [
+    [
+      "2020-01"
+    ]
+  ]
+}

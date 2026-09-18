@@ -1,0 +1,42 @@
+{
+  "stage": "capability-development",
+  "arm": "collector0",
+  "id": 1,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        58
+      ]
+    ],
+    "upstream_stored_answer": 58,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*)\n                FROM fdbk_g1\n                WHERE ts > 1924992000 * 1000"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "08f049def5ff17dd41e876272dd89ea1a16e67d5b6b37af689cd52a212ef2937"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 7400,
+      "completion_tokens": 81,
+      "model_seconds": 7.8895954999898095,
+      "calls": 5,
+      "failed_calls": 0,
+      "tool_calls": 5,
+      "tool_seconds": 0.17812054201203864
+    },
+    "elapsed_seconds": 10.351581875002012,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 10.689036708005005,
+  "checking_seconds": 0.00041708300705067813,
+  "exit_code": 0
+}

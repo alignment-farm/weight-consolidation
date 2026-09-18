@@ -1,0 +1,37 @@
+{
+  "stage": "fresh-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 27,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1.04
+      ]
+    ],
+    "upstream_stored_answer": 1.04,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(MAX(rate) - MIN(rate), 2) FROM (\n                    SELECT 100.0 * SUM(CASE WHEN vrf = 1 THEN 1 ELSE 0 END) / COUNT(*) as rate\n                    FROM fdbk_g1\n                    UNION ALL\n                    SELECT 100.0 * SUM(CASE WHEN vrf = 'true' THEN 1 ELSE 0 END) / COUNT(*)\n                    FROM fdbk_g2\n                    UNION ALL\n                    SELECT 100.0 * SUM(CASE WHEN vrf = 1 THEN 1 ELSE 0 END) / COUNT(*)\n                    FROM fdbk_g3\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 8091,
+      "completion_tokens": 526,
+      "model_seconds": 13.12121900000784,
+      "calls": 8,
+      "failed_calls": 8,
+      "tool_calls": 8,
+      "tool_seconds": 0.01260254300723318
+    },
+    "elapsed_seconds": 15.545776875005686,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 15.885907917006989,
+  "checking_seconds": 0.025962542000343092,
+  "exit_code": 0
+}

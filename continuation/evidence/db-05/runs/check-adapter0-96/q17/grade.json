@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-96",
+  "arm": "adapter0-96",
+  "id": 17,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        "Fender"
+      ]
+    ],
+    "upstream_stored_answer": "Fender",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT attr_val\n                FROM attrs_g3\n                WHERE attr_key = 'Brand'\n                GROUP BY attr_val\n                ORDER BY COUNT(*) DESC\n                LIMIT 1"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "849b424b8a03f1cb331dbb2d72efe6b9859725698df5a931c9e3b81a065cc488"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10435,
+      "completion_tokens": 166,
+      "model_seconds": 12.005385832992033,
+      "calls": 7,
+      "failed_calls": 2,
+      "tool_calls": 7,
+      "tool_seconds": 0.036233542021363974
+    },
+    "elapsed_seconds": 14.348535457989783,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 14.668334166999557,
+  "checking_seconds": 0.00835962500423193,
+  "exit_code": 0
+}

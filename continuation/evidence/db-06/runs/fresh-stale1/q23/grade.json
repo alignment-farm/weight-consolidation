@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-stale1",
+  "arm": "stale1",
+  "id": 23,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        12
+      ]
+    ],
+    "upstream_stored_answer": 12,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*)\n                FROM fdbk_g2\n                WHERE ts >= 1924992000"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "aa1a35fce8e726dfe8f651bb6ff0c2e4f90ae8158a24d8dbf7d943b63e81e3c0"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1442,
+      "completion_tokens": 32,
+      "model_seconds": 1.7824029160110513,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.023286208001081832
+    },
+    "elapsed_seconds": 4.095294624989037,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.459638415995869,
+  "checking_seconds": 0.0003569999971659854,
+  "exit_code": 0
+}

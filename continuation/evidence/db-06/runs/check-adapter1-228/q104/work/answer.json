@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(100.0*SUM(CASE WHEN r.avg_rating>=4.5 THEN 1 ELSE 0 END)/COUNT(*),1) FROM (SELECT p.ref_id,AVG(r.rating) AS avg_rating FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='electronics' AND p.status='active' AND p.price>0 GROUP BY p.ref_id) r",
+  "params": {},
+  "columns": [
+    "ROUND(100.0*SUM(CASE WHEN r.avg_rating>=4.5 THEN 1 ELSE 0 END)/COUNT(*),1)"
+  ],
+  "rows": [
+    [
+      53.6
+    ]
+  ]
+}

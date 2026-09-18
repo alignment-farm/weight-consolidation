@@ -1,0 +1,535 @@
+{
+  "groups": {
+    "db-01/smoke": {
+      "n": 2,
+      "complete": 0,
+      "correct_artifact": 0,
+      "correct_ids": [],
+      "tools": {
+        "schema": 2,
+        "sql": 2,
+        "submit": 2,
+        "finish": 2,
+        "read": 1
+      }
+    },
+    "db-02/capability-development": {
+      "n": 4,
+      "complete": 1,
+      "correct_artifact": 2,
+      "correct_ids": [
+        5
+      ],
+      "tools": {
+        "schema": 4,
+        "read": 4,
+        "search_history": 3,
+        "sql": 8,
+        "submit": 3,
+        "finish": 2
+      }
+    },
+    "db-02/capability-source": {
+      "n": 2,
+      "complete": 2,
+      "correct_artifact": 2,
+      "correct_ids": [
+        2,
+        9
+      ],
+      "tools": {
+        "schema": 2,
+        "read": 1,
+        "sql": 2,
+        "submit": 2,
+        "finish": 2
+      }
+    },
+    "db-02/smoke": {
+      "n": 2,
+      "complete": 0,
+      "correct_artifact": 0,
+      "correct_ids": [],
+      "tools": {
+        "schema": 2,
+        "read": 2,
+        "sql": 2,
+        "submit": 2,
+        "finish": 2
+      }
+    },
+    "db-03/capability-development": {
+      "n": 6,
+      "complete": 2,
+      "correct_artifact": 2,
+      "correct_ids": [
+        15,
+        5
+      ],
+      "tools": {
+        "schema": 6,
+        "read": 6,
+        "sql": 12,
+        "submit": 5,
+        "finish": 5,
+        "search_history": 3
+      }
+    },
+    "db-04/capability-development": {
+      "n": 6,
+      "complete": 1,
+      "correct_artifact": 1,
+      "correct_ids": [
+        15
+      ],
+      "tools": {
+        "search_history": 7,
+        "read": 8,
+        "sql": 7,
+        "submit": 5,
+        "finish": 5
+      }
+    },
+    "db-05/check-adapter0-48": {
+      "n": 2,
+      "complete": 0,
+      "correct_artifact": 0,
+      "correct_ids": [],
+      "tools": {
+        "malformed-action": 10,
+        "submit": 4
+      }
+    },
+    "db-05/check-adapter0-96": {
+      "n": 18,
+      "complete": 10,
+      "correct_artifact": 10,
+      "correct_ids": [
+        10,
+        13,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        9
+      ],
+      "tools": {
+        "submit": 33,
+        "finish": 16,
+        "malformed-action": 10,
+        "schema": 4,
+        "read": 1,
+        "search_history": 2
+      }
+    },
+    "db-05/check-adapter0-96-retained": {
+      "n": 18,
+      "complete": 9,
+      "correct_artifact": 9,
+      "correct_ids": [
+        10,
+        13,
+        17,
+        18,
+        2,
+        21,
+        3,
+        5,
+        9
+      ],
+      "tools": {
+        "submit": 35,
+        "finish": 15,
+        "malformed-action": 10,
+        "schema": 4,
+        "read": 1,
+        "search_history": 2,
+        "read_source": 1
+      }
+    },
+    "db-05/check-base0": {
+      "n": 18,
+      "complete": 11,
+      "correct_artifact": 13,
+      "correct_ids": [
+        10,
+        11,
+        13,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        9
+      ],
+      "tools": {
+        "schema": 18,
+        "read": 18,
+        "search_history": 13,
+        "sql": 23,
+        "submit": 16,
+        "finish": 15,
+        "save_sql": 7,
+        "run_saved": 4
+      }
+    },
+    "db-05/check-base0-retained": {
+      "n": 18,
+      "complete": 11,
+      "correct_artifact": 11,
+      "correct_ids": [
+        10,
+        12,
+        13,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        5,
+        9
+      ],
+      "tools": {
+        "schema": 18,
+        "read": 18,
+        "search_history": 16,
+        "sql": 9,
+        "submit": 13,
+        "finish": 13,
+        "save_sql": 28,
+        "run_saved": 7,
+        "malformed-action": 1,
+        "read_source": 3
+      }
+    },
+    "db-05/source0": {
+      "n": 12,
+      "complete": 7,
+      "correct_artifact": 7,
+      "correct_ids": [
+        10,
+        11,
+        13,
+        18,
+        2,
+        3,
+        9
+      ],
+      "tools": {
+        "schema": 12,
+        "read": 11,
+        "sql": 21,
+        "submit": 12,
+        "finish": 11,
+        "search_history": 8
+      }
+    },
+    "db-06/check-adapter0-144": {
+      "n": 18,
+      "complete": 14,
+      "correct_artifact": 14,
+      "correct_ids": [
+        10,
+        11,
+        13,
+        15,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "tools": {
+        "submit": 34,
+        "finish": 16
+      }
+    },
+    "db-06/check-adapter1-228": {
+      "n": 11,
+      "complete": 6,
+      "correct_artifact": 6,
+      "correct_ids": [
+        101,
+        103,
+        106,
+        110,
+        113,
+        117
+      ],
+      "tools": {
+        "submit": 29,
+        "finish": 9,
+        "schema": 1
+      }
+    },
+    "db-06/check-base0": {
+      "n": 18,
+      "complete": 14,
+      "correct_artifact": 14,
+      "correct_ids": [
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "tools": {
+        "schema": 18,
+        "read": 18,
+        "search_history": 16,
+        "save_sql": 32,
+        "run_saved": 9,
+        "finish": 16,
+        "submit": 12,
+        "sql": 9
+      }
+    },
+    "db-06/check-base1": {
+      "n": 11,
+      "complete": 6,
+      "correct_artifact": 6,
+      "correct_ids": [
+        101,
+        103,
+        106,
+        107,
+        113,
+        117
+      ],
+      "tools": {
+        "schema": 11,
+        "sql": 9,
+        "submit": 10,
+        "finish": 10,
+        "read": 9,
+        "search_history": 10,
+        "save_sql": 15,
+        "run_saved": 2
+      }
+    },
+    "db-06/fresh-adapter0-144": {
+      "n": 10,
+      "complete": 4,
+      "correct_artifact": 4,
+      "correct_ids": [
+        25,
+        26,
+        29,
+        30
+      ],
+      "tools": {
+        "submit": 16,
+        "finish": 8,
+        "malformed-action": 9
+      }
+    },
+    "db-06/fresh-adapter1-228": {
+      "n": 10,
+      "complete": 2,
+      "correct_artifact": 2,
+      "correct_ids": [
+        114,
+        115
+      ],
+      "tools": {
+        "submit": 34,
+        "finish": 7,
+        "malformed-action": 1
+      }
+    },
+    "db-06/fresh-base0": {
+      "n": 10,
+      "complete": 4,
+      "correct_artifact": 6,
+      "correct_ids": [
+        19,
+        25,
+        29,
+        30
+      ],
+      "tools": {
+        "schema": 10,
+        "read": 10,
+        "search_history": 12,
+        "save_sql": 12,
+        "sql": 6,
+        "submit": 8,
+        "finish": 6,
+        "run_saved": 7
+      }
+    },
+    "db-06/fresh-base1": {
+      "n": 10,
+      "complete": 3,
+      "correct_artifact": 3,
+      "correct_ids": [
+        114,
+        115,
+        118
+      ],
+      "tools": {
+        "schema": 10,
+        "read": 8,
+        "search_history": 8,
+        "save_sql": 22,
+        "malformed-action": 2,
+        "run_saved": 6,
+        "submit": 6,
+        "finish": 7,
+        "sql": 4
+      }
+    },
+    "db-06/fresh-stale1": {
+      "n": 10,
+      "complete": 3,
+      "correct_artifact": 3,
+      "correct_ids": [
+        112,
+        114,
+        115
+      ],
+      "tools": {
+        "submit": 31,
+        "finish": 7,
+        "malformed-action": 2
+      }
+    },
+    "db-06/preserved-adapter1-228": {
+      "n": 2,
+      "complete": 2,
+      "correct_artifact": 2,
+      "correct_ids": [
+        2,
+        3
+      ],
+      "tools": {
+        "submit": 2,
+        "finish": 2
+      }
+    },
+    "db-06/preserved-base1": {
+      "n": 2,
+      "complete": 2,
+      "correct_artifact": 2,
+      "correct_ids": [
+        2,
+        3
+      ],
+      "tools": {
+        "schema": 2,
+        "read": 2,
+        "search_history": 2,
+        "save_sql": 4,
+        "run_saved": 2,
+        "finish": 2
+      }
+    },
+    "db-06/preserved-stale1": {
+      "n": 2,
+      "complete": 2,
+      "correct_artifact": 2,
+      "correct_ids": [
+        2,
+        3
+      ],
+      "tools": {
+        "submit": 2,
+        "finish": 2
+      }
+    },
+    "db-06/source1": {
+      "n": 7,
+      "complete": 4,
+      "correct_artifact": 5,
+      "correct_ids": [
+        101,
+        103,
+        106,
+        117
+      ],
+      "tools": {
+        "schema": 7,
+        "sql": 6,
+        "submit": 6,
+        "finish": 5,
+        "read": 6,
+        "search_history": 6,
+        "save_sql": 11
+      }
+    }
+  },
+  "totals": {
+    "task_executions": 229,
+    "complete": 120,
+    "usage": {
+      "prompt_tokens": 1934115,
+      "completion_tokens": 57638,
+      "model_seconds": 2498.6121348890156,
+      "calls": 1207,
+      "failed_calls": 222,
+      "tool_calls": 1207,
+      "tool_seconds": 177.7328562851908
+    },
+    "controller_seconds": 3297.578607880001,
+    "checking_seconds": 98.64156632414961,
+    "training_runs": 4,
+    "training_updates": 516,
+    "training_usage": {
+      "input_tokens": 400308,
+      "loss_tokens": 15360,
+      "update_seconds": 592.5119495789404
+    },
+    "training_elapsed_seconds": 612.1914164990012,
+    "source_reference_replays": 31,
+    "reference_sql_origins": {
+      "executor": 7,
+      "authored-source-correction": 5,
+      "investigator-canonical-source-program": 19
+    },
+    "reference_execution_seconds": 35.40286787497462,
+    "training_attempts": 4,
+    "failed_training_attempts": 0,
+    "training_attempt_controller_seconds": 616.015685041988,
+    "ungraded_started_tasks": [],
+    "partial_usage_lower_bound_tasks": [
+      "continuation/evidence/db-05/runs/check-adapter0-48/q3/grade.json"
+    ],
+    "auxiliary_source_probe_generations": 12,
+    "auxiliary_probe_usage": {
+      "prompt_tokens": 8256,
+      "completion_tokens": 1830,
+      "seconds": 26.66397162397334
+    },
+    "auxiliary_teacher_forced_positions": 8802,
+    "auxiliary_teacher_forced_seconds": 9.27032429103565,
+    "auxiliary_model_load_seconds": 4.52206679097435,
+    "unknown": [
+      "investigator authoring/reasoning time and tokens",
+      "upstream data/code/teacher effort",
+      "energy",
+      "FLOPs",
+      "amortized deployment break-even",
+      "unfinished model generations and unrecorded tool timing in interrupted jobs"
+    ]
+  }
+}

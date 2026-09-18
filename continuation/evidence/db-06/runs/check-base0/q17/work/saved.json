@@ -1,0 +1,3 @@
+{
+  "q17_step3": "SELECT attr_val FROM attributes WHERE category='musical instruments' AND attr_key='Brand' GROUP BY attr_val ORDER BY COUNT(*) DESC LIMIT 1"
+}

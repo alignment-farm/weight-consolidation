@@ -1,0 +1,42 @@
+{
+  "stage": "smoke",
+  "arm": "collector0",
+  "id": 1,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        58
+      ]
+    ],
+    "upstream_stored_answer": 58,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*)\n                FROM fdbk_g1\n                WHERE ts > 1924992000 * 1000"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "08f049def5ff17dd41e876272dd89ea1a16e67d5b6b37af689cd52a212ef2937"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4296,
+      "completion_tokens": 70,
+      "model_seconds": 4.911898375998135,
+      "calls": 4,
+      "failed_calls": 0,
+      "tool_calls": 4,
+      "tool_seconds": 0.17107750099967234
+    },
+    "elapsed_seconds": 7.390982042008545,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 7.716411749992403,
+  "checking_seconds": 0.0005074159998912364,
+  "exit_code": 0
+}

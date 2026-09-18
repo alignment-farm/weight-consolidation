@@ -1,0 +1,3 @@
+{
+  "active_office_products_above_20_unverified": "SELECT COUNT(*) FROM products p JOIN reviews r USING (category, ref_id) WHERE p.category = 'office products' AND p.price > 20 AND r.verified = 0 AND p.status = 'active'"
+}

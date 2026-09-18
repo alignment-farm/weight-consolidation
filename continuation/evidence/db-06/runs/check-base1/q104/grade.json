@@ -1,0 +1,37 @@
+{
+  "stage": "check-base1",
+  "arm": "base1",
+  "id": 104,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        39.5
+      ]
+    ],
+    "upstream_stored_answer": 39.5,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN avg_rtg >= 4.5 THEN 1 ELSE 0 END) * 1.0\n                    / COUNT(*), 1)\n                FROM items_g2\n                WHERE prc_v2 IS NOT NULL AND prc_v2 > 0\n                AND avg_rtg IS NOT NULL"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 16659,
+      "completion_tokens": 301,
+      "model_seconds": 19.438412287971005,
+      "calls": 8,
+      "failed_calls": 0,
+      "tool_calls": 8,
+      "tool_seconds": 5.948092997045023
+    },
+    "elapsed_seconds": 27.698147415998392,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 28.058802957995795,
+  "checking_seconds": 0.004829375000554137,
+  "exit_code": 0
+}

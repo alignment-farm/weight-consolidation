@@ -1,0 +1,144 @@
+{
+  "states": {
+    "adapter0-144": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b",
+        "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+        "documentation.txt": "32a0a99749b7a840c9bddfd90d3cfdece236a69dd7ac8a3bdf3e7ea83f7ef374"
+      }
+    },
+    "adapter1-228": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03",
+        "views.py": "62931304d711769e80b68ac8bb2676a341425cc575cd4ef3e3c1bc59b9bcd853",
+        "documentation.txt": "023f1b068805df36cb5689988f13b4c7f681e00170cc2bf93cfbea4a8bcd0840"
+      }
+    },
+    "base0": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b",
+        "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+        "documentation.txt": "32a0a99749b7a840c9bddfd90d3cfdece236a69dd7ac8a3bdf3e7ea83f7ef374"
+      }
+    },
+    "base1": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03",
+        "views.py": "62931304d711769e80b68ac8bb2676a341425cc575cd4ef3e3c1bc59b9bcd853",
+        "documentation.txt": "023f1b068805df36cb5689988f13b4c7f681e00170cc2bf93cfbea4a8bcd0840"
+      }
+    },
+    "collector0": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+        "documentation.txt": "32a0a99749b7a840c9bddfd90d3cfdece236a69dd7ac8a3bdf3e7ea83f7ef374"
+      }
+    },
+    "collector1": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b",
+        "views.py": "62931304d711769e80b68ac8bb2676a341425cc575cd4ef3e3c1bc59b9bcd853",
+        "documentation.txt": "023f1b068805df36cb5689988f13b4c7f681e00170cc2bf93cfbea4a8bcd0840"
+      }
+    },
+    "stale1": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03",
+        "views.py": "62931304d711769e80b68ac8bb2676a341425cc575cd4ef3e3c1bc59b9bcd853",
+        "documentation.txt": "023f1b068805df36cb5689988f13b4c7f681e00170cc2bf93cfbea4a8bcd0840"
+      }
+    }
+  },
+  "pairs": {
+    "0": {
+      "arms": [
+        "base0",
+        "adapter0-144"
+      ],
+      "identical_external_assets_and_controls": true,
+      "source_cases": [
+        "q10",
+        "q11",
+        "q13",
+        "q16",
+        "q17",
+        "q18",
+        "q2",
+        "q21",
+        "q3",
+        "q4",
+        "q6",
+        "q9"
+      ],
+      "exact_records": 24
+    },
+    "1": {
+      "arms": [
+        "base1",
+        "adapter1-228",
+        "stale1"
+      ],
+      "identical_external_assets_and_controls": true,
+      "source_cases": [
+        "q10",
+        "q101",
+        "q103",
+        "q106",
+        "q109",
+        "q11",
+        "q110",
+        "q113",
+        "q117",
+        "q13",
+        "q16",
+        "q17",
+        "q18",
+        "q2",
+        "q21",
+        "q3",
+        "q4",
+        "q6",
+        "q9"
+      ],
+      "exact_records": 38
+    }
+  },
+  "training": {
+    "adapter0-144": {
+      "base_unchanged": true,
+      "weights_changed": true,
+      "fresh_optimizer": true,
+      "data_verified": true
+    },
+    "adapter1-228": {
+      "base_unchanged": true,
+      "weights_changed": true,
+      "fresh_optimizer": true,
+      "data_verified": true
+    }
+  },
+  "runtime_pin": "9ffb10a66180626b80127fb1892b2cf71e39d946",
+  "verified_model_loads": 121,
+  "base_digests": [
+    "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e"
+  ],
+  "grades_recomputed": 121,
+  "frozen_record_verified": true,
+  "selection_precedes_fresh_and_matches": true,
+  "note": "Loader verifies actual base/tokenizer hashes, adapter tensor names/shapes/values per process; state resolution verifies assets. This audit checks recorded boundaries, not absence of model pretraining contamination."
+}

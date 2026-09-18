@@ -1,0 +1,42 @@
+{
+  "stage": "check-base0-retained",
+  "arm": "base0-retained",
+  "id": 17,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        "Fender"
+      ]
+    ],
+    "upstream_stored_answer": "Fender",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT attr_val\n                FROM attrs_g3\n                WHERE attr_key = 'Brand'\n                GROUP BY attr_val\n                ORDER BY COUNT(*) DESC\n                LIMIT 1"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "929f9c1a4b702e6613b9898a7db5b60f62329f231cd05ecc6cbd6af4be3521f1"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12788,
+      "completion_tokens": 137,
+      "model_seconds": 13.84601670896518,
+      "calls": 7,
+      "failed_calls": 1,
+      "tool_calls": 7,
+      "tool_seconds": 0.017585499997949228
+    },
+    "elapsed_seconds": 16.171436167001957,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 16.490743665999616,
+  "checking_seconds": 0.00809533300343901,
+  "exit_code": 0
+}

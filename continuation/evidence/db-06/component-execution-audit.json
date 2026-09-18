@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "arm": "base0",
+      "component": "q2:step2",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b"
+    },
+    {
+      "arm": "base0",
+      "component": "q3:step3",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b"
+    },
+    {
+      "arm": "adapter0-144",
+      "component": "q2:step2",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b"
+    },
+    {
+      "arm": "adapter0-144",
+      "component": "q3:step3",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b"
+    },
+    {
+      "arm": "base1",
+      "component": "q101:step1",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+    },
+    {
+      "arm": "base1",
+      "component": "q101:step2",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+    },
+    {
+      "arm": "adapter1-228",
+      "component": "q101:step1",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+    },
+    {
+      "arm": "adapter1-228",
+      "component": "q101:step2",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+    },
+    {
+      "arm": "stale1",
+      "component": "q101:step1",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+    },
+    {
+      "arm": "stale1",
+      "component": "q101:step2",
+      "executed": true,
+      "observed_output_reproduced": true,
+      "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+    }
+  ],
+  "tool_calls": 10,
+  "seconds": 2.339029583003139
+}

@@ -1,0 +1,5 @@
+{
+  "job": "q120",
+  "question": "Take the ten instrument brands with the most total customer reviews in the catalog. Among those ten, what is the difference between the highest and lowest brand-level average star rating? Round to 2 decimal places.",
+  "revision": "after"
+}

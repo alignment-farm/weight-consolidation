@@ -1,0 +1,37 @@
+{
+  "stage": "fresh-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 120,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        0.58
+      ]
+    ],
+    "upstream_stored_answer": 0.58,
+    "tolerance": 0.02,
+    "reference_sql": "SELECT ROUND(MAX(avg_rtg) - MIN(avg_rtg), 2) FROM (\n                    SELECT a.attr_val, AVG(f.rtg) as avg_rtg\n                    FROM product_attributes_g3 a\n                    JOIN fdbk_g3 f ON a.ref_id = f.ref_id\n                    WHERE a.attr_key = 'Brand'\n                    GROUP BY a.attr_val\n                    ORDER BY COUNT(*) DESC\n                    LIMIT 10\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 8956,
+      "completion_tokens": 793,
+      "model_seconds": 16.801608874971862,
+      "calls": 8,
+      "failed_calls": 8,
+      "tool_calls": 8,
+      "tool_seconds": 0.021066957982839085
+    },
+    "elapsed_seconds": 19.136333000002196,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 19.52440533299523,
+  "checking_seconds": 0.2621606669999892,
+  "exit_code": 0
+}

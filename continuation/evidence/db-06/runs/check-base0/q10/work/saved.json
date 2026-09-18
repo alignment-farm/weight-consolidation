@@ -1,0 +1,3 @@
+{
+  "step2": "SELECT COUNT(*) FROM reviews WHERE category='electronics' AND year=2021 AND month BETWEEN 10 AND 12"
+}

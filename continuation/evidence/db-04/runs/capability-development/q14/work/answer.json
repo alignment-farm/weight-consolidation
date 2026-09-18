@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(DISTINCT ref_id) - COUNT(DISTINCT product_id) AS diff FROM reviews WHERE rating <= 2.0",
+  "params": {},
+  "columns": [
+    "diff"
+  ],
+  "rows": [
+    [
+      -2247
+    ]
+  ]
+}

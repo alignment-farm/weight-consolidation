@@ -1,0 +1,12 @@
+{
+  "query": "SELECT (13062 * 100.0 / 358837.0) AS percentage FROM (SELECT 1)",
+  "params": {},
+  "columns": [
+    "percentage"
+  ],
+  "rows": [
+    [
+      3.6400928555305057
+    ]
+  ]
+}

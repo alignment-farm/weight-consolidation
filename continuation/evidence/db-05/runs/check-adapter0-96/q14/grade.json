@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-96",
+  "arm": "adapter0-96",
+  "id": 14,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1832
+      ]
+    ],
+    "upstream_stored_answer": 1832,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT\n                    (SELECT COUNT(DISTINCT item_id) FROM fdbk_g1\n                     WHERE rtg IS NOT NULL AND rtg <= 2.0) -\n                    (SELECT COUNT(DISTINCT ref_id) FROM fdbk_g1\n                     WHERE rtg IS NOT NULL AND rtg <= 2.0)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "121ee7c3792f9b5384bedf944ff644fca454daff8eed9cde3410b579557045d3"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1545,
+      "completion_tokens": 70,
+      "model_seconds": 2.2860504160053097,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.18555824999930337
+    },
+    "elapsed_seconds": 4.757802542007994,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.1371729579987,
+  "checking_seconds": 0.09314729100151453,
+  "exit_code": 0
+}

@@ -1,0 +1,12 @@
+{
+  "query": "SELECT CAST(202543 AS REAL) / 182566 AS ratio",
+  "params": {},
+  "columns": [
+    "ratio"
+  ],
+  "rows": [
+    [
+      1.109423441385581
+    ]
+  ]
+}

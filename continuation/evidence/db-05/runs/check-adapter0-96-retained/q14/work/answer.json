@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM (\n                SELECT COUNT(DISTINCT ref_id) - COUNT(DISTINCT product_id) as diff\n                FROM reviews\n                WHERE category = 'office products'\n                GROUP BY ref_id\n                HAVING COUNT(*) > 0\n               )",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      19999
+    ]
+  ]
+}

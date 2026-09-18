@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(ABS(AVG(CASE WHEN p.price IS NOT NULL THEN r.rating END) - AVG(CASE WHEN p.price IS NULL THEN r.rating END)), 2) FROM reviews r JOIN products p ON r.category = p.category AND r.ref_id = p.ref_id WHERE p.category = 'musical instruments'",
+  "params": {},
+  "columns": [
+    "ROUND(ABS(AVG(CASE WHEN p.price IS NOT NULL THEN r.rating END) - AVG(CASE WHEN p.price IS NULL THEN r.rating END)), 2)"
+  ],
+  "rows": [
+    [
+      0.12
+    ]
+  ]
+}

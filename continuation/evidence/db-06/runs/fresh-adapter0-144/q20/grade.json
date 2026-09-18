@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 20,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        21
+      ]
+    ],
+    "upstream_stored_answer": 21,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT\n                    (SELECT COUNT(DISTINCT a.ref_id) FROM attrs_g1 a\n                     JOIN items_g1 i ON a.ref_id = i.ref_id\n                     WHERE a.attr_key = 'Is Discontinued By Manufacturer'\n                     AND LOWER(a.attr_val) = 'yes'\n                     AND i.avg_rtg IS NOT NULL AND i.avg_rtg < 3.0) +\n                    (SELECT COUNT(DISTINCT a.ref_id) FROM attrs_g3 a\n                     JOIN items_g3 i ON a.ref_id = i.ref_id\n                     WHERE a.attr_key = 'Is Discontinued By Manufacturer'\n                     AND LOWER(a.attr_val) = 'yes'\n                     AND i.avg_rtg IS NOT NULL AND i.avg_rtg < 3.0)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "fb0455de3f5cf883246aeabc65b9d9c51445476f7f6bcc4b6288457f78432134"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1480,
+      "completion_tokens": 46,
+      "model_seconds": 1.994957083996269,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.0033667920070001855
+    },
+    "elapsed_seconds": 4.305459374998463,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.662420749999001,
+  "checking_seconds": 0.01107629200851079,
+  "exit_code": 0
+}

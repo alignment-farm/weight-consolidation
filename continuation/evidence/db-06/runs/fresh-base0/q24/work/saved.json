@@ -1,0 +1,4 @@
+{
+  "musical_instrument_repeat_purchasers": "SELECT COUNT(*) FROM reviews WHERE category = 'musical instruments' AND user_id IN (SELECT user_id FROM reviews WHERE category = 'musical instruments' GROUP BY user_id HAVING COUNT(*) >= 3) AND rating = 5",
+  "musical_instrument_total_reviews": "SELECT COUNT(*) FROM reviews WHERE category = 'musical instruments' AND user_id IN (SELECT user_id FROM reviews WHERE category = 'musical instruments' GROUP BY user_id HAVING COUNT(*) >= 3)"
+}

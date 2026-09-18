@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND((SELECT COUNT(*)*1.0 FROM attributes WHERE category='musical instruments')/(SELECT COUNT(*) FROM attrs_g3_legacy),2)",
+  "params": {},
+  "columns": [
+    "ROUND((SELECT COUNT(*)*1.0 FROM attributes WHERE category='musical instruments')/(SELECT COUNT(*) FROM attrs_g3_legacy),2)"
+  ],
+  "rows": [
+    [
+      1.11
+    ]
+  ]
+}

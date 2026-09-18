@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM (SELECT DISTINCT a.attr_val FROM attributes a JOIN reviews r USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' EXCEPT SELECT DISTINCT r2.body FROM reviews r2 WHERE r2.year=2022)",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      4299
+    ]
+  ]
+}

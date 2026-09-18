@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(CASE WHEN price IS NOT NULL AND price > 0 THEN 1 END) * 100.0 / COUNT(*) AS percentage FROM products WHERE category = 'electronics' AND ref_id NOT IN (SELECT DISTINCT ref_id FROM reviews WHERE category = 'electronics')",
+  "params": {},
+  "columns": [
+    "percentage"
+  ],
+  "rows": [
+    [
+      29.92507712648744
+    ]
+  ]
+}

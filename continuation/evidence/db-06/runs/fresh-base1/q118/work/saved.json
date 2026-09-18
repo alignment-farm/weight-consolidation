@@ -1,0 +1,4 @@
+{
+  "electronics_avg_price": "SELECT AVG(price) FROM products WHERE category = 'electronics' AND price > 0",
+  "electronics_price_deviations": "SELECT price, (price - (SELECT AVG(price) FROM products WHERE category = 'electronics' AND price > 0)) AS deviation FROM products WHERE category = 'electronics' AND price > 0"
+}

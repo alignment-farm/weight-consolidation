@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM reviews WHERE category = 'electronics' AND year = 2021 AND month >= 10 AND month <= 12",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      1867
+    ]
+  ]
+}

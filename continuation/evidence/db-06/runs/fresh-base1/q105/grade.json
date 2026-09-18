@@ -1,0 +1,37 @@
+{
+  "stage": "fresh-base1",
+  "arm": "base1",
+  "id": 105,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        24.5
+      ]
+    ],
+    "upstream_stored_answer": 24.5,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN prc_v2 > 6000 THEN 1 ELSE 0 END) * 1.0\n                    / COUNT(*), 1)\n                FROM (\n                    SELECT i.ref_id, MAX(i.prc_v2) AS prc_v2\n                    FROM items_g2 i\n                    JOIN fdbk_g2 f ON i.ref_id = f.ref_id\n                    WHERE i.prc_v2 IS NOT NULL AND i.prc_v2 > 0\n                    GROUP BY i.ref_id\n                    HAVING COUNT(*) >= 3\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 17034,
+      "completion_tokens": 422,
+      "model_seconds": 21.176853373995982,
+      "calls": 8,
+      "failed_calls": 1,
+      "tool_calls": 8,
+      "tool_seconds": 0.012071082994225435
+    },
+    "elapsed_seconds": 23.51484208300826,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 23.846553582989145,
+  "checking_seconds": 0.025074040997424163,
+  "exit_code": 0
+}

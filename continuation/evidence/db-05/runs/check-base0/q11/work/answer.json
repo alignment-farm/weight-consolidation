@@ -1,0 +1,12 @@
+{
+  "query": "SELECT CAST(222 AS REAL) * 100 / 2172 AS percentage",
+  "params": {},
+  "columns": [
+    "percentage"
+  ],
+  "rows": [
+    [
+      10.220994475138122
+    ]
+  ]
+}

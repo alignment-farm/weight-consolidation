@@ -1,0 +1,14 @@
+{
+  "query": "SELECT c.cat_nm, COUNT(p.ref_id) AS product_count FROM products p JOIN categories c ON p.category = c.category AND p.ref_id = c.ref_id WHERE p.category = 'electronics' AND p.price > 200 GROUP BY c.cat_nm ORDER BY product_count DESC, c.cat_nm ASC LIMIT 1",
+  "params": {},
+  "columns": [
+    "cat_nm",
+    "product_count"
+  ],
+  "rows": [
+    [
+      "Electronics",
+      582
+    ]
+  ]
+}

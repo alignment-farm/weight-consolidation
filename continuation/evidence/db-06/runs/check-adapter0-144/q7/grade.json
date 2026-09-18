@@ -1,0 +1,37 @@
+{
+  "stage": "check-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 7,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1.03
+      ]
+    ],
+    "upstream_stored_answer": 1.03,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(100.0 * COUNT(*) /\n                    (SELECT COUNT(DISTINCT uid) FROM fdbk_g1), 2)\n                FROM (\n                    SELECT f.uid\n                    FROM fdbk_g1 f\n                    JOIN taxn_g1 t ON f.ref_id = t.ref_id\n                    WHERE t.cat_lvl = 1\n                    GROUP BY f.uid\n                    HAVING COUNT(DISTINCT t.cat_nm) >= 2\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 8457,
+      "completion_tokens": 656,
+      "model_seconds": 14.908444832995883,
+      "calls": 8,
+      "failed_calls": 8,
+      "tool_calls": 8,
+      "tool_seconds": 0.016638957997201942
+    },
+    "elapsed_seconds": 17.25576979199832,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 17.603983875000267,
+  "checking_seconds": 1.3480714580073254,
+  "exit_code": 0
+}

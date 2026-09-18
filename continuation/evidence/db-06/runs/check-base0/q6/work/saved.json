@@ -1,0 +1,3 @@
+{
+  "q6_step3": "SELECT COUNT(DISTINCT r.ref_id) FROM reviews r WHERE r.category='office products' AND NOT EXISTS (SELECT 1 FROM attributes a WHERE a.category=r.category AND a.ref_id=r.ref_id)"
+}

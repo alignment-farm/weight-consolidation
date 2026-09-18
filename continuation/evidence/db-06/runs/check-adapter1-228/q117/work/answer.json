@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM (SELECT a.attr_val FROM attributes a JOIN reviews r USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' AND r.year IN (2019,2020,2021) GROUP BY a.attr_val HAVING COUNT(DISTINCT r.year)=3)",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      891
+    ]
+  ]
+}

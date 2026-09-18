@@ -1,0 +1,5 @@
+{
+  "job": "q25",
+  "question": "Which product category has the most products priced above $50? Report as 'office products', 'electronics', or 'musical instruments'.",
+  "revision": "before"
+}

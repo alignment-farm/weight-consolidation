@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 24,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        69.76
+      ]
+    ],
+    "upstream_stored_answer": 69.76,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(100.0 * SUM(CASE WHEN f.rtg = 5.0 THEN 1 ELSE 0 END) / COUNT(*), 2)\n                FROM fdbk_g3 f\n                WHERE f.uid IN (\n                    SELECT uid FROM fdbk_g3 GROUP BY uid HAVING COUNT(*) >= 3\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "849556778dc0ca2c45031c3b2603e191cf596b2fdc6cf11bc442e9a75d930652"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1576,
+      "completion_tokens": 103,
+      "model_seconds": 2.7219920000061393,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 1.248454208005569
+    },
+    "elapsed_seconds": 6.277220957999816,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 6.6433293750014855,
+  "checking_seconds": 0.23377458300092258,
+  "exit_code": 0
+}

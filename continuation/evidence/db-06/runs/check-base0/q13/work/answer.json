@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(100.0*SUM(CASE WHEN p.price>0 THEN 1 ELSE 0 END)/COUNT(*),2) FROM products p WHERE p.category='electronics' AND NOT EXISTS (SELECT 1 FROM reviews r WHERE r.category=p.category AND r.ref_id=p.ref_id)",
+  "params": {},
+  "columns": [
+    "ROUND(100.0*SUM(CASE WHEN p.price>0 THEN 1 ELSE 0 END)/COUNT(*),2)"
+  ],
+  "rows": [
+    [
+      29.93
+    ]
+  ]
+}

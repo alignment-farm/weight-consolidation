@@ -1,0 +1,42 @@
+{
+  "stage": "check-base1",
+  "arm": "base1",
+  "id": 102,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        "Computers & Accessories"
+      ]
+    ],
+    "upstream_stored_answer": "Computers & Accessories",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT cat_nm FROM (\n                    SELECT t.cat_nm, COUNT(DISTINCT i.ref_id) AS c\n                    FROM items_g2 i\n                    JOIN taxn_g2 t ON i.ref_id = t.ref_id\n                    WHERE t.cat_lvl = 1\n                    AND i.prc_v2 IS NOT NULL AND i.prc_v2 > 20000\n                    GROUP BY t.cat_nm\n                    ORDER BY c DESC, t.cat_nm ASC\n                    LIMIT 1\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "0f89c333fcf91b3546d0dfa575ddcffbef8ce90e2fad21f4d708be1bb17d3b6c"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 11687,
+      "completion_tokens": 191,
+      "model_seconds": 13.442298875001143,
+      "calls": 6,
+      "failed_calls": 0,
+      "tool_calls": 6,
+      "tool_seconds": 0.21539529199071694
+    },
+    "elapsed_seconds": 15.95474075000675,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 16.322746707999613,
+  "checking_seconds": 0.01437620900105685,
+  "exit_code": 0
+}

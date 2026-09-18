@@ -1,0 +1,5 @@
+{
+  "office_active_verified_reviews": "SELECT COUNT(*) FROM reviews r JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id AND p.status='active' WHERE r.verified = 1 AND p.status = 'active' AND r.rating IS NOT NULL AND r.year IS NOT NULL AND r.month IS NOT NULL",
+  "office_active_product_review_avg": "SELECT p.ref_id, AVG(r.rating) AS avg_verified_rating, COUNT(r.rating) AS verified_review_count FROM products p JOIN reviews r ON p.ref_id = r.ref_id AND p.category = 'office products' AND p.status = 'active' WHERE r.verified = 1 GROUP BY p.ref_id HAVING AVG(r.rating) = 5.0 AND COUNT(r.rating) >= 5",
+  "office_active_product_count": "SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p JOIN reviews r ON p.ref_id = r.ref_id AND p.category = 'office products' AND p.status = 'active' WHERE r.verified = 1 AND p.status = 'active' AND r.rating IS NOT NULL AND r.year IS NOT NULL AND r.month IS NOT NULL GROUP BY p.ref_id HAVING AVG(r.rating) = 5.0 AND COUNT(r.rating) >= 5)"
+}

@@ -1,0 +1,37 @@
+{
+  "stage": "source0",
+  "arm": "collector0",
+  "id": 21,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        "WORLDS BEST CABLES"
+      ]
+    ],
+    "upstream_stored_answer": "WORLDS BEST CABLES",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT a.attr_val\n                FROM attrs_g3 a\n                JOIN fdbk_g3 f ON a.ref_id = f.ref_id\n                WHERE a.attr_key = 'Brand'\n                GROUP BY a.attr_val\n                HAVING COUNT(DISTINCT a.ref_id) >= 20\n                ORDER BY AVG(f.rtg) DESC\n                LIMIT 1"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 13919,
+      "completion_tokens": 538,
+      "model_seconds": 18.731814500002656,
+      "calls": 8,
+      "failed_calls": 2,
+      "tool_calls": 8,
+      "tool_seconds": 0.012017330998787656
+    },
+    "elapsed_seconds": 21.063137959004962,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 21.42050858300354,
+  "checking_seconds": 0.2684430420049466,
+  "exit_code": 0
+}

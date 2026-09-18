@@ -1,0 +1,5 @@
+{
+  "job": "q3",
+  "question": "How many office product reviews were posted in calendar year 2022 for products whose catalog list price is strictly between $20 and $200 (exclude products priced exactly at those boundaries)?",
+  "revision": "before"
+}

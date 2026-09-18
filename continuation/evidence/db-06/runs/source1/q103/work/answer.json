@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM products WHERE category = 'electronics' AND price > 0 AND price > 1.15 * (SELECT AVG(price) FROM products WHERE category = 'electronics' AND price > 0)",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      1049
+    ]
+  ]
+}

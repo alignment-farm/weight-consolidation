@@ -1,0 +1,37 @@
+{
+  "stage": "fresh-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 119,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        16.3
+      ]
+    ],
+    "upstream_stored_answer": 16.3,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN i.prc > avg_prc THEN 1 ELSE 0 END)\n                    * 1.0 / COUNT(*), 1)\n                FROM fdbk_g3 f\n                JOIN items_g3 i ON f.ref_id = i.ref_id\n                CROSS JOIN (\n                    SELECT AVG(prc) as avg_prc FROM items_g3\n                    WHERE prc IS NOT NULL AND prc > 0\n                )\n                WHERE f.ts IS NULL\n                AND i.prc IS NOT NULL AND i.prc > 0"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 8991,
+      "completion_tokens": 798,
+      "model_seconds": 16.805386292995536,
+      "calls": 8,
+      "failed_calls": 8,
+      "tool_calls": 8,
+      "tool_seconds": 0.01908166700741276
+    },
+    "elapsed_seconds": 19.135951958000078,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 19.469928083999548,
+  "checking_seconds": 0.11475016699114349,
+  "exit_code": 0
+}

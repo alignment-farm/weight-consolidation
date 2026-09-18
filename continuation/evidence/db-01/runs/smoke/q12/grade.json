@@ -1,0 +1,42 @@
+{
+  "stage": "smoke",
+  "arm": "collector0",
+  "id": 12,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        8
+      ]
+    ],
+    "upstream_stored_answer": 8,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM (\n                    SELECT i.ref_id\n                    FROM items_g2 i\n                    JOIN fdbk_g2 f ON i.ref_id = f.ref_id\n                    WHERE i.prc > 5000 AND i.prc IS NOT NULL\n                    GROUP BY i.ref_id\n                    HAVING COUNT(*) >= 5 AND AVG(f.rtg) < 3.0\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "8a2753f22037254bc9e67f3b2794ec3e761e77ec53c9d7ad6250e713eceaf06b"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 7638,
+      "completion_tokens": 175,
+      "model_seconds": 9.1338906250312,
+      "calls": 5,
+      "failed_calls": 0,
+      "tool_calls": 5,
+      "tool_seconds": 0.23938512599852402
+    },
+    "elapsed_seconds": 11.687938333008788,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 12.027847334000398,
+  "checking_seconds": 0.03398512500280049,
+  "exit_code": 0
+}

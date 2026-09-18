@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(AVG(r.rating),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.price>50",
+  "params": {},
+  "columns": [
+    "ROUND(AVG(r.rating),2)"
+  ],
+  "rows": [
+    [
+      4.11
+    ]
+  ]
+}

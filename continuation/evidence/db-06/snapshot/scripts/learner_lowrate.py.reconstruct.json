@@ -1,0 +1,6 @@
+{
+  "sha256": "964c258768282cbae8bff7c6967423cf685ce0e787d323c8b03ce33eaa64304c",
+  "reconstructor": "continuation/scripts/learner_lowrate.py",
+  "native_revision": "9ffb10a66180626b80127fb1892b2cf71e39d946",
+  "reason": "Exact experiment code is reconstructed from the pinned dependency plus the owned transformation. Upstream runtime has no explicit license file; full dependency source is not vendored in Git."
+}

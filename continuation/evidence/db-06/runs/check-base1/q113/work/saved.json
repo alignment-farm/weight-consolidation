@@ -1,0 +1,3 @@
+{
+  "q113_step4": "SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p JOIN reviews r USING(category,ref_id) WHERE p.category='office products' AND p.status='active' AND p.price>20 GROUP BY p.ref_id HAVING SUM(r.verified)=0)"
+}

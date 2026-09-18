@@ -1,0 +1,12 @@
+{
+  "query": "SELECT (SELECT AVG(LENGTH(body)) FROM reviews WHERE category = 'electronics' AND verified = 1 AND body IS NOT NULL AND body != '' AND rating = 1) - (SELECT AVG(LENGTH(body)) FROM reviews WHERE category = 'electronics' AND verified = 1 AND body IS NOT NULL AND body != '' AND rating = 5)",
+  "params": {},
+  "columns": [
+    "(SELECT AVG(LENGTH(body)) FROM reviews WHERE category = 'electronics' AND verified = 1 AND body IS NOT NULL AND body != '' AND rating = 1) - (SELECT AVG(LENGTH(body)) FROM reviews WHERE category = 'electronics' AND verified = 1 AND body IS NOT NULL AND body != '' AND rating = 5)"
+  ],
+  "rows": [
+    [
+      101.75958859245159
+    ]
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "check-adapter0-144": {
+    "n": 18,
+    "complete": 14,
+    "correct_artifact": 14,
+    "usage": {
+      "prompt_tokens": 42184,
+      "completion_tokens": 2252,
+      "model_seconds": 65.42556417407468,
+      "calls": 50,
+      "failed_calls": 18,
+      "tool_calls": 50,
+      "tool_seconds": 4.186623501082067
+    },
+    "tools": {
+      "submit": 34,
+      "finish": 16
+    },
+    "controller_seconds": 117.59340908398735,
+    "checking_seconds": 2.890850873023737,
+    "ids": [
+      1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      2,
+      21,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "correct_ids": [
+      10,
+      11,
+      13,
+      15,
+      16,
+      17,
+      18,
+      2,
+      21,
+      3,
+      4,
+      5,
+      6,
+      9
+    ],
+    "statuses": {
+      "succeeded": 16,
+      "failed": 2
+    }
+  },
+  "check-adapter1-228": {
+    "n": 11,
+    "complete": 6,
+    "correct_artifact": 6,
+    "usage": {
+      "prompt_tokens": 36434,
+      "completion_tokens": 1955,
+      "model_seconds": 56.09879700196325,
+      "calls": 39,
+      "failed_calls": 20,
+      "tool_calls": 39,
+      "tool_seconds": 5.617829624010483
+    },
+    "tools": {
+      "submit": 29,
+      "finish": 9,
+      "schema": 1
+    },
+    "controller_seconds": 91.24227016796067,
+    "checking_seconds": 23.482127498980844,
+    "ids": [
+      101,
+      102,
+      103,
+      104,
+      106,
+      107,
+      109,
+      110,
+      111,
+      113,
+      117
+    ],
+    "correct_ids": [
+      101,
+      103,
+      106,
+      110,
+      113,
+      117
+    ],
+    "statuses": {
+      "succeeded": 9,
+      "failed": 2
+    }
+  },
+  "check-base0": {
+    "n": 18,
+    "complete": 14,
+    "correct_artifact": 14,
+    "usage": {
+      "prompt_tokens": 248373,
+      "completion_tokens": 4030,
+      "model_seconds": 285.33416705006675,
+      "calls": 130,
+      "failed_calls": 11,
+      "tool_calls": 130,
+      "tool_seconds": 7.565212578076171
+    },
+    "tools": {
+      "schema": 18,
+      "read": 18,
+      "search_history": 16,
+      "save_sql": 32,
+      "run_saved": 9,
+      "finish": 16,
+      "submit": 12,
+      "sql": 9
+    },
+    "controller_seconds": 340.90299433199107,
+    "checking_seconds": 2.907107129023643,
+    "ids": [
+      1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      2,
+      21,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "correct_ids": [
+      10,
+      11,
+      12,
+      13,
+      16,
+      17,
+      18,
+      2,
+      21,
+      3,
+      4,
+      5,
+      6,
+      9
+    ],
+    "statuses": {
+      "succeeded": 16,
+      "failed": 2
+    }
+  },
+  "check-base1": {
+    "n": 11,
+    "complete": 6,
+    "correct_artifact": 6,
+    "usage": {
+      "prompt_tokens": 154012,
+      "completion_tokens": 2791,
+      "model_seconds": 179.57574424991617,
+      "calls": 76,
+      "failed_calls": 2,
+      "tool_calls": 76,
+      "tool_seconds": 15.491431284041028
+    },
+    "tools": {
+      "schema": 11,
+      "sql": 9,
+      "submit": 10,
+      "finish": 10,
+      "read": 9,
+      "search_history": 10,
+      "save_sql": 15,
+      "run_saved": 2
+    },
+    "controller_seconds": 224.398165126986,
+    "checking_seconds": 23.14629691700975,
+    "ids": [
+      101,
+      102,
+      103,
+      104,
+      106,
+      107,
+      109,
+      110,
+      111,
+      113,
+      117
+    ],
+    "correct_ids": [
+      101,
+      103,
+      106,
+      107,
+      113,
+      117
+    ],
+    "statuses": {
+      "succeeded": 10,
+      "failed": 1
+    }
+  },
+  "fresh-adapter0-144": {
+    "n": 10,
+    "complete": 4,
+    "correct_artifact": 4,
+    "usage": {
+      "prompt_tokens": 30254,
+      "completion_tokens": 1927,
+      "model_seconds": 49.71962862703367,
+      "calls": 33,
+      "failed_calls": 16,
+      "tool_calls": 33,
+      "tool_seconds": 7.716706876002718
+    },
+    "tools": {
+      "submit": 16,
+      "finish": 8,
+      "malformed-action": 9
+    },
+    "controller_seconds": 84.11840250100067,
+    "checking_seconds": 1.3675976650265511,
+    "ids": [
+      19,
+      20,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "correct_ids": [
+      25,
+      26,
+      29,
+      30
+    ],
+    "statuses": {
+      "succeeded": 8,
+      "failed": 2
+    }
+  },
+  "fresh-adapter1-228": {
+    "n": 10,
+    "complete": 2,
+    "correct_artifact": 2,
+    "usage": {
+      "prompt_tokens": 42300,
+      "completion_tokens": 3224,
+      "model_seconds": 74.28425254300237,
+      "calls": 42,
+      "failed_calls": 28,
+      "tool_calls": 42,
+      "tool_seconds": 1.3849461259815143
+    },
+    "tools": {
+      "submit": 34,
+      "finish": 7,
+      "malformed-action": 1
+    },
+    "controller_seconds": 102.51920245900692,
+    "checking_seconds": 1.0224580000212882,
+    "ids": [
+      105,
+      108,
+      112,
+      114,
+      115,
+      116,
+      118,
+      119,
+      120,
+      23
+    ],
+    "correct_ids": [
+      114,
+      115
+    ],
+    "statuses": {
+      "succeeded": 7,
+      "failed": 3
+    }
+  },
+  "fresh-base0": {
+    "n": 10,
+    "complete": 4,
+    "correct_artifact": 6,
+    "usage": {
+      "prompt_tokens": 138248,
+      "completion_tokens": 2066,
+      "model_seconds": 156.92939107802522,
+      "calls": 71,
+      "failed_calls": 2,
+      "tool_calls": 71,
+      "tool_seconds": 5.717840248020366
+    },
+    "tools": {
+      "schema": 10,
+      "read": 10,
+      "search_history": 12,
+      "save_sql": 12,
+      "sql": 6,
+      "submit": 8,
+      "finish": 6,
+      "run_saved": 7
+    },
+    "controller_seconds": 189.31608770802268,
+    "checking_seconds": 1.3651710820267908,
+    "ids": [
+      19,
+      20,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "correct_ids": [
+      19,
+      25,
+      29,
+      30
+    ],
+    "statuses": {
+      "succeeded": 6,
+      "failed": 4
+    }
+  },
+  "fresh-base1": {
+    "n": 10,
+    "complete": 3,
+    "correct_artifact": 3,
+    "usage": {
+      "prompt_tokens": 149576,
+      "completion_tokens": 2839,
+      "model_seconds": 175.87449395899603,
+      "calls": 73,
+      "failed_calls": 5,
+      "tool_calls": 73,
+      "tool_seconds": 6.219714415899944
+    },
+    "tools": {
+      "schema": 10,
+      "read": 8,
+      "search_history": 8,
+      "save_sql": 22,
+      "malformed-action": 2,
+      "run_saved": 6,
+      "submit": 6,
+      "finish": 7,
+      "sql": 4
+    },
+    "controller_seconds": 208.7621217509586,
+    "checking_seconds": 1.0275921669963282,
+    "ids": [
+      105,
+      108,
+      112,
+      114,
+      115,
+      116,
+      118,
+      119,
+      120,
+      23
+    ],
+    "correct_ids": [
+      114,
+      115,
+      118
+    ],
+    "statuses": {
+      "failed": 4,
+      "succeeded": 6
+    }
+  },
+  "fresh-stale1": {
+    "n": 10,
+    "complete": 3,
+    "correct_artifact": 3,
+    "usage": {
+      "prompt_tokens": 38320,
+      "completion_tokens": 2404,
+      "model_seconds": 61.908629460958764,
+      "calls": 40,
+      "failed_calls": 26,
+      "tool_calls": 40,
+      "tool_seconds": 2.189048458036268
+    },
+    "tools": {
+      "submit": 31,
+      "finish": 7,
+      "malformed-action": 2
+    },
+    "controller_seconds": 90.77424049799447,
+    "checking_seconds": 1.0324145429913187,
+    "ids": [
+      105,
+      108,
+      112,
+      114,
+      115,
+      116,
+      118,
+      119,
+      120,
+      23
+    ],
+    "correct_ids": [
+      112,
+      114,
+      115
+    ],
+    "statuses": {
+      "succeeded": 7,
+      "failed": 3
+    }
+  },
+  "preserved-adapter1-228": {
+    "n": 2,
+    "complete": 2,
+    "correct_artifact": 2,
+    "usage": {
+      "prompt_tokens": 2966,
+      "completion_tokens": 107,
+      "model_seconds": 4.197492457999033,
+      "calls": 4,
+      "failed_calls": 0,
+      "tool_calls": 4,
+      "tool_seconds": 1.1445100010023452
+    },
+    "tools": {
+      "submit": 2,
+      "finish": 2
+    },
+    "controller_seconds": 10.699255042010918,
+    "checking_seconds": 0.17458833298587706,
+    "ids": [
+      2,
+      3
+    ],
+    "correct_ids": [
+      2,
+      3
+    ],
+    "statuses": {
+      "succeeded": 2
+    }
+  },
+  "preserved-base1": {
+    "n": 2,
+    "complete": 2,
+    "correct_artifact": 2,
+    "usage": {
+      "prompt_tokens": 28277,
+      "completion_tokens": 342,
+      "model_seconds": 31.28856125001039,
+      "calls": 14,
+      "failed_calls": 2,
+      "tool_calls": 14,
+      "tool_seconds": 1.1634597079828382
+    },
+    "tools": {
+      "schema": 2,
+      "read": 2,
+      "search_history": 2,
+      "save_sql": 4,
+      "run_saved": 2,
+      "finish": 2
+    },
+    "controller_seconds": 37.73984587499581,
+    "checking_seconds": 0.17365312500623986,
+    "ids": [
+      2,
+      3
+    ],
+    "correct_ids": [
+      2,
+      3
+    ],
+    "statuses": {
+      "succeeded": 2
+    }
+  },
+  "preserved-stale1": {
+    "n": 2,
+    "complete": 2,
+    "correct_artifact": 2,
+    "usage": {
+      "prompt_tokens": 2966,
+      "completion_tokens": 107,
+      "model_seconds": 4.205289334000554,
+      "calls": 4,
+      "failed_calls": 0,
+      "tool_calls": 4,
+      "tool_seconds": 1.1501606649835594
+    },
+    "tools": {
+      "submit": 2,
+      "finish": 2
+    },
+    "controller_seconds": 10.659288958995603,
+    "checking_seconds": 0.17178229099954478,
+    "ids": [
+      2,
+      3
+    ],
+    "correct_ids": [
+      2,
+      3
+    ],
+    "statuses": {
+      "succeeded": 2
+    }
+  },
+  "source1": {
+    "n": 7,
+    "complete": 4,
+    "correct_artifact": 5,
+    "usage": {
+      "prompt_tokens": 94329,
+      "completion_tokens": 1834,
+      "model_seconds": 111.14857037297043,
+      "calls": 47,
+      "failed_calls": 2,
+      "tool_calls": 47,
+      "tool_seconds": 51.77491029801604
+    },
+    "tools": {
+      "schema": 7,
+      "sql": 6,
+      "submit": 6,
+      "finish": 5,
+      "read": 6,
+      "search_history": 6,
+      "save_sql": 11
+    },
+    "controller_seconds": 181.58880454002065,
+    "checking_seconds": 22.493218542003888,
+    "ids": [
+      101,
+      103,
+      106,
+      109,
+      110,
+      113,
+      117
+    ],
+    "correct_ids": [
+      101,
+      103,
+      106,
+      117
+    ],
+    "statuses": {
+      "succeeded": 5,
+      "failed": 2
+    }
+  }
+}

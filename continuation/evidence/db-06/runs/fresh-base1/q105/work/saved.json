@@ -1,0 +1,6 @@
+{
+  "electronics_review_count": "SELECT COUNT(*) FROM reviews WHERE category='electronics'",
+  "electronics_product_review_count": "SELECT p.ref_id, COUNT(r.review_id) AS review_count FROM products p JOIN reviews r ON p.category = r.category AND p.ref_id = r.ref_id WHERE p.category = 'electronics' GROUP BY p.ref_id HAVING COUNT(r.review_id) >= 3",
+  "electronics_price_above_60": "SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p WHERE p.category = 'electronics' AND p.price > 60 AND p.ref_id IN (SELECT ref_id FROM (SELECT p.ref_id FROM products p JOIN reviews r ON p.category = r.category AND p.ref_id = r.ref_id WHERE p.category = 'electronics' GROUP BY p.ref_id HAVING COUNT(r.review_id) >= 3))",
+  "electronics_filtered_products_count": "SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p WHERE p.category = 'electronics' AND p.ref_id IN (SELECT ref_id FROM (SELECT p.ref_id FROM products p JOIN reviews r ON p.category = r.category AND p.ref_id = r.ref_id WHERE p.category = 'electronics' GROUP BY p.ref_id HAVING COUNT(r.review_id) >= 3))"
+}

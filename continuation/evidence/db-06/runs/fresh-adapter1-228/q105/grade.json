@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 105,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        24.5
+      ]
+    ],
+    "upstream_stored_answer": 24.5,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN prc_v2 > 6000 THEN 1 ELSE 0 END) * 1.0\n                    / COUNT(*), 1)\n                FROM (\n                    SELECT i.ref_id, MAX(i.prc_v2) AS prc_v2\n                    FROM items_g2 i\n                    JOIN fdbk_g2 f ON i.ref_id = f.ref_id\n                    WHERE i.prc_v2 IS NOT NULL AND i.prc_v2 > 0\n                    GROUP BY i.ref_id\n                    HAVING COUNT(*) >= 3\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "edb05e45053528215322c2a3be73a1a3c360819639a94a90996ce03ace10521c"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1629,
+      "completion_tokens": 86,
+      "model_seconds": 2.5435890420048963,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.15846133400918916
+    },
+    "elapsed_seconds": 5.131691165996017,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.491059583000606,
+  "checking_seconds": 0.0254900410072878,
+  "exit_code": 0
+}

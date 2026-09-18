@@ -1,0 +1,122 @@
+{
+  "states": {
+    "adapter0-48": {
+      "assets_verified": true,
+      "environment": "1df338638a8e224e4eb0fabaf14d2d1e559a709df686ef203f1b178e82e96fdf",
+      "inherited": {
+        "history.json": "e0e334848a9b4f544aa1e48de0dc55cd517baf486f2244d8cfca622edd17ba58",
+        "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+        "documentation.txt": "11dc0a3534491828b6b8fd646661436cfe7d1faa64944b530a8412ac836c9f2a"
+      }
+    },
+    "adapter0-96": {
+      "assets_verified": true,
+      "environment": "1df338638a8e224e4eb0fabaf14d2d1e559a709df686ef203f1b178e82e96fdf",
+      "inherited": {
+        "history.json": "e0e334848a9b4f544aa1e48de0dc55cd517baf486f2244d8cfca622edd17ba58",
+        "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+        "documentation.txt": "11dc0a3534491828b6b8fd646661436cfe7d1faa64944b530a8412ac836c9f2a"
+      }
+    },
+    "adapter0-96-retained": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "a9853dfc4bdaa129feba7b02efe92593cb47f62d2b75dfd481315aefa071b65b",
+        "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+        "documentation.txt": "32a0a99749b7a840c9bddfd90d3cfdece236a69dd7ac8a3bdf3e7ea83f7ef374"
+      }
+    },
+    "base0": {
+      "assets_verified": true,
+      "environment": "1df338638a8e224e4eb0fabaf14d2d1e559a709df686ef203f1b178e82e96fdf",
+      "inherited": {
+        "history.json": "e0e334848a9b4f544aa1e48de0dc55cd517baf486f2244d8cfca622edd17ba58",
+        "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+        "documentation.txt": "11dc0a3534491828b6b8fd646661436cfe7d1faa64944b530a8412ac836c9f2a"
+      }
+    },
+    "base0-retained": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "a9853dfc4bdaa129feba7b02efe92593cb47f62d2b75dfd481315aefa071b65b",
+        "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+        "documentation.txt": "32a0a99749b7a840c9bddfd90d3cfdece236a69dd7ac8a3bdf3e7ea83f7ef374"
+      }
+    },
+    "collector0": {
+      "assets_verified": true,
+      "environment": "1df338638a8e224e4eb0fabaf14d2d1e559a709df686ef203f1b178e82e96fdf",
+      "inherited": {
+        "history.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+        "documentation.txt": "11dc0a3534491828b6b8fd646661436cfe7d1faa64944b530a8412ac836c9f2a"
+      }
+    },
+    "collector1": {
+      "assets_verified": true,
+      "environment": "1df338638a8e224e4eb0fabaf14d2d1e559a709df686ef203f1b178e82e96fdf",
+      "inherited": {
+        "history.json": "e0e334848a9b4f544aa1e48de0dc55cd517baf486f2244d8cfca622edd17ba58",
+        "views.py": "62931304d711769e80b68ac8bb2676a341425cc575cd4ef3e3c1bc59b9bcd853",
+        "documentation.txt": "5ce2ee9fa6643f966bc8473cf6be720c518a638cc2c44e9ab060df29d7bf500e"
+      }
+    },
+    "collector1-retained": {
+      "assets_verified": true,
+      "environment": "c7db09712cf4d6bdd633e0a2b98c8bed43eb90238e957c2dcc310827d215024d",
+      "inherited": {
+        "history.json": "a9853dfc4bdaa129feba7b02efe92593cb47f62d2b75dfd481315aefa071b65b",
+        "views.py": "62931304d711769e80b68ac8bb2676a341425cc575cd4ef3e3c1bc59b9bcd853",
+        "documentation.txt": "023f1b068805df36cb5689988f13b4c7f681e00170cc2bf93cfbea4a8bcd0840"
+      }
+    }
+  },
+  "pairs": {
+    "0": {
+      "arms": [
+        "base0-retained",
+        "adapter0-96-retained"
+      ],
+      "identical_external_assets_and_controls": true,
+      "source_cases": [
+        "q10",
+        "q11",
+        "q13",
+        "q16",
+        "q17",
+        "q18",
+        "q2",
+        "q21",
+        "q3",
+        "q4",
+        "q6",
+        "q9"
+      ],
+      "exact_records": 24
+    }
+  },
+  "training": {
+    "adapter0-48": {
+      "base_unchanged": true,
+      "weights_changed": true,
+      "fresh_optimizer": true,
+      "data_verified": true
+    },
+    "adapter0-96": {
+      "base_unchanged": true,
+      "weights_changed": true,
+      "fresh_optimizer": true,
+      "data_verified": true
+    }
+  },
+  "runtime_pin": "9ffb10a66180626b80127fb1892b2cf71e39d946",
+  "verified_model_loads": 86,
+  "base_digests": [
+    "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e"
+  ],
+  "grades_recomputed": 86,
+  "frozen_record_verified": true,
+  "note": "Loader verifies actual base/tokenizer hashes, adapter tensor names/shapes/values per process; state resolution verifies assets. This audit checks recorded boundaries, not absence of model pretraining contamination."
+}

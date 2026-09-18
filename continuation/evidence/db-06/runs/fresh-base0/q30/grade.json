@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-base0",
+  "arm": "base0",
+  "id": 30,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        "VTech CS6529-2 DECT 6.0 Phone Answering System with Caller ID/Call Waiting, 2 Cordless Handsets, Silver/Black"
+      ]
+    ],
+    "upstream_stored_answer": "VTech CS6529-2 DECT 6.0 Phone Answering System with Caller ID/Call Waiting, 2 Cordless Handsets, Silver/Black",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT ttl FROM (\n                    SELECT i.ttl, COUNT(*) as cnt\n                    FROM items_g1 i JOIN fdbk_g1 f ON i.ref_id = f.ref_id\n                    WHERE f.rtg = 1.0\n                    GROUP BY i.ref_id, i.ttl\n                    UNION ALL\n                    SELECT i.ttl, COUNT(*) as cnt\n                    FROM items_g2 i JOIN fdbk_g2 f ON i.ref_id = f.ref_id\n                    WHERE f.rtg = 1.0\n                    GROUP BY i.ref_id, i.ttl\n                    UNION ALL\n                    SELECT i.ttl, COUNT(*) as cnt\n                    FROM items_g3 i JOIN fdbk_g3 f ON i.ref_id = f.ref_id\n                    WHERE f.rtg = 1.0\n                    GROUP BY i.ref_id, i.ttl\n                )\n                ORDER BY cnt DESC\n                LIMIT 1"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "30ad11c9cea2232b1bebb097570b457bfe85dc4be46f1453b45b275423508aff"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10812,
+      "completion_tokens": 124,
+      "model_seconds": 11.843813835032051,
+      "calls": 6,
+      "failed_calls": 0,
+      "tool_calls": 6,
+      "tool_seconds": 0.36845429200911894
+    },
+    "elapsed_seconds": 14.511253375007072,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 14.863693166000303,
+  "checking_seconds": 0.1448408330033999,
+  "exit_code": 0
+}

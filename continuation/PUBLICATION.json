@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-18",
+  "status": "bounded continuation complete",
+  "scope": "One constructed database history; limited feasibility; no adapter promoted; broader question open.",
+  "previous_publication_commit": "491c0f8a745f48327f6d095d2c3fa7f07d768b44",
+  "parent_commit": "8b299bdaaed6a46da1d64f4ec3940d9837332215",
+  "runtime_commit": "9ffb10a66180626b80127fb1892b2cf71e39d946",
+  "model_revision": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+  "database_revision": "a0cc57eeb9a54f01c0490a1b46cb705b4e05aa19",
+  "fresh_complete": {
+    "external_reuse": 7,
+    "selected_adapter_strategy": 6,
+    "jobs": 20
+  },
+  "fresh_correct_artifacts": {
+    "external_reuse": 9,
+    "selected_adapter_strategy": 6,
+    "jobs": 20
+  },
+  "preserved_source_obligations": {
+    "external_reuse": 2,
+    "stale_adapter": 2,
+    "updated_adapter": 2,
+    "jobs": 2
+  },
+  "task_executions": 229,
+  "training_updates": 516,
+  "files_sha256": {
+    "FINDINGS.md": "42741349dbf3676d2e272e9a6d796a8539a0bc995edbf7c17f1c216b7eef4457",
+    "REPRODUCE.md": "05e41f7dbe7e3dc15b70ea8f1cd201a1ee5cd0a3c45771af6010a7a7ee89cd4e",
+    "methods/PROTOCOL-03.md": "259727c78454042a0478110304cde52d642222cfdab72d85d01dbb642ba19a90",
+    "methods/PROTOCOL-04.md": "d5f3d735b8143feb7191bbb523e2666e08e27c310f0ed1c5d90259e2ecafa9fd",
+    "evidence/db-06/decision.json": "56eeaa41ddd3fd23f11ab1a116a1de270d4e2285c6c5127544fa1d59e1c3a64e",
+    "evidence/db-06/audit.json": "3d92707440ea163a73f4caa7577681a560ea3e7d0b96db9188093d1eb66d0ef1",
+    "evidence/db-05/audit.json": "3f34270dce794e17a8e2ff28687d5b8b36159675139f3db7cc20a3ded0628552",
+    "evidence/summary.json": "9022e7dfd896a1a7de0e825978c81dc95cefbfb6fe77696593a35d5b95960400",
+    "evidence/primary-results.json": "8c79e190630a671d9af2d764e1fec194b360b6989ae334fab4c6674c6e166b0b",
+    "resources/PROVENANCE.md": "4e4ce57b2b6f8fa0efa2a2eca5a8df9cc65d5ba5b1891d427bea2423f3e18cf5"
+  }
+}

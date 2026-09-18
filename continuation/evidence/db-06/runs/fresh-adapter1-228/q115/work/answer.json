@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(100.0*SUM(CASE WHEN r.verified=1 THEN 1 ELSE 0 END)/COUNT(*),1) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.status='archived'",
+  "params": {},
+  "columns": [
+    "ROUND(100.0*SUM(CASE WHEN r.verified=1 THEN 1 ELSE 0 END)/COUNT(*),1)"
+  ],
+  "rows": [
+    [
+      94.8
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(AVG(CASE WHEN r.verification_label IS NULL THEN LENGTH(r.body) END)-AVG(CASE WHEN r.verification_label IS NOT NULL THEN LENGTH(r.body) END),1) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.status='active' AND r.body IS NOT NULL",
+  "params": {},
+  "columns": [
+    "ROUND(AVG(CASE WHEN r.verification_label IS NULL THEN LENGTH(r.body) END)-AVG(CASE WHEN r.verification_label IS NOT NULL THEN LENGTH(r.body) END),1)"
+  ],
+  "rows": [
+    [
+      1.1
+    ]
+  ]
+}

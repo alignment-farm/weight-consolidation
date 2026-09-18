@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p JOIN reviews r USING(category,ref_id) WHERE p.category='office products' GROUP BY p.ref_id HAVING ABS(p.catalog_rating - AVG(r.rating)) > 1)",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      2715
+    ]
+  ]
+}

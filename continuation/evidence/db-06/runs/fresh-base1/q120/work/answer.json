@@ -1,0 +1,61 @@
+{
+  "query": "SELECT a.attr_val AS brand, COUNT(r.rating) AS total_reviews, AVG(r.rating) AS avg_rating FROM attributes a JOIN reviews r ON a.ref_id = r.ref_id AND a.category = 'musical instruments' WHERE a.attr_key = 'Brand' GROUP BY a.attr_val ORDER BY COUNT(r.rating) DESC LIMIT 10",
+  "params": {},
+  "columns": [
+    "brand",
+    "total_reviews",
+    "avg_rating"
+  ],
+  "rows": [
+    [
+      "Pyle",
+      9475,
+      4.057730870712401
+    ],
+    [
+      "D'Addario",
+      5526,
+      4.520810712993123
+    ],
+    [
+      "Yamaha",
+      5199,
+      4.470090402000385
+    ],
+    [
+      "OnStage",
+      5140,
+      4.4542801556420235
+    ],
+    [
+      "JIM DUNLOP",
+      4835,
+      4.637849017580145
+    ],
+    [
+      "Donner",
+      3880,
+      4.417010309278351
+    ],
+    [
+      "Fender",
+      3018,
+      4.373426110006627
+    ],
+    [
+      "PreSonus",
+      2717,
+      4.335296282664704
+    ],
+    [
+      "Behringer",
+      2574,
+      4.217560217560218
+    ],
+    [
+      "Elixir",
+      2549,
+      4.570419772459788
+    ]
+  ]
+}

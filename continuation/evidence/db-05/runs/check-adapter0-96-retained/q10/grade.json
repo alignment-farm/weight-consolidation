@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-96-retained",
+  "arm": "adapter0-96-retained",
+  "id": 10,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        1867
+      ]
+    ],
+    "upstream_stored_answer": 1867,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM fdbk_g2\n                WHERE strftime('%Y', ts, 'unixepoch') = '2021'\n                AND CAST(strftime('%m', ts, 'unixepoch') AS INTEGER) >= 10"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "251d33164c622f52d0c3aeccb160c41689060b820b99fcaaf2b289a601ff228c"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1459,
+      "completion_tokens": 46,
+      "model_seconds": 1.9532049999834271,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.04409187499550171
+    },
+    "elapsed_seconds": 4.290642666004715,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.631830917001935,
+  "checking_seconds": 0.01465187499707099,
+  "exit_code": 0
+}

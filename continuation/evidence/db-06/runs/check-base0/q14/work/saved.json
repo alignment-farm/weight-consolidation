@@ -1,0 +1,5 @@
+{
+  "office_products_rating_2_or_below": "SELECT COUNT(*) FROM reviews WHERE category = 'office products' AND rating <= 2",
+  "office_products_ref_id_count": "SELECT COUNT(DISTINCT ref_id) FROM reviews WHERE category = 'office products' AND rating <= 2",
+  "office_products_product_id_count": "SELECT COUNT(DISTINCT product_id) FROM reviews WHERE category = 'office products' AND rating <= 2"
+}

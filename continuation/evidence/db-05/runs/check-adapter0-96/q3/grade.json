@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-96",
+  "arm": "adapter0-96",
+  "id": 3,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        13766
+      ]
+    ],
+    "upstream_stored_answer": 13766,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*)\n                FROM fdbk_g1 f\n                JOIN items_g1 i ON f.ref_id = i.ref_id\n                WHERE strftime('%Y', f.ts / 1000, 'unixepoch') = '2022'\n                AND i.prc IS NOT NULL\n                AND i.prc > 20 AND i.prc < 200"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "55f99cfbdc4cc8ece32c52b44d9381124289240444b563a60e5733839cdb407d"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1520,
+      "completion_tokens": 70,
+      "model_seconds": 2.279658750005183,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.16530562499247026
+    },
+    "elapsed_seconds": 4.727707958008978,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.0896070419985335,
+  "checking_seconds": 0.1379502079944359,
+  "exit_code": 0
+}

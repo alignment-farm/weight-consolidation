@@ -1,0 +1,42 @@
+{
+  "stage": "check-base1",
+  "arm": "base1",
+  "id": 101,
+  "revision": "after",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        101.8
+      ]
+    ],
+    "upstream_stored_answer": 101.8,
+    "tolerance": 0.05,
+    "reference_sql": "SELECT ROUND(AVG(prc_v2) / 100.0, 2)\n                FROM items_g2\n                WHERE prc_v2 IS NOT NULL AND prc_v2 > 0 AND img_ct >= 3"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "4dcd6b25e10f078914530ce1512cec519fedacf2a6b66dfabe7b3cb47e58fbd1"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4809,
+      "completion_tokens": 91,
+      "model_seconds": 5.48330583400093,
+      "calls": 4,
+      "failed_calls": 0,
+      "tool_calls": 4,
+      "tool_seconds": 0.020914457010803744
+    },
+    "elapsed_seconds": 7.784282292006537,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 8.123717833004775,
+  "checking_seconds": 0.005583915990428068,
+  "exit_code": 0
+}

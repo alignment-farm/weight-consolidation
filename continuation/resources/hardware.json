@@ -1,0 +1,7 @@
+{
+  "chip_type": "Apple M1 Ultra",
+  "machine_model": "Mac13,2",
+  "machine_name": "Mac Studio",
+  "number_processors": "proc 20:0:16:4",
+  "physical_memory": "64 GB"
+}

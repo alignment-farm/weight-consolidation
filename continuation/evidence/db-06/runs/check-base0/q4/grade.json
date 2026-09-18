@@ -1,0 +1,42 @@
+{
+  "stage": "check-base0",
+  "arm": "base0",
+  "id": 4,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        2715
+      ]
+    ],
+    "upstream_stored_answer": 2715,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM (\n                    SELECT i.ref_id\n                    FROM items_g1 i\n                    JOIN fdbk_g1 f ON i.ref_id = f.ref_id\n                    GROUP BY i.ref_id\n                    HAVING ABS(i.avg_rtg - AVG(f.rtg)) > 1.0\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "40044326ea2ab325c3eabeac92da6ba69f2433f59f4cecc3ea6ae42cc23bba66"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13257,
+      "completion_tokens": 222,
+      "model_seconds": 15.290891419019317,
+      "calls": 7,
+      "failed_calls": 0,
+      "tool_calls": 7,
+      "tool_seconds": 2.323412042009295
+    },
+    "elapsed_seconds": 19.94465616600064,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 20.280351917012013,
+  "checking_seconds": 0.4058001250086818,
+  "exit_code": 0
+}

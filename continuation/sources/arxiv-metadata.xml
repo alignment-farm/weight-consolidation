@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/M3OnOMBu3ix1TOoSfkTehNqoAf8</id>
+  <title>arXiv Query: search_query=&amp;id_list=2606.05661v1,2510.05318v1,2606.01779v1&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-18T10:29:44Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2606.05661v1,2510.05318v1,2606.01779v1" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.05661v1</id>
+    <title>Continual Learning Bench: Evaluating Frontier AI Systems in Real-World Stateful Environments</title>
+    <updated>2026-06-04T03:43:28Z</updated>
+    <link href="https://arxiv.org/abs/2606.05661v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.05661v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Continual learning, the ability of AI systems to improve through sequential experience, has attracted substantial interest, but no high-quality benchmark exists to evaluate it. We introduce Continual Learning Bench (CL-Bench), the first difficult, expert-validated benchmark designed to measure whether LLM-based systems genuinely improve with experience. CL-Bench spans six diverse domains (software engineering, signal processing, disease outbreak forecasting, database querying, strategic game-playing, and demand forecasting), each validated by domain experts and designed so that tasks share a learnable latent structure (codebase layout, disease outbreak dynamics, opponent strategies) that a stateful system can discover online but a stateless one cannot. We evaluate frontier models across several agent architectures, from naive in-context learning (ICL) to dedicated memory systems, introducing a gain metric to isolate learning from prior capabilities. We find that these systems leave headroom for improved continual learning: agents frequently overfit to immediate observations or fail to reuse knowledge across instances, and dedicated memory systems do not fix this -- in fact, naive ICL outperforms systems dedicated to memory management. CL-Bench is the first benchmark to evaluate continual learning across diverse real-world domains with expert-validated tasks and isolate online learning from underlying model capability, showing a need for better continual learning systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-04T03:43:28Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Parth Asawa</name>
+    </author>
+    <author>
+      <name>Christopher M. Glaze</name>
+    </author>
+    <author>
+      <name>Gabriel Orlanski</name>
+    </author>
+    <author>
+      <name>Ramya Ramakrishnan</name>
+    </author>
+    <author>
+      <name>Benji Xu</name>
+    </author>
+    <author>
+      <name>Asim Biswal</name>
+    </author>
+    <author>
+      <name>Vincent Sunn Chen</name>
+    </author>
+    <author>
+      <name>Frederic Sala</name>
+    </author>
+    <author>
+      <name>Matei Zaharia</name>
+    </author>
+    <author>
+      <name>Joseph E. Gonzalez</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.05318v1</id>
+    <title>BIRD-INTERACT: Re-imagining Text-to-SQL Evaluation for Large Language Models via Lens of Dynamic Interactions</title>
+    <updated>2025-10-06T19:31:47Z</updated>
+    <link href="https://arxiv.org/abs/2510.05318v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.05318v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have demonstrated remarkable performance on single-turn text-to-SQL tasks, but real-world database applications predominantly require multi-turn interactions to handle ambiguous queries, execution errors, and evolving user requirements. Existing multi-turn benchmarks fall short by treating conversation histories as static context or limiting evaluation to read-only operations, failing to reflect production-grade database assistant challenges. We introduce BIRD-INTERACT, a benchmark that restores this realism through: (1) a comprehensive interaction environment coupling each database with a hierarchical knowledge base, metadata files, and a function-driven user simulator, enabling models to solicit clarifications, retrieve knowledge, and recover from errors without human supervision; (2) two evaluation settings consisting of a pre-defined conversational protocol (c-Interact) and an open-ended agentic setting (a-Interact) where models autonomously decide when to query the user simulator or explore the environment; (3) a challenging task suite covering the full CRUD spectrum for business-intelligence and operational use cases, guarded by executable test cases. Each task features ambiguous and follow-up sub-tasks requiring dynamic interaction. The suite comprises BIRD-INTERACT-FULL (600 tasks, up to 11,796 interactions) for comprehensive performance assessment, and BIRD-INTERACT-LITE (300 tasks with simplified databases) for detailed behavioral analysis and rapid method development. Our empirical results highlight BIRD-INTERACT's difficulty: GPT-5 completes only 8.67% of tasks in c-Interact and 17.00% in a-Interact. Analysis via memory grafting and Interaction Test-time Scaling validates the importance of effective interaction for complex, dynamic text-to-SQL tasks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-06T19:31:47Z</published>
+    <arxiv:comment>47 pages, 26 figures, 11 tables. Submitted to arXiv; based on work from The BIRD Team and Google Cloud. Dataset and code available at https://bird-interact.github.io</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Nan Huo</name>
+    </author>
+    <author>
+      <name>Xiaohan Xu</name>
+    </author>
+    <author>
+      <name>Jinyang Li</name>
+    </author>
+    <author>
+      <name>Per Jacobsson</name>
+    </author>
+    <author>
+      <name>Shipei Lin</name>
+    </author>
+    <author>
+      <name>Bowen Qin</name>
+    </author>
+    <author>
+      <name>Binyuan Hui</name>
+    </author>
+    <author>
+      <name>Xiaolong Li</name>
+    </author>
+    <author>
+      <name>Ge Qu</name>
+    </author>
+    <author>
+      <name>Shuzheng Si</name>
+    </author>
+    <author>
+      <name>Linheng Han</name>
+    </author>
+    <author>
+      <name>Edward Alexander</name>
+    </author>
+    <author>
+      <name>Xintong Zhu</name>
+    </author>
+    <author>
+      <name>Rui Qin</name>
+    </author>
+    <author>
+      <name>Ruihan Yu</name>
+    </author>
+    <author>
+      <name>Yiyao Jin</name>
+    </author>
+    <author>
+      <name>Feige Zhou</name>
+    </author>
+    <author>
+      <name>Weihao Zhong</name>
+    </author>
+    <author>
+      <name>Yun Chen</name>
+    </author>
+    <author>
+      <name>Hongyu Liu</name>
+    </author>
+    <author>
+      <name>Chenhao Ma</name>
+    </author>
+    <author>
+      <name>Fatma Ozcan</name>
+    </author>
+    <author>
+      <name>Yannis Papakonstantinou</name>
+    </author>
+    <author>
+      <name>Reynold Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.01779v1</id>
+    <title>HarnessForge: Joint Harness and Policy Evolution for Adaptive Agent Systems</title>
+    <updated>2026-06-01T07:00:35Z</updated>
+    <link href="https://arxiv.org/abs/2606.01779v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.01779v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents are increasingly expected to operate across heterogeneous task regimes that require distinct execution paradigms. This challenges fixed agent systems and motivates system-level meta-adaptation beyond isolated component updates. While existing works have adapted external harness or trained underlying reasoning policies, full-system adaptation remains insufficiently characterized. The adaptation space between structure and execution is rarely made explicit, and the compatibility between the external harness and the internal reasoner is not optimized jointly. We propose HarnessForge, a meta-adaptive framework for evolving LLM agent systems. HarnessForge formulates an agent system as a harness--policy pair, defining a stable adaptation space that separates harness-level execution structure from policy-level reasoning behavior. It then performs harness--policy co-evolution through fault-guided harness tailoring and harness-conditioned policy alignment. Experiments across five benchmarks from diverse domains show that HarnessForge consistently improves both Qwen3-4B and Qwen3-8B backbones, outperforming harness-only and policy-only baselines with gains of up to 12.0\% over the strongest baseline and achieving favorable rollout-efficiency tradeoffs, demonstrating that harness--policy co-evolution is effective, and that executable compatibility between the harness and reasoning policy is essential for agent-system adaptation. The code is available at https://github.com/mingju-c/HarnessForge.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-01T07:00:35Z</published>
+    <arxiv:comment>25 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mingju Chen</name>
+    </author>
+    <author>
+      <name>Can Lv</name>
+    </author>
+    <author>
+      <name>Guibin Zhang</name>
+    </author>
+    <author>
+      <name>Heng Chang</name>
+    </author>
+    <author>
+      <name>Shiji Zhou</name>
+    </author>
+  </entry>
+</feed>

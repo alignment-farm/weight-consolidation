@@ -1,0 +1,3 @@
+{
+  "musical_instruments_brand_review_avg": "SELECT a.attr_val FROM attrs_g3 a JOIN fdbk_g3 f ON a.ref_id = f.ref_id WHERE a.attr_key = 'Brand' GROUP BY a.attr_val HAVING COUNT(DISTINCT a.ref_id) >= 20 ORDER BY AVG(f.rtg) DESC LIMIT 1"
+}

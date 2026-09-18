@@ -1,0 +1,42 @@
+{
+  "stage": "capability-development",
+  "arm": "collector0",
+  "id": 14,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1832
+      ]
+    ],
+    "upstream_stored_answer": 1832,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT\n                    (SELECT COUNT(DISTINCT item_id) FROM fdbk_g1\n                     WHERE rtg IS NOT NULL AND rtg <= 2.0) -\n                    (SELECT COUNT(DISTINCT ref_id) FROM fdbk_g1\n                     WHERE rtg IS NOT NULL AND rtg <= 2.0)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "9cae23b41439046b8f7532645eff9b5a6794e9baa938d0c3fcf0e4996ebac2d7"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9500,
+      "completion_tokens": 125,
+      "model_seconds": 10.326007335999748,
+      "calls": 6,
+      "failed_calls": 0,
+      "tool_calls": 6,
+      "tool_seconds": 0.14703237400681246
+    },
+    "elapsed_seconds": 12.77834950000397,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 13.092213458003243,
+  "checking_seconds": 0.09264795799390413,
+  "exit_code": 0
+}

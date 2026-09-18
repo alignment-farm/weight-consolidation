@@ -1,0 +1,25 @@
+{
+  "stage": "check-adapter0-48",
+  "arm": "adapter0-48",
+  "id": 3,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        13766
+      ]
+    ],
+    "upstream_stored_answer": 13766,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*)\n                FROM fdbk_g1 f\n                JOIN items_g1 i ON f.ref_id = i.ref_id\n                WHERE strftime('%Y', f.ts / 1000, 'unixepoch') = '2022'\n                AND i.prc IS NOT NULL\n                AND i.prc > 20 AND i.prc < 200"
+  },
+  "result": {
+    "status": "crashed",
+    "usage": {}
+  },
+  "controller_seconds": 47.77527875000669,
+  "checking_seconds": 0.13635512501059566,
+  "exit_code": -15
+}

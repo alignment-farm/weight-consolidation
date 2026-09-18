@@ -1,0 +1,8 @@
+{
+  "scope": "verification-script failure, not a model or report-grade change",
+  "component": "q2:step2",
+  "arm": "base0",
+  "reason": "Compared native SQLite row tuples with the JSON arrays recorded at the public tool boundary. Normalize through JSON before comparison.",
+  "executed_tool_calls": 1,
+  "seconds": null
+}

@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 117,
+  "revision": "after",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        891
+      ]
+    ],
+    "upstream_stored_answer": 891,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM (\n                    SELECT a.attr_val\n                    FROM product_attributes_g3 a\n                    JOIN fdbk_g3 f ON a.ref_id = f.ref_id\n                    WHERE a.attr_key = 'Brand'\n                    AND f.review_year IN (2019, 2020, 2021)\n                    GROUP BY a.attr_val\n                    HAVING COUNT(DISTINCT f.review_year) = 3\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "b0001099b083924da9c9a1784022cde3ca6e38c7f5ee156da129792979e9cccf"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1564,
+      "completion_tokens": 86,
+      "model_seconds": 2.4940646659815684,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.2725677089911187
+    },
+    "elapsed_seconds": 5.0767499590001535,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.434866499999771,
+  "checking_seconds": 0.24739012500504032,
+  "exit_code": 0
+}

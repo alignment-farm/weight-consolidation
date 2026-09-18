@@ -1,0 +1,42 @@
+{
+  "stage": "capability-development",
+  "arm": "collector0",
+  "id": 15,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        17.27
+      ]
+    ],
+    "upstream_stored_answer": 17.27,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN i.prc > avg_prc THEN 1 ELSE 0 END)\n                    / COUNT(*), 2)\n                FROM items_g2 i\n                JOIN taxn_g2 t ON i.ref_id = t.ref_id\n                CROSS JOIN (\n                    SELECT AVG(i2.prc) as avg_prc\n                    FROM items_g2 i2\n                    JOIN taxn_g2 t2 ON i2.ref_id = t2.ref_id\n                    WHERE t2.cat_lvl = 1 AND t2.cat_nm = 'Computers & Accessories'\n                    AND i2.prc IS NOT NULL AND i2.prc > 0\n                ) a\n                WHERE t.cat_lvl = 1 AND t.cat_nm = 'Computers & Accessories'\n                AND i.prc IS NOT NULL AND i.prc > 0"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "6e7299333094de45c0778ac0a0e1acbf6791c44b11a7afa31b7241d9ce532e7e"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2569,
+      "completion_tokens": 226,
+      "model_seconds": 5.3399692899984075,
+      "calls": 3,
+      "failed_calls": 0,
+      "tool_calls": 3,
+      "tool_seconds": 0.08266449999064207
+    },
+    "elapsed_seconds": 8.645238415992935,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 9.033305207995,
+  "checking_seconds": 0.02191500000481028,
+  "exit_code": 0
+}

@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM (SELECT DISTINCT ref_id FROM attributes WHERE category='musical instruments' AND attr_key='Brand' EXCEPT SELECT ref_id FROM attributes WHERE category='musical instruments' AND attr_key='Brand Line' AND attr_val IS NOT NULL AND attr_val != '')",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      11643
+    ]
+  ]
+}

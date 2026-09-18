@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-96-retained",
+  "arm": "adapter0-96-retained",
+  "id": 7,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1.03
+      ]
+    ],
+    "upstream_stored_answer": 1.03,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(100.0 * COUNT(*) /\n                    (SELECT COUNT(DISTINCT uid) FROM fdbk_g1), 2)\n                FROM (\n                    SELECT f.uid\n                    FROM fdbk_g1 f\n                    JOIN taxn_g1 t ON f.ref_id = t.ref_id\n                    WHERE t.cat_lvl = 1\n                    GROUP BY f.uid\n                    HAVING COUNT(DISTINCT t.cat_nm) >= 2\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "5bb4c71dfda07c832c3f4b3350cac1a71f37945051ea23cd65cf68adfa6b3b83"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1459,
+      "completion_tokens": 38,
+      "model_seconds": 1.8647300840093521,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.0032143749995157123
+    },
+    "elapsed_seconds": 4.155600541998865,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.4939547079993645,
+  "checking_seconds": 1.30560033400252,
+  "exit_code": 0
+}

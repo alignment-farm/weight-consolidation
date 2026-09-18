@@ -1,0 +1,12 @@
+{
+  "query": "SELECT printf('%04d-%02d',year,month) FROM reviews WHERE category='musical instruments' AND year IS NOT NULL GROUP BY year,month ORDER BY COUNT(*) DESC LIMIT 1",
+  "params": {},
+  "columns": [
+    "printf('%04d-%02d',year,month)"
+  ],
+  "rows": [
+    [
+      "2020-01"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "stage": "fresh-base1",
+  "arm": "base1",
+  "id": 119,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        16.3
+      ]
+    ],
+    "upstream_stored_answer": 16.3,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN i.prc > avg_prc THEN 1 ELSE 0 END)\n                    * 1.0 / COUNT(*), 1)\n                FROM fdbk_g3 f\n                JOIN items_g3 i ON f.ref_id = i.ref_id\n                CROSS JOIN (\n                    SELECT AVG(prc) as avg_prc FROM items_g3\n                    WHERE prc IS NOT NULL AND prc > 0\n                )\n                WHERE f.ts IS NULL\n                AND i.prc IS NOT NULL AND i.prc > 0"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 17335,
+      "completion_tokens": 286,
+      "model_seconds": 19.923610333018587,
+      "calls": 8,
+      "failed_calls": 1,
+      "tool_calls": 8,
+      "tool_seconds": 0.013109788997098804
+    },
+    "elapsed_seconds": 22.251217625002027,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 22.6260505419923,
+  "checking_seconds": 0.12313704199914355,
+  "exit_code": 0
+}

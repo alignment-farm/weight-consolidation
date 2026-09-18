@@ -1,0 +1,14 @@
+{
+  "query": "SELECT ROUND(AVG(ABS(price-SubqueryAvg)))*1.0,2 FROM (SELECT price, (SELECT AVG(price) FROM products WHERE category='electronics' AND price>0) AS SubqueryAvg FROM products WHERE category='electronics' AND price>0)",
+  "params": {},
+  "columns": [
+    "ROUND(AVG(ABS(price-SubqueryAvg)))*1.0",
+    "2"
+  ],
+  "rows": [
+    [
+      118.0,
+      2
+    ]
+  ]
+}

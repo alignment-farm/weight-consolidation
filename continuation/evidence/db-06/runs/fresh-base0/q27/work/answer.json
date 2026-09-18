@@ -1,0 +1,12 @@
+{
+  "query": "SELECT MAX(verified_rate) - MIN(verified_rate) AS spread FROM (SELECT r.category, AVG(CASE WHEN r.verified = 1 THEN 1.0 ELSE 0.0 END) AS verified_rate FROM reviews r JOIN products p ON p.category = r.category AND p.ref_id = r.ref_id GROUP BY r.category)",
+  "params": {},
+  "columns": [
+    "spread"
+  ],
+  "rows": [
+    [
+      0.01044812541994622
+    ]
+  ]
+}

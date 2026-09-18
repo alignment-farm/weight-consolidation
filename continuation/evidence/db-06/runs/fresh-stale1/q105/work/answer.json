@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(100.0*SUM(CASE WHEN p.price>60 THEN 1 ELSE 0 END)/COUNT(*),1) FROM products p JOIN reviews r USING(category,ref_id) WHERE p.category='electronics' AND r.category=p.category AND r.ref_id=p.ref_id GROUP BY p.category HAVING COUNT(DISTINCT r.review_date)>=3",
+  "params": {},
+  "columns": [
+    "ROUND(100.0*SUM(CASE WHEN p.price>60 THEN 1 ELSE 0 END)/COUNT(*),1)"
+  ],
+  "rows": [
+    [
+      19.4
+    ]
+  ]
+}

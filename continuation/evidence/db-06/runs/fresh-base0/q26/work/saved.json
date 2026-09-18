@@ -1,0 +1,5 @@
+{
+  "review_count_2021": "SELECT SUM(CASE WHEN year = 2021 THEN 1 ELSE 0 END) AS total_2021_reviews FROM reviews",
+  "review_count_2022": "SELECT SUM(CASE WHEN year = 2022 THEN 1 ELSE 0 END) AS total_2022_reviews FROM reviews",
+  "review_ratio": "SELECT ROUND(CAST(SUM(CASE WHEN year = 2022 THEN 1 ELSE 0 END) AS FLOAT) / NULLIF(SUM(CASE WHEN year = 2021 THEN 1 ELSE 0 END), 0), 2) AS ratio FROM reviews"
+}

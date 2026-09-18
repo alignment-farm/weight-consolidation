@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(100.0*SUM(CASE WHEN p.price>cat_avg THEN 1 ELSE 0 END)/COUNT(*),2) FROM (SELECT p.price, (SELECT AVG(p2.price) FROM products p2 JOIN categories c2 USING(category,ref_id) WHERE c2.cat_lvl=1 AND c2.cat_nm='Computers & Accessories') AS cat_avg FROM products p JOIN categories c USING(category,ref_id) WHERE c.cat_lvl=1 AND c.cat_nm='Computers & Accessories' AND p.price>0) p",
+  "params": {},
+  "columns": [
+    "ROUND(100.0*SUM(CASE WHEN p.price>cat_avg THEN 1 ELSE 0 END)/COUNT(*),2)"
+  ],
+  "rows": [
+    [
+      17.27
+    ]
+  ]
+}

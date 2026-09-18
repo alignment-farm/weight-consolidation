@@ -1,0 +1,21 @@
+{
+  "2": "SELECT ROUND(AVG(r.rating),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.price>50",
+  "3": "SELECT COUNT(*) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND r.year=2022 AND p.price>20 AND p.price<200",
+  "4": "SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p JOIN reviews r USING(category,ref_id) WHERE p.category='office products' GROUP BY p.ref_id HAVING ABS(p.catalog_rating-AVG(r.rating))>1)",
+  "6": "SELECT COUNT(DISTINCT r.ref_id) FROM reviews r WHERE r.category='office products' AND NOT EXISTS (SELECT 1 FROM attributes a WHERE a.category=r.category AND a.ref_id=r.ref_id)",
+  "9": "SELECT ROUND(AVG(price),2) FROM products WHERE category='electronics' AND price>0",
+  "10": "SELECT COUNT(*) FROM reviews WHERE category='electronics' AND year=2021 AND month BETWEEN 10 AND 12",
+  "11": "SELECT ROUND(100.0*SUM(CASE WHEN r.rating=1 THEN 1 ELSE 0 END)/COUNT(*),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='electronics' AND p.price>0 AND p.price<=40 AND LENGTH(r.body)>500",
+  "13": "SELECT ROUND(100.0*SUM(CASE WHEN p.price>0 THEN 1 ELSE 0 END)/COUNT(*),2) FROM products p WHERE p.category='electronics' AND NOT EXISTS (SELECT 1 FROM reviews r WHERE r.category=p.category AND r.ref_id=p.ref_id)",
+  "16": "SELECT printf('%04d-%02d',year,month) FROM reviews WHERE category='musical instruments' AND year IS NOT NULL GROUP BY year,month ORDER BY COUNT(*) DESC LIMIT 1",
+  "17": "SELECT attr_val FROM attributes WHERE category='musical instruments' AND attr_key='Brand' GROUP BY attr_val ORDER BY COUNT(*) DESC LIMIT 1",
+  "18": "SELECT ROUND(AVG(CASE WHEN p.price>0 THEN r.rating END)-AVG(CASE WHEN p.price IS NULL OR p.price=0 THEN r.rating END),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='musical instruments'",
+  "21": "SELECT a.attr_val FROM attributes a JOIN reviews r USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' GROUP BY a.attr_val HAVING COUNT(DISTINCT a.ref_id)>=20 ORDER BY AVG(r.rating) DESC LIMIT 1",
+  "101": "SELECT ROUND(AVG(price),2) FROM products WHERE category='electronics' AND price>0 AND image_count>=3",
+  "103": "SELECT COUNT(*) FROM products WHERE category='electronics' AND price>0 AND price>=1.15*(SELECT AVG(price) FROM products WHERE category='electronics' AND price>0)",
+  "106": "SELECT ROUND(AVG(CASE WHEN r.verification_label IS NULL THEN LENGTH(r.body) END)-AVG(CASE WHEN r.verification_label IS NOT NULL THEN LENGTH(r.body) END),1) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.status='active' AND r.body IS NOT NULL",
+  "109": "SELECT COUNT(DISTINCT a.ref_id) FROM attributes a WHERE a.category='musical instruments' AND a.attr_key='Brand' AND NOT EXISTS (SELECT 1 FROM attrs_g3_legacy l WHERE l.ref_id=a.ref_id AND l.attr_key='Brand')",
+  "110": "SELECT ROUND((SELECT COUNT(*)*1.0 FROM attributes WHERE category='musical instruments')/(SELECT COUNT(*) FROM attrs_g3_legacy),2)",
+  "113": "SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p JOIN reviews r USING(category,ref_id) WHERE p.category='office products' AND p.status='active' AND p.price>20 GROUP BY p.ref_id HAVING SUM(r.verified)=0)",
+  "117": "SELECT COUNT(*) FROM (SELECT a.attr_val FROM attributes a JOIN reviews r USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' AND r.year IN (2019,2020,2021) GROUP BY a.attr_val HAVING COUNT(DISTINCT r.year)=3)"
+}

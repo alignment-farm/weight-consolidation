@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM (SELECT DISTINCT a.attr_val FROM attributes a WHERE a.category = 'musical instruments' AND a.attr_key = 'Brand' AND a.attr_val IS NOT NULL AND a.attr_val != '' AND NOT EXISTS (SELECT 1 FROM reviews r WHERE r.ref_id = a.ref_id AND r.year = 2022))",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      3144
+    ]
+  ]
+}

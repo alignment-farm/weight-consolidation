@@ -1,0 +1,86 @@
+[
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q2",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q2/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q3",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q3/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q4",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q4/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q6",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q6/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q9",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q9/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q10",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q10/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q11",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q11/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q13",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q13/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q16",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q16/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q17",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q17/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q18",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q18/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q21",
+    "events": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/weight-consolidation/continuation/evidence/db-06/references0/q21/events.jsonl",
+    "reason": "Investigator complete computational query in existing normalized views; executed against pinned source data and source oracle. Original queries/components and prior teacher records retained externally."
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-base1",
+  "arm": "base1",
+  "id": 108,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        6.1
+      ]
+    ],
+    "upstream_stored_answer": 6.1,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN i.status = 'archived' THEN 1 ELSE 0 END)\n                    * 1.0 / COUNT(*), 1)\n                FROM fdbk_g1 f\n                JOIN items_g1 i ON f.ref_id = i.ref_id\n                WHERE f.verified_status IS NULL"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "69e98e00524c226245c0f3d902b7d224ae8871b9eb338ff4d03503b3909eaf89"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17491,
+      "completion_tokens": 252,
+      "model_seconds": 19.742439833004028,
+      "calls": 8,
+      "failed_calls": 0,
+      "tool_calls": 8,
+      "tool_seconds": 2.08790366598987
+    },
+    "elapsed_seconds": 24.13963100001274,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 24.501136334001785,
+  "checking_seconds": 0.13770566700259224,
+  "exit_code": 0
+}

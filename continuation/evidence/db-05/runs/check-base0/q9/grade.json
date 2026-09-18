@@ -1,0 +1,42 @@
+{
+  "stage": "check-base0",
+  "arm": "base0",
+  "id": 9,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        96.23
+      ]
+    ],
+    "upstream_stored_answer": 96.23,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(AVG(prc) / 100.0, 2)\n                FROM items_g2\n                WHERE prc IS NOT NULL AND prc > 0"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "cc24a863eae981f7cb5fd08669d19537fd6fdf37a0cbf0ab0e5b5495a38b326f"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 7392,
+      "completion_tokens": 65,
+      "model_seconds": 7.754607167007634,
+      "calls": 5,
+      "failed_calls": 0,
+      "tool_calls": 5,
+      "tool_seconds": 0.011277373996563256
+    },
+    "elapsed_seconds": 10.063092791999225,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 10.393319249997148,
+  "checking_seconds": 0.0005781670042779297,
+  "exit_code": 0
+}

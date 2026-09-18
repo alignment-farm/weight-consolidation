@@ -1,0 +1,42 @@
+{
+  "stage": "check-base0",
+  "arm": "base0",
+  "id": 18,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        0.12
+      ]
+    ],
+    "upstream_stored_answer": 0.12,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(\n                    (SELECT AVG(f.rtg) FROM fdbk_g3 f\n                     JOIN items_g3 i ON f.ref_id = i.ref_id\n                     WHERE i.prc IS NOT NULL AND i.prc > 0) -\n                    (SELECT AVG(f.rtg) FROM fdbk_g3 f\n                     JOIN items_g3 i ON f.ref_id = i.ref_id\n                     WHERE i.prc IS NULL OR i.prc = 0),\n                2)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "8aa2888adf1c975e4b7f00b29b0031c810dced81dc9ccf5a21f6a1a2eec0d59e"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10595,
+      "completion_tokens": 191,
+      "model_seconds": 12.207298957015155,
+      "calls": 6,
+      "failed_calls": 0,
+      "tool_calls": 6,
+      "tool_seconds": 0.3920967489830218
+    },
+    "elapsed_seconds": 14.902546209006687,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 15.219912458996987,
+  "checking_seconds": 0.30266124999616295,
+  "exit_code": 0
+}

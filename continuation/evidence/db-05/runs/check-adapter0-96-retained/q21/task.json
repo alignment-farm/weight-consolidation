@@ -1,0 +1,5 @@
+{
+  "job": "q21",
+  "question": "Among musical instrument brands with at least 20 products (using the attributes data), which brand has the highest average review rating? Report the brand name.",
+  "revision": "before"
+}

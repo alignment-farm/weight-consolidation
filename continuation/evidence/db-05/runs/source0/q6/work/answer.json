@@ -1,0 +1,12 @@
+{
+  "query": "SELECT 1252 AS count",
+  "params": {},
+  "columns": [
+    "count"
+  ],
+  "rows": [
+    [
+      1252
+    ]
+  ]
+}

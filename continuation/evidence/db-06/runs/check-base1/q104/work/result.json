@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "artifacts": [],
+  "usage": {
+    "prompt_tokens": 16659,
+    "completion_tokens": 301,
+    "model_seconds": 19.438412287971005,
+    "calls": 8,
+    "failed_calls": 0,
+    "tool_calls": 8,
+    "tool_seconds": 5.948092997045023
+  },
+  "elapsed_seconds": 27.698147415998392,
+  "compute_flops": null,
+  "quality": "not evaluated by runtime"
+}

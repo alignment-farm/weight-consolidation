@@ -1,0 +1,12 @@
+{
+  "query": "SELECT 8",
+  "params": {},
+  "columns": [
+    "8"
+  ],
+  "rows": [
+    [
+      8
+    ]
+  ]
+}

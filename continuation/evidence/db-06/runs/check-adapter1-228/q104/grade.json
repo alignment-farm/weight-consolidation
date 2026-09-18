@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 104,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        39.5
+      ]
+    ],
+    "upstream_stored_answer": 39.5,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN avg_rtg >= 4.5 THEN 1 ELSE 0 END) * 1.0\n                    / COUNT(*), 1)\n                FROM items_g2\n                WHERE prc_v2 IS NOT NULL AND prc_v2 > 0\n                AND avg_rtg IS NOT NULL"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "7542cfce6c07348f271376a54b3cac3cd5e07d7eee20b5bc52b6d3fdbe9b19a8"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 7488,
+      "completion_tokens": 576,
+      "model_seconds": 13.133659125000122,
+      "calls": 7,
+      "failed_calls": 5,
+      "tool_calls": 7,
+      "tool_seconds": 0.13630974902480375
+    },
+    "elapsed_seconds": 15.6089559589891,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 15.949350708993734,
+  "checking_seconds": 0.005686916003469378,
+  "exit_code": 0
+}

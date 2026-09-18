@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-stale1",
+  "arm": "stale1",
+  "id": 112,
+  "revision": "after",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        "Fender"
+      ]
+    ],
+    "upstream_stored_answer": "Fender",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT attr_val FROM (\n                    SELECT a.attr_val, AVG(i.prc) AS ap\n                    FROM product_attributes_g3 a\n                    JOIN items_g3 i ON a.ref_id = i.ref_id\n                    WHERE a.attr_key = 'Brand'\n                    AND i.prc IS NOT NULL AND i.prc > 0\n                    GROUP BY a.attr_val\n                    HAVING COUNT(DISTINCT a.ref_id) >= 50\n                    ORDER BY ap DESC, a.attr_val ASC\n                    LIMIT 1\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "0c5b36413c491ddf94c065903ba728c3bd28c357e9594954aa7f453d7a2cb321"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1516,
+      "completion_tokens": 65,
+      "model_seconds": 2.224127666995628,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.020487458998104557
+    },
+    "elapsed_seconds": 4.531045833005919,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.926522959009162,
+  "checking_seconds": 0.022745291993487626,
+  "exit_code": 0
+}

@@ -1,0 +1,5 @@
+{
+  "job": "q30",
+  "question": "Across all three product categories, which product has the most 1-star reviews? Report its title.",
+  "revision": "before"
+}

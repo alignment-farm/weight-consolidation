@@ -1,0 +1,5 @@
+{
+  "category_spanning_reviewers": "SELECT COUNT(*) FROM reviews r1 WHERE r1.user_id IN (SELECT r2.user_id FROM reviews r2 WHERE r2.category != r1.category) AND r1.category = 'office products'",
+  "office_product_reviewers": "SELECT COUNT(DISTINCT user_id) FROM reviews WHERE category = 'office products'",
+  "category_count_per_user": "SELECT r.user_id, COUNT(DISTINCT r.category) AS category_count FROM reviews r WHERE r.category = 'office products' GROUP BY r.user_id HAVING COUNT(DISTINCT r.category) >= 2"
+}

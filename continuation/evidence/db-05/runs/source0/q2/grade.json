@@ -1,0 +1,42 @@
+{
+  "stage": "source0",
+  "arm": "collector0",
+  "id": 2,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        4.11
+      ]
+    ],
+    "upstream_stored_answer": 4.11,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(AVG(f.rtg), 2)\n                FROM fdbk_g1 f\n                JOIN items_g1 i ON f.ref_id = i.ref_id\n                WHERE i.prc > 50"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "5c4358a69b4303fc936489ffd48e729a605eddc0b198be4fd37a259b7bafb558"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 7497,
+      "completion_tokens": 121,
+      "model_seconds": 8.38815879203321,
+      "calls": 5,
+      "failed_calls": 0,
+      "tool_calls": 5,
+      "tool_seconds": 1.972369751019869
+    },
+    "elapsed_seconds": 12.64376891599386,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 12.966128165993723,
+  "checking_seconds": 0.042532291990937665,
+  "exit_code": 0
+}

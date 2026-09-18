@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q2",
+    "question": "What is the average review rating given to office products that cost more than $50?",
+    "revision": "before",
+    "origin": "executor"
+  },
+  {
+    "id": "q3",
+    "question": "How many office product reviews were posted in calendar year 2022 for products whose catalog list price is strictly between $20 and $200 (exclude products priced exactly at those boundaries)?",
+    "revision": "before",
+    "origin": "executor"
+  },
+  {
+    "id": "q4",
+    "question": "For how many office products does the stored average rating differ from the actual mean of its review scores by more than 1 full star?",
+    "revision": "before",
+    "origin": "authored-source-correction"
+  },
+  {
+    "id": "q6",
+    "question": "How many office products have at least one review in the database but are NOT represented in the attributes data at all?",
+    "revision": "before",
+    "origin": "authored-source-correction"
+  },
+  {
+    "id": "q9",
+    "question": "What is the average listed price of electronics products, expressed in dollars?",
+    "revision": "before",
+    "origin": "executor"
+  },
+  {
+    "id": "q10",
+    "question": "How many electronics product reviews were posted in Q4 (October through December) of 2021?",
+    "revision": "before",
+    "origin": "executor"
+  },
+  {
+    "id": "q11",
+    "question": "Among electronics reviews with a review body longer than 500 characters, considering only products whose list price is at most $40, what percentage are 1-star? Round to 2 decimal places.",
+    "revision": "before",
+    "origin": "executor"
+  },
+  {
+    "id": "q13",
+    "question": "Among electronics products that have zero reviews, what percentage have a price listed (non-NULL, non-zero)? Round to 2 decimal places.",
+    "revision": "before",
+    "origin": "executor"
+  },
+  {
+    "id": "q16",
+    "question": "In which year-month were the most musical instrument reviews posted? Report as YYYY-MM (e.g. '2020-01').",
+    "revision": "before",
+    "origin": "authored-source-correction"
+  },
+  {
+    "id": "q17",
+    "question": "What brand is associated with the most musical instrument products?",
+    "revision": "before",
+    "origin": "authored-source-correction"
+  },
+  {
+    "id": "q18",
+    "question": "For musical instruments, how much higher (in star rating) is the average review rating for products with a listed price compared to products without a price? Round to 2 decimal places.",
+    "revision": "before",
+    "origin": "executor"
+  },
+  {
+    "id": "q21",
+    "question": "Among musical instrument brands with at least 20 products (using the attributes data), which brand has the highest average review rating? Report the brand name.",
+    "revision": "before",
+    "origin": "authored-source-correction"
+  }
+]

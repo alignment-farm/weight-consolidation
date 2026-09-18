@@ -25,3 +25,6 @@ secrets.json
 .agent/
 .claude/
 .DS_Store
+
+# Exact owned trainer snapshots are regenerated from the pinned runtime and patch.
+continuation/evidence/**/learner_lowrate.py

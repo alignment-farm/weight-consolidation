@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-base0",
+  "arm": "base0",
+  "id": 27,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1.04
+      ]
+    ],
+    "upstream_stored_answer": 1.04,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(MAX(rate) - MIN(rate), 2) FROM (\n                    SELECT 100.0 * SUM(CASE WHEN vrf = 1 THEN 1 ELSE 0 END) / COUNT(*) as rate\n                    FROM fdbk_g1\n                    UNION ALL\n                    SELECT 100.0 * SUM(CASE WHEN vrf = 'true' THEN 1 ELSE 0 END) / COUNT(*)\n                    FROM fdbk_g2\n                    UNION ALL\n                    SELECT 100.0 * SUM(CASE WHEN vrf = 1 THEN 1 ELSE 0 END) / COUNT(*)\n                    FROM fdbk_g3\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "7384911f6211e73e1ed3384baae173e40283faf8f4da1772b33cb03664c7e40c"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15816,
+      "completion_tokens": 277,
+      "model_seconds": 18.400735913979588,
+      "calls": 8,
+      "failed_calls": 1,
+      "tool_calls": 8,
+      "tool_seconds": 1.4645848759973887
+    },
+    "elapsed_seconds": 22.202450917000533,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 22.542400000005728,
+  "checking_seconds": 0.02552312500483822,
+  "exit_code": 0
+}

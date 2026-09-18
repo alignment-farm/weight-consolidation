@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 21,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        "WORLDS BEST CABLES"
+      ]
+    ],
+    "upstream_stored_answer": "WORLDS BEST CABLES",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT a.attr_val\n                FROM attrs_g3 a\n                JOIN fdbk_g3 f ON a.ref_id = f.ref_id\n                WHERE a.attr_key = 'Brand'\n                GROUP BY a.attr_val\n                HAVING COUNT(DISTINCT a.ref_id) >= 20\n                ORDER BY AVG(f.rtg) DESC\n                LIMIT 1"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "71e6f90a0a401bbe30b9984c4577e46a224c95643231cfe3780e107bf986d237"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1506,
+      "completion_tokens": 73,
+      "model_seconds": 2.327194541998324,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.8559260830079438
+    },
+    "elapsed_seconds": 5.492287415996543,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.812897624986363,
+  "checking_seconds": 0.2743426249944605,
+  "exit_code": 0
+}

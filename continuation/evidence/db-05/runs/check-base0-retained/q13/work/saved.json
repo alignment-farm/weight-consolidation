@@ -1,0 +1,3 @@
+{
+  "q13_step3": "SELECT COUNT(CASE WHEN price IS NOT NULL AND price > 0 THEN 1 END) * 100.0 / COUNT(*) FROM products WHERE category = 'electronics' AND ref_id NOT IN (SELECT DISTINCT ref_id FROM reviews WHERE category = 'electronics')"
+}

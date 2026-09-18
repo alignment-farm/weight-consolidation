@@ -1,0 +1,12 @@
+{
+  "query": "SELECT median(price) FROM products WHERE category = 'electronics' AND price > 0",
+  "params": {},
+  "columns": [
+    "median(price)"
+  ],
+  "rows": [
+    [
+      21.99
+    ]
+  ]
+}

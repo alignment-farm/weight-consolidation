@@ -1,0 +1,12 @@
+{
+  "query": "SELECT p.title FROM reviews r JOIN products p ON r.category = p.category AND r.ref_id = p.ref_id WHERE r.rating = 1 GROUP BY p.ref_id, p.title ORDER BY COUNT(r.rating) DESC LIMIT 1",
+  "params": {},
+  "columns": [
+    "title"
+  ],
+  "rows": [
+    [
+      "VTech CS6529-2 DECT 6.0 Phone Answering System with Caller ID/Call Waiting, 2 Cordless Handsets, Silver/Black"
+    ]
+  ]
+}

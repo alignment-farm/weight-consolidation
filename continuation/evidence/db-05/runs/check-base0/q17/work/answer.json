@@ -1,0 +1,12 @@
+{
+  "query": "SELECT a.attr_val FROM attrs_g3 a WHERE a.attr_key = 'Brand' GROUP BY a.attr_val ORDER BY COUNT(*) DESC LIMIT 1",
+  "params": {},
+  "columns": [
+    "attr_val"
+  ],
+  "rows": [
+    [
+      "Fender"
+    ]
+  ]
+}

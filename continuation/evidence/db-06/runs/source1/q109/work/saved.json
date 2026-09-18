@@ -1,0 +1,5 @@
+{
+  "musical_instrument_brand_check": "SELECT a1.attr_val FROM attributes a1 WHERE a1.category = 'musical instruments' AND a1.attr_key = 'Brand' AND a1.attr_val IS NOT NULL AND a1.attr_val != '' AND a1.attr_val NOT IN (SELECT a2.attr_val FROM attributes a2 WHERE a2.category = 'musical instruments' AND a2.attr_key = 'Brand' AND a2.attr_val IS NOT NULL AND a2.attr_val != '') AND a1.attr_val NOT IN (SELECT DISTINCT attr_val FROM attributes WHERE category = 'musical instruments' AND attr_key = 'Brand' AND attr_val IS NOT NULL AND attr_val != '')",
+  "musical_instrument_ref_id_check": "SELECT DISTINCT ref_id FROM attributes WHERE category = 'musical instruments' AND attr_key = 'Brand' AND attr_val IS NOT NULL AND attr_val != ''",
+  "musical_instrument_legacy_check": "SELECT DISTINCT ref_id FROM attributes WHERE category = 'musical instruments' AND attr_key = 'Brand Line' AND attr_val IS NOT NULL AND attr_val != ''"
+}

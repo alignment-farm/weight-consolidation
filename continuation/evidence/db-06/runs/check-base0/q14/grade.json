@@ -1,0 +1,37 @@
+{
+  "stage": "check-base0",
+  "arm": "base0",
+  "id": 14,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1832
+      ]
+    ],
+    "upstream_stored_answer": 1832,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT\n                    (SELECT COUNT(DISTINCT item_id) FROM fdbk_g1\n                     WHERE rtg IS NOT NULL AND rtg <= 2.0) -\n                    (SELECT COUNT(DISTINCT ref_id) FROM fdbk_g1\n                     WHERE rtg IS NOT NULL AND rtg <= 2.0)"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 15927,
+      "completion_tokens": 212,
+      "model_seconds": 17.887150127018685,
+      "calls": 8,
+      "failed_calls": 0,
+      "tool_calls": 8,
+      "tool_seconds": 0.07029708301706705
+    },
+    "elapsed_seconds": 20.286795834006625,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 20.653468916993006,
+  "checking_seconds": 0.0940627499949187,
+  "exit_code": 0
+}

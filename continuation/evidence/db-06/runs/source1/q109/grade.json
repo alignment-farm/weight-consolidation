@@ -1,0 +1,37 @@
+{
+  "stage": "source1",
+  "arm": "collector1",
+  "id": 109,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1145
+      ]
+    ],
+    "upstream_stored_answer": 1145,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(DISTINCT p.ref_id)\n                FROM product_attributes_g3 p\n                WHERE p.attr_key = 'Brand'\n                AND NOT EXISTS (\n                    SELECT 1 FROM attrs_g3_legacy l\n                    WHERE l.ref_id = p.ref_id AND l.attr_key = 'Brand'\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 17402,
+      "completion_tokens": 500,
+      "model_seconds": 22.23756195799797,
+      "calls": 8,
+      "failed_calls": 2,
+      "tool_calls": 8,
+      "tool_seconds": 40.01551087498956
+    },
+    "elapsed_seconds": 64.56997704198875,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 64.90468212500855,
+  "checking_seconds": 21.324426332997973,
+  "exit_code": 0
+}

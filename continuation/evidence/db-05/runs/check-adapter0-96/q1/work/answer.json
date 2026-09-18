@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM reviews WHERE category = 'office products' AND epoch_seconds >= 977606400 AND epoch_seconds < 2147483647",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      377414
+    ]
+  ]
+}

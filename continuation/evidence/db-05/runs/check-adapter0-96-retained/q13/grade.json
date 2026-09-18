@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-96-retained",
+  "arm": "adapter0-96-retained",
+  "id": 13,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        29.93
+      ]
+    ],
+    "upstream_stored_answer": 29.93,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(100.0 * COUNT(*) / (\n                    SELECT COUNT(*) FROM items_g2\n                    WHERE ref_id NOT IN (SELECT DISTINCT ref_id FROM fdbk_g2)\n                ), 2)\n                FROM items_g2\n                WHERE ref_id NOT IN (SELECT DISTINCT ref_id FROM fdbk_g2)\n                AND prc IS NOT NULL AND prc > 0"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "680a21f0850340d6a6fdad7a9357398d2aeeeb7d25f8f77bf618ad592ccf3ffe"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1534,
+      "completion_tokens": 70,
+      "model_seconds": 2.2831856249977136,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.055827124990173616
+    },
+    "elapsed_seconds": 4.628541124999174,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.001616499997908,
+  "checking_seconds": 0.022307125007500872,
+  "exit_code": 0
+}

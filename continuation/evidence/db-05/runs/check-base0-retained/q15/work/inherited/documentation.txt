@@ -1,0 +1,29 @@
+Database handbook (public, investigator supplied from pinned build and migration code).
+Three groups: g1=office products, g2=electronics, g3=musical instruments.
+Use normalized TEMP VIEW products(category,ref_id,title,price,catalog_rating,status,image_count),
+reviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds),
+attributes(category,ref_id,attr_key,attr_val), categories(category,ref_id,cat_lvl,cat_nm).
+Prices are dollars in the views. epoch_seconds retains numeric epoch timestamps, including corrupt very large values. SQLite date/year return NULL outside their supported range; compare epoch_seconds for far-future checks. Join views on BOTH category and ref_id. Do not join
+reviews.product_id to products: ref_id is the foreign key. Review rows, products,
+attribute lines and distinct users are different counting units. A product can have
+many reviews and attributes. Taxonomy level 0 is department, level 1 is broad category.
+Don't use catalog_rating when asked for actual mean of review ratings. Do not exclude
+archived products unless the question requests active products. Attribute values
+are original strings; SQL can inspect keys/values. g2 has no attributes, g3 no taxonomy.
+Raw tables remain available: items_gN, fdbk_gN, taxn_g1/g2, attrs_g1 and original attrs_g3.
+Raw ttl=title, prc=price, rtg=rating, avg_rtg=catalog rating, uid=user, ts=timestamp,
+ref_id=product foreign key, vrf=verified. Original g1: dollars, epoch milliseconds,
+integer vrf 0/1. g2: integer cents, epoch seconds, text vrf 'true'/'false'. g3: dollars,
+ISO date text, integer vrf. fdbk_stats_g1 is an incomplete precomputed table; don't
+substitute it for all actual reviews. items_g2.prc_usd is biased; do not use it.
+
+Execute SQL to inspect data, counts and errors. You may retain, read, search and
+execute any source query; change its SQL when the new request differs. The final
+artifact is the full query result, not a guessed numeric answer. No evaluator
+answers or reference SQL for the current development/evaluation job are exposed.
+
+Retained source history also keeps successfully executed intermediate SQL. Search
+results list saved_component_ids; read_source with one of those IDs shows the SQL
+and its observed output, and run_saved executes it directly. These components are
+not individually graded as final answers. They can supply reusable computations
+even when the final source submission was only literal arithmetic.

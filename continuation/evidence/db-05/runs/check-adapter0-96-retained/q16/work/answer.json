@@ -1,0 +1,12 @@
+{
+  "query": "SELECT substr(epoch_seconds, 1, 7) as ym\n                FROM reviews\n                WHERE epoch_seconds IS NOT NULL\n                GROUP BY ym\n                ORDER BY COUNT(*) DESC\n                LIMIT 1",
+  "params": {},
+  "columns": [
+    "ym"
+  ],
+  "rows": [
+    [
+      "1577664"
+    ]
+  ]
+}

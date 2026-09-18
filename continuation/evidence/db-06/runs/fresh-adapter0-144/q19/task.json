@@ -1,0 +1,5 @@
+{
+  "job": "q19",
+  "question": "For verified electronics reviews, how much longer on average (in characters) are 1-star review bodies compared to 5-star review bodies? Round to 1 decimal place. Only count reviews with non-empty body text.",
+  "revision": "before"
+}

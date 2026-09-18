@@ -1,0 +1,4 @@
+{
+  "electronics_mean_price": "SELECT AVG(price) FROM products WHERE category = 'electronics' AND price > 0",
+  "electronics_price_15_above_mean": "SELECT COUNT(*) FROM products WHERE category = 'electronics' AND price > 0 AND price > 1.15 * (SELECT AVG(price) FROM products WHERE category = 'electronics' AND price > 0)"
+}

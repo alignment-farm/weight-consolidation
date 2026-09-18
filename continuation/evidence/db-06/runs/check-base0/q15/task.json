@@ -1,0 +1,5 @@
+{
+  "job": "q15",
+  "question": "Among electronics products in the 'Computers & Accessories' top-level category, what percentage are priced above the category-wide average? Round to 2 decimal places. Only consider products with a non-zero price.",
+  "revision": "before"
+}

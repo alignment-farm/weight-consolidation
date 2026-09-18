@@ -1,0 +1,12 @@
+{
+  "query": "SELECT \n  (SELECT AVG(LENGTH(r.body)) \n   FROM reviews r \n   JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id AND p.status='active' \n   WHERE r.verification_label IS NULL AND r.body IS NOT NULL) - \n  (SELECT AVG(LENGTH(r.body)) \n   FROM reviews r \n   JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id AND p.status='active' \n   WHERE r.verification_label IS NOT NULL AND r.body IS NOT NULL)",
+  "params": {},
+  "columns": [
+    "(SELECT AVG(LENGTH(r.body)) \n   FROM reviews r \n   JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id AND p.status='active' \n   WHERE r.verification_label IS NULL AND r.body IS NOT NULL) - \n  (SELECT AVG(LENGTH(r.body)) \n   FROM reviews r \n   JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id AND p.status='active' \n   WHERE r.verification_label IS NOT NULL AND r.body IS NOT NULL)"
+  ],
+  "rows": [
+    [
+      1.0663407932666757
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "query": "SELECT a.attr_val FROM attributes a JOIN reviews r USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' GROUP BY a.attr_val HAVING COUNT(DISTINCT a.ref_id) >= 20 ORDER BY AVG(r.rating) DESC LIMIT 1",
+  "params": {},
+  "columns": [
+    "attr_val"
+  ],
+  "rows": [
+    [
+      "WORLDS BEST CABLES"
+    ]
+  ]
+}

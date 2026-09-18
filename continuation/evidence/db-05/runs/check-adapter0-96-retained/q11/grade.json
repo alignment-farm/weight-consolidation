@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-96-retained",
+  "arm": "adapter0-96-retained",
+  "id": 11,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        10.22
+      ]
+    ],
+    "upstream_stored_answer": 10.22,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(100.0 *\n                    SUM(CASE WHEN f.rtg = 1.0 THEN 1 ELSE 0 END) / COUNT(*), 2)\n                FROM fdbk_g2 f\n                JOIN items_g2 i ON f.ref_id = i.ref_id\n                WHERE f.body IS NOT NULL AND LENGTH(f.body) > 500\n                AND i.prc IS NOT NULL AND i.prc > 0 AND i.prc <= 4000"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "ce66360380af7c8c8d8e15ae371b025affe5254dff0638c9885a66c6d9a1110a"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1500,
+      "completion_tokens": 37,
+      "model_seconds": 1.9198019159957767,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.0032407910039182752
+    },
+    "elapsed_seconds": 4.207452500006184,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.564464417009731,
+  "checking_seconds": 0.03956162500253413,
+  "exit_code": 0
+}

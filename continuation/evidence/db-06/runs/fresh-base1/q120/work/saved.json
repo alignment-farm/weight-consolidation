@@ -1,0 +1,4 @@
+{
+  "instrument_brands_with_reviews": "SELECT a.attr_val AS brand, COUNT(r.rating) AS total_reviews, AVG(r.rating) AS avg_rating FROM attributes a JOIN reviews r ON a.ref_id = r.ref_id AND a.category = 'musical instruments' WHERE a.attr_key = 'Brand' GROUP BY a.attr_val ORDER BY COUNT(r.rating) DESC LIMIT 10",
+  "brand_avg_rating_by_review_count": "SELECT brand, avg_rating FROM (SELECT a.attr_val AS brand, AVG(r.rating) AS avg_rating FROM attributes a JOIN reviews r ON a.ref_id = r.ref_id AND a.category = 'musical instruments' WHERE a.attr_key = 'Brand' GROUP BY a.attr_val) ORDER BY avg_rating DESC"
+}

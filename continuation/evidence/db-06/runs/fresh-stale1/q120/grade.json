@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-stale1",
+  "arm": "stale1",
+  "id": 120,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        0.58
+      ]
+    ],
+    "upstream_stored_answer": 0.58,
+    "tolerance": 0.02,
+    "reference_sql": "SELECT ROUND(MAX(avg_rtg) - MIN(avg_rtg), 2) FROM (\n                    SELECT a.attr_val, AVG(f.rtg) as avg_rtg\n                    FROM product_attributes_g3 a\n                    JOIN fdbk_g3 f ON a.ref_id = f.ref_id\n                    WHERE a.attr_key = 'Brand'\n                    GROUP BY a.attr_val\n                    ORDER BY COUNT(*) DESC\n                    LIMIT 10\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "cce6386698ca359998d4522023f4eac1883cc88fe9a13735f12b30dde8ba2787"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3526,
+      "completion_tokens": 223,
+      "model_seconds": 5.777356957987649,
+      "calls": 4,
+      "failed_calls": 2,
+      "tool_calls": 4,
+      "tool_seconds": 0.8295551649935078
+    },
+    "elapsed_seconds": 8.90454058299656,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 9.292814000000362,
+  "checking_seconds": 0.26481424999656156,
+  "exit_code": 0
+}

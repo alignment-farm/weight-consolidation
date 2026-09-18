@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 19,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        101.8
+      ]
+    ],
+    "upstream_stored_answer": 101.8,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(\n                    (SELECT AVG(LENGTH(body)) FROM fdbk_g2\n                     WHERE rtg = 1.0 AND vrf = 'true'\n                     AND body IS NOT NULL AND body != '') -\n                    (SELECT AVG(LENGTH(body)) FROM fdbk_g2\n                     WHERE rtg = 5.0 AND vrf = 'true'\n                     AND body IS NOT NULL AND body != ''),\n                1)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "d49c929b4a1339cfb4bbf73b347ac49ab54e87a3e64c16b6ac0e5ff51ad36264"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1580,
+      "completion_tokens": 86,
+      "model_seconds": 2.499193292009295,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.07562316698022187
+    },
+    "elapsed_seconds": 4.886722915995051,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 5.248678999996628,
+  "checking_seconds": 0.030415375003940426,
+  "exit_code": 0
+}

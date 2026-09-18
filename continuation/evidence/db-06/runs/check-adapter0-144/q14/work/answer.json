@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(DISTINCT CASE WHEN r.rating<=2 THEN r.category END) FROM reviews r WHERE r.category='office products' AND r.rating<=2",
+  "params": {},
+  "columns": [
+    "COUNT(DISTINCT CASE WHEN r.rating<=2 THEN r.category END)"
+  ],
+  "rows": [
+    [
+      1
+    ]
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "stage": "source1",
+  "arm": "collector1",
+  "id": 103,
+  "revision": "after",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        1049
+      ]
+    ],
+    "upstream_stored_answer": 1049,
+    "tolerance": 0.0,
+    "reference_sql": "WITH m AS (\n                    SELECT AVG(prc_v2) AS av\n                    FROM items_g2\n                    WHERE prc_v2 IS NOT NULL AND prc_v2 > 0\n                )\n                SELECT COUNT(*) FROM items_g2 i, m\n                WHERE i.prc_v2 IS NOT NULL AND i.prc_v2 > 0\n                AND i.prc_v2 >= 1.15 * m.av"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "14e7f2948c19c779a13cfe2db3e466ce3fc67933c6548dcb92cdd01d1a8f2105"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14114,
+      "completion_tokens": 187,
+      "model_seconds": 15.690842581985635,
+      "calls": 7,
+      "failed_calls": 0,
+      "tool_calls": 7,
+      "tool_seconds": 0.03652366701862775
+    },
+    "elapsed_seconds": 18.031929374992615,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 18.40702945800149,
+  "checking_seconds": 0.009133166997344233,
+  "exit_code": 0
+}

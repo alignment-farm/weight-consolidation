@@ -1,0 +1,42 @@
+{
+  "stage": "check-base1",
+  "arm": "base1",
+  "id": 106,
+  "revision": "after",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        1.1
+      ]
+    ],
+    "upstream_stored_answer": 1.1,
+    "tolerance": 0.3,
+    "reference_sql": "SELECT ROUND(\n                    (SELECT AVG(LENGTH(f.body))\n                     FROM fdbk_g1 f\n                     JOIN items_g1 i ON f.ref_id = i.ref_id\n                     WHERE i.status = 'active'\n                     AND f.verified_status IS NULL\n                     AND f.body IS NOT NULL)\n                    -\n                    (SELECT AVG(LENGTH(f.body))\n                     FROM fdbk_g1 f\n                     JOIN items_g1 i ON f.ref_id = i.ref_id\n                     WHERE i.status = 'active'\n                     AND f.verified_status IS NOT NULL\n                     AND f.body IS NOT NULL)\n                , 1)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "5753c4e4440fedad6ee294c6cee322aa2f896b4deb250f15fd5cc957e334b217"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14950,
+      "completion_tokens": 259,
+      "model_seconds": 17.34305291499186,
+      "calls": 7,
+      "failed_calls": 0,
+      "tool_calls": 7,
+      "tool_seconds": 5.462383622987545
+    },
+    "elapsed_seconds": 25.112939291997463,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 25.466782624993357,
+  "checking_seconds": 0.7583054590068059,
+  "exit_code": 0
+}

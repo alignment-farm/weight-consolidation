@@ -1,0 +1,3 @@
+{
+  "discontinued_products_below_3_rating": "SELECT COUNT(*) FROM products WHERE category IN ('office products', 'electronics', 'musical instruments') AND status = 'discontinued' AND catalog_rating < 3.0"
+}

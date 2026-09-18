@@ -1,0 +1,42 @@
+{
+  "stage": "source0",
+  "arm": "collector0",
+  "id": 16,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        "2020-01"
+      ]
+    ],
+    "upstream_stored_answer": "2020-01",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT substr(ts, 1, 7) as ym\n                FROM fdbk_g3\n                WHERE ts IS NOT NULL\n                GROUP BY ym\n                ORDER BY COUNT(*) DESC\n                LIMIT 1"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "67e283a440f64a5d630ff92fe7fba7028ba18514dfc23191eef184244df3a82e"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 7507,
+      "completion_tokens": 101,
+      "model_seconds": 8.238547956992988,
+      "calls": 5,
+      "failed_calls": 0,
+      "tool_calls": 5,
+      "tool_seconds": 0.29449604300316423
+    },
+    "elapsed_seconds": 10.881367374997353,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 11.241734666997218,
+  "checking_seconds": 0.0695654589944752,
+  "exit_code": 0
+}

@@ -1,0 +1,3 @@
+{
+  "electronics_review_filter": "SELECT p.ref_id, p.price, COUNT(r.rating) AS review_count, AVG(r.rating) AS avg_review_rating\nFROM products p\nJOIN reviews r ON p.category = r.category AND p.ref_id = r.ref_id\nWHERE p.category = 'electronics' AND p.price > 50\nGROUP BY p.ref_id, p.price\nHAVING COUNT(r.rating) >= 5 AND AVG(r.rating) < 3.0"
+}

@@ -1,0 +1,3 @@
+{
+  "verified_electronics_reviews": "SELECT r.rating, r.body, r.verified FROM reviews r JOIN products p ON (p.category = 'electronics' AND p.ref_id = r.ref_id) WHERE p.category = 'electronics' AND r.verified = 1 AND r.body IS NOT NULL AND r.body != ''"
+}

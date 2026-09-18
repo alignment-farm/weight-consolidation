@@ -1,0 +1,37 @@
+{
+  "stage": "check-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 109,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1145
+      ]
+    ],
+    "upstream_stored_answer": 1145,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(DISTINCT p.ref_id)\n                FROM product_attributes_g3 p\n                WHERE p.attr_key = 'Brand'\n                AND NOT EXISTS (\n                    SELECT 1 FROM attrs_g3_legacy l\n                    WHERE l.ref_id = p.ref_id AND l.attr_key = 'Brand'\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 7675,
+      "completion_tokens": 405,
+      "model_seconds": 11.590524501982145,
+      "calls": 8,
+      "failed_calls": 8,
+      "tool_calls": 8,
+      "tool_seconds": 0.017862125983810984
+    },
+    "elapsed_seconds": 13.937708124998608,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 14.283993249991909,
+  "checking_seconds": 21.54897170800541,
+  "exit_code": 0
+}

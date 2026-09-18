@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-96-retained",
+  "arm": "adapter0-96-retained",
+  "id": 1,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        58
+      ]
+    ],
+    "upstream_stored_answer": 58,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*)\n                FROM fdbk_g1\n                WHERE ts > 1924992000 * 1000"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "eb313e382b2f54c05e5ca92c2d76a596ed8c80e6bd5df514a94584802e0cdc9e"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1469,
+      "completion_tokens": 56,
+      "model_seconds": 2.0844280000019353,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.050805209000827745
+    },
+    "elapsed_seconds": 4.428616416000295,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.776582167003653,
+  "checking_seconds": 0.0003546249936334789,
+  "exit_code": 0
+}

@@ -1,0 +1,12 @@
+{
+  "query": "SELECT AVG(price) FROM products WHERE category = 'electronics'",
+  "params": {},
+  "columns": [
+    "AVG(price)"
+  ],
+  "rows": [
+    [
+      96.2334490106545
+    ]
+  ]
+}

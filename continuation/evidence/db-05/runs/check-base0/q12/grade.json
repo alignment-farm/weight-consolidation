@@ -1,0 +1,42 @@
+{
+  "stage": "check-base0",
+  "arm": "base0",
+  "id": 12,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": true,
+    "expected": [
+      [
+        8
+      ]
+    ],
+    "upstream_stored_answer": 8,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM (\n                    SELECT i.ref_id\n                    FROM items_g2 i\n                    JOIN fdbk_g2 f ON i.ref_id = f.ref_id\n                    WHERE i.prc > 5000 AND i.prc IS NOT NULL\n                    GROUP BY i.ref_id\n                    HAVING COUNT(*) >= 5 AND AVG(f.rtg) < 3.0\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "e61d8414579242a2fe8954123905077a4842de45aede2e72c64c60a161641d68"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15165,
+      "completion_tokens": 277,
+      "model_seconds": 17.616503835030016,
+      "calls": 8,
+      "failed_calls": 1,
+      "tool_calls": 8,
+      "tool_seconds": 0.13266846000624355
+    },
+    "elapsed_seconds": 20.05651612499787,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 20.42582816600043,
+  "checking_seconds": 0.0367885000014212,
+  "exit_code": 0
+}

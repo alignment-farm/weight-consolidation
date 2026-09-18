@@ -1,0 +1,3 @@
+{
+  "office_product_years_query": "SELECT COUNT(*) FROM (SELECT DISTINCT r.ref_id FROM reviews r JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id WHERE r.year IS NOT NULL AND r.epoch_seconds < 1388534400)"
+}

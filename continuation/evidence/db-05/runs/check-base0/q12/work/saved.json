@@ -1,0 +1,4 @@
+{
+  "electronics_review_analysis": "SELECT COUNT(*) FROM products p JOIN reviews r ON p.category = r.category AND p.ref_id = r.ref_id WHERE p.category = 'electronics' AND p.price > 50 AND p.ref_id IN (SELECT product_id FROM reviews GROUP BY product_id HAVING COUNT(*) >= 5) AND AVG(r.rating) < 3.0",
+  "electronics_review_analysis_correct": "SELECT COUNT(*) FROM (\n    SELECT p.ref_id\n    FROM products p\n    JOIN reviews r ON p.category = r.category AND p.ref_id = r.ref_id\n    WHERE p.category = 'electronics' AND p.price > 50\n    GROUP BY p.ref_id\n    HAVING COUNT(r.rating) >= 5\n    AND AVG(r.rating) < 3.0\n)"
+}

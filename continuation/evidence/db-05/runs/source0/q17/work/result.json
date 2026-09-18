@@ -1,0 +1,21 @@
+{
+  "status": "succeeded",
+  "artifacts": [
+    {
+      "name": "answer.json",
+      "sha256": "a48c8a9966fa1295a4a98435fd51eb125c408db4beb38f92af81ca469a6a18dc"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9329,
+    "completion_tokens": 169,
+    "model_seconds": 10.590824125014478,
+    "calls": 6,
+    "failed_calls": 0,
+    "tool_calls": 6,
+    "tool_seconds": 0.10747658299806062
+  },
+  "elapsed_seconds": 12.999578582996037,
+  "compute_flops": null,
+  "quality": "not evaluated by runtime"
+}

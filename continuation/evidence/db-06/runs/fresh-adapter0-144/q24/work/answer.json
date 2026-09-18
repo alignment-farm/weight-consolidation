@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(100.0*SUM(CASE WHEN r.rating=5 THEN 1 ELSE 0 END)/COUNT(*),2) FROM reviews r JOIN attributes a USING(category,ref_id) WHERE a.category='musical instruments' AND r.year>0 AND r.month>0 AND r.user_id IN (SELECT user_id FROM reviews WHERE category='musical instruments' GROUP BY user_id HAVING COUNT(*)>=3)",
+  "params": {},
+  "columns": [
+    "ROUND(100.0*SUM(CASE WHEN r.rating=5 THEN 1 ELSE 0 END)/COUNT(*),2)"
+  ],
+  "rows": [
+    [
+      69.83
+    ]
+  ]
+}

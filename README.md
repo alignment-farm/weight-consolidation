@@ -5,7 +5,16 @@ Prepared 17 September 2026 as an independent Construct-2 ancillary study.
 authorizes workload discovery, implementation and experiments in this repository.
 Follow it after the instructions and sources. The previous bounded feasibility
 and confirmation phase is complete (17 September); its findings below remain
-unchanged. Preparation of this follow-up has not started its experiments.
+unchanged. The follow-up is complete: [continuing-work findings](continuation/FINDINGS.md),
+[reproduction](continuation/REPRODUCE.md), and [cost ledger](continuation/evidence/summary.json).
+In one constructed database history, external reuse completed **7/20** fresh jobs
+versus **6/20** with the selected adapter strategy; correct report artifacts were
+9/20 versus 6/20. Training shortened familiar source-task execution but did not
+improve fresh accuracy. All conditions preserved two unchanged source obligations.
+The follow-up includes 229 task executions and four training runs; no adapter is
+promoted. The broader question remains open.
+
+Previous phase (unchanged):
 [Findings and abstract](FINDINGS.md) · [Reproduction](REPRODUCE.md) ·
 [Corrected confirmation audit](evidence/confirmation-01/audit.json) ·
 [All incurred costs](evidence/costs.json).

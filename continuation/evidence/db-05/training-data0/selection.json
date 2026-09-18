@@ -1,0 +1,110 @@
+[
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q2",
+    "events": "sources/0.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=executor. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "9c42f7fa0c5323bb7bba46d6fff1d51fbd6452af5df14bf96ae289b28b22fbf1",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q3",
+    "events": "sources/1.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=executor. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "7539792fc92f17b5d9fc5002e8b998bfa5447196a18debf28dfd4d299777ebfe",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q4",
+    "events": "sources/2.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=authored-source-correction. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "5e6898479aeda452d23af5c9bc6e00bc77927daba9ff4d9d6b1144513784c197",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q6",
+    "events": "sources/3.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=authored-source-correction. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "72b4f95cb6498c78c1de87ceaf9e6b512f51e791d0a63b749eeb5a9e974575ed",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q9",
+    "events": "sources/4.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=executor. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "ccbb05964e63895690f06e1a09deeb44297fe17a4716003af0c6ad7d5b56596b",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q10",
+    "events": "sources/5.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=executor. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "7cb979da41583bbc2e1f793d74a081c81902662be82c6f60df08f50175388f4f",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q11",
+    "events": "sources/6.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=executor. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "f12f3b92834d16a38636421175f0e8d6a402bb44c891bfd1f98e429d75ae9a72",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q13",
+    "events": "sources/7.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=executor. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "60150d0d667a2a0e207714904f6a3f394f49cd3e8253cfd487da10b43e63b790",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q16",
+    "events": "sources/8.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=authored-source-correction. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "57251b7fd840972d3b074eb5dd0d1cf924d2e046e5e8f6c8a4b4adde60764066",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q17",
+    "events": "sources/9.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=authored-source-correction. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "958141e720e30c07b4c99b60c4422f50cec770f9afd241222b93d5b66b997cc8",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q18",
+    "events": "sources/10.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=executor. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "f063540735c77fd4da2afdeb2f6026545a8e3bd6b5c8a0f337110c747095694c",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q21",
+    "events": "sources/11.jsonl",
+    "reason": "Executed two-action teaching replay; SQL origin=authored-source-correction. Replay sequence investigator-authored, not claimed on-policy.",
+    "events_sha256": "e844c5c7ee099812ffa68575e4a95943c676e89e33073c14c2748bbe75bac4be",
+    "exported_actions": 2
+  }
+]

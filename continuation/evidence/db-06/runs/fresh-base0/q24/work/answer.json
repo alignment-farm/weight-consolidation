@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(100.0 * 18842 / 27011, 2) AS percentage",
+  "params": {},
+  "columns": [
+    "percentage"
+  ],
+  "rows": [
+    [
+      69.76
+    ]
+  ]
+}

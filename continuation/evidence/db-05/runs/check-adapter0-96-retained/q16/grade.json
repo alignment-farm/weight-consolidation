@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-96-retained",
+  "arm": "adapter0-96-retained",
+  "id": 16,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        "2020-01"
+      ]
+    ],
+    "upstream_stored_answer": "2020-01",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT substr(ts, 1, 7) as ym\n                FROM fdbk_g3\n                WHERE ts IS NOT NULL\n                GROUP BY ym\n                ORDER BY COUNT(*) DESC\n                LIMIT 1"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "b6b746883d888b9e7115b24407aebe359776d9fcc2f89c346df378b8f68b1635"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3256,
+      "completion_tokens": 163,
+      "model_seconds": 4.891261249009403,
+      "calls": 4,
+      "failed_calls": 2,
+      "tool_calls": 4,
+      "tool_seconds": 0.34216475099674426
+    },
+    "elapsed_seconds": 7.5242204170062905,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 7.896388958004536,
+  "checking_seconds": 0.07088312500854954,
+  "exit_code": 0
+}

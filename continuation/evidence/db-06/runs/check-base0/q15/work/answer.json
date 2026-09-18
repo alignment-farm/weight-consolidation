@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM products p WHERE p.category = 'electronics' AND p.ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories' AND cat_lvl = 1) AND p.price > 0), 2) AS percentage_above_avg FROM products WHERE category = 'electronics' AND ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories' AND cat_lvl = 1) AND price > 0 AND price > (SELECT AVG(price) FROM products WHERE category = 'electronics' AND price > 0)",
+  "params": {},
+  "columns": [
+    "percentage_above_avg"
+  ],
+  "rows": [
+    [
+      18.67
+    ]
+  ]
+}

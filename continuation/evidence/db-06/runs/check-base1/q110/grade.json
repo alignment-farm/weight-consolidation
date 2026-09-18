@@ -1,0 +1,42 @@
+{
+  "stage": "check-base1",
+  "arm": "base1",
+  "id": 110,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1.11
+      ]
+    ],
+    "upstream_stored_answer": 1.11,
+    "tolerance": 0.05,
+    "reference_sql": "SELECT ROUND(\n                    (SELECT COUNT(*) * 1.0 FROM product_attributes_g3)\n                    / (SELECT COUNT(*) FROM attrs_g3_legacy)\n                , 2)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "a57d7289663f8ee6b8983d835e3e019aacea1520929ef625bfe9ae7c90a3854a"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9032,
+      "completion_tokens": 161,
+      "model_seconds": 10.228591999970376,
+      "calls": 6,
+      "failed_calls": 0,
+      "tool_calls": 6,
+      "tool_seconds": 0.07586341598653235
+    },
+    "elapsed_seconds": 12.60750937499688,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 12.989569917001063,
+  "checking_seconds": 0.005814207994262688,
+  "exit_code": 0
+}

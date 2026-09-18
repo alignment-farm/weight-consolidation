@@ -1,0 +1,6 @@
+{
+  "musical_instruments_avg_price": "SELECT AVG(price) FROM products WHERE category = 'musical instruments'",
+  "musical_instruments_missing_timestamp": "SELECT COUNT(*) FROM reviews WHERE category = 'musical instruments' AND epoch_seconds IS NULL AND year IS NULL AND month IS NULL",
+  "musical_instruments_missing_timestamp_reviews": "SELECT COUNT(*) FROM reviews WHERE category = 'musical instruments' AND (year IS NULL OR month IS NULL)",
+  "musical_instruments_price_above_avg": "SELECT COUNT(*) FROM reviews r JOIN products p ON r.category = p.category AND r.ref_id = p.ref_id WHERE p.category = 'musical instruments' AND p.price > (SELECT AVG(price) FROM products WHERE category = 'musical instruments') AND (r.year IS NULL OR r.month IS NULL)"
+}

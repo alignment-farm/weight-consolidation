@@ -1,0 +1,37 @@
+{
+  "stage": "fresh-base0",
+  "arm": "base0",
+  "id": 28,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        50.0
+      ]
+    ],
+    "upstream_stored_answer": 50.0,
+    "tolerance": 0.1,
+    "reference_sql": "SELECT ROUND(100.0 * (SELECT COUNT(*) FROM fdbk_stats_g1)\n                    / (SELECT COUNT(DISTINCT ref_id) FROM fdbk_g1), 1)"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 18675,
+      "completion_tokens": 113,
+      "model_seconds": 19.609614248969592,
+      "calls": 8,
+      "failed_calls": 0,
+      "tool_calls": 8,
+      "tool_seconds": 0.014336665000882931
+    },
+    "elapsed_seconds": 21.938055749997147,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 22.29807437499403,
+  "checking_seconds": 0.015109040992683731,
+  "exit_code": 0
+}

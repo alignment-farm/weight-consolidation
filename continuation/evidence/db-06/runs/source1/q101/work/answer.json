@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(AVG(p.price), 2) FROM products p WHERE p.category = 'electronics' AND p.image_count >= 3 AND p.price IS NOT NULL",
+  "params": {},
+  "columns": [
+    "ROUND(AVG(p.price), 2)"
+  ],
+  "rows": [
+    [
+      101.8
+    ]
+  ]
+}

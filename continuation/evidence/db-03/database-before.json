@@ -1,0 +1,112 @@
+{
+  "name": "products.db",
+  "sha256": "edf8ee80ff125de0bfd6c37a1d185efa9e3037ce28eb1bd1d32ae0829bd264a6",
+  "bytes": 397910016,
+  "revision": "a0cc57eeb9a54f01c0490a1b46cb705b4e05aa19",
+  "schema": {
+    "items_g1": [
+      "ref_id",
+      "ttl",
+      "avg_rtg",
+      "avg_rtg_30d",
+      "rtg_ct",
+      "prc",
+      "str_nm",
+      "main_cat",
+      "desc_txt",
+      "feat_lst"
+    ],
+    "fdbk_g1": [
+      "id",
+      "item_id",
+      "ref_id",
+      "uid",
+      "rtg",
+      "ttl",
+      "body",
+      "ts",
+      "hlp_ct",
+      "vrf"
+    ],
+    "sqlite_sequence": [
+      "name",
+      "seq"
+    ],
+    "taxn_g1": [
+      "ref_id",
+      "cat_lvl",
+      "cat_nm"
+    ],
+    "attrs_g1": [
+      "ref_id",
+      "attr_key",
+      "attr_val"
+    ],
+    "items_g2": [
+      "ref_id",
+      "ttl",
+      "avg_rtg",
+      "prc",
+      "prc_usd",
+      "str_nm",
+      "main_cat",
+      "feat_lst",
+      "img_ct"
+    ],
+    "fdbk_g2": [
+      "id",
+      "item_id",
+      "ref_id",
+      "uid",
+      "rtg",
+      "ttl",
+      "body",
+      "ts",
+      "hlp_ct",
+      "vrf"
+    ],
+    "taxn_g2": [
+      "ref_id",
+      "cat_lvl",
+      "cat_nm"
+    ],
+    "items_g3": [
+      "ref_id",
+      "ttl",
+      "avg_rtg",
+      "rtg_ct",
+      "prc",
+      "str_nm",
+      "main_cat",
+      "desc_txt"
+    ],
+    "fdbk_g3": [
+      "id",
+      "ref_id",
+      "uid",
+      "rtg",
+      "ttl",
+      "body",
+      "ts",
+      "hlp_ct",
+      "vrf"
+    ],
+    "attrs_g3": [
+      "ref_id",
+      "attr_key",
+      "attr_val"
+    ],
+    "fdbk_stats_g1": [
+      "ref_id",
+      "avg_rtg",
+      "review_ct",
+      "pct_5star",
+      "avg_hlp"
+    ]
+  },
+  "quick_check": [
+    [
+      "ok"
+    ]
+  ]
+}

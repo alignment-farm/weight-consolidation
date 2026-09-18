@@ -1,0 +1,10 @@
+{
+  "queries": {
+    "109": "SELECT COUNT(*) FROM (SELECT DISTINCT ref_id FROM attributes WHERE category='musical instruments' AND attr_key='Brand' EXCEPT SELECT ref_id FROM attrs_g3_legacy WHERE attr_key='Brand')"
+  },
+  "reason": "Source-only execution validation: correlated legacy anti-join exceeds 20-second SQL budget (upstream oracle itself took 21.3244 seconds). Use equivalent distinct set difference, validate against same source oracle. No fresh outcome used; no model recipe or split change.",
+  "failed_attempt": "references1-failed-01/q109",
+  "timeout_budget_seconds": 20,
+  "failed_attempt_seconds": null,
+  "original_programs_sha256": "d2ef581861cde14d2a9efe0c647f86b4a54c841fc6fec90a6a9cadf44eefdb5f"
+}

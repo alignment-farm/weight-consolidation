@@ -1,0 +1,4 @@
+{
+  "musical_instrument_brand_check": "SELECT DISTINCT ref_id FROM attributes WHERE category = 'musical instruments' AND attr_key = 'Brand' AND attr_val IS NOT NULL AND attr_val != ''",
+  "musical_instrument_legacy_check": "SELECT DISTINCT ref_id FROM attributes WHERE category = 'musical instruments' AND attr_key = 'Brand Line' AND attr_val IS NOT NULL AND attr_val != ''"
+}

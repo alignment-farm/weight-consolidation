@@ -1,0 +1,3 @@
+{
+  "q11_step3": "SELECT ROUND(100.0*SUM(CASE WHEN r.rating=1 THEN 1 ELSE 0 END)/COUNT(*),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='electronics' AND p.price>0 AND p.price<=40 AND LENGTH(r.body)>500"
+}

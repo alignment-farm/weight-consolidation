@@ -1,0 +1,4055 @@
+{
+  "sha": "5f8c50eb1e84b2eda2ef4faff757dfc812a0ea26",
+  "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/5f8c50eb1e84b2eda2ef4faff757dfc812a0ea26",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dce0b6c60d2a8c4c6aaf31f7360506c4a0dfaa4c",
+      "size": 681,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/dce0b6c60d2a8c4c6aaf31f7360506c4a0dfaa4c"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc579d456f259f13ce69dbaf9acc5a657e2a110f",
+      "size": 203,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/fc579d456f259f13ce69dbaf9acc5a657e2a110f"
+    },
+    {
+      "path": ".python-version",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24ee5b1be9961e38a503c8e764b7385dbb6ba124",
+      "size": 5,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/24ee5b1be9961e38a503c8e764b7385dbb6ba124"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c37c665b0b11528542ffc776c5826e38eadfc61",
+      "size": 2316,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/8c37c665b0b11528542ffc776c5826e38eadfc61"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "path": "Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a5ceeb96ed4c45940b6ddfa65e3b3a7ae89e07c",
+      "size": 59,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1a5ceeb96ed4c45940b6ddfa65e3b3a7ae89e07c"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5eb8fea83793bad7f95da9c3a09f2c8f138715eb",
+      "size": 4551,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5eb8fea83793bad7f95da9c3a09f2c8f138715eb"
+    },
+    {
+      "path": "agent_docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "65bbfffd11e3e27879e1f0449a0e64c7c3e7057a",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/65bbfffd11e3e27879e1f0449a0e64c7c3e7057a"
+    },
+    {
+      "path": "agent_docs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c81a5aa6ca72e205bf3e18ff38d835d4ed33f54b",
+      "size": 319,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c81a5aa6ca72e205bf3e18ff38d835d4ed33f54b"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d8f535ceb2cc37037721190234d35402dc80083b",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/d8f535ceb2cc37037721190234d35402dc80083b"
+    },
+    {
+      "path": "assets/logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1111960043bd24157927acde287decac15737802",
+      "size": 793706,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1111960043bd24157927acde287decac15737802"
+    },
+    {
+      "path": "configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a82c68556ee19ec6f1dd6e427e5bb46d1c674386",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/a82c68556ee19ec6f1dd6e427e5bb46d1c674386"
+    },
+    {
+      "path": "configs/blind_spectrum_monitoring",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b50c371f1a0d11dd8128b0ebdfe07c4112a33cc",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/6b50c371f1a0d11dd8128b0ebdfe07c4112a33cc"
+    },
+    {
+      "path": "configs/blind_spectrum_monitoring/bsm_mixed_grid_ace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b6352a2a9e232a5056bbec3f6d95fe7bdd1d310",
+      "size": 397,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7b6352a2a9e232a5056bbec3f6d95fe7bdd1d310"
+    },
+    {
+      "path": "configs/blind_spectrum_monitoring/bsm_mixed_grid_icl.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9312061001339912ce4ecb9248155b899f15aa0",
+      "size": 461,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c9312061001339912ce4ecb9248155b899f15aa0"
+    },
+    {
+      "path": "configs/blind_spectrum_monitoring/bsm_mixed_grid_notepad.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03afc29ff4fd0f00adcdb851a800fe68ae9e0550",
+      "size": 405,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/03afc29ff4fd0f00adcdb851a800fe68ae9e0550"
+    },
+    {
+      "path": "configs/codebase_adaptation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9b7fd93fef6b57ac8dece780cd25ae2201064f1",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/c9b7fd93fef6b57ac8dece780cd25ae2201064f1"
+    },
+    {
+      "path": "configs/codebase_adaptation/codebase_adaptation_ace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e52d42a9cf7e41b9c0e2e55c378692c46aa59b90",
+      "size": 411,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e52d42a9cf7e41b9c0e2e55c378692c46aa59b90"
+    },
+    {
+      "path": "configs/codebase_adaptation/codebase_adaptation_icl.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bf881ffcb565794190a511221d52eab71e06a3d",
+      "size": 513,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/9bf881ffcb565794190a511221d52eab71e06a3d"
+    },
+    {
+      "path": "configs/codebase_adaptation/codebase_adaptation_icl_notepad.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "865985b608b231595f977146f4bdf21354063780",
+      "size": 622,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/865985b608b231595f977146f4bdf21354063780"
+    },
+    {
+      "path": "configs/cohort_studies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40a107fdbfe5817e3ef7246aadf923e6386ea44a",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/40a107fdbfe5817e3ef7246aadf923e6386ea44a"
+    },
+    {
+      "path": "configs/cohort_studies/cohort_studies_ace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae9b47512b2c25bbc6d80e797ef57ab8da2b6a13",
+      "size": 370,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ae9b47512b2c25bbc6d80e797ef57ab8da2b6a13"
+    },
+    {
+      "path": "configs/cohort_studies/cohort_studies_icl.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a135e5bd0412492bbf8887a13013e6e2e53399c",
+      "size": 406,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6a135e5bd0412492bbf8887a13013e6e2e53399c"
+    },
+    {
+      "path": "configs/cohort_studies/cohort_studies_icl_notepad.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "333ce03414e1a6f73e184f1f145fc6bc05695c74",
+      "size": 378,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/333ce03414e1a6f73e184f1f145fc6bc05695c74"
+    },
+    {
+      "path": "configs/exploitable_poker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f229273acb42716d5467708e61cc65a101b1736",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/5f229273acb42716d5467708e61cc65a101b1736"
+    },
+    {
+      "path": "configs/exploitable_poker/exploitable_poker_ace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7a3cf91e425ecfd49cba0847941f9b8d19aadea",
+      "size": 412,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b7a3cf91e425ecfd49cba0847941f9b8d19aadea"
+    },
+    {
+      "path": "configs/exploitable_poker/exploitable_poker_claude_continual_learn.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97c3c297aa7607844c5a68171b5ecea1ada03bd3",
+      "size": 417,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/97c3c297aa7607844c5a68171b5ecea1ada03bd3"
+    },
+    {
+      "path": "configs/exploitable_poker/exploitable_poker_claude_single_conversation_raw.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f30ff478a1b9e638332bb74b8ca27b9ce7a56096",
+      "size": 283,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f30ff478a1b9e638332bb74b8ca27b9ce7a56096"
+    },
+    {
+      "path": "configs/exploitable_poker/exploitable_poker_codex_single_conversation_raw.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afd91c25d4bdc8179ffa581ef827621a46127271",
+      "size": 249,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/afd91c25d4bdc8179ffa581ef827621a46127271"
+    },
+    {
+      "path": "configs/exploitable_poker/exploitable_poker_codex_skill.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c13d2158313b1c5b0ba3538aac0b5a9181ce3cb",
+      "size": 383,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2c13d2158313b1c5b0ba3538aac0b5a9181ce3cb"
+    },
+    {
+      "path": "configs/exploitable_poker/exploitable_poker_human.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1c924b4da0b7010e6834cea814134aeb8dd8bcd",
+      "size": 349,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f1c924b4da0b7010e6834cea814134aeb8dd8bcd"
+    },
+    {
+      "path": "configs/exploitable_poker/exploitable_poker_icl.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8e9cd2a197176ba13493692071b3ee418e77468",
+      "size": 430,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d8e9cd2a197176ba13493692071b3ee418e77468"
+    },
+    {
+      "path": "configs/exploitable_poker/exploitable_poker_icl_notepad.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e9a2a5da5175550ccdd2fc37d7e675c2cc0e113",
+      "size": 650,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1e9a2a5da5175550ccdd2fc37d7e675c2cc0e113"
+    },
+    {
+      "path": "configs/poker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b74094109f47f36bf4254918fa96f238689fcaf",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/5b74094109f47f36bf4254918fa96f238689fcaf"
+    },
+    {
+      "path": "configs/poker/mem0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4483f1d680ae5661e2855ff62ccc279a58ce4dc7",
+      "size": 150,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4483f1d680ae5661e2855ff62ccc279a58ce4dc7"
+    },
+    {
+      "path": "configs/sales_prediction",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f4ebe79f7c69a546fa40deb2fdda44a0b57973f",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/7f4ebe79f7c69a546fa40deb2fdda44a0b57973f"
+    },
+    {
+      "path": "configs/sales_prediction/sp_lifecycle_ace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1bc9c8c8d3f2bba6304009d72f93c877a1b8719",
+      "size": 373,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c1bc9c8c8d3f2bba6304009d72f93c877a1b8719"
+    },
+    {
+      "path": "configs/sales_prediction/sp_lifecycle_icl.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "335630f44ff89703b58d024756b339abbef00544",
+      "size": 409,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/335630f44ff89703b58d024756b339abbef00544"
+    },
+    {
+      "path": "configs/sales_prediction/sp_lifecycle_notepad.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b4d2d1b43153038b64e8cbefa0edf9e0b33669a",
+      "size": 381,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4b4d2d1b43153038b64e8cbefa0edf9e0b33669a"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c70845777b52af925d3a6d2b4e19b108999d376a",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/c70845777b52af925d3a6d2b4e19b108999d376a"
+    },
+    {
+      "path": "data/blind_spectrum_monitoring",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "41fcf81ca5ddacebc6c0f07f9599a0bcfb8f18b7",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/41fcf81ca5ddacebc6c0f07f9599a0bcfb8f18b7"
+    },
+    {
+      "path": "data/blind_spectrum_monitoring/mixed_grid_lifecycle.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6899035230f4782926b608d799bdd91e43df23ee",
+      "size": 295364,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6899035230f4782926b608d799bdd91e43df23ee"
+    },
+    {
+      "path": "data/blind_spectrum_monitoring/mixed_grid_lifecycle_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b94d193fcf91bb9eadf9356768695789309387f",
+      "size": 6546,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5b94d193fcf91bb9eadf9356768695789309387f"
+    },
+    {
+      "path": "data/codebase_adaptation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "044a008519168d48626a0e466a15dbc90c4ab315",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/044a008519168d48626a0e466a15dbc90c4ab315"
+    },
+    {
+      "path": "data/codebase_adaptation/final-dataset.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ef07febd6e65353795b8e9c4ec2a770f607fd5b",
+      "size": 330712,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3ef07febd6e65353795b8e9c4ec2a770f607fd5b"
+    },
+    {
+      "path": "data/codebase_adaptation/screening-report.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aef162a4256a48405359755083be4f14430fd57a",
+      "size": 24575,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/aef162a4256a48405359755083be4f14430fd57a"
+    },
+    {
+      "path": "data/codebase_adaptation/screening-summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c16a49b3f01034b1ac6a234758c598834532b128",
+      "size": 6126,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c16a49b3f01034b1ac6a234758c598834532b128"
+    },
+    {
+      "path": "data/cohort_studies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2efa44a804d9fefb60dc89c839fde55b3d994520",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/2efa44a804d9fefb60dc89c839fde55b3d994520"
+    },
+    {
+      "path": "data/cohort_studies/default",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3436a3ef53859ab67d2ebfef7326d72d1b102b2",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/b3436a3ef53859ab67d2ebfef7326d72d1b102b2"
+    },
+    {
+      "path": "data/cohort_studies/default/cohort_definitions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a07e8746a358036166944102980a14e20a34212f",
+      "size": 9859,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a07e8746a358036166944102980a14e20a34212f"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fffb97e61047238a08664202c732862e839c1448",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/fffb97e61047238a08664202c732862e839c1448"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/cadence_industrial.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4d37a75fd5ac5587637c54c63cac80f23c3c83c",
+      "size": 36864,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a4d37a75fd5ac5587637c54c63cac80f23c3c83c"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/cadence_industrial_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6cc8d7db811bcced5203faa881afb478e8e0db4",
+      "size": 36864,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b6cc8d7db811bcced5203faa881afb478e8e0db4"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/cadence_urban.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3cfd8e2e442219d48d84a920d6919f570290bc3",
+      "size": 45056,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c3cfd8e2e442219d48d84a920d6919f570290bc3"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/cadence_urban_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11a64f1223dfcbf5b4431bdca7ad4d05f82efb59",
+      "size": 45056,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/11a64f1223dfcbf5b4431bdca7ad4d05f82efb59"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/forge_industrial.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b53011c167b016af73a34385c19a50554ce3b58e",
+      "size": 49152,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b53011c167b016af73a34385c19a50554ce3b58e"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/forge_industrial_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f490599a5c1309972fb8ff8a72cbc1724df8b94d",
+      "size": 49152,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f490599a5c1309972fb8ff8a72cbc1724df8b94d"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/forge_urban.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84de97ff51dda73991858283d95915c1e11840bf",
+      "size": 40960,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/84de97ff51dda73991858283d95915c1e11840bf"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/forge_urban_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4735a7c910e449ed3b0a59023ac4761ab914e598",
+      "size": 40960,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4735a7c910e449ed3b0a59023ac4761ab914e598"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/herald_rural.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3ab4967e5150f5683810f897b9399d93303bdc3",
+      "size": 40960,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c3ab4967e5150f5683810f897b9399d93303bdc3"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/herald_rural_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5507e64e2712c86614f58e7d87b553a2b8a53c31",
+      "size": 40960,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5507e64e2712c86614f58e7d87b553a2b8a53c31"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/herald_suburban.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b635398c2da7bcf4450883fa0c2be0f1b01f559",
+      "size": 36864,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/8b635398c2da7bcf4450883fa0c2be0f1b01f559"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/herald_suburban_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2426530618c80856e2e046d17a88810aaa78c1fa",
+      "size": 40960,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2426530618c80856e2e046d17a88810aaa78c1fa"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/meridian_rural.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e5a954bbb04bd0366632a4cd0c3f770febefe94",
+      "size": 45056,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4e5a954bbb04bd0366632a4cd0c3f770febefe94"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/meridian_rural_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "038a9d175e109634304b7c562b10204ad304ed4b",
+      "size": 45056,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/038a9d175e109634304b7c562b10204ad304ed4b"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/meridian_suburban.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f63cfffc5d7cb040a2c3a37a48a85afabddcb37e",
+      "size": 45056,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f63cfffc5d7cb040a2c3a37a48a85afabddcb37e"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/meridian_suburban_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d88a402d01932b4aa8c5a685ae88d59023894730",
+      "size": 49152,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d88a402d01932b4aa8c5a685ae88d59023894730"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/mosaic_suburban.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f46a3e0b4c650b1a719b17b19a3f68c132dea0ce",
+      "size": 40960,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f46a3e0b4c650b1a719b17b19a3f68c132dea0ce"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/mosaic_suburban_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d187608e77a916d45f0a503b87a7cdd158535e3c",
+      "size": 45056,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d187608e77a916d45f0a503b87a7cdd158535e3c"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/mosaic_urban.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5a8640f7da47a5996be477192ce4d24354fecb1",
+      "size": 36864,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f5a8640f7da47a5996be477192ce4d24354fecb1"
+    },
+    {
+      "path": "data/cohort_studies/default/dbs/mosaic_urban_s2.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0df4b5a3ff9d475013542c00c9116f2897db7005",
+      "size": 36864,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0df4b5a3ff9d475013542c00c9116f2897db7005"
+    },
+    {
+      "path": "data/cohort_studies/default/ground_truth.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c12de1e3f5c5dccf00f37d2136756018b7c9936e",
+      "size": 5997,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c12de1e3f5c5dccf00f37d2136756018b7c9936e"
+    },
+    {
+      "path": "data/cohort_studies/default/instance_references.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5006cec8dc5c6aa045dfb77c67f1b817cd43d99",
+      "size": 2350,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d5006cec8dc5c6aa045dfb77c67f1b817cd43d99"
+    },
+    {
+      "path": "data/cohort_studies/default/metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edc24bf93b64ccd87c8412d07e0f13689ff90ec9",
+      "size": 6585,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/edc24bf93b64ccd87c8412d07e0f13689ff90ec9"
+    },
+    {
+      "path": "data/database_exploration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ee0b3574159db4b8516bf01f1c279f908466f7b",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/7ee0b3574159db4b8516bf01f1c279f908466f7b"
+    },
+    {
+      "path": "data/database_exploration/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7eca6ed358e5265f75fab1095fac2c698f749c3",
+      "size": 18,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b7eca6ed358e5265f75fab1095fac2c698f749c3"
+    },
+    {
+      "path": "data/database_exploration/questions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9f44cc831153913534378d16c712639b4f35fa1",
+      "size": 30820,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d9f44cc831153913534378d16c712639b4f35fa1"
+    },
+    {
+      "path": "data/database_exploration/questions_post_drift.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2232477379b2c83d3dff7bfad2c03595b0198088",
+      "size": 21144,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2232477379b2c83d3dff7bfad2c03595b0198088"
+    },
+    {
+      "path": "data/sales_prediction",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a091a4d7f0156da51d396a24d02f8a40fd518b37",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/a091a4d7f0156da51d396a24d02f8a40fd518b37"
+    },
+    {
+      "path": "data/sales_prediction/furniture.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd82238af1e2b820576a8a5edf32494d1a2f2288",
+      "size": 64519,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bd82238af1e2b820576a8a5edf32494d1a2f2288"
+    },
+    {
+      "path": "data/sales_prediction/furniture_types.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba8d97e3a280f2b072b8833a33b0b63857607824",
+      "size": 1942,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ba8d97e3a280f2b072b8833a33b0b63857607824"
+    },
+    {
+      "path": "data/sales_prediction/locations.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc48ca84f0ca843ec961ec641ae0c60bc4abde4e",
+      "size": 255,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/dc48ca84f0ca843ec961ec641ae0c60bc4abde4e"
+    },
+    {
+      "path": "data/sales_prediction/sales_lifecycle_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03462abffbf4aaa5a3440fa081d76fb5590113e3",
+      "size": 72168,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/03462abffbf4aaa5a3440fa081d76fb5590113e3"
+    },
+    {
+      "path": "data/sales_prediction/sales_lifecycle_panel.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1ce02be50fdfacb9d3a95799c060adc5e1c1884",
+      "size": 3431918,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b1ce02be50fdfacb9d3a95799c060adc5e1c1884"
+    },
+    {
+      "path": "final_results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1d5eba9fb364138e111188ac195688e44e740c91",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/1d5eba9fb364138e111188ac195688e44e740c91"
+    },
+    {
+      "path": "final_results/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eff351f185d3423e6686efb4db0e3a93af65590f",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/eff351f185d3423e6686efb4db0e3a93af65590f"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "644b1b1397a268b256acb36eb91ac5b1bf85d46e",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/644b1b1397a268b256acb36eb91ac5b1bf85d46e"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0d3885cef61657fb448c34df36d41fdeb95b29c",
+      "size": 8563,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a0d3885cef61657fb448c34df36d41fdeb95b29c"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a85714d7233da7100708fc1cf53736c9f496bca3",
+      "size": 32062590,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a85714d7233da7100708fc1cf53736c9f496bca3"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a05c27ef979f6abba0639d683ee3da713c380778",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/a05c27ef979f6abba0639d683ee3da713c380778"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92832e69eea8db3e6f7101941bda988fd2599be2",
+      "size": 2060488,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/92832e69eea8db3e6f7101941bda988fd2599be2"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c554f06612395536b9d4625a85e3c445bf1069cd",
+      "size": 3668434,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c554f06612395536b9d4625a85e3c445bf1069cd"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba5e0697fe83cc7e9d1b0fc3632015f9134bec4a",
+      "size": 2362699,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ba5e0697fe83cc7e9d1b0fc3632015f9134bec4a"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c4d71c534826dea06d1c8b68ec30467f493a72",
+      "size": 2918606,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c4c4d71c534826dea06d1c8b68ec30467f493a72"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56d89613ecd1ff71b939aab494f14d9c41a8aa7f",
+      "size": 19254797,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/56d89613ecd1ff71b939aab494f14d9c41a8aa7f"
+    },
+    {
+      "path": "final_results/runs/ace-gpt-5.4/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd3675f49ff05d9d2e63dc54b146ede9c6612fab",
+      "size": 1809326,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/fd3675f49ff05d9d2e63dc54b146ede9c6612fab"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e0ece3be9f4ecae10b129d32930f380caaeb0e50",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/e0ece3be9f4ecae10b129d32930f380caaeb0e50"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/archive",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47f2cb0bf86eebdb98c15c6ff089599424a95bf5",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/47f2cb0bf86eebdb98c15c6ff089599424a95bf5"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/archive/2026-05-01T16-11-08_run-all",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2eec65a476157f9fc2f9fed073a97ff307c09636",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/2eec65a476157f9fc2f9fed073a97ff307c09636"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/archive/2026-05-01T16-11-08_run-all/codebase_adaptation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6a4297ef49704dd2888284297dfbbfcd589c104",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/e6a4297ef49704dd2888284297dfbbfcd589c104"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/archive/2026-05-01T16-11-08_run-all/codebase_adaptation/archive_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b6dcc1b3cd8489f4a6ceb641d86a771c1634845",
+      "size": 153,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3b6dcc1b3cd8489f4a6ceb641d86a771c1634845"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc3c5a59a1f223f553742df83fb2a8be7d506c25",
+      "size": 9042,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bc3c5a59a1f223f553742df83fb2a8be7d506c25"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "929814e56712a9a64a15c977fa98c5f6baadb7dc",
+      "size": 8828500,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/929814e56712a9a64a15c977fa98c5f6baadb7dc"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f650059cbf1b4860a80579cb3582ad7d78813bca",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/f650059cbf1b4860a80579cb3582ad7d78813bca"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "479fb12bf74f390bf3677ff79aacd456f4283be5",
+      "size": 1177272,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/479fb12bf74f390bf3677ff79aacd456f4283be5"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b4220b3dbc7e9adf502e4b4488a647a4272aa21",
+      "size": 1688025,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1b4220b3dbc7e9adf502e4b4488a647a4272aa21"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3fc7ac41390ef0874dc9f8fe26bc98f6b2c7b59",
+      "size": 1958119,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e3fc7ac41390ef0874dc9f8fe26bc98f6b2c7b59"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b149e3f352e3eaa60684b91838de3261d3e104a7",
+      "size": 1141379,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b149e3f352e3eaa60684b91838de3261d3e104a7"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47539ba674026ae20fb8ffd34dce0a3b8c7bd389",
+      "size": 1917564,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/47539ba674026ae20fb8ffd34dce0a3b8c7bd389"
+    },
+    {
+      "path": "final_results/runs/claude-code-sonnet-4.6/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37588d07be3eb4ef2caf2a73373e1cd4e6442735",
+      "size": 938797,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/37588d07be3eb4ef2caf2a73373e1cd4e6442735"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90cf33717dbb36915be307e44df43f03b719cb3a",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/90cf33717dbb36915be307e44df43f03b719cb3a"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c83b4e6fe653f66f61b23174f049056fa5d02263",
+      "size": 9716,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c83b4e6fe653f66f61b23174f049056fa5d02263"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d828a9034bec3a94a81a00d94453c1d8122f894f",
+      "size": 3969264,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d828a9034bec3a94a81a00d94453c1d8122f894f"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe6372f9987cb8c63cdd5594677ec70574c86ccd",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/fe6372f9987cb8c63cdd5594677ec70574c86ccd"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "721acf2cf2dbc91d97bd9962232a10da7d158ad5",
+      "size": 226893,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/721acf2cf2dbc91d97bd9962232a10da7d158ad5"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4432ec25b71056017c2ca589564973e65ce49ee",
+      "size": 956177,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a4432ec25b71056017c2ca589564973e65ce49ee"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b788093e2c33fb0d89831360d26b215303478f2d",
+      "size": 627760,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b788093e2c33fb0d89831360d26b215303478f2d"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "351c42145dab2837644065f2b7830a5bcbf522a3",
+      "size": 512770,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/351c42145dab2837644065f2b7830a5bcbf522a3"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5eef1c333d756ba716a6d5f94c1649849db28bd0",
+      "size": 703346,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5eef1c333d756ba716a6d5f94c1649849db28bd0"
+    },
+    {
+      "path": "final_results/runs/codex-gpt-5.4/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4723070229a82e0458a6ae856658f7fa66b51c0a",
+      "size": 938260,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4723070229a82e0458a6ae856658f7fa66b51c0a"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32f5cabccfb9fdc98b90b4dab625214140978aba",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/32f5cabccfb9fdc98b90b4dab625214140978aba"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/archive",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "698ea04d0fb9f335cdb76c08ac9e5ef7eb94ce01",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/698ea04d0fb9f335cdb76c08ac9e5ef7eb94ce01"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/archive/2026-05-03T02-16-31.816667Z_run-all",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d8c67858b66a604fe080ac82508bb40bbf9b1cb7",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/d8c67858b66a604fe080ac82508bb40bbf9b1cb7"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/archive/2026-05-03T02-16-31.816667Z_run-all/cohort_studies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "39efeda11518561242ef5fc40a7a1ceab7331eee",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/39efeda11518561242ef5fc40a7a1ceab7331eee"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/archive/2026-05-03T02-16-31.816667Z_run-all/cohort_studies/archive_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba4a28632f60281f5fda779bd9d6489d26abb51a",
+      "size": 156,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ba4a28632f60281f5fda779bd9d6489d26abb51a"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cedde8ad2840a1e46007dac995fdc674b1cfda46",
+      "size": 8108,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/cedde8ad2840a1e46007dac995fdc674b1cfda46"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40e764ed87378f0b98dec8389812718cf39c12b1",
+      "size": 6653213,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/40e764ed87378f0b98dec8389812718cf39c12b1"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e440ac349bc9957dd4352f1e4ae63f2ce8b55e5",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/3e440ac349bc9957dd4352f1e4ae63f2ce8b55e5"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1bbe11d1aec5d5425fc7a24ec4d75f5d89522ad",
+      "size": 547067,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a1bbe11d1aec5d5425fc7a24ec4d75f5d89522ad"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c877d4200bb3671fe460fbe43092b972a0b6470",
+      "size": 1731211,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0c877d4200bb3671fe460fbe43092b972a0b6470"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "589565f057328435013b66aa95dd52966c11e3fc",
+      "size": 869612,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/589565f057328435013b66aa95dd52966c11e3fc"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6f38bbec60dbf20f3deba2ae2d8343dc09234c8",
+      "size": 974765,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d6f38bbec60dbf20f3deba2ae2d8343dc09234c8"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0b053476d046573e8242c26265bcfb18e37a170",
+      "size": 1771499,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c0b053476d046573e8242c26265bcfb18e37a170"
+    },
+    {
+      "path": "final_results/runs/icl-claude-opus-4.7/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cb41bf138b3bd6fbd2a47b167663c6d1c19dab0",
+      "size": 760484,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0cb41bf138b3bd6fbd2a47b167663c6d1c19dab0"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a4b951041b916758895750a691a9e4b91674f1d",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/3a4b951041b916758895750a691a9e4b91674f1d"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfcef71006d317c30540ec83daeb535eabe0a3b6",
+      "size": 8494,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bfcef71006d317c30540ec83daeb535eabe0a3b6"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "635d01d1c947434a1303edb4294fe9b4a61f928b",
+      "size": 9004312,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/635d01d1c947434a1303edb4294fe9b4a61f928b"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c0fe1d2bfcce401b0adc620e1dcc9c299f54c650",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/c0fe1d2bfcce401b0adc620e1dcc9c299f54c650"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e41ee1adfb34e30e4fd423641db9bf29c61d55e",
+      "size": 564411,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0e41ee1adfb34e30e4fd423641db9bf29c61d55e"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91654d49fa997c8df59cb20059a350f05b84f48e",
+      "size": 2331257,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/91654d49fa997c8df59cb20059a350f05b84f48e"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c067da1e70bf3e1760f86944da7828b6e0c69f0",
+      "size": 1554284,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1c067da1e70bf3e1760f86944da7828b6e0c69f0"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bc4a69e0d5d4953ec94bec2bb7f5e93b1a25669",
+      "size": 1208016,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7bc4a69e0d5d4953ec94bec2bb7f5e93b1a25669"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ad693850680da47d475951263c5d6aa4e18ac3e",
+      "size": 2079956,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0ad693850680da47d475951263c5d6aa4e18ac3e"
+    },
+    {
+      "path": "final_results/runs/icl-claude-sonnet-4.6/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a120a348a5c6121e81d41189c2ed7e96c44551c2",
+      "size": 1260098,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a120a348a5c6121e81d41189c2ed7e96c44551c2"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2ac702a2f5561f60f6cb2e4b8ed3d2d6d0fa1ea",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/d2ac702a2f5561f60f6cb2e4b8ed3d2d6d0fa1ea"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e62fefecd6898627321915654fc53ed8691abae8",
+      "size": 7668,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e62fefecd6898627321915654fc53ed8691abae8"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0d4450f766f673f4ed37ae65c5ad9d39e613f1a",
+      "size": 9491480,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c0d4450f766f673f4ed37ae65c5ad9d39e613f1a"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "606ca84b6d42d85bc45aa8691965bc2af119c7ce",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/606ca84b6d42d85bc45aa8691965bc2af119c7ce"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d22ee8f354f2e90c885181dee2485c5f81a81c9",
+      "size": 618711,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3d22ee8f354f2e90c885181dee2485c5f81a81c9"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1688bed927d52b82ea3a4fc9877595f1f11c5b63",
+      "size": 3633752,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1688bed927d52b82ea3a4fc9877595f1f11c5b63"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60a11ccc1abb0a7ee5c37ccf14aeee612a32b2b9",
+      "size": 1414762,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/60a11ccc1abb0a7ee5c37ccf14aeee612a32b2b9"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "786f08204dd19e5f0e6dbfc7c68c29c3195edbaa",
+      "size": 938641,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/786f08204dd19e5f0e6dbfc7c68c29c3195edbaa"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e53f0837b009c888cf4c4c440cab0fed68f57697",
+      "size": 1889157,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e53f0837b009c888cf4c4c440cab0fed68f57697"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3-flash/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c81afb2e0ffe4882f0bfcc2e5066a5dbacad394",
+      "size": 967401,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/8c81afb2e0ffe4882f0bfcc2e5066a5dbacad394"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d77edc35120c4ad666d748a131590037e71d8c6e",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/d77edc35120c4ad666d748a131590037e71d8c6e"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db37801c890768752a4b1e14d49585fd8641c9d9",
+      "size": 10724,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/db37801c890768752a4b1e14d49585fd8641c9d9"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da201a26f39d0e466cd8b2a2357ba92ac44fc2c2",
+      "size": 5307820,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/da201a26f39d0e466cd8b2a2357ba92ac44fc2c2"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f43da45d82171b21202b64d408fdf1f7898f2a29",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/f43da45d82171b21202b64d408fdf1f7898f2a29"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1a5fcac68af0f78cbf6f156c9f0edd8dcff6c34",
+      "size": 650783,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b1a5fcac68af0f78cbf6f156c9f0edd8dcff6c34"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21f0156ceb7d7ae57923db24092d2a0d98d252e2",
+      "size": 1551866,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/21f0156ceb7d7ae57923db24092d2a0d98d252e2"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3fc7c2e877d3f51ce8f054372a008ce4bbe3c06",
+      "size": 477931,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e3fc7c2e877d3f51ce8f054372a008ce4bbe3c06"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6ffb33f6760ee965540cbdb6e4813f2c4c27c91",
+      "size": 915466,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f6ffb33f6760ee965540cbdb6e4813f2c4c27c91"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "171e4b49a665371f83ca151f154010d4f03f258c",
+      "size": 1223282,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/171e4b49a665371f83ca151f154010d4f03f258c"
+    },
+    {
+      "path": "final_results/runs/icl-gemini-3.1-pro-preview/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6252d3b98e5e7abc6a1776e5757df9c8e9785fe0",
+      "size": 458335,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6252d3b98e5e7abc6a1776e5757df9c8e9785fe0"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c53d0f000ccb12b57ff314eea544c9f8a180bcb5",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/c53d0f000ccb12b57ff314eea544c9f8a180bcb5"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9044877274db5be1d644ea783864bc820935e58",
+      "size": 8102,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d9044877274db5be1d644ea783864bc820935e58"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43b50590127a97fb328afeaee9a5567bc2f708bb",
+      "size": 19976913,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/43b50590127a97fb328afeaee9a5567bc2f708bb"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3cfdfba7a7ddb0631e19994d62575266a146c113",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/3cfdfba7a7ddb0631e19994d62575266a146c113"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32329c0143d8066111837d951a37a41427499c81",
+      "size": 1004111,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/32329c0143d8066111837d951a37a41427499c81"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3be77e49402b09bb7f8e5e08abd581a14a646c0c",
+      "size": 3351159,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3be77e49402b09bb7f8e5e08abd581a14a646c0c"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1928786a6d39dfbb0dcfb96fc74e654bd24b05df",
+      "size": 1654169,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1928786a6d39dfbb0dcfb96fc74e654bd24b05df"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "901fe2d27e074cc5b00f0c8804882ea703d24da2",
+      "size": 1543120,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/901fe2d27e074cc5b00f0c8804882ea703d24da2"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7c7fe1883b96e2fa69a3f1c4f0f7ee28ecd432b",
+      "size": 11294215,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e7c7fe1883b96e2fa69a3f1c4f0f7ee28ecd432b"
+    },
+    {
+      "path": "final_results/runs/icl-gpt-5.4/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a461b993c7427dd4985b62d967adf55f10c56f51",
+      "size": 1090234,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a461b993c7427dd4985b62d967adf55f10c56f51"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e7e18d9e327a9306ddbdf1b55b81e121da044a3",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/8e7e18d9e327a9306ddbdf1b55b81e121da044a3"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac025cf0510810577fb186c4db06d410a5a5d93f",
+      "size": 9412,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ac025cf0510810577fb186c4db06d410a5a5d93f"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca9d90ff0bec3aae72fff330db8a081be7c4cdc2",
+      "size": 11360090,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ca9d90ff0bec3aae72fff330db8a081be7c4cdc2"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cffe01ac78e0ff089a91732927c2d4118a2a4050",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/cffe01ac78e0ff089a91732927c2d4118a2a4050"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "118c662f0efd37522002cff5acc65e1ae8b4fb37",
+      "size": 710304,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/118c662f0efd37522002cff5acc65e1ae8b4fb37"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46c13c5e64b19b81d2a7af49d5166f88fd79d311",
+      "size": 2713807,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/46c13c5e64b19b81d2a7af49d5166f88fd79d311"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f255e66d27dbc232a56af13c1d1f85532432235",
+      "size": 2528509,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4f255e66d27dbc232a56af13c1d1f85532432235"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "251674bac0d5efae4598836c4c046c4fe729c920",
+      "size": 1473117,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/251674bac0d5efae4598836c4c046c4fe729c920"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd530c5f471037ed7e9a723c2f79780045d3f256",
+      "size": 2402212,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bd530c5f471037ed7e9a723c2f79780045d3f256"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-claude-sonnet-4-6/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cc7350914ad41100d1ba77d653ccc56025de7db",
+      "size": 1532299,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3cc7350914ad41100d1ba77d653ccc56025de7db"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "43260af63c8ba637125ebd2ca4692722e499aa93",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/43260af63c8ba637125ebd2ca4692722e499aa93"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57a01213ef5d34b70c7da88dd80a4feb5206145e",
+      "size": 9241,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/57a01213ef5d34b70c7da88dd80a4feb5206145e"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "459b5437853db93915612c0c44b2044d9eac5aae",
+      "size": 6461045,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/459b5437853db93915612c0c44b2044d9eac5aae"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "659b787fda0bf0517db2e638a44ceb2543a9be1f",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/659b787fda0bf0517db2e638a44ceb2543a9be1f"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3a08da7e184a7d8233dc26fdf9a5640d3007222",
+      "size": 572359,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c3a08da7e184a7d8233dc26fdf9a5640d3007222"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d26f233e8211362dd3068c33939d67eda031801",
+      "size": 2218443,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7d26f233e8211362dd3068c33939d67eda031801"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d842f2be5605f38d782cf8f52c9b9309e33afe21",
+      "size": 638585,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d842f2be5605f38d782cf8f52c9b9309e33afe21"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "360d793fa1698a6ee91bc81024a5f67fd46c9368",
+      "size": 1310827,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/360d793fa1698a6ee91bc81024a5f67fd46c9368"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4bf5aed1842d31a94d373a06bf86ee949fe73fe",
+      "size": 1073421,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d4bf5aed1842d31a94d373a06bf86ee949fe73fe"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gemini-3.1-pro-preview/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc2592e81687c7446b12ef4bc99dc752dd649c13",
+      "size": 615938,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bc2592e81687c7446b12ef4bc99dc752dd649c13"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "253d0d2e5b81bf2efd71d9d38ac286003450bcde",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/253d0d2e5b81bf2efd71d9d38ac286003450bcde"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "05fd3e654ae7fcac5ed4d617e4a48447a0cbc823",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/05fd3e654ae7fcac5ed4d617e4a48447a0cbc823"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T06-21-38_run-all",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e4d5b17fa290ab01af80ff7cf8b03270e6ca4a1",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/7e4d5b17fa290ab01af80ff7cf8b03270e6ca4a1"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T06-21-38_run-all/codebase_adaptation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "844d684c2c164b4a53bf8e6839a2b503741b196d",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/844d684c2c164b4a53bf8e6839a2b503741b196d"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T06-21-38_run-all/codebase_adaptation/archive_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "219f0089e99b7f5df10defcf1b17ae1b36eebd9a",
+      "size": 153,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/219f0089e99b7f5df10defcf1b17ae1b36eebd9a"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T06-21-38_run-all/cohort_studies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "716188c089103758ea9ed016e2c309c40f0bce4d",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/716188c089103758ea9ed016e2c309c40f0bce4d"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T06-21-38_run-all/cohort_studies/archive_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76cb0b8aba001e64d35f42472231653b632e1bc1",
+      "size": 148,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/76cb0b8aba001e64d35f42472231653b632e1bc1"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T06-21-38_run-all/exploitable_poker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82e72807455082e1db8f90455e6a4013a4abcf29",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/82e72807455082e1db8f90455e6a4013a4abcf29"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T06-21-38_run-all/exploitable_poker/archive_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a8f5e69c9e48155341d0c7d4bf7e93c293ee075",
+      "size": 151,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2a8f5e69c9e48155341d0c7d4bf7e93c293ee075"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T07-25-40_run-all",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f4a2a4fb659e02dfaacdf2e8f9c789ec51eda75",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/8f4a2a4fb659e02dfaacdf2e8f9c789ec51eda75"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T07-25-40_run-all/cohort_studies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f5115a4bed92ca4e57a5206e97f681481c2e8278",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/f5115a4bed92ca4e57a5206e97f681481c2e8278"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T07-25-40_run-all/cohort_studies/archive_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ab11ab425f382204b9f27fae45378697d6a5180",
+      "size": 148,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3ab11ab425f382204b9f27fae45378697d6a5180"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T07-25-40_run-all/exploitable_poker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fa21e589127a7f538f2dbda60b87433cabd5cca",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/0fa21e589127a7f538f2dbda60b87433cabd5cca"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T07-25-40_run-all/exploitable_poker/archive_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9843e149ac9351d392462cb6dac9a21c43d009a",
+      "size": 151,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c9843e149ac9351d392462cb6dac9a21c43d009a"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T08-20-23_run-all",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "44dc9ab3c0184bdc5d833b762709b3745dfb4ea4",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/44dc9ab3c0184bdc5d833b762709b3745dfb4ea4"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T08-20-23_run-all/cohort_studies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42052bdf1c2c49957d13a048e71194ed34d47131",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/42052bdf1c2c49957d13a048e71194ed34d47131"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/archive/2026-04-30T08-20-23_run-all/cohort_studies/archive_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0d651bda4e9089da4b062baaa44d10375998096",
+      "size": 148,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b0d651bda4e9089da4b062baaa44d10375998096"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e74eb44c7f39d4bf18e8f4fc25bdb0cfe9ac886",
+      "size": 9893,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5e74eb44c7f39d4bf18e8f4fc25bdb0cfe9ac886"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb4754ddb7f6ab60abce85cd41b81f69aa7a14fe",
+      "size": 9339493,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/cb4754ddb7f6ab60abce85cd41b81f69aa7a14fe"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bbbf4fa8a9c65c81d04dd576cc3b3b50e733230",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/8bbbf4fa8a9c65c81d04dd576cc3b3b50e733230"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63c101a0fa1de694d7672f16736ce51e4e82be33",
+      "size": 658421,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/63c101a0fa1de694d7672f16736ce51e4e82be33"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fb9b34ac98cdb281a6cad9fa7d388c21e34262a",
+      "size": 2494764,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1fb9b34ac98cdb281a6cad9fa7d388c21e34262a"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9e4e9b51b1e3a5182389a734db28e5b12ebb00f",
+      "size": 1804567,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c9e4e9b51b1e3a5182389a734db28e5b12ebb00f"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25deffd263bdf93de8c666a7ece9570d7afee50d",
+      "size": 1362943,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/25deffd263bdf93de8c666a7ece9570d7afee50d"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e19d7f3e0bc9c4c711f682848ebf170d818b029c",
+      "size": 1864812,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e19d7f3e0bc9c4c711f682848ebf170d818b029c"
+    },
+    {
+      "path": "final_results/runs/icl-notepad-gpt-5.4/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f6f51e82d909625564245af58c5c94a7b0d0f25",
+      "size": 1140085,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5f6f51e82d909625564245af58c5c94a7b0d0f25"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d55651421a40843fe91af1f94c12301f1b62dae0",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/d55651421a40843fe91af1f94c12301f1b62dae0"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "033c715dce05e8562ce8a4a2bc7159a72cad52bd",
+      "size": 8581,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/033c715dce05e8562ce8a4a2bc7159a72cad52bd"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4/task_artifacts.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f72953be4046bfcbf2871ae24350beac64ed99d",
+      "size": 10517070,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0f72953be4046bfcbf2871ae24350beac64ed99d"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7deb49bc9dcf13855992c4c4c34b3945857f38e5",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/7deb49bc9dcf13855992c4c4c34b3945857f38e5"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4/tasks/blind_spectrum_monitoring.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad13fd1f85edf1d9ecedb63fa94fc38a743b95b3",
+      "size": 527670,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ad13fd1f85edf1d9ecedb63fa94fc38a743b95b3"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4/tasks/codebase_adaptation.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34dfb6ce611b3803214ff2da69d09d34b7390d6e",
+      "size": 2763197,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/34dfb6ce611b3803214ff2da69d09d34b7390d6e"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4/tasks/cohort_studies.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "397de1022e963613ea50775292bb0c52d04f85db",
+      "size": 1985256,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/397de1022e963613ea50775292bb0c52d04f85db"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4/tasks/database_exploration.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80912630ccad93ee4638ff17fd64eb1cd5d344b1",
+      "size": 1141700,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/80912630ccad93ee4638ff17fd64eb1cd5d344b1"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4/tasks/exploitable_poker.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a97b4b0a6cce7ac70e4bcdb76fd25ef8c3c02c83",
+      "size": 2449286,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a97b4b0a6cce7ac70e4bcdb76fd25ef8c3c02c83"
+    },
+    {
+      "path": "final_results/runs/mem0-gpt-5.4/tasks/sales_prediction.json.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aedacd0c501c0f38708ef3a255a9fccc2ae52c2b",
+      "size": 1621426,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/aedacd0c501c0f38708ef3a255a9fccc2ae52c2b"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d44a87611295e3b6fa789ebd0767db9ab492ee6",
+      "size": 1961,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/8d44a87611295e3b6fa789ebd0767db9ab492ee6"
+    },
+    {
+      "path": "results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0248c7b6a467f9576f8d7912d6688aff14af0665",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/0248c7b6a467f9576f8d7912d6688aff14af0665"
+    },
+    {
+      "path": "results/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd1caaafbb16a577916579454276a1c467c921ad",
+      "size": 64,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/fd1caaafbb16a577916579454276a1c467c921ad"
+    },
+    {
+      "path": "run_benchmark.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "791b46a2ae10adfa0e07e2993dfbfba348dc646e",
+      "size": 617,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/791b46a2ae10adfa0e07e2993dfbfba348dc646e"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9195c9380c300069ec58c93432d7db2293f3ac9",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/e9195c9380c300069ec58c93432d7db2293f3ac9"
+    },
+    {
+      "path": "scripts/analyze_final_results.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31b8063f10a57686b3182d54cb79f05606196d55",
+      "size": 23885,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/31b8063f10a57686b3182d54cb79f05606196d55"
+    },
+    {
+      "path": "scripts/generate_leaderboard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79eaa90ad101dacc11d849ed88bf9b0f179680d2",
+      "size": 4103,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/79eaa90ad101dacc11d849ed88bf9b0f179680d2"
+    },
+    {
+      "path": "skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7430af6bec48786c68e5e7edc8f7ff7c11ab7912",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/7430af6bec48786c68e5e7edc8f7ff7c11ab7912"
+    },
+    {
+      "path": "skills/continual-learn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6ef265b42c3dcaeaa3c1ff83e1b92827fdf3b39",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/b6ef265b42c3dcaeaa3c1ff83e1b92827fdf3b39"
+    },
+    {
+      "path": "skills/continual-learn/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbe2461f7ec0550dd0449c8cdf5e36d970b20fd1",
+      "size": 1773,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bbe2461f7ec0550dd0449c8cdf5e36d970b20fd1"
+    },
+    {
+      "path": "skills/create-task",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7737021ae0af711327b2af8c3a3a8683660e86cc",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/7737021ae0af711327b2af8c3a3a8683660e86cc"
+    },
+    {
+      "path": "skills/create-task/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0c2a185b189c470f6555f48b6520c3b5ce214da",
+      "size": 18401,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d0c2a185b189c470f6555f48b6520c3b5ce214da"
+    },
+    {
+      "path": "skills/create-task/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "332aae834fb8ed6f7494f887ce739f44d1453dca",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/332aae834fb8ed6f7494f887ce739f44d1453dca"
+    },
+    {
+      "path": "skills/create-task/references/readme-standard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66208b2ce6b631c832d249dfccc30cc7cdc5094c",
+      "size": 6897,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/66208b2ce6b631c832d249dfccc30cc7cdc5094c"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce696c49848e24f0d501166ccc2fa5135f0180f6",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/ce696c49848e24f0d501166ccc2fa5135f0180f6"
+    },
+    {
+      "path": "src/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a330eccd18177fb5d0b0cbb8aaf912acd240237",
+      "size": 1031,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2a330eccd18177fb5d0b0cbb8aaf912acd240237"
+    },
+    {
+      "path": "src/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/artifacts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24fa01ac58b388c4a5ce9ed35b3575589ed11988",
+      "size": 3758,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/24fa01ac58b388c4a5ce9ed35b3575589ed11988"
+    },
+    {
+      "path": "src/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44bc5d87eba8e0c436a3ea015ec84cf2bca6880e",
+      "size": 89190,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/44bc5d87eba8e0c436a3ea015ec84cf2bca6880e"
+    },
+    {
+      "path": "src/commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2226a3e06f9d7112adf20bfa2a578149041c358a",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/2226a3e06f9d7112adf20bfa2a578149041c358a"
+    },
+    {
+      "path": "src/commands/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c13214f45d91ef4221f3549fb277d1c8b62af627",
+      "size": 458,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c13214f45d91ef4221f3549fb277d1c8b62af627"
+    },
+    {
+      "path": "src/commands/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aebadddf61c8a7abcaed8d1d7e74b25fd19a3910",
+      "size": 54,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/aebadddf61c8a7abcaed8d1d7e74b25fd19a3910"
+    },
+    {
+      "path": "src/commands/doctor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feb4892eb405cbc5c69ab363989037e8d27ed710",
+      "size": 5041,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/feb4892eb405cbc5c69ab363989037e8d27ed710"
+    },
+    {
+      "path": "src/commands/init.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2ea3ea5fa0b0f224e993ecdef1510ed00a23c87",
+      "size": 23174,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f2ea3ea5fa0b0f224e993ecdef1510ed00a23c87"
+    },
+    {
+      "path": "src/commands/setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e568b66940008397bc01ff82d75d0951ab357cb8",
+      "size": 3982,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e568b66940008397bc01ff82d75d0951ab357cb8"
+    },
+    {
+      "path": "src/commands/validate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c22dcfd45883ad3af787076c6ad92cf75282776",
+      "size": 15735,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2c22dcfd45883ad3af787076c6ad92cf75282776"
+    },
+    {
+      "path": "src/errors.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc0db65db6278ebf72e6335635342da0834f7ae1",
+      "size": 6339,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/cc0db65db6278ebf72e6335635342da0834f7ae1"
+    },
+    {
+      "path": "src/interface.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dade9d804738824a97e20de9e0ebbd2ad95919d7",
+      "size": 25197,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/dade9d804738824a97e20de9e0ebbd2ad95919d7"
+    },
+    {
+      "path": "src/live_dashboard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09cd2be2f59dc69aec585fb9695281be2abeaaff",
+      "size": 3699,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/09cd2be2f59dc69aec585fb9695281be2abeaaff"
+    },
+    {
+      "path": "src/logging_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8c92a24716d6338f5a27ae28f68f1106a2d0127",
+      "size": 6052,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f8c92a24716d6338f5a27ae28f68f1106a2d0127"
+    },
+    {
+      "path": "src/registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f8f72011a973288562d44c8a36e51d3b678c649",
+      "size": 5581,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4f8f72011a973288562d44c8a36e51d3b678c649"
+    },
+    {
+      "path": "src/run_ids.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f838bf6ad7e6c0288ec4d34850fc576a9304516",
+      "size": 1624,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2f838bf6ad7e6c0288ec4d34850fc576a9304516"
+    },
+    {
+      "path": "src/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c21608daba110b459f7cd57c10e6f8a39be880f",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/5c21608daba110b459f7cd57c10e6f8a39be880f"
+    },
+    {
+      "path": "src/runs/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1ea98586b086201cb834857ef2dc801cc25695e",
+      "size": 510,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d1ea98586b086201cb834857ef2dc801cc25695e"
+    },
+    {
+      "path": "src/runs/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc5cc0dfdd52eefee246a7670453d0374c7b8d70",
+      "size": 1702,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/cc5cc0dfdd52eefee246a7670453d0374c7b8d70"
+    },
+    {
+      "path": "src/runs/baseline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4d581308bec51a3865b83d405aaa32668c81789",
+      "size": 18673,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f4d581308bec51a3865b83d405aaa32668c81789"
+    },
+    {
+      "path": "src/runs/benchmark.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0efb0644888826f26b67aff8e25ed1f4f84e9446",
+      "size": 17706,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0efb0644888826f26b67aff8e25ed1f4f84e9446"
+    },
+    {
+      "path": "src/runs/common.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5eea3fa783b77526627388923e4616ef079cc4c7",
+      "size": 11370,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5eea3fa783b77526627388923e4616ef079cc4c7"
+    },
+    {
+      "path": "src/runs/single.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b186a12d8fef9741e5935da46f0db8bd4cb82007",
+      "size": 9059,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b186a12d8fef9741e5935da46f0db8bd4cb82007"
+    },
+    {
+      "path": "src/runtime",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "61d1a95a462e9f6d314804774f7020ee6510f434",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/61d1a95a462e9f6d314804774f7020ee6510f434"
+    },
+    {
+      "path": "src/runtime/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d22977755e1d92eadba9e2e1363fab19d83fae2",
+      "size": 474,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/9d22977755e1d92eadba9e2e1363fab19d83fae2"
+    },
+    {
+      "path": "src/runtime/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "772185ba1048b1cfb69cf12f00ba174005f29550",
+      "size": 63,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/772185ba1048b1cfb69cf12f00ba174005f29550"
+    },
+    {
+      "path": "src/runtime/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9e5140775345c98eec2491910a34e2c9a73c0e6",
+      "size": 19951,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e9e5140775345c98eec2491910a34e2c9a73c0e6"
+    },
+    {
+      "path": "src/system_manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "830883645c53e98c46f21e9d3a56964e21e51e8d",
+      "size": 4446,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/830883645c53e98c46f21e9d3a56964e21e51e8d"
+    },
+    {
+      "path": "src/systems",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8cc0f735dcfd84b562e660c5a2dbd47d75025234",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/8cc0f735dcfd84b562e660c5a2dbd47d75025234"
+    },
+    {
+      "path": "src/systems/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b32ec9babd2871adbe59e9646a2f7fd29aed158b",
+      "size": 576,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b32ec9babd2871adbe59e9646a2f7fd29aed158b"
+    },
+    {
+      "path": "src/systems/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf2d7501c575833e3d0baf2cccd1f1e9579efc58",
+      "size": 34,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bf2d7501c575833e3d0baf2cccd1f1e9579efc58"
+    },
+    {
+      "path": "src/systems/ace",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a1694eebfc08d702ec982d1b05c0b69ce0e802a7",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/a1694eebfc08d702ec982d1b05c0b69ce0e802a7"
+    },
+    {
+      "path": "src/systems/ace/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d3cb081d4e22dad11b4688bc6ef82b841ae939e",
+      "size": 1980,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7d3cb081d4e22dad11b4688bc6ef82b841ae939e"
+    },
+    {
+      "path": "src/systems/ace/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab9e9597e5baf7d28625c3a5ddfaa3746e74bc14",
+      "size": 82,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ab9e9597e5baf7d28625c3a5ddfaa3746e74bc14"
+    },
+    {
+      "path": "src/systems/ace/artifacts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e8e60b00408fc19affc6774c246d2604e160221",
+      "size": 2450,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4e8e60b00408fc19affc6774c246d2604e160221"
+    },
+    {
+      "path": "src/systems/ace/system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c3e9da89e7e2850350261f5c416654cbcae111b",
+      "size": 31167,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7c3e9da89e7e2850350261f5c416654cbcae111b"
+    },
+    {
+      "path": "src/systems/claude",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1797da0374819ca95b700000f5f8907434370f43",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/1797da0374819ca95b700000f5f8907434370f43"
+    },
+    {
+      "path": "src/systems/claude/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3781ff0b08345f01489fb8b11844df26e984fe08",
+      "size": 7429,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3781ff0b08345f01489fb8b11844df26e984fe08"
+    },
+    {
+      "path": "src/systems/claude/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da3b705a77f362d0ec6cf48f29b5da7d3a463897",
+      "size": 108,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/da3b705a77f362d0ec6cf48f29b5da7d3a463897"
+    },
+    {
+      "path": "src/systems/claude/artifacts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4900348296786b25f60685c5abb8e7319180be19",
+      "size": 14572,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4900348296786b25f60685c5abb8e7319180be19"
+    },
+    {
+      "path": "src/systems/claude/system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec1c80719ee7653cfe5073a1aed4b5e7c7cdf31d",
+      "size": 35618,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ec1c80719ee7653cfe5073a1aed4b5e7c7cdf31d"
+    },
+    {
+      "path": "src/systems/codex",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b12539c7ec3f90db6127a8c888181b5080164d4b",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/b12539c7ec3f90db6127a8c888181b5080164d4b"
+    },
+    {
+      "path": "src/systems/codex/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "626047548b876c6a7aeee1bc82a645662f7fd62f",
+      "size": 1070,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/626047548b876c6a7aeee1bc82a645662f7fd62f"
+    },
+    {
+      "path": "src/systems/codex/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "882aa859041cff5e65ad901aedf52873b155101b",
+      "size": 5958,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/882aa859041cff5e65ad901aedf52873b155101b"
+    },
+    {
+      "path": "src/systems/codex/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27fec45f816dc53b791a65e3a51cafc98b93646b",
+      "size": 92,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/27fec45f816dc53b791a65e3a51cafc98b93646b"
+    },
+    {
+      "path": "src/systems/codex/artifacts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26d034d533de9b575d2dbcc9061b0f5197746e75",
+      "size": 14047,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/26d034d533de9b575d2dbcc9061b0f5197746e75"
+    },
+    {
+      "path": "src/systems/codex/system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2df72f208d894aba85b43f9f856a641d8ffa9ff",
+      "size": 41310,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e2df72f208d894aba85b43f9f856a641d8ffa9ff"
+    },
+    {
+      "path": "src/systems/common.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdc65167cb57b77e872a5201999d9a1e13df3d63",
+      "size": 14760,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/fdc65167cb57b77e872a5201999d9a1e13df3d63"
+    },
+    {
+      "path": "src/systems/human",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c6101dd00aef78c657cbf36ac81d1da50202ca7b",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/c6101dd00aef78c657cbf36ac81d1da50202ca7b"
+    },
+    {
+      "path": "src/systems/human/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6be42c08fdf03fbb829cb321865db8fe92a59bc4",
+      "size": 341,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6be42c08fdf03fbb829cb321865db8fe92a59bc4"
+    },
+    {
+      "path": "src/systems/human/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2fb51572669f469583b03aaf9a0bce2bc331f15",
+      "size": 127,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e2fb51572669f469583b03aaf9a0bce2bc331f15"
+    },
+    {
+      "path": "src/systems/human/system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d0137f21aadae8d2a01d900ca93707f5fc7d86e",
+      "size": 8227,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4d0137f21aadae8d2a01d900ca93707f5fc7d86e"
+    },
+    {
+      "path": "src/systems/icl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bc2786f6862e82815cadd824e981edb4f655277b",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/bc2786f6862e82815cadd824e981edb4f655277b"
+    },
+    {
+      "path": "src/systems/icl/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ce188ae3e21b7eb8777e3773c6f34f6a1686b4e",
+      "size": 238,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7ce188ae3e21b7eb8777e3773c6f34f6a1686b4e"
+    },
+    {
+      "path": "src/systems/icl/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba2377216b159edaebead30c76a4b915b3d8125b",
+      "size": 91,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ba2377216b159edaebead30c76a4b915b3d8125b"
+    },
+    {
+      "path": "src/systems/icl/system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf60ce2441fbe48f38d76bc3a1636ae64893f66a",
+      "size": 12101,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bf60ce2441fbe48f38d76bc3a1636ae64893f66a"
+    },
+    {
+      "path": "src/systems/icl_notepad",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a40a02688dec115ec7093cd86699be0b005a6a71",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/a40a02688dec115ec7093cd86699be0b005a6a71"
+    },
+    {
+      "path": "src/systems/icl_notepad/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1677935f2df1426353fa837615c57f698905bbcc",
+      "size": 416,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1677935f2df1426353fa837615c57f698905bbcc"
+    },
+    {
+      "path": "src/systems/icl_notepad/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96636e2378def9f2b1066bdce27d672d22f87f87",
+      "size": 104,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/96636e2378def9f2b1066bdce27d672d22f87f87"
+    },
+    {
+      "path": "src/systems/icl_notepad/system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "837f1cb9657279134b378fb74dda32435765c8f4",
+      "size": 17932,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/837f1cb9657279134b378fb74dda32435765c8f4"
+    },
+    {
+      "path": "src/systems/mem0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ed956647d1fecc6eb347315b362fe5729ebe101",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/7ed956647d1fecc6eb347315b362fe5729ebe101"
+    },
+    {
+      "path": "src/systems/mem0/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc73182c61911949e6daf2af63a4279a0d3550e8",
+      "size": 1656,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/cc73182c61911949e6daf2af63a4279a0d3550e8"
+    },
+    {
+      "path": "src/systems/mem0/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01381ca534b6f0a67d0aadc43b76e83e9b82dfa8",
+      "size": 120,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/01381ca534b6f0a67d0aadc43b76e83e9b82dfa8"
+    },
+    {
+      "path": "src/systems/mem0/system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "613efb379e9530a3aaac3f6c3b397344252be870",
+      "size": 11911,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/613efb379e9530a3aaac3f6c3b397344252be870"
+    },
+    {
+      "path": "src/systems/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7fb2c2d3cbe51014738d76e3a71146d9d7340e9",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/f7fb2c2d3cbe51014738d76e3a71146d9d7340e9"
+    },
+    {
+      "path": "src/systems/utils/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa00c243edcc1f14c60975e20f26007c1459e0ae",
+      "size": 415,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/aa00c243edcc1f14c60975e20f26007c1459e0ae"
+    },
+    {
+      "path": "src/systems/utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b245867200999c5c1da6388b00f463f64f7c98c",
+      "size": 490,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5b245867200999c5c1da6388b00f463f64f7c98c"
+    },
+    {
+      "path": "src/systems/utils/provider_adapters.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5b95d65bb9172f128a9285cce6a96d3f48fa605",
+      "size": 32420,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f5b95d65bb9172f128a9285cce6a96d3f48fa605"
+    },
+    {
+      "path": "src/systems/utils/structured_output.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbf4976e4cce135229c85df643ff18025ac13d8c",
+      "size": 22017,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bbf4976e4cce135229c85df643ff18025ac13d8c"
+    },
+    {
+      "path": "src/systems/utils/token_budget.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5395269d6ee50267e624fe1a37a024385e039dc0",
+      "size": 3618,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5395269d6ee50267e624fe1a37a024385e039dc0"
+    },
+    {
+      "path": "src/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e6cfa6f3af87076acde31b48882054621b8d0ea",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/9e6cfa6f3af87076acde31b48882054621b8d0ea"
+    },
+    {
+      "path": "src/tasks/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7037ed578dc60ce15865513780345a5535086176",
+      "size": 733,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7037ed578dc60ce15865513780345a5535086176"
+    },
+    {
+      "path": "src/tasks/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "165865df016aef7f981733828215c42eae08888e",
+      "size": 216,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/165865df016aef7f981733828215c42eae08888e"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd1c804245401ea1bb068a714ed60516b4ac4b39",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/fd1c804245401ea1bb068a714ed60516b4ac4b39"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44108eb77fd258f2d02dc70b16e0e301b8ce1539",
+      "size": 6344,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/44108eb77fd258f2d02dc70b16e0e301b8ce1539"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "604edcc0178674d1cb9c1f6bf124e72dafda6f19",
+      "size": 502,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/604edcc0178674d1cb9c1f6bf124e72dafda6f19"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/corpus.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd7663fb7ec44a65a11dd1f06e2d16170948be5b",
+      "size": 17458,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bd7663fb7ec44a65a11dd1f06e2d16170948be5b"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/dgp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60d5913cc58f68c93c2d5f7094cf8909b1e689ab",
+      "size": 12019,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/60d5913cc58f68c93c2d5f7094cf8909b1e689ab"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/schedules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b13134ab589805a91889a2078891c2c9d813b8c0",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/b13134ab589805a91889a2078891c2c9d813b8c0"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/schedules/default.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6333b25a1e3b5034a0371e06afba681a35fb49de",
+      "size": 1665,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6333b25a1e3b5034a0371e06afba681a35fb49de"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dda86aa83c0c5f0336f7224cef5837eb47da768",
+      "size": 45479,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/8dda86aa83c0c5f0336f7224cef5837eb47da768"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c215f3d4514faa16589ef2b744cc6b7e0c025db1",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/c215f3d4514faa16589ef2b744cc6b7e0c025db1"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/templates/feedback.j2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72761d3f43250be7d7997727f84f535c5fc001b6",
+      "size": 223,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/72761d3f43250be7d7997727f84f535c5fc001b6"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/templates/instance.j2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "513db73da4ff7ed46e15477899553aabbab876e0",
+      "size": 760,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/513db73da4ff7ed46e15477899553aabbab876e0"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/templates/task.j2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dd0de64946dff6e4dea3ed86e1a72db540ded0b",
+      "size": 2086,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/8dd0de64946dff6e4dea3ed86e1a72db540ded0b"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/variants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "401af3591855203044c2b4fa91b8465696e89a9b",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/401af3591855203044c2b4fa91b8465696e89a9b"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/variants/five_ch_wide.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da1c6b94db00f3dec0f11feef0cbc3177a0cc25d",
+      "size": 2149,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/da1c6b94db00f3dec0f11feef0cbc3177a0cc25d"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/variants/five_plus_four_mixed.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbdffa38a5f71bd0907fcadb3b2eea0ec6a58664",
+      "size": 2103,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/bbdffa38a5f71bd0907fcadb3b2eea0ec6a58664"
+    },
+    {
+      "path": "src/tasks/blind_spectrum_monitoring/variants/full_grid_active.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9832c035627235bf3fb0e56ec78b8dd2eeb28c81",
+      "size": 1943,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/9832c035627235bf3fb0e56ec78b8dd2eeb28c81"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d98fc6fac76888d411afa72cfe49f000465ae2ac",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/d98fc6fac76888d411afa72cfe49f000465ae2ac"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "813e139954ad733d13aa09e52a1820e776d741d8",
+      "size": 3807,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/813e139954ad733d13aa09e52a1820e776d741d8"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9c31404926f66f9fc8d48879663e9f6b561f08f",
+      "size": 499,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f9c31404926f66f9fc8d48879663e9f6b561f08f"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4e371e120e2a6f84c2ecb264b263f2e03185ded",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/d4e371e120e2a6f84c2ecb264b263f2e03185ded"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bc894f26a53292974184585a81a636fdd0ec305",
+      "size": 488,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2bc894f26a53292974184585a81a636fdd0ec305"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/diff_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53862f0bd54907be7e2117114da56e87f24e1d49",
+      "size": 1441,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/53862f0bd54907be7e2117114da56e87f24e1d49"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/repo_window_ranking.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "533bae1ca06274101c1eeaa1eb24345333782043",
+      "size": 8872,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/533bae1ca06274101c1eeaa1eb24345333782043"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ddfd715354f2101ab55c57637051b1d93eae0db",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/5ddfd715354f2101ab55c57637051b1d93eae0db"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3296e664476ca2364e5d5f239f7159a537146ff4",
+      "size": 248,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3296e664476ca2364e5d5f239f7159a537146ff4"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/assemble_final_dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0d63da02f9ad38f171a71a9551641acffefb9c4",
+      "size": 11699,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d0d63da02f9ad38f171a71a9551641acffefb9c4"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/build_git_pr_image.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b14d70918552e0c84454fea781fd2a5c9d851fa1",
+      "size": 2310,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b14d70918552e0c84454fea781fd2a5c9d851fa1"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/curate_sequential_pr_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "121a9205684fc291f5fdf44b0b60ca8e97bade55",
+      "size": 5871,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/121a9205684fc291f5fdf44b0b60ca8e97bade55"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/derive_generic_pr_test_specs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10430ba64d5be715b6aeef0cfd4d5900d8feaf81",
+      "size": 8519,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/10430ba64d5be715b6aeef0cfd4d5900d8feaf81"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/fetch_pr_candidates.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de8db90dfa8d621e9dbac76b9a98bf8785278db0",
+      "size": 10215,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/de8db90dfa8d621e9dbac76b9a98bf8785278db0"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/prepare_candidate_screening_pool.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "744184c7ad2bf6c98c00ba160a95e9ca36e61a0e",
+      "size": 4906,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/744184c7ad2bf6c98c00ba160a95e9ca36e61a0e"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/prepare_generic_pr_dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c08f5cca68a9794e04cd6234dd50de72f3ad096c",
+      "size": 2241,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c08f5cca68a9794e04cd6234dd50de72f3ad096c"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/rank_repo_scan_windows.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d91c312b055adca5f7637d8d67fdfa7cd061a6ef",
+      "size": 5022,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d91c312b055adca5f7637d8d67fdfa7cd061a6ef"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/scripts/screen_difficulty.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caa003d107209390a19b918d0587c857d71f8056",
+      "size": 11864,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/caa003d107209390a19b918d0587c857d71f8056"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/sequential_curation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d0208b793fee7ab69a490e3cda0daebd11968c6",
+      "size": 15435,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4d0208b793fee7ab69a490e3cda0daebd11968c6"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/curation/solvability_heuristics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c98f86e9a2896b81217f290d852c0b7a87aa0f3e",
+      "size": 11006,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c98f86e9a2896b81217f290d852c0b7a87aa0f3e"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/evaluator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b0f67b5c411449035e4fe9c7f092e6967da6ce",
+      "size": 1524,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e7b0f67b5c411449035e4fe9c7f092e6967da6ce"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/generic_runtime.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85b42a1b1ab1db5580a35c8611574b34bf3be000",
+      "size": 15790,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/85b42a1b1ab1db5580a35c8611574b34bf3be000"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/prompts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a2285c9ac5f9ed9755e3f082fb256c111fae976",
+      "size": 2405,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3a2285c9ac5f9ed9755e3f082fb256c111fae976"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/schedules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd8b1e25b214d09b0ba86f027ae6afe37d621ad5",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/dd8b1e25b214d09b0ba86f027ae6afe37d621ad5"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/schedules/default.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e951c1a667042bdb97f13d3425ce35bc7bd6f593",
+      "size": 1511,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e951c1a667042bdb97f13d3425ce35bc7bd6f593"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab7fb884d36649c7ebfeab526eac29a19fa49e65",
+      "size": 39016,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ab7fb884d36649c7ebfeab526eac29a19fa49e65"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/task_loader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a02a42b2b7a0338ec2a900319eec1cf5b78a4dff",
+      "size": 5170,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a02a42b2b7a0338ec2a900319eec1cf5b78a4dff"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/variants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e76b1a6e72a4b5b9c9b0b692a42b6de59bded31",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/4e76b1a6e72a4b5b9c9b0b692a42b6de59bded31"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/variants/tablib.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "152fc92836860a1a57642e2b7c7051d8bc8e75e4",
+      "size": 913,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/152fc92836860a1a57642e2b7c7051d8bc8e75e4"
+    },
+    {
+      "path": "src/tasks/codebase_adaptation/variants/tenacity.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcc1d38bab935cb9d1e8186cda51fae5d2625756",
+      "size": 900,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/dcc1d38bab935cb9d1e8186cda51fae5d2625756"
+    },
+    {
+      "path": "src/tasks/cohort_studies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "88bdac0b77f31c6ea907b05ec0adb8123805b716",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/88bdac0b77f31c6ea907b05ec0adb8123805b716"
+    },
+    {
+      "path": "src/tasks/cohort_studies/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcd46120b9ee9b52b1846c51539d3f917cf22c39",
+      "size": 11561,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/dcd46120b9ee9b52b1846c51539d3f917cf22c39"
+    },
+    {
+      "path": "src/tasks/cohort_studies/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb915e56a96f6294ca618b77040e1cc31f0603fb",
+      "size": 193,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/eb915e56a96f6294ca618b77040e1cc31f0603fb"
+    },
+    {
+      "path": "src/tasks/cohort_studies/dgp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a644223d17b1583d639e1772fc038f1ac3f3c7e4",
+      "size": 17949,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a644223d17b1583d639e1772fc038f1ac3f3c7e4"
+    },
+    {
+      "path": "src/tasks/cohort_studies/frozen_db.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a4f83ceac60f0664d7f15b8de8857f814af6014",
+      "size": 8104,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0a4f83ceac60f0664d7f15b8de8857f814af6014"
+    },
+    {
+      "path": "src/tasks/cohort_studies/schedules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "35a9e2841e44947bcc13e7ca681010c98dbd8ae8",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/35a9e2841e44947bcc13e7ca681010c98dbd8ae8"
+    },
+    {
+      "path": "src/tasks/cohort_studies/schedules/default.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22cf8b5ced913e10045bc2e5a83be831270094c0",
+      "size": 4478,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/22cf8b5ced913e10045bc2e5a83be831270094c0"
+    },
+    {
+      "path": "src/tasks/cohort_studies/scorer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06897c0a505a91925e061042080ddaf5fcc1e4ce",
+      "size": 10912,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/06897c0a505a91925e061042080ddaf5fcc1e4ce"
+    },
+    {
+      "path": "src/tasks/cohort_studies/scoring_cohorts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b81c489210f46b37c290488efa630ffc70ee075",
+      "size": 22642,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7b81c489210f46b37c290488efa630ffc70ee075"
+    },
+    {
+      "path": "src/tasks/cohort_studies/study_configs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c11aa786d3f90335651240446b30e2ff1269090",
+      "size": 19054,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5c11aa786d3f90335651240446b30e2ff1269090"
+    },
+    {
+      "path": "src/tasks/cohort_studies/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "870b4c1b8a119266455adbfc5369e7ff99c472af",
+      "size": 25001,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/870b4c1b8a119266455adbfc5369e7ff99c472af"
+    },
+    {
+      "path": "src/tasks/cohort_studies/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c4ea565d625dbb93a4a3e3121d13c21714b29b4f",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/c4ea565d625dbb93a4a3e3121d13c21714b29b4f"
+    },
+    {
+      "path": "src/tasks/cohort_studies/templates/instance_brief.j2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73196bc3dae09171535cacfca840a3c26341a339",
+      "size": 861,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/73196bc3dae09171535cacfca840a3c26341a339"
+    },
+    {
+      "path": "src/tasks/cohort_studies/templates/step_prompt.j2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95d7301d80047a405d18f2a62f0febc34fc53287",
+      "size": 282,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/95d7301d80047a405d18f2a62f0febc34fc53287"
+    },
+    {
+      "path": "src/tasks/cohort_studies/tool_schemas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7a238c3100de32a7cfcc120e4bb27b066ad7908",
+      "size": 34118,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b7a238c3100de32a7cfcc120e4bb27b066ad7908"
+    },
+    {
+      "path": "src/tasks/cohort_studies/variants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb49e4a95aed38b07add82b2dff94b35f7b134d3",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/fb49e4a95aed38b07add82b2dff94b35f7b134d3"
+    },
+    {
+      "path": "src/tasks/cohort_studies/variants/cadence.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf675abe37f0a2bf9a95606e0dab94a31fe8c31d",
+      "size": 535,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/cf675abe37f0a2bf9a95606e0dab94a31fe8c31d"
+    },
+    {
+      "path": "src/tasks/cohort_studies/variants/forge.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f71c6df95f991e3c34eaaa603b8a254739d5f12",
+      "size": 498,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0f71c6df95f991e3c34eaaa603b8a254739d5f12"
+    },
+    {
+      "path": "src/tasks/cohort_studies/variants/herald.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3adc851b34933e2ffd2d1e69ca68ce7e97c6f9fd",
+      "size": 548,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3adc851b34933e2ffd2d1e69ca68ce7e97c6f9fd"
+    },
+    {
+      "path": "src/tasks/cohort_studies/variants/meridian.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9579f55674dda6d5efd841c382e3c05265145c31",
+      "size": 545,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/9579f55674dda6d5efd841c382e3c05265145c31"
+    },
+    {
+      "path": "src/tasks/cohort_studies/variants/mosaic.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e16d56e64f801b98d9b174fedbe68a9b107e8264",
+      "size": 509,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e16d56e64f801b98d9b174fedbe68a9b107e8264"
+    },
+    {
+      "path": "src/tasks/database_exploration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "283890e80f391df6191b233f3d0c9bf7baa80539",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/283890e80f391df6191b233f3d0c9bf7baa80539"
+    },
+    {
+      "path": "src/tasks/database_exploration/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d328f0d0c71ae8fa2e17bff07e5b2d6e2c334ee",
+      "size": 5187,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2d328f0d0c71ae8fa2e17bff07e5b2d6e2c334ee"
+    },
+    {
+      "path": "src/tasks/database_exploration/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "982bfeb58107119235ebb8d73a100294d61334ce",
+      "size": 300,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/982bfeb58107119235ebb8d73a100294d61334ce"
+    },
+    {
+      "path": "src/tasks/database_exploration/prompts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55032cbd4eb65074869be22244ee43dfb4b38bc1",
+      "size": 2608,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/55032cbd4eb65074869be22244ee43dfb4b38bc1"
+    },
+    {
+      "path": "src/tasks/database_exploration/schedules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17c1c673ce7d8419a8e7c180d754f42ff9cb9244",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/17c1c673ce7d8419a8e7c180d754f42ff9cb9244"
+    },
+    {
+      "path": "src/tasks/database_exploration/schedules/default.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "541fede64484b667ecdfbd7adc5307cb72675c38",
+      "size": 963,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/541fede64484b667ecdfbd7adc5307cb72675c38"
+    },
+    {
+      "path": "src/tasks/database_exploration/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92219fdb2153085fba9ee41e50953d849e52c12f",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/92219fdb2153085fba9ee41e50953d849e52c12f"
+    },
+    {
+      "path": "src/tasks/database_exploration/scripts/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb915e56a96f6294ca618b77040e1cc31f0603fb",
+      "size": 193,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/eb915e56a96f6294ca618b77040e1cc31f0603fb"
+    },
+    {
+      "path": "src/tasks/database_exploration/scripts/build_db.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5421c6d1861fc2bcf743d1f6c672645faf6467ca",
+      "size": 33855,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5421c6d1861fc2bcf743d1f6c672645faf6467ca"
+    },
+    {
+      "path": "src/tasks/database_exploration/scripts/discover_quirks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "194a63551be09f2a19c588df59afed23696e34d8",
+      "size": 14448,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/194a63551be09f2a19c588df59afed23696e34d8"
+    },
+    {
+      "path": "src/tasks/database_exploration/scripts/generate_questions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1241b77a929b746511617736ace431d34f01afbe",
+      "size": 72110,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1241b77a929b746511617736ace431d34f01afbe"
+    },
+    {
+      "path": "src/tasks/database_exploration/sqlite_in.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9d054775f4f6affa61153c59b50496e2bc972ca",
+      "size": 1175,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d9d054775f4f6affa61153c59b50496e2bc972ca"
+    },
+    {
+      "path": "src/tasks/database_exploration/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09358652e3d97a6aacb00b9f2310eaff20fff38f",
+      "size": 34250,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/09358652e3d97a6aacb00b9f2310eaff20fff38f"
+    },
+    {
+      "path": "src/tasks/database_exploration/variants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22d6d58722c484f4c11b58f87fa973183c7141a6",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/22d6d58722c484f4c11b58f87fa973183c7141a6"
+    },
+    {
+      "path": "src/tasks/database_exploration/variants/multi_group.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aeee00a83704e444a19b5ebd82c3f79e05b0b40a",
+      "size": 714,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/aeee00a83704e444a19b5ebd82c3f79e05b0b40a"
+    },
+    {
+      "path": "src/tasks/database_exploration/variants/office_products.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af208fe9053900cfd1ba9fe7998b60ca66f0b914",
+      "size": 644,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/af208fe9053900cfd1ba9fe7998b60ca66f0b914"
+    },
+    {
+      "path": "src/tasks/database_exploration/variants/schema_drift.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5a9db09851684806ed2d0521c945b7e70e48ecb",
+      "size": 1073,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e5a9db09851684806ed2d0521c945b7e70e48ecb"
+    },
+    {
+      "path": "src/tasks/exploitable_poker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26dbb014abcc45da1c5f16efd5a163e7d86fed25",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/26dbb014abcc45da1c5f16efd5a163e7d86fed25"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6546aa37153146d6a91315c3d8c91bff2688fa35",
+      "size": 3509,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6546aa37153146d6a91315c3d8c91bff2688fa35"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8d7c2619c6c6da4738c08609f94dc83ed700cdd",
+      "size": 257,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f8d7c2619c6c6da4738c08609f94dc83ed700cdd"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/opponents.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa53f9c4ab2c8fea4b6de84d5e5bd48bf2deb5f8",
+      "size": 8842,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/fa53f9c4ab2c8fea4b6de84d5e5bd48bf2deb5f8"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/oracle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c508e4fea8fbd84bd193352acbd0af4eb9fc311",
+      "size": 18673,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/9c508e4fea8fbd84bd193352acbd0af4eb9fc311"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "381f9a0e6806da191b4e4a5e70eee94aca2886c2",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/381f9a0e6806da191b4e4a5e70eee94aca2886c2"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/references/poker_reference_max.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23f38ab9dd54175128150f14d5f4e8c7e9501719",
+      "size": 20206,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/23f38ab9dd54175128150f14d5f4e8c7e9501719"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/references/poker_reference_max_expert.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3822a4b06a5334ece60440dc7de783881fd9e81b",
+      "size": 20092,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3822a4b06a5334ece60440dc7de783881fd9e81b"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/schedules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6fd5849768ee19f0bca67f8fbc40b7882ec959c9",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/6fd5849768ee19f0bca67f8fbc40b7882ec959c9"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/schedules/calling_station_then_fit_or_fold.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "151cf5ef2df4fa3f4aa40872601cecc0027f7d6a",
+      "size": 886,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/151cf5ef2df4fa3f4aa40872601cecc0027f7d6a"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/schedules/default.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c558c22a8ad7b15273cbd8d6beb627ad47f02f4",
+      "size": 1520,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4c558c22a8ad7b15273cbd8d6beb627ad47f02f4"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/schedules/quick_test.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d162c9dc1514706d99b09bec4147860749af32d3",
+      "size": 658,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d162c9dc1514706d99b09bec4147860749af32d3"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4de5a01d1ae62721be4c8cc1e6ce881b6d071f41",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/4de5a01d1ae62721be4c8cc1e6ce881b6d071f41"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/scripts/compute_poker_reference_max.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "336b764775273a302660b8a5186f9036c6067d2d",
+      "size": 5737,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/336b764775273a302660b8a5186f9036c6067d2d"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e464d0d942d50c8bc26e7c4061195b71344536bc",
+      "size": 34417,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e464d0d942d50c8bc26e7c4061195b71344536bc"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/variants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2641b320904fb4cbf22184129434d3aa78bd45a9",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/2641b320904fb4cbf22184129434d3aa78bd45a9"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/variants/calling_station.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "854bb873128999197cd307d00d0bb60fc97ac265",
+      "size": 557,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/854bb873128999197cd307d00d0bb60fc97ac265"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/variants/fit_or_fold.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db33d825ead8418b3e3d4b754f33c0ba017286eb",
+      "size": 572,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/db33d825ead8418b3e3d4b754f33c0ba017286eb"
+    },
+    {
+      "path": "src/tasks/exploitable_poker/variants/loose_aggressive.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "795d3aecd21c61eca35c04408a6780b5ce2c0fb2",
+      "size": 632,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/795d3aecd21c61eca35c04408a6780b5ce2c0fb2"
+    },
+    {
+      "path": "src/tasks/sales_prediction",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4cc8ba05ff6cd233dfb565f8a797d263d55e3dca",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/4cc8ba05ff6cd233dfb565f8a797d263d55e3dca"
+    },
+    {
+      "path": "src/tasks/sales_prediction/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea6e20bd771ae6a5255cca11e0f9804e861ab277",
+      "size": 8437,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ea6e20bd771ae6a5255cca11e0f9804e861ab277"
+    },
+    {
+      "path": "src/tasks/sales_prediction/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb915e56a96f6294ca618b77040e1cc31f0603fb",
+      "size": 193,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/eb915e56a96f6294ca618b77040e1cc31f0603fb"
+    },
+    {
+      "path": "src/tasks/sales_prediction/corpus.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bc703f8dc90fa98ac46170b944442d49cb4457b",
+      "size": 21678,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6bc703f8dc90fa98ac46170b944442d49cb4457b"
+    },
+    {
+      "path": "src/tasks/sales_prediction/data_room.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50c8a2f6954746cfcc493c78c4b1e1c4c3816b6d",
+      "size": 15508,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/50c8a2f6954746cfcc493c78c4b1e1c4c3816b6d"
+    },
+    {
+      "path": "src/tasks/sales_prediction/dgp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71470ba7350f326ccb89dd18bd10e3a4773f0285",
+      "size": 9545,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/71470ba7350f326ccb89dd18bd10e3a4773f0285"
+    },
+    {
+      "path": "src/tasks/sales_prediction/docker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f3dee4e39671bbacaafe28511036d4758bca05b",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/4f3dee4e39671bbacaafe28511036d4758bca05b"
+    },
+    {
+      "path": "src/tasks/sales_prediction/docker/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95a400c79976cf06f7071e0bb6b1229aa65fb899",
+      "size": 254,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/95a400c79976cf06f7071e0bb6b1229aa65fb899"
+    },
+    {
+      "path": "src/tasks/sales_prediction/docker/check_time.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056809656c18c53005a4e7ad74aa2da6b193c97e",
+      "size": 973,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/056809656c18c53005a4e7ad74aa2da6b193c97e"
+    },
+    {
+      "path": "src/tasks/sales_prediction/evaluator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6acee446ed993ccc1761809dd5293e809fe1c582",
+      "size": 8850,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6acee446ed993ccc1761809dd5293e809fe1c582"
+    },
+    {
+      "path": "src/tasks/sales_prediction/prompts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e6e454cfa85d3b4fe3c82ad4aa5aa70cd4ebdc1",
+      "size": 1061,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4e6e454cfa85d3b4fe3c82ad4aa5aa70cd4ebdc1"
+    },
+    {
+      "path": "src/tasks/sales_prediction/schedules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9211c9626af37341274d8e5082616f0edd3428a",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/c9211c9626af37341274d8e5082616f0edd3428a"
+    },
+    {
+      "path": "src/tasks/sales_prediction/schedules/default.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "200472c120191f9da1800a2f39e19b3e96c15fe7",
+      "size": 3574,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/200472c120191f9da1800a2f39e19b3e96c15fe7"
+    },
+    {
+      "path": "src/tasks/sales_prediction/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d233ddbf101eaac3b203f43e3b8fb6791f0c20a",
+      "size": 50872,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5d233ddbf101eaac3b203f43e3b8fb6791f0c20a"
+    },
+    {
+      "path": "src/tasks/sales_prediction/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e3cc5621a4ae0fae23acf866a700f37dbd2c6964",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/e3cc5621a4ae0fae23acf866a700f37dbd2c6964"
+    },
+    {
+      "path": "src/tasks/sales_prediction/templates/feedback.j2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d517d5d1dd29a98e539fe55b3920e3d33f43c28e",
+      "size": 250,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d517d5d1dd29a98e539fe55b3920e3d33f43c28e"
+    },
+    {
+      "path": "src/tasks/sales_prediction/templates/instance.j2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "824a0ec8ac5f2fe8f44fa85a616708cbc809b40a",
+      "size": 4589,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/824a0ec8ac5f2fe8f44fa85a616708cbc809b40a"
+    },
+    {
+      "path": "src/tasks/sales_prediction/templates/system.j2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "323627949aafe649ec6837cea7edbd6aa5514a3d",
+      "size": 626,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/323627949aafe649ec6837cea7edbd6aa5514a3d"
+    },
+    {
+      "path": "src/tasks/sales_prediction/variants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1ce140e008616b1019f7a0ecf8013d4120e35e8",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/e1ce140e008616b1019f7a0ecf8013d4120e35e8"
+    },
+    {
+      "path": "src/tasks/sales_prediction/variants/disrupted_products.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6902c36dfbb01ec87485a59eebfe0aad4ecf50f8",
+      "size": 669,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6902c36dfbb01ec87485a59eebfe0aad4ecf50f8"
+    },
+    {
+      "path": "src/tasks/sales_prediction/variants/full_portfolio.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db51370c839c1771802e68ca3738c12a18f0b866",
+      "size": 715,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/db51370c839c1771802e68ca3738c12a18f0b866"
+    },
+    {
+      "path": "src/tasks/sales_prediction/variants/seasonal_products.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebbf7b2cc4a4ec48055596c97ceb5c44b9f92f07",
+      "size": 837,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ebbf7b2cc4a4ec48055596c97ceb5c44b9f92f07"
+    },
+    {
+      "path": "src/tasks/sales_prediction/variants/trending_products.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6415be043d4020d1164af4453a592d6730f61a9",
+      "size": 784,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a6415be043d4020d1164af4453a592d6730f61a9"
+    },
+    {
+      "path": "src/tasks/schedules.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "090b86e3b145ee3cd7c8fcc94bb19dd229f7ed6a",
+      "size": 4670,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/090b86e3b145ee3cd7c8fcc94bb19dd229f7ed6a"
+    },
+    {
+      "path": "src/tasks/variants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63fd20eba20c89c9dc27124df9bdf25dba0d4be8",
+      "size": 3741,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/63fd20eba20c89c9dc27124df9bdf25dba0d4be8"
+    },
+    {
+      "path": "src/trace_metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "506b7c86087b6800bb243f3cca8e54896aa82574",
+      "size": 21151,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/506b7c86087b6800bb243f3cca8e54896aa82574"
+    },
+    {
+      "path": "src/trace_storage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b320d7fd2913d1ac8be272c8344cef7626601227",
+      "size": 29303,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/b320d7fd2913d1ac8be272c8344cef7626601227"
+    },
+    {
+      "path": "src/usage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dede88c1ca7d114bd40364b455564133e26acac",
+      "size": 23201,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2dede88c1ca7d114bd40364b455564133e26acac"
+    },
+    {
+      "path": "src/vendors",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da7a257820eabb5172b72ead4c49a54127b957cd",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/da7a257820eabb5172b72ead4c49a54127b957cd"
+    },
+    {
+      "path": "src/vendors/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c3cc1c0330bb691a1dd0ff14ab15401f83df1d7",
+      "size": 333,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5c3cc1c0330bb691a1dd0ff14ab15401f83df1d7"
+    },
+    {
+      "path": "src/vendors/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adcdb5c3b6a7c0a9fa12197db1f6adbb7a66349d",
+      "size": 33,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/adcdb5c3b6a7c0a9fa12197db1f6adbb7a66349d"
+    },
+    {
+      "path": "src/vendors/ace",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "340e1fad569f34f10aaa746b2005ccb271eb017a",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/340e1fad569f34f10aaa746b2005ccb271eb017a"
+    },
+    {
+      "path": "src/vendors/ace/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76e5013019dc8724df3d7bc938370869dfc2ace1",
+      "size": 312,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/76e5013019dc8724df3d7bc938370869dfc2ace1"
+    },
+    {
+      "path": "src/vendors/ace/LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "path": "src/vendors/ace/UPSTREAM_SNAPSHOT.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac4e96db73d755dd696de8062e2b65b4881e45dd",
+      "size": 332,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ac4e96db73d755dd696de8062e2b65b4881e45dd"
+    },
+    {
+      "path": "src/vendors/ace/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "228b39ab47d7f4697d7e379e9cd82e82ae5963c0",
+      "size": 298,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/228b39ab47d7f4697d7e379e9cd82e82ae5963c0"
+    },
+    {
+      "path": "src/vendors/ace/core",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8d43bc5b600ff912ca2367f7d67d1bf9edbf9ee",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/a8d43bc5b600ff912ca2367f7d67d1bf9edbf9ee"
+    },
+    {
+      "path": "src/vendors/ace/core/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f1d4441dd041786bd6930b1359ffea0cd2818d1",
+      "size": 289,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2f1d4441dd041786bd6930b1359ffea0cd2818d1"
+    },
+    {
+      "path": "src/vendors/ace/core/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c88927c8f52edea9216015b51c413187a9861235",
+      "size": 190,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c88927c8f52edea9216015b51c413187a9861235"
+    },
+    {
+      "path": "src/vendors/ace/core/curator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c833bc8714743a094e7b9c7711dc4bb0e9f45122",
+      "size": 10466,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/c833bc8714743a094e7b9c7711dc4bb0e9f45122"
+    },
+    {
+      "path": "src/vendors/ace/core/generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73285409ab93252bf9f42318b26bd79e8c217b7c",
+      "size": 3837,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/73285409ab93252bf9f42318b26bd79e8c217b7c"
+    },
+    {
+      "path": "src/vendors/ace/core/reflector.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cddeba5f38e8cba3772c532e2e9f5e046eb86f5",
+      "size": 5229,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3cddeba5f38e8cba3772c532e2e9f5e046eb86f5"
+    },
+    {
+      "path": "src/vendors/ace/llm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37f65790b806ffc4c4b7b32d43c49c3c8c6a87ef",
+      "size": 14938,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/37f65790b806ffc4c4b7b32d43c49c3c8c6a87ef"
+    },
+    {
+      "path": "src/vendors/ace/logger.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95a6ac7da672264a5a1a6a4196cb293f63d54d93",
+      "size": 12566,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/95a6ac7da672264a5a1a6a4196cb293f63d54d93"
+    },
+    {
+      "path": "src/vendors/ace/playbook_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37bfea730826f17d5d6f13c7d2344bbe2f8a9d41",
+      "size": 15172,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/37bfea730826f17d5d6f13c7d2344bbe2f8a9d41"
+    },
+    {
+      "path": "src/vendors/ace/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27e9d8b7b44f2420ad9623596d49d15e4f51ac2b",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/27e9d8b7b44f2420ad9623596d49d15e4f51ac2b"
+    },
+    {
+      "path": "src/vendors/ace/prompts/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "805937a9996992da65e9ca28cff544aadbe6a70a",
+      "size": 263,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/805937a9996992da65e9ca28cff544aadbe6a70a"
+    },
+    {
+      "path": "src/vendors/ace/prompts/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33ddf065b3c0232de4a3ab4e0ca2cefbe43fef72",
+      "size": 334,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/33ddf065b3c0232de4a3ab4e0ca2cefbe43fef72"
+    },
+    {
+      "path": "src/vendors/ace/prompts/curator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d35408d791dd849440b61e1de577d446a38bd70",
+      "size": 8024,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7d35408d791dd849440b61e1de577d446a38bd70"
+    },
+    {
+      "path": "src/vendors/ace/prompts/generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b00817500750b1280c68dec31a093795e5c6d7c",
+      "size": 1711,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6b00817500750b1280c68dec31a093795e5c6d7c"
+    },
+    {
+      "path": "src/vendors/ace/prompts/reflector.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "058c1be47f3a168685a11e279e8e51855187ef81",
+      "size": 5023,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/058c1be47f3a168685a11e279e8e51855187ef81"
+    },
+    {
+      "path": "src/vendors/ace/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ded736d8299d3e9e4e76acede9bb43f747eb520",
+      "size": 10321,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5ded736d8299d3e9e4e76acede9bb43f747eb520"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7d2ef03fe3a2f4fba6877f7eec5c3551a4a12f4d",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/7d2ef03fe3a2f4fba6877f7eec5c3551a4a12f4d"
+    },
+    {
+      "path": "tests/test_ace_llm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fedff51da7026e9dd267466b3ee1185920d6263",
+      "size": 2378,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0fedff51da7026e9dd267466b3ee1185920d6263"
+    },
+    {
+      "path": "tests/test_ace_system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08e205ddf92a03f7851aa5a3968b48d1c1985c12",
+      "size": 25567,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/08e205ddf92a03f7851aa5a3968b48d1c1985c12"
+    },
+    {
+      "path": "tests/test_bsm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "433ab4b607f1d3242bac114021e0a396ecdc7b16",
+      "size": 14212,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/433ab4b607f1d3242bac114021e0a396ecdc7b16"
+    },
+    {
+      "path": "tests/test_bsm_frozen_corpus.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af767061af5ac241d1b5b094c5a39698bc6e472b",
+      "size": 5519,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/af767061af5ac241d1b5b094c5a39698bc6e472b"
+    },
+    {
+      "path": "tests/test_bsm_online_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b1c3d73ff7d12a85a73f79324f3ae7ac3c4e8e1",
+      "size": 12263,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/4b1c3d73ff7d12a85a73f79324f3ae7ac3c4e8e1"
+    },
+    {
+      "path": "tests/test_bsm_prepare_rollout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a48e16fcaa692c693529caa001c092c7da2f24a5",
+      "size": 2803,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a48e16fcaa692c693529caa001c092c7da2f24a5"
+    },
+    {
+      "path": "tests/test_claude_system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dfd1021f48fa16e1030800e97ac2344747626d9",
+      "size": 41297,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/3dfd1021f48fa16e1030800e97ac2344747626d9"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "853c9597953ae0b57775d965b3eb99d44ebc34ce",
+      "size": 29409,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/853c9597953ae0b57775d965b3eb99d44ebc34ce"
+    },
+    {
+      "path": "tests/test_cli_types.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "872ed5d68e9652f7404fa9b3e7b7fafecf91c09c",
+      "size": 1275,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/872ed5d68e9652f7404fa9b3e7b7fafecf91c09c"
+    },
+    {
+      "path": "tests/test_codebase_adaptation_difficulty_screen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f998f1171f2b7fdc6382f13701176f12fbd97fc1",
+      "size": 2126,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f998f1171f2b7fdc6382f13701176f12fbd97fc1"
+    },
+    {
+      "path": "tests/test_codebase_adaptation_generic_runtime.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33d0a4d190cb4406de48054775690062c4a15134",
+      "size": 8709,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/33d0a4d190cb4406de48054775690062c4a15134"
+    },
+    {
+      "path": "tests/test_codebase_adaptation_repo_window_ranking.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be4110d0ea0ea3d38bcbfe5797a1880682938e8b",
+      "size": 7262,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/be4110d0ea0ea3d38bcbfe5797a1880682938e8b"
+    },
+    {
+      "path": "tests/test_codebase_adaptation_sequential_curation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5baf53d58c557e95c5024b7849d19d0511800f7",
+      "size": 4502,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/d5baf53d58c557e95c5024b7849d19d0511800f7"
+    },
+    {
+      "path": "tests/test_codex_system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea64b7a476df0b01dcd40ed9d72694525af05960",
+      "size": 55650,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ea64b7a476df0b01dcd40ed9d72694525af05960"
+    },
+    {
+      "path": "tests/test_cohort_metric_consistency.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23632bcf7a7f4a24d08e3e630e42692d294a90c2",
+      "size": 3718,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/23632bcf7a7f4a24d08e3e630e42692d294a90c2"
+    },
+    {
+      "path": "tests/test_cohort_studies_rollout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eabc3dc8cfe84bde0d81620a35e03fc051451265",
+      "size": 4923,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/eabc3dc8cfe84bde0d81620a35e03fc051451265"
+    },
+    {
+      "path": "tests/test_cohort_submission_schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb27fd5a1e7c0c9c4779d418691b403e49b0956c",
+      "size": 3503,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/cb27fd5a1e7c0c9c4779d418691b403e49b0956c"
+    },
+    {
+      "path": "tests/test_commands.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fd2a2b8c1750c54481821a6a88d5dad1e320ed4",
+      "size": 9661,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1fd2a2b8c1750c54481821a6a88d5dad1e320ed4"
+    },
+    {
+      "path": "tests/test_failure_artifacts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64a1f8900619715ddcf840b932482ca663d686a4",
+      "size": 3788,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/64a1f8900619715ddcf840b932482ca663d686a4"
+    },
+    {
+      "path": "tests/test_human_system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0abe55c650df8d835e17af43780d10b076d2fdd2",
+      "size": 2134,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0abe55c650df8d835e17af43780d10b076d2fdd2"
+    },
+    {
+      "path": "tests/test_icl_notepad_flat_schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f55d6c722d22f6e988e0b8ea5d8d6d5d203328e",
+      "size": 4078,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/1f55d6c722d22f6e988e0b8ea5d8d6d5d203328e"
+    },
+    {
+      "path": "tests/test_live_dashboard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7558ba23d1c0a44d66646ef25ad5f5886e61fb4",
+      "size": 1621,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f7558ba23d1c0a44d66646ef25ad5f5886e61fb4"
+    },
+    {
+      "path": "tests/test_logging_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ce2ef2b6c4dfb1c86d92432d47db5b2722337b6",
+      "size": 4251,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/5ce2ef2b6c4dfb1c86d92432d47db5b2722337b6"
+    },
+    {
+      "path": "tests/test_notepad_feedback.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9dde1aec939fdf74c54fa97223bc16054789eef",
+      "size": 5639,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e9dde1aec939fdf74c54fa97223bc16054789eef"
+    },
+    {
+      "path": "tests/test_provider_adapters.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fefa05875046c851429243142e191f67b960309",
+      "size": 26145,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/0fefa05875046c851429243142e191f67b960309"
+    },
+    {
+      "path": "tests/test_registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7930d76a069a4d9928a42e4fb00e49568ac3c545",
+      "size": 1305,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/7930d76a069a4d9928a42e4fb00e49568ac3c545"
+    },
+    {
+      "path": "tests/test_reproducibility.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15e53086f4f365256d889e43e612329181e2347f",
+      "size": 4048,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/15e53086f4f365256d889e43e612329181e2347f"
+    },
+    {
+      "path": "tests/test_reward_first_runtime.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36fe4c1aa59f86c544499ce18fdf49dafb904969",
+      "size": 14046,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/36fe4c1aa59f86c544499ce18fdf49dafb904969"
+    },
+    {
+      "path": "tests/test_rollout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30a7ca987a77dfc99512a766778ac518a86da9c2",
+      "size": 40268,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/30a7ca987a77dfc99512a766778ac518a86da9c2"
+    },
+    {
+      "path": "tests/test_sales_prediction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8f3787a6c0aa5f20c13b15d5500410d2e6de1b8",
+      "size": 50750,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/e8f3787a6c0aa5f20c13b15d5500410d2e6de1b8"
+    },
+    {
+      "path": "tests/test_structured_output.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6447a34a4d0b1030dbd69249c5357ec41ff7ce14",
+      "size": 22910,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/6447a34a4d0b1030dbd69249c5357ec41ff7ce14"
+    },
+    {
+      "path": "tests/test_system_manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f32b100e5b5a650184f2cf522e8acb8303fb17b1",
+      "size": 2585,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/f32b100e5b5a650184f2cf522e8acb8303fb17b1"
+    },
+    {
+      "path": "tests/test_systems_common.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed59c6432f59ad5cff87b5b83a515894aa07cd8d",
+      "size": 10400,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ed59c6432f59ad5cff87b5b83a515894aa07cd8d"
+    },
+    {
+      "path": "tests/test_task_rollouts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac339af7e3a1db3f062611dae93245cf440af470",
+      "size": 1428,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ac339af7e3a1db3f062611dae93245cf440af470"
+    },
+    {
+      "path": "tests/test_task_variants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "140cbda93889645588a6d7f93b2d28a5a3914e67",
+      "size": 13041,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/140cbda93889645588a6d7f93b2d28a5a3914e67"
+    },
+    {
+      "path": "tests/test_token_budget_systems.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "224ae79ab1190be2038392c35edba551001e87b3",
+      "size": 3600,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/224ae79ab1190be2038392c35edba551001e87b3"
+    },
+    {
+      "path": "tests/test_trace_storage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d655e30c7aa51c90484e041ac60f010e215f1bb",
+      "size": 52137,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/8d655e30c7aa51c90484e041ac60f010e215f1bb"
+    },
+    {
+      "path": "tests/test_usage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae6c4ecbb46643f2a5efd3ef096f8652a9f6f28d",
+      "size": 10153,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/ae6c4ecbb46643f2a5efd3ef096f8652a9f6f28d"
+    },
+    {
+      "path": "tests/test_variant_seed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdbebe66a4e58975ccf8d432c52ff083bc3321e0",
+      "size": 2973,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/fdbebe66a4e58975ccf8d432c52ff083bc3321e0"
+    },
+    {
+      "path": "tests/test_viewer_compression.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd06014ae27e710d97efba7e2f97f28f0d59ea83",
+      "size": 907,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/fd06014ae27e710d97efba7e2f97f28f0d59ea83"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a349d3465342085016abfba5ff6a87f17554d358",
+      "size": 580382,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/a349d3465342085016abfba5ff6a87f17554d358"
+    },
+    {
+      "path": "viewers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9594aeb10128e4b9510bf9594b5cfa302ac15e6",
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/trees/f9594aeb10128e4b9510bf9594b5cfa302ac15e6"
+    },
+    {
+      "path": "viewers/compare_traces.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71ba535261b05cc03b6882717f0e5538d5a23aa8",
+      "size": 57349,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/71ba535261b05cc03b6882717f0e5538d5a23aa8"
+    },
+    {
+      "path": "viewers/run_all_viewer.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93c6d5963c7d803b0ee00fb5f855e36100621653",
+      "size": 48214,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/93c6d5963c7d803b0ee00fb5f855e36100621653"
+    },
+    {
+      "path": "viewers/single_task_viewer.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d9c76042d8c2421a5b3e2b51728b98fb4860f80",
+      "size": 104212,
+      "url": "https://api.github.com/repos/pgasawa/continual-learning-bench/git/blobs/2d9c76042d8c2421a5b3e2b51728b98fb4860f80"
+    }
+  ],
+  "truncated": false
+}

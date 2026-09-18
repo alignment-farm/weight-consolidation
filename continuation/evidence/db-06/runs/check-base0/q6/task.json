@@ -1,0 +1,5 @@
+{
+  "job": "q6",
+  "question": "How many office products have at least one review in the database but are NOT represented in the attributes data at all?",
+  "revision": "before"
+}

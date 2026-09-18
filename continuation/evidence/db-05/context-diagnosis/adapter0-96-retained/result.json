@@ -1,0 +1,530 @@
+{
+  "arm": "adapter0-96-retained",
+  "identity": {
+    "backend": "native-mlx",
+    "base_digest": "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e",
+    "base": {
+      "repository": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+      "revision": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+      "files": {
+        "README.md": "7b17ce562d7ea121c86d2ffdf660eed3726ac5b52cacfa9f1de11a65969f5657",
+        "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "chat_template.jinja": "40c21f34cf67d8c760ef72f8ad3ae5afad514299d4b06e91dd9a8d705af7b541",
+        "config.json": "574349e5a343236546fda55e4744a76e181f534182d7dc60ff1bad7e7a502849",
+        "generation_config.json": "835fffe355c9438e7a25be099b3fccaa98350b83451f9fd2d99512e74f1ade48",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "model.safetensors": "2a73c6c248601ab904e035548abd8e6abb65ea27dcb5f342fb0a8910eb44173f",
+        "model.safetensors.index.json": "388d811b8b7c2608dd04cce1bcb04a8bf715d19b42790894e6d3427ff429a777",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "4397cc477eb6d79715ccd2000accd6b3531928f30029665832fa1b255f24d2b9",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "original_model": "Qwen/Qwen3-4B-Instruct-2507",
+      "original_revision_not_reverified": true,
+      "license": "Apache-2.0",
+      "download_and_hash_seconds": 60.38850570900104
+    },
+    "adapter": {
+      "base_digest": "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e",
+      "lora": {
+        "num_layers": 8,
+        "rank": 8,
+        "scale": 2.0,
+        "dropout": 0.0,
+        "keys": [
+          "self_attn.q_proj",
+          "self_attn.v_proj"
+        ]
+      },
+      "weights_sha256": "d5d21feeeb42f9b76fed28d2c34b8f8e220e64a89e20fc9a2f4c62547220774d",
+      "initial_tensor_digest": "2c9040b54f180be58b4b992e37f6fe7c0c6bbc65f74457c2194413796e38eb7f",
+      "final_tensor_digest": "a688a47e05f0fd2aaede964876d97d9d771960ae59c6ad9dfcd3f23ac2ac9915",
+      "base_tensor_digest": "17c5af03677e2d12e47c682db826fa716c9dd2039b445fc3d80fa8b5832a7524",
+      "base_unchanged": true,
+      "tensor_shapes": {
+        "model.layers.28.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.28.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.29.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.29.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.30.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.30.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.31.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.31.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.32.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.32.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.33.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.33.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.34.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.34.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.35.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.35.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ]
+      },
+      "recipe_digest": "4f0a1c3d5b177c96e5fd0ad2c311a812deb3397c00f28882b7813d1c51404387",
+      "training_data_sha256": "d49051566de887029b9369460028b839d83a6f86cd3f7ea7423d4bd3c5ef6f10",
+      "steps": 96,
+      "elapsed_seconds": 114.36227783298818,
+      "usage": {
+        "input_tokens": 74284,
+        "loss_tokens": 2872,
+        "update_seconds": 109.55954362396733
+      },
+      "peak_mlx_bytes": 4454361714,
+      "compute_flops": null,
+      "acquisition_status": "requires complete-task development evaluation"
+    },
+    "load_seconds": 1.49818774999585,
+    "packages": {
+      "mlx": "0.32.2",
+      "mlx-lm": "0.32.0",
+      "transformers": "5.17.0"
+    },
+    "cache_policy": "fresh KV cache per generation; fresh process per task",
+    "generation": {
+      "temperature": 0,
+      "max_tokens": 512,
+      "seed": 17
+    },
+    "memory_limit_bytes": 17179869184,
+    "study_backend": "continuation/scripts/backend.py; native runtime loader unchanged",
+    "study_backend_sha256": "1e2ded7bcce13d29759596dafb0cf483e186f702b6eb6fcdfc94981d0d9c11bb",
+    "database_binding": null
+  },
+  "results": [
+    {
+      "id": 2,
+      "context": "recorded_source",
+      "query_target_nll": 0.008465297520160675,
+      "loss_input_tokens": 733,
+      "loss_target_tokens": 49,
+      "loss_seconds": 0.7970000839995919,
+      "generation": {
+        "text": "{\"query\":\"SELECT AVG(r.rating) FROM reviews r JOIN products p ON r.category = p.category AND r.ref_id = p.ref_id WHERE p.category = 'office products' AND p.price > 50\",\"tool\":\"submit\"}",
+        "prompt_tokens": 685,
+        "completion_tokens": 49,
+        "token_ids": [
+          4913,
+          1631,
+          3252,
+          4858,
+          70414,
+          2601,
+          48659,
+          8,
+          4295,
+          8379,
+          435,
+          13069,
+          3871,
+          281,
+          6197,
+          435,
+          18391,
+          284,
+          281,
+          18391,
+          3567,
+          435,
+          11053,
+          842,
+          284,
+          281,
+          11053,
+          842,
+          5288,
+          281,
+          18391,
+          284,
+          364,
+          26516,
+          3871,
+          6,
+          3567,
+          281,
+          18057,
+          861,
+          220,
+          20,
+          15,
+          2198,
+          14172,
+          3252,
+          5955,
+          9207,
+          151645
+        ],
+        "ended": true,
+        "seconds": 1.2261373340006685,
+        "peak_mlx_bytes": 3462206196,
+        "compute_flops": null
+      },
+      "valid_json_action": true,
+      "action": {
+        "query": "SELECT AVG(r.rating) FROM reviews r JOIN products p ON r.category = p.category AND r.ref_id = p.ref_id WHERE p.category = 'office products' AND p.price > 50",
+        "tool": "submit"
+      },
+      "messages": [
+        {
+          "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+          "role": "system"
+        },
+        {
+          "content": "{\"job\":\"q2\",\"question\":\"What is the average review rating given to office products that cost more than $50?\",\"revision\":\"before\"}",
+          "role": "user"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "context": "deployment",
+      "query_target_nll": 0.009275217540562153,
+      "loss_input_tokens": 734,
+      "loss_target_tokens": 49,
+      "loss_seconds": 0.770957417000318,
+      "generation": {
+        "text": "{\"query\":\"SELECT AVG(r.rating) FROM reviews r JOIN products p ON r.category = p.category AND r.ref_id = p.ref_id WHERE p.category = 'office products' AND p.price > 50\",\"tool\":\"submit\"}",
+        "prompt_tokens": 686,
+        "completion_tokens": 49,
+        "token_ids": [
+          4913,
+          1631,
+          3252,
+          4858,
+          70414,
+          2601,
+          48659,
+          8,
+          4295,
+          8379,
+          435,
+          13069,
+          3871,
+          281,
+          6197,
+          435,
+          18391,
+          284,
+          281,
+          18391,
+          3567,
+          435,
+          11053,
+          842,
+          284,
+          281,
+          11053,
+          842,
+          5288,
+          281,
+          18391,
+          284,
+          364,
+          26516,
+          3871,
+          6,
+          3567,
+          281,
+          18057,
+          861,
+          220,
+          20,
+          15,
+          2198,
+          14172,
+          3252,
+          5955,
+          9207,
+          151645
+        ],
+        "ended": true,
+        "seconds": 1.1588009999977658,
+        "peak_mlx_bytes": 3464551488,
+        "compute_flops": null
+      },
+      "valid_json_action": true,
+      "action": {
+        "query": "SELECT AVG(r.rating) FROM reviews r JOIN products p ON r.category = p.category AND r.ref_id = p.ref_id WHERE p.category = 'office products' AND p.price > 50",
+        "tool": "submit"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py"
+        },
+        {
+          "role": "user",
+          "content": "{\"job\":\"q2\",\"question\":\"What is the average review rating given to office products that cost more than $50?\",\"revision\":\"before\"}"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "context": "recorded_source",
+      "query_target_nll": 0.0740029364824295,
+      "loss_input_tokens": 733,
+      "loss_target_tokens": 44,
+      "loss_seconds": 0.771701125006075,
+      "generation": {
+        "text": "{\"query\":\"SELECT COUNT(DISTINCT f.ref_id)\\n                FROM fdbk_g2 f\\n                WHERE f.ref_id NOT IN (SELECT DISTINCT ref_id FROM attrs_g2)\",\"tool\":\"submit\"}",
+        "prompt_tokens": 690,
+        "completion_tokens": 44,
+        "token_ids": [
+          4913,
+          1631,
+          3252,
+          4858,
+          23989,
+          5432,
+          3846,
+          45319,
+          282,
+          11053,
+          842,
+          10699,
+          77,
+          394,
+          4295,
+          282,
+          1999,
+          74,
+          1889,
+          17,
+          282,
+          1699,
+          394,
+          5288,
+          282,
+          11053,
+          842,
+          4183,
+          1964,
+          320,
+          4858,
+          59086,
+          2053,
+          842,
+          4295,
+          16204,
+          1889,
+          17,
+          79787,
+          14172,
+          3252,
+          5955,
+          9207,
+          151645
+        ],
+        "ended": true,
+        "seconds": 1.1115494589903392,
+        "peak_mlx_bytes": 3464551488,
+        "compute_flops": null
+      },
+      "valid_json_action": true,
+      "action": {
+        "query": "SELECT COUNT(DISTINCT f.ref_id)\n                FROM fdbk_g2 f\n                WHERE f.ref_id NOT IN (SELECT DISTINCT ref_id FROM attrs_g2)",
+        "tool": "submit"
+      },
+      "messages": [
+        {
+          "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+          "role": "system"
+        },
+        {
+          "content": "{\"job\":\"q6\",\"question\":\"How many office products have at least one review in the database but are NOT represented in the attributes data at all?\",\"revision\":\"before\"}",
+          "role": "user"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "context": "deployment",
+      "query_target_nll": 0.07787993550300598,
+      "loss_input_tokens": 734,
+      "loss_target_tokens": 44,
+      "loss_seconds": 0.7599910839926451,
+      "generation": {
+        "text": "{\"query\":\"SELECT COUNT(DISTINCT f.ref_id)\\n                FROM fdbk_g2 f\\n                WHERE f.ref_id NOT IN (SELECT DISTINCT ref_id FROM attrs_g2)\",\"tool\":\"submit\"}",
+        "prompt_tokens": 691,
+        "completion_tokens": 44,
+        "token_ids": [
+          4913,
+          1631,
+          3252,
+          4858,
+          23989,
+          5432,
+          3846,
+          45319,
+          282,
+          11053,
+          842,
+          10699,
+          77,
+          394,
+          4295,
+          282,
+          1999,
+          74,
+          1889,
+          17,
+          282,
+          1699,
+          394,
+          5288,
+          282,
+          11053,
+          842,
+          4183,
+          1964,
+          320,
+          4858,
+          59086,
+          2053,
+          842,
+          4295,
+          16204,
+          1889,
+          17,
+          79787,
+          14172,
+          3252,
+          5955,
+          9207,
+          151645
+        ],
+        "ended": true,
+        "seconds": 1.1130065829929663,
+        "peak_mlx_bytes": 3464551488,
+        "compute_flops": null
+      },
+      "valid_json_action": true,
+      "action": {
+        "query": "SELECT COUNT(DISTINCT f.ref_id)\n                FROM fdbk_g2 f\n                WHERE f.ref_id NOT IN (SELECT DISTINCT ref_id FROM attrs_g2)",
+        "tool": "submit"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py"
+        },
+        {
+          "role": "user",
+          "content": "{\"job\":\"q6\",\"question\":\"How many office products have at least one review in the database but are NOT represented in the attributes data at all?\",\"revision\":\"before\"}"
+        }
+      ]
+    }
+  ],
+  "scope": "Source-only first-action diagnostic, not complete tasks, no candidate selection or fresh labels. Same model/target, recorded source context versus deployed history metadata."
+}

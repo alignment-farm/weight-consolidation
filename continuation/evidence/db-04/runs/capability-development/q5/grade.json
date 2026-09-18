@@ -1,0 +1,42 @@
+{
+  "stage": "capability-development",
+  "arm": "collector0",
+  "id": 5,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        21.99
+      ]
+    ],
+    "upstream_stored_answer": 21.99,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(prc / 100.0, 2) FROM items_g2\n                WHERE prc IS NOT NULL AND prc > 0\n                ORDER BY prc\n                LIMIT 1 OFFSET (\n                    SELECT COUNT(*) / 2 FROM items_g2\n                    WHERE prc IS NOT NULL AND prc > 0\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "7d4173241f142cf579d5cdf303ada6059a500ab7255e4f69e08909e1971301c6"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3221,
+      "completion_tokens": 103,
+      "model_seconds": 4.8021707509760745,
+      "calls": 4,
+      "failed_calls": 0,
+      "tool_calls": 4,
+      "tool_seconds": 0.011513750985614024
+    },
+    "elapsed_seconds": 8.039384709001752,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 8.420357625000179,
+  "checking_seconds": 0.000711791988578625,
+  "exit_code": 0
+}

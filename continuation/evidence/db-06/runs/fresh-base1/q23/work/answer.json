@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) FROM reviews WHERE category = 'electronics' AND year >= 2031",
+  "params": {},
+  "columns": [
+    "COUNT(*)"
+  ],
+  "rows": [
+    [
+      0
+    ]
+  ]
+}

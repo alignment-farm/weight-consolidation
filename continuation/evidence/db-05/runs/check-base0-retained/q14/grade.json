@@ -1,0 +1,42 @@
+{
+  "stage": "check-base0-retained",
+  "arm": "base0-retained",
+  "id": 14,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1832
+      ]
+    ],
+    "upstream_stored_answer": 1832,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT\n                    (SELECT COUNT(DISTINCT item_id) FROM fdbk_g1\n                     WHERE rtg IS NOT NULL AND rtg <= 2.0) -\n                    (SELECT COUNT(DISTINCT ref_id) FROM fdbk_g1\n                     WHERE rtg IS NOT NULL AND rtg <= 2.0)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "00d4159f4afdd9d5eb84157083d2dd4356bcc7f99d664d20016808d25cf21088"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10842,
+      "completion_tokens": 122,
+      "model_seconds": 11.76652224798454,
+      "calls": 6,
+      "failed_calls": 0,
+      "tool_calls": 6,
+      "tool_seconds": 0.15155454199702945
+    },
+    "elapsed_seconds": 14.223353624998708,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 14.55931862500438,
+  "checking_seconds": 0.09271391600486822,
+  "exit_code": 0
+}

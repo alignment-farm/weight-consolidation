@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 10,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        1867
+      ]
+    ],
+    "upstream_stored_answer": 1867,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM fdbk_g2\n                WHERE strftime('%Y', ts, 'unixepoch') = '2021'\n                AND CAST(strftime('%m', ts, 'unixepoch') AS INTEGER) >= 10"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "00434ae4147935b84799dcd2aed431665e317c685e98f57f222f81173f76d084"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1455,
+      "completion_tokens": 42,
+      "model_seconds": 1.9086113329976797,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.02594929200131446
+    },
+    "elapsed_seconds": 4.261263374995906,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.593792083003791,
+  "checking_seconds": 0.014824042009422556,
+  "exit_code": 0
+}

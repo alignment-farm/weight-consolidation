@@ -1,0 +1,74 @@
+{
+  "format": "construct-state/1",
+  "name": "collector1",
+  "parent": null,
+  "decision": {
+    "reason": "protocol03 fixed history/tool snapshot",
+    "source_count": 12
+  },
+  "config": {
+    "model_manifest": "assets/model.json",
+    "mode": "base",
+    "max_steps": 8,
+    "environment": {
+      "path": "assets/environment.py",
+      "sha256": "1df338638a8e224e4eb0fabaf14d2d1e559a709df686ef203f1b178e82e96fdf"
+    },
+    "experience": "assets/experience.json",
+    "guidance": "There are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.",
+    "inherited_artifacts": {
+      "history.json": "assets/inherited/history.json",
+      "views.py": "assets/inherited/views.py",
+      "documentation.txt": "assets/inherited/documentation.txt"
+    }
+  },
+  "assets": {
+    "assets/environment.py": "1df338638a8e224e4eb0fabaf14d2d1e559a709df686ef203f1b178e82e96fdf",
+    "assets/experience.json": "c4fdae56dd54e031d0b11c3405e0a4547926afe9c0f7c787833a32df57028091",
+    "assets/inherited/documentation.txt": "5ce2ee9fa6643f966bc8473cf6be720c518a638cc2c44e9ab060df29d7bf500e",
+    "assets/inherited/history.json": "e0e334848a9b4f544aa1e48de0dc55cd517baf486f2244d8cfca622edd17ba58",
+    "assets/inherited/views.py": "62931304d711769e80b68ac8bb2676a341425cc575cd4ef3e3c1bc59b9bcd853",
+    "assets/model.json": "5bbb06985e4a0b166a3326249f420d56165a5f66452a6403080238ddeb26a611"
+  },
+  "reset": {
+    "workspace": "new task directory, copied inherited artifacts, no previous outputs",
+    "conversation": "new assembled messages for each task",
+    "kv_cache": "fresh per generation; fresh model process per HTTP task",
+    "parameters": "reload pinned base and selected adapter",
+    "optimizer": "not inherited; only fresh optimization is supported"
+  },
+  "base_digest": "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e",
+  "runtime_at_creation": {
+    "git_head": "9ffb10a66180626b80127fb1892b2cf71e39d946",
+    "files": {
+      "src/construct_runtime/__init__.py": "b9703ab0f6373ea821045ded96b700324d07acb3093c4415ddc24efc54e0bc63",
+      "src/construct_runtime/cli.py": "8b6f7dff5f59daa4e3fc954aa92365256788d18f4ee10928d44f253e9c893d83",
+      "src/construct_runtime/client.py": "a7e7061b76ef531868eda84b013c7eaac7dbc48bb4cacc2c8ac13c2b9676f5f6",
+      "src/construct_runtime/configuration.py": "f29a9457c85b9891ca3afb655c53c8f298516dc30fa3b648401697a14d155a4a",
+      "src/construct_runtime/environment.py": "a207b26a8c987dc67e41a68354b2e0c3b64fd08487d343183df40404aee37679",
+      "src/construct_runtime/executor.py": "df822690db5882bef017681e6b80d5df499fc972e9ff560d45c10b30346fe0c9",
+      "src/construct_runtime/experience.py": "d97be48d183abb73e180efbfa774e35d178158e52fcc8260e82535d448d5f42e",
+      "src/construct_runtime/learner.py": "32917b5ea07aba2c4fb27aa15bb60732a5da8329635f4f931a2b2c4ddfe81e86",
+      "src/construct_runtime/model.py": "4d47b4840cced05855fa6a7417acb57e4fbf5c06b9fa6f7712ea4c0fd2679001",
+      "src/construct_runtime/records.py": "d3f8c6b2065e4048b02bd9e9cb2b7d37e1e2951df2f55bc7d8dc31c26f7ccf99",
+      "src/construct_runtime/service.py": "ab10e31854eae7c0d1c7da236f34d691d0641c210ad725559a723c04a3a8b5fa",
+      "src/construct_runtime/state.py": "0ef94b64aa33ccc97b1637fbb71c06e365c3ee90d5f33c2614caf585ab7613b4",
+      "src/construct_runtime/workload.py": "e476faa5817a70537b4707a668ea8aed747b51806e1ffecdf2b003f2e2e6dcfe",
+      "scripts/audit_saved.py": "eecdc26e35bb3bc9473e08946fed8cbbe43f054d444e518d3fb49c6bff826893",
+      "scripts/build_demonstrations.py": "113b3eceae8019dc10202a89297ab48967349237ad4c41f6045016658cca2434",
+      "scripts/build_workload.py": "2245e2e5f641881b5c57ddd460e3c7f1aaf5f17ac2067c051624364ddb0aa69f",
+      "scripts/check_isolation.py": "e33e714471de4b822fcdb43cdad1a759c27a59255390f63666faad811de4ae35",
+      "scripts/collect_experience.py": "7eff586bd94c37ddaf9da6b1a85817c9008c6c9464861204cbb957a79f55bdb8",
+      "scripts/compare.py": "288821c3942540476c5ced27cce790653b9487527d6006fb5b5d657d138fc24d",
+      "scripts/configure.py": "4bb4c1300f561875514d2594d2af8097595fda9683c0631a04de07083ffda89f",
+      "scripts/fetch_model.py": "6b8b65c589e0d5388e648d79bac7c5d4182fb630d78d03b6a45b85b34785f754",
+      "scripts/prepare_training.py": "e707fcdaba5340cbb5b7fb867adb7ba7c9d38da828fc846e8b2f1449d9d4190f",
+      "scripts/run_cases.py": "b80039aed6c10b965f1848ee7503279aa9594b2fbd3a9b128bb4af64864cf4a9",
+      "scripts/summarize_costs.py": "84b8dcb4f4107bede0b42ea4316e0eb4b61bd1d2d3fc9925f06ce8429a65a947",
+      "pyproject.toml": "cff4a91427b03eaad6855fa0e3fc5c4dc532948135d660ef3450da24d0ef74bc",
+      "uv.lock": "7f8c1f82870fdf211c9525bcf0933f466817d91d7121efc3e721218e9896f2bf"
+    },
+    "content_digest": "04ca8e5e6cdefdc74a4b0b6b3529e75b36c29e7100b4ef79f576f38513e5113f"
+  },
+  "state_id": "e290549c5333a7e1ed767dba540ef60778901d6a38551522c55af829feef3d4a"
+}

@@ -1,0 +1,5 @@
+{
+  "job": "q11",
+  "question": "Among electronics reviews with a review body longer than 500 characters, considering only products whose list price is at most $40, what percentage are 1-star? Round to 2 decimal places.",
+  "revision": "before"
+}

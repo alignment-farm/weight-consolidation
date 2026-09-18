@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(SUM(CASE WHEN price > (SELECT AVG(price) FROM products WHERE category = 'electronics' AND ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories')) THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS percentage_above_avg FROM products WHERE category = 'electronics' AND ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories') AND price > 0",
+  "params": {},
+  "columns": [
+    "percentage_above_avg"
+  ],
+  "rows": [
+    [
+      17.27
+    ]
+  ]
+}

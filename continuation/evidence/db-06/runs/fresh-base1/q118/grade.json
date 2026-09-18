@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-base1",
+  "arm": "base1",
+  "id": 118,
+  "revision": "after",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        117.69
+      ]
+    ],
+    "upstream_stored_answer": 117.69,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(AVG(ABS(i.prc_v2 - g.av) / 100.0), 2)\n                FROM items_g2 i,\n                (\n                    SELECT AVG(prc_v2) AS av\n                    FROM items_g2\n                    WHERE prc_v2 IS NOT NULL AND prc_v2 > 0\n                ) g\n                WHERE i.prc_v2 IS NOT NULL AND i.prc_v2 > 0"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "6a29d0d59ff118cec5d78bd4c71ca0268ebeebbf11dc0fa172654ae18c0433ca"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16781,
+      "completion_tokens": 247,
+      "model_seconds": 18.991306791998795,
+      "calls": 8,
+      "failed_calls": 0,
+      "tool_calls": 8,
+      "tool_seconds": 0.04788825099240057
+    },
+    "elapsed_seconds": 21.351780875003897,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 21.726334124992718,
+  "checking_seconds": 0.009088916005566716,
+  "exit_code": 0
+}

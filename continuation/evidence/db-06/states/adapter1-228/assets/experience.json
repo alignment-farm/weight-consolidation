@@ -1,0 +1,182 @@
+[
+  {
+    "id": "q2",
+    "question": "What is the average review rating given to office products that cost more than $50?",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q3",
+    "question": "How many office product reviews were posted in calendar year 2022 for products whose catalog list price is strictly between $20 and $200 (exclude products priced exactly at those boundaries)?",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q4",
+    "question": "For how many office products does the stored average rating differ from the actual mean of its review scores by more than 1 full star?",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q6",
+    "question": "How many office products have at least one review in the database but are NOT represented in the attributes data at all?",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q9",
+    "question": "What is the average listed price of electronics products, expressed in dollars?",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q10",
+    "question": "How many electronics product reviews were posted in Q4 (October through December) of 2021?",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q11",
+    "question": "Among electronics reviews with a review body longer than 500 characters, considering only products whose list price is at most $40, what percentage are 1-star? Round to 2 decimal places.",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q13",
+    "question": "Among electronics products that have zero reviews, what percentage have a price listed (non-NULL, non-zero)? Round to 2 decimal places.",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q16",
+    "question": "In which year-month were the most musical instrument reviews posted? Report as YYYY-MM (e.g. '2020-01').",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q17",
+    "question": "What brand is associated with the most musical instrument products?",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q18",
+    "question": "For musical instruments, how much higher (in star rating) is the average review rating for products with a listed price compared to products without a price? Round to 2 decimal places.",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q21",
+    "question": "Among musical instrument brands with at least 20 products (using the attributes data), which brand has the highest average review rating? Report the brand name.",
+    "revision": "before",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q101",
+    "question": "What is the average list price in dollars for electronics products that show at least three images in the catalog? Ignore listings without a positive list price. Round to 2 decimal places.",
+    "revision": "after",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q103",
+    "question": "How many electronics products have a list price at least 15% higher than the mean list price across all electronics with a positive list price?",
+    "revision": "after",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q103-saved-electronics_mean_price",
+    "question": "How many electronics products have a list price at least 15% higher than the mean list price across all electronics with a positive list price?; retained worker query electronics_mean_price",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q103-saved-electronics_price_15_above_mean",
+    "question": "How many electronics products have a list price at least 15% higher than the mean list price across all electronics with a positive list price?; retained worker query electronics_price_15_above_mean",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q106",
+    "question": "For office products that are still active in the catalog, compare average review text length in characters between reviews that are missing a text verification label and reviews that have one. Ignore reviews with no body text. Report the unlabeled average minus the labeled average. Round to 1 decimal place.",
+    "revision": "after",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q106-saved-office_active_reviews_text_length",
+    "question": "For office products that are still active in the catalog, compare average review text length in characters between reviews that are missing a text verification label and reviews that have one. Ignore reviews with no body text. Report the unlabeled average minus the labeled average. Round to 1 decimal place.; retained worker query office_active_reviews_text_length",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q106-saved-office_active_labeled_reviews_text_length",
+    "question": "For office products that are still active in the catalog, compare average review text length in characters between reviews that are missing a text verification label and reviews that have one. Ignore reviews with no body text. Report the unlabeled average minus the labeled average. Round to 1 decimal place.; retained worker query office_active_labeled_reviews_text_length",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q109",
+    "question": "How many distinct musical instrument products have brand information in the current product-facts feed but no brand line at all for the same product in the older attribute export we still keep online?",
+    "revision": "after",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q109-saved-musical_instrument_brand_check",
+    "question": "How many distinct musical instrument products have brand information in the current product-facts feed but no brand line at all for the same product in the older attribute export we still keep online?; retained worker query musical_instrument_brand_check",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q109-saved-musical_instrument_ref_id_check",
+    "question": "How many distinct musical instrument products have brand information in the current product-facts feed but no brand line at all for the same product in the older attribute export we still keep online?; retained worker query musical_instrument_ref_id_check",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q109-saved-musical_instrument_legacy_check",
+    "question": "How many distinct musical instrument products have brand information in the current product-facts feed but no brand line at all for the same product in the older attribute export we still keep online?; retained worker query musical_instrument_legacy_check",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q110",
+    "question": "For musical instruments, what is the ratio of how many lines of product attribute data exist in the current feed to how many exist in the older attribute export? Round to 2 decimal places.",
+    "revision": "after",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q110-saved-musical_instruments_attributes_current",
+    "question": "For musical instruments, what is the ratio of how many lines of product attribute data exist in the current feed to how many exist in the older attribute export? Round to 2 decimal places.; retained worker query musical_instruments_attributes_current",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q110-saved-musical_instruments_attributes_legacy",
+    "question": "For musical instruments, what is the ratio of how many lines of product attribute data exist in the current feed to how many exist in the older attribute export? Round to 2 decimal places.; retained worker query musical_instruments_attributes_legacy",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q113",
+    "question": "How many active office products priced above $20 have ONLY unverified reviews (zero verified purchases among all their reviews)?",
+    "revision": "after",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q113-saved-active_office_products_above_20_unverified",
+    "question": "How many active office products priced above $20 have ONLY unverified reviews (zero verified purchases among all their reviews)?; retained worker query active_office_products_above_20_unverified",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  },
+  {
+    "id": "q117",
+    "question": "How many instrument brands have at least one customer review in each of the calendar years 2019, 2020, and 2021? Infer the review year from the fields that are actually populated on each review after you inspect the data.",
+    "revision": "after",
+    "origin": "investigator-canonical-source-program"
+  },
+  {
+    "id": "q117-saved-instrument_brand_reviews_by_year",
+    "question": "How many instrument brands have at least one customer review in each of the calendar years 2019, 2020, and 2021? Infer the review year from the fields that are actually populated on each review after you inspect the data.; retained worker query instrument_brand_reviews_by_year",
+    "revision": "after",
+    "origin": "executor-saved-ungraded"
+  }
+]

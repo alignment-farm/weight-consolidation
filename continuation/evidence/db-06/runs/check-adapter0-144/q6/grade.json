@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 6,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        267
+      ]
+    ],
+    "upstream_stored_answer": 267,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(DISTINCT f.ref_id)\n                FROM fdbk_g1 f\n                WHERE f.ref_id NOT IN (SELECT DISTINCT ref_id FROM attrs_g1)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "6ecb8a9378575acf12e98b983fa971651123f3b06a82e8277311baf142853706"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1474,
+      "completion_tokens": 56,
+      "model_seconds": 2.1020571669942,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.10516537498915568
+    },
+    "elapsed_seconds": 4.5294209999992745,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.886870041998918,
+  "checking_seconds": 0.08447575000172947,
+  "exit_code": 0
+}

@@ -1,0 +1,17 @@
+{
+  "before": {
+    "products_rows_preserved": true,
+    "reviews_rows_preserved": true,
+    "office_epoch_preserved": true
+  },
+  "after": {
+    "products_rows_preserved": true,
+    "reviews_rows_preserved": true,
+    "office_epoch_preserved": true,
+    "authoritative_price": true,
+    "migration_consequential": true,
+    "split_dates_preserved": true,
+    "current_attributes": true
+  },
+  "truth_field_rejected": true
+}

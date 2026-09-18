@@ -1,0 +1,3 @@
+{
+  "count_users_in_both_categories": "SELECT COUNT(DISTINCT r.user_id) FROM reviews r WHERE r.category = 'office products' AND EXISTS (SELECT 1 FROM reviews r2 WHERE r2.category = 'electronics' AND r2.user_id = r.user_id)"
+}

@@ -1,0 +1,37 @@
+{
+  "stage": "capability-development",
+  "arm": "collector0",
+  "id": 7,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        1.03
+      ]
+    ],
+    "upstream_stored_answer": 1.03,
+    "tolerance": 0.01,
+    "reference_sql": "SELECT ROUND(100.0 * COUNT(*) /\n                    (SELECT COUNT(DISTINCT uid) FROM fdbk_g1), 2)\n                FROM (\n                    SELECT f.uid\n                    FROM fdbk_g1 f\n                    JOIN taxn_g1 t ON f.ref_id = t.ref_id\n                    WHERE t.cat_lvl = 1\n                    GROUP BY f.uid\n                    HAVING COUNT(DISTINCT t.cat_nm) >= 2\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 14507,
+      "completion_tokens": 775,
+      "model_seconds": 21.887780375996954,
+      "calls": 8,
+      "failed_calls": 0,
+      "tool_calls": 8,
+      "tool_seconds": 6.072458875991288
+    },
+    "elapsed_seconds": 30.265647375010303,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 30.59713587499573,
+  "checking_seconds": 1.3199701660050778,
+  "exit_code": 0
+}

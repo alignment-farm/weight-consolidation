@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-base0",
+  "arm": "base0",
+  "id": 19,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        101.8
+      ]
+    ],
+    "upstream_stored_answer": 101.8,
+    "tolerance": 0.5,
+    "reference_sql": "SELECT ROUND(\n                    (SELECT AVG(LENGTH(body)) FROM fdbk_g2\n                     WHERE rtg = 1.0 AND vrf = 'true'\n                     AND body IS NOT NULL AND body != '') -\n                    (SELECT AVG(LENGTH(body)) FROM fdbk_g2\n                     WHERE rtg = 5.0 AND vrf = 'true'\n                     AND body IS NOT NULL AND body != ''),\n                1)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "7e2348147e5d295c3da7f77cf2ec9222e909d44ca1dee0f007257915e60f6f82"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16665,
+      "completion_tokens": 369,
+      "model_seconds": 20.236243208986707,
+      "calls": 8,
+      "failed_calls": 1,
+      "tool_calls": 8,
+      "tool_seconds": 0.08781654098129366
+    },
+    "elapsed_seconds": 22.646970125002554,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 23.00650504200894,
+  "checking_seconds": 0.029542542004492134,
+  "exit_code": 0
+}

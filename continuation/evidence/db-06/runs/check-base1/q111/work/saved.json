@@ -1,0 +1,3 @@
+{
+  "musical_instrument_brands_no_reviews_2022": "SELECT COUNT(*) FROM (SELECT DISTINCT a.attr_val FROM attributes a WHERE a.category = 'musical instruments' AND a.attr_key = 'Brand' AND a.attr_val IS NOT NULL AND a.attr_val != '' EXCEPT SELECT DISTINCT b.attr_val FROM attributes b WHERE b.category = 'musical instruments' AND b.attr_key = 'Brand' AND b.attr_val IS NOT NULL AND b.attr_val != '' AND NOT EXISTS (SELECT 1 FROM reviews r WHERE r.ref_id = a.ref_id AND r.year = 2022))"
+}

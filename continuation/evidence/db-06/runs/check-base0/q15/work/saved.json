@@ -1,0 +1,5 @@
+{
+  "electronics_avg_price": "SELECT AVG(price) AS category_avg_price FROM products WHERE category = 'electronics' AND price > 0",
+  "electronics_computers_accessories_products": "SELECT p.ref_id, p.price FROM products p WHERE p.category = 'electronics' AND p.ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories' AND cat_lvl = 1) AND p.price > 0",
+  "electronics_computers_accessories_above_avg": "SELECT COUNT(*) * 100.0 / (SELECT COUNT(*) FROM products p WHERE p.category = 'electronics' AND p.ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories' AND cat_lvl = 1) AND p.price > 0) AS percentage_above_avg FROM products p WHERE p.category = 'electronics' AND p.ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories' AND cat_lvl = 1) AND p.price > 0 AND p.price > (SELECT AVG(price) FROM products WHERE category = 'electronics' AND price > 0)"
+}

@@ -1,0 +1,3 @@
+{
+  "electronics_mean_price": "SELECT AVG(price) FROM products WHERE category = 'electronics' AND price > 0"
+}

@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(DISTINCT r1.user_id) FROM reviews r1 WHERE EXISTS (SELECT 1 FROM reviews r2 WHERE r2.category='office products' AND r2.user_id=r1.user_id) AND EXISTS (SELECT 1 FROM reviews r3 WHERE r3.category='electronics' AND r3.user_id=r1.user_id)",
+  "params": {},
+  "columns": [
+    "COUNT(DISTINCT r1.user_id)"
+  ],
+  "rows": [
+    [
+      6041
+    ]
+  ]
+}

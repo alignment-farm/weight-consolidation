@@ -1,0 +1,4 @@
+{
+  "step1": "SELECT r.rating, LENGTH(r.body) FROM reviews r WHERE r.category = 'electronics' AND r.body IS NOT NULL AND LENGTH(r.body) > 500",
+  "step2": "SELECT p.price FROM products p WHERE p.category = 'electronics' AND p.price <= 40"
+}

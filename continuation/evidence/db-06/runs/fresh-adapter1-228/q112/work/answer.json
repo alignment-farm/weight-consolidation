@@ -1,0 +1,12 @@
+{
+  "query": "SELECT a.attr_val FROM attributes a JOIN products p USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' GROUP BY a.attr_val HAVING COUNT(DISTINCT a.ref_id)>=50 ORDER BY AVG(p.price) DESC, a.attr_val ASC LIMIT 1",
+  "params": {},
+  "columns": [
+    "attr_val"
+  ],
+  "rows": [
+    [
+      "Yamaha"
+    ]
+  ]
+}

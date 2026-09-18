@@ -1,0 +1,4 @@
+{
+  "office_active_reviews_text_length": "SELECT AVG(LENGTH(r.body)) FROM reviews r JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id AND p.status='active' WHERE r.verification_label IS NULL AND r.body IS NOT NULL",
+  "office_active_labeled_reviews_text_length": "SELECT AVG(LENGTH(r.body)) FROM reviews r JOIN products p ON p.category='office products' AND p.ref_id=r.ref_id AND p.status='active' WHERE r.verification_label IS NOT NULL AND r.body IS NOT NULL"
+}

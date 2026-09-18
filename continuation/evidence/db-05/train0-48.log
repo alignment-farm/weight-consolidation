@@ -1,0 +1,6 @@
+step 8/48: loss=0.01057, peak=4.06 GiB
+step 16/48: loss=0.00029, peak=4.11 GiB
+step 24/48: loss=0.00027, peak=4.15 GiB
+step 32/48: loss=0.00015, peak=4.15 GiB
+step 40/48: loss=0.14351, peak=4.15 GiB
+step 48/48: loss=0.08321, peak=4.15 GiB

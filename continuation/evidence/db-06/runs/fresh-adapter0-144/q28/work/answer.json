@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(100.0*SUM(CASE WHEN r.category='office products' THEN 1 ELSE 0 END)/COUNT(*),1) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products'",
+  "params": {},
+  "columns": [
+    "ROUND(100.0*SUM(CASE WHEN r.category='office products' THEN 1 ELSE 0 END)/COUNT(*),1)"
+  ],
+  "rows": [
+    [
+      100.0
+    ]
+  ]
+}

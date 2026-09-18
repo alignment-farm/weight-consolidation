@@ -1,0 +1,3 @@
+{
+  "office_category_spanning": "SELECT DISTINCT r.user_id FROM reviews r JOIN products p ON r.category = p.category AND r.ref_id = p.ref_id WHERE p.category = 'office products'"
+}

@@ -1,0 +1,1923 @@
+{
+  "groups": {
+    "db-01/smoke": {
+      "n": 2,
+      "complete": 0,
+      "correct_artifact": 0,
+      "usage": {
+        "prompt_tokens": 11934,
+        "completion_tokens": 245,
+        "model_seconds": 14.045789001029334,
+        "calls": 9,
+        "failed_calls": 0,
+        "tool_calls": 9,
+        "tool_seconds": 0.41046262699819636
+      },
+      "tools": {
+        "schema": 2,
+        "sql": 2,
+        "submit": 2,
+        "finish": 2,
+        "read": 1
+      },
+      "controller_seconds": 19.7442590839928,
+      "checking_seconds": 0.03449254100269172,
+      "ids": [
+        1,
+        12
+      ],
+      "correct_ids": [],
+      "statuses": {
+        "succeeded": 2
+      }
+    },
+    "db-02/capability-development": {
+      "n": 4,
+      "complete": 1,
+      "correct_artifact": 2,
+      "usage": {
+        "prompt_tokens": 39453,
+        "completion_tokens": 1154,
+        "model_seconds": 49.62345475197071,
+        "calls": 24,
+        "failed_calls": 1,
+        "tool_calls": 24,
+        "tool_seconds": 6.007550831011031
+      },
+      "tools": {
+        "schema": 4,
+        "read": 4,
+        "search_history": 3,
+        "sql": 8,
+        "submit": 3,
+        "finish": 2
+      },
+      "controller_seconds": 66.23085558500316,
+      "checking_seconds": 1.4614197499904549,
+      "ids": [
+        14,
+        15,
+        5,
+        7
+      ],
+      "correct_ids": [
+        5
+      ],
+      "statuses": {
+        "succeeded": 2,
+        "failed": 2
+      }
+    },
+    "db-02/capability-source": {
+      "n": 2,
+      "complete": 2,
+      "correct_artifact": 2,
+      "usage": {
+        "prompt_tokens": 12064,
+        "completion_tokens": 175,
+        "model_seconds": 13.347427123982925,
+        "calls": 9,
+        "failed_calls": 0,
+        "tool_calls": 9,
+        "tool_seconds": 2.0274935409688624
+      },
+      "tools": {
+        "schema": 2,
+        "read": 1,
+        "sql": 2,
+        "submit": 2,
+        "finish": 2
+      },
+      "controller_seconds": 20.65064970801177,
+      "checking_seconds": 0.04328941699350253,
+      "ids": [
+        2,
+        9
+      ],
+      "correct_ids": [
+        2,
+        9
+      ],
+      "statuses": {
+        "succeeded": 2
+      }
+    },
+    "db-02/smoke": {
+      "n": 2,
+      "complete": 0,
+      "correct_artifact": 0,
+      "usage": {
+        "prompt_tokens": 15023,
+        "completion_tokens": 256,
+        "model_seconds": 16.94104758198955,
+        "calls": 10,
+        "failed_calls": 0,
+        "tool_calls": 10,
+        "tool_seconds": 0.43334012500417884
+      },
+      "tools": {
+        "schema": 2,
+        "read": 2,
+        "sql": 2,
+        "submit": 2,
+        "finish": 2
+      },
+      "controller_seconds": 22.671897124993848,
+      "checking_seconds": 0.036489373989752494,
+      "ids": [
+        1,
+        12
+      ],
+      "correct_ids": [],
+      "statuses": {
+        "succeeded": 2
+      }
+    },
+    "db-03/capability-development": {
+      "n": 6,
+      "complete": 2,
+      "correct_artifact": 2,
+      "usage": {
+        "prompt_tokens": 62387,
+        "completion_tokens": 1752,
+        "model_seconds": 77.91962546300783,
+        "calls": 37,
+        "failed_calls": 1,
+        "tool_calls": 37,
+        "tool_seconds": 6.90844270598609
+      },
+      "tools": {
+        "schema": 6,
+        "read": 6,
+        "sql": 12,
+        "submit": 5,
+        "finish": 5,
+        "search_history": 3
+      },
+      "controller_seconds": 100.62716366701352,
+      "checking_seconds": 1.4679212900082348,
+      "ids": [
+        1,
+        12,
+        14,
+        15,
+        5,
+        7
+      ],
+      "correct_ids": [
+        15,
+        5
+      ],
+      "statuses": {
+        "succeeded": 5,
+        "failed": 1
+      }
+    },
+    "db-04/capability-development": {
+      "n": 6,
+      "complete": 1,
+      "correct_artifact": 1,
+      "usage": {
+        "prompt_tokens": 40704,
+        "completion_tokens": 1056,
+        "model_seconds": 58.457239538940485,
+        "calls": 32,
+        "failed_calls": 1,
+        "tool_calls": 32,
+        "tool_seconds": 0.7145784149324754
+      },
+      "tools": {
+        "search_history": 7,
+        "read": 8,
+        "sql": 7,
+        "submit": 5,
+        "finish": 5
+      },
+      "controller_seconds": 80.81882724998286,
+      "checking_seconds": 1.4645267929881811,
+      "ids": [
+        1,
+        12,
+        14,
+        15,
+        5,
+        7
+      ],
+      "correct_ids": [
+        15
+      ],
+      "statuses": {
+        "succeeded": 5,
+        "failed": 1
+      }
+    },
+    "db-05/check-adapter0-48": {
+      "n": 2,
+      "complete": 0,
+      "correct_artifact": 0,
+      "usage": {
+        "prompt_tokens": 24345,
+        "completion_tokens": 5347,
+        "model_seconds": 81.18584254101734,
+        "calls": 14,
+        "failed_calls": 8,
+        "tool_calls": 14,
+        "tool_seconds": 20.016709999996237
+      },
+      "tools": {
+        "malformed-action": 10,
+        "submit": 4
+      },
+      "controller_seconds": 113.11415262501396,
+      "checking_seconds": 0.17943116700917017,
+      "ids": [
+        2,
+        3
+      ],
+      "correct_ids": [],
+      "statuses": {
+        "failed": 1,
+        "crashed": 1
+      }
+    },
+    "db-05/check-adapter0-96": {
+      "n": 18,
+      "complete": 10,
+      "correct_artifact": 10,
+      "usage": {
+        "prompt_tokens": 80006,
+        "completion_tokens": 6185,
+        "model_seconds": 146.18749808400753,
+        "calls": 66,
+        "failed_calls": 27,
+        "tool_calls": 66,
+        "tool_seconds": 3.142219749992364
+      },
+      "tools": {
+        "submit": 33,
+        "finish": 16,
+        "malformed-action": 10,
+        "schema": 4,
+        "read": 1,
+        "search_history": 2
+      },
+      "controller_seconds": 196.8815887929959,
+      "checking_seconds": 2.8416354559885804,
+      "ids": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "correct_ids": [
+        10,
+        13,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        9
+      ],
+      "statuses": {
+        "succeeded": 16,
+        "failed": 2
+      }
+    },
+    "db-05/check-adapter0-96-retained": {
+      "n": 18,
+      "complete": 9,
+      "correct_artifact": 9,
+      "usage": {
+        "prompt_tokens": 85430,
+        "completion_tokens": 6344,
+        "model_seconds": 153.25161725500948,
+        "calls": 68,
+        "failed_calls": 30,
+        "tool_calls": 68,
+        "tool_seconds": 2.6859620019677095
+      },
+      "tools": {
+        "submit": 35,
+        "finish": 15,
+        "malformed-action": 10,
+        "schema": 4,
+        "read": 1,
+        "search_history": 2,
+        "read_source": 1
+      },
+      "controller_seconds": 203.59123354205803,
+      "checking_seconds": 2.8215542480320437,
+      "ids": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "correct_ids": [
+        10,
+        13,
+        17,
+        18,
+        2,
+        21,
+        3,
+        5,
+        9
+      ],
+      "statuses": {
+        "succeeded": 15,
+        "failed": 3
+      }
+    },
+    "db-05/check-base0": {
+      "n": 18,
+      "complete": 11,
+      "correct_artifact": 13,
+      "usage": {
+        "prompt_tokens": 197078,
+        "completion_tokens": 3137,
+        "model_seconds": 223.07158307699137,
+        "calls": 114,
+        "failed_calls": 5,
+        "tool_calls": 114,
+        "tool_seconds": 10.132095374094206
+      },
+      "tools": {
+        "schema": 18,
+        "read": 18,
+        "search_history": 13,
+        "sql": 23,
+        "submit": 16,
+        "finish": 15,
+        "save_sql": 7,
+        "run_saved": 4
+      },
+      "controller_seconds": 280.87251187498623,
+      "checking_seconds": 2.849033792022965,
+      "ids": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "correct_ids": [
+        10,
+        11,
+        13,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        9
+      ],
+      "statuses": {
+        "succeeded": 15,
+        "failed": 3
+      }
+    },
+    "db-05/check-base0-retained": {
+      "n": 18,
+      "complete": 11,
+      "correct_artifact": 11,
+      "usage": {
+        "prompt_tokens": 237727,
+        "completion_tokens": 3745,
+        "model_seconds": 270.19966133197886,
+        "calls": 126,
+        "failed_calls": 13,
+        "tool_calls": 126,
+        "tool_seconds": 4.077557922049891
+      },
+      "tools": {
+        "schema": 18,
+        "read": 18,
+        "search_history": 16,
+        "sql": 9,
+        "submit": 13,
+        "finish": 13,
+        "save_sql": 28,
+        "run_saved": 7,
+        "malformed-action": 1,
+        "read_source": 3
+      },
+      "controller_seconds": 321.9709952490084,
+      "checking_seconds": 2.8192724540131167,
+      "ids": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "correct_ids": [
+        10,
+        12,
+        13,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        5,
+        9
+      ],
+      "statuses": {
+        "succeeded": 13,
+        "failed": 5
+      }
+    },
+    "db-05/source0": {
+      "n": 12,
+      "complete": 7,
+      "correct_artifact": 7,
+      "usage": {
+        "prompt_tokens": 119725,
+        "completion_tokens": 2364,
+        "model_seconds": 138.39076758007286,
+        "calls": 75,
+        "failed_calls": 4,
+        "tool_calls": 75,
+        "tool_seconds": 9.85404920905421
+      },
+      "tools": {
+        "schema": 12,
+        "read": 11,
+        "sql": 21,
+        "submit": 12,
+        "finish": 11,
+        "search_history": 8
+      },
+      "controller_seconds": 180.09038533300918,
+      "checking_seconds": 1.3676418760151137,
+      "ids": [
+        10,
+        11,
+        13,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        6,
+        9
+      ],
+      "correct_ids": [
+        10,
+        11,
+        13,
+        18,
+        2,
+        3,
+        9
+      ],
+      "statuses": {
+        "succeeded": 11,
+        "failed": 1
+      }
+    },
+    "db-06/check-adapter0-144": {
+      "n": 18,
+      "complete": 14,
+      "correct_artifact": 14,
+      "usage": {
+        "prompt_tokens": 42184,
+        "completion_tokens": 2252,
+        "model_seconds": 65.42556417407468,
+        "calls": 50,
+        "failed_calls": 18,
+        "tool_calls": 50,
+        "tool_seconds": 4.186623501082067
+      },
+      "tools": {
+        "submit": 34,
+        "finish": 16
+      },
+      "controller_seconds": 117.59340908398735,
+      "checking_seconds": 2.890850873023737,
+      "ids": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "correct_ids": [
+        10,
+        11,
+        13,
+        15,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "statuses": {
+        "succeeded": 16,
+        "failed": 2
+      }
+    },
+    "db-06/check-adapter1-228": {
+      "n": 11,
+      "complete": 6,
+      "correct_artifact": 6,
+      "usage": {
+        "prompt_tokens": 36434,
+        "completion_tokens": 1955,
+        "model_seconds": 56.09879700196325,
+        "calls": 39,
+        "failed_calls": 20,
+        "tool_calls": 39,
+        "tool_seconds": 5.617829624010483
+      },
+      "tools": {
+        "submit": 29,
+        "finish": 9,
+        "schema": 1
+      },
+      "controller_seconds": 91.24227016796067,
+      "checking_seconds": 23.482127498980844,
+      "ids": [
+        101,
+        102,
+        103,
+        104,
+        106,
+        107,
+        109,
+        110,
+        111,
+        113,
+        117
+      ],
+      "correct_ids": [
+        101,
+        103,
+        106,
+        110,
+        113,
+        117
+      ],
+      "statuses": {
+        "succeeded": 9,
+        "failed": 2
+      }
+    },
+    "db-06/check-base0": {
+      "n": 18,
+      "complete": 14,
+      "correct_artifact": 14,
+      "usage": {
+        "prompt_tokens": 248373,
+        "completion_tokens": 4030,
+        "model_seconds": 285.33416705006675,
+        "calls": 130,
+        "failed_calls": 11,
+        "tool_calls": 130,
+        "tool_seconds": 7.565212578076171
+      },
+      "tools": {
+        "schema": 18,
+        "read": 18,
+        "search_history": 16,
+        "save_sql": 32,
+        "run_saved": 9,
+        "finish": 16,
+        "submit": 12,
+        "sql": 9
+      },
+      "controller_seconds": 340.90299433199107,
+      "checking_seconds": 2.907107129023643,
+      "ids": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "correct_ids": [
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        2,
+        21,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "statuses": {
+        "succeeded": 16,
+        "failed": 2
+      }
+    },
+    "db-06/check-base1": {
+      "n": 11,
+      "complete": 6,
+      "correct_artifact": 6,
+      "usage": {
+        "prompt_tokens": 154012,
+        "completion_tokens": 2791,
+        "model_seconds": 179.57574424991617,
+        "calls": 76,
+        "failed_calls": 2,
+        "tool_calls": 76,
+        "tool_seconds": 15.491431284041028
+      },
+      "tools": {
+        "schema": 11,
+        "sql": 9,
+        "submit": 10,
+        "finish": 10,
+        "read": 9,
+        "search_history": 10,
+        "save_sql": 15,
+        "run_saved": 2
+      },
+      "controller_seconds": 224.398165126986,
+      "checking_seconds": 23.14629691700975,
+      "ids": [
+        101,
+        102,
+        103,
+        104,
+        106,
+        107,
+        109,
+        110,
+        111,
+        113,
+        117
+      ],
+      "correct_ids": [
+        101,
+        103,
+        106,
+        107,
+        113,
+        117
+      ],
+      "statuses": {
+        "succeeded": 10,
+        "failed": 1
+      }
+    },
+    "db-06/fresh-adapter0-144": {
+      "n": 10,
+      "complete": 4,
+      "correct_artifact": 4,
+      "usage": {
+        "prompt_tokens": 30254,
+        "completion_tokens": 1927,
+        "model_seconds": 49.71962862703367,
+        "calls": 33,
+        "failed_calls": 16,
+        "tool_calls": 33,
+        "tool_seconds": 7.716706876002718
+      },
+      "tools": {
+        "submit": 16,
+        "finish": 8,
+        "malformed-action": 9
+      },
+      "controller_seconds": 84.11840250100067,
+      "checking_seconds": 1.3675976650265511,
+      "ids": [
+        19,
+        20,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "correct_ids": [
+        25,
+        26,
+        29,
+        30
+      ],
+      "statuses": {
+        "succeeded": 8,
+        "failed": 2
+      }
+    },
+    "db-06/fresh-adapter1-228": {
+      "n": 10,
+      "complete": 2,
+      "correct_artifact": 2,
+      "usage": {
+        "prompt_tokens": 42300,
+        "completion_tokens": 3224,
+        "model_seconds": 74.28425254300237,
+        "calls": 42,
+        "failed_calls": 28,
+        "tool_calls": 42,
+        "tool_seconds": 1.3849461259815143
+      },
+      "tools": {
+        "submit": 34,
+        "finish": 7,
+        "malformed-action": 1
+      },
+      "controller_seconds": 102.51920245900692,
+      "checking_seconds": 1.0224580000212882,
+      "ids": [
+        105,
+        108,
+        112,
+        114,
+        115,
+        116,
+        118,
+        119,
+        120,
+        23
+      ],
+      "correct_ids": [
+        114,
+        115
+      ],
+      "statuses": {
+        "succeeded": 7,
+        "failed": 3
+      }
+    },
+    "db-06/fresh-base0": {
+      "n": 10,
+      "complete": 4,
+      "correct_artifact": 6,
+      "usage": {
+        "prompt_tokens": 138248,
+        "completion_tokens": 2066,
+        "model_seconds": 156.92939107802522,
+        "calls": 71,
+        "failed_calls": 2,
+        "tool_calls": 71,
+        "tool_seconds": 5.717840248020366
+      },
+      "tools": {
+        "schema": 10,
+        "read": 10,
+        "search_history": 12,
+        "save_sql": 12,
+        "sql": 6,
+        "submit": 8,
+        "finish": 6,
+        "run_saved": 7
+      },
+      "controller_seconds": 189.31608770802268,
+      "checking_seconds": 1.3651710820267908,
+      "ids": [
+        19,
+        20,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "correct_ids": [
+        19,
+        25,
+        29,
+        30
+      ],
+      "statuses": {
+        "succeeded": 6,
+        "failed": 4
+      }
+    },
+    "db-06/fresh-base1": {
+      "n": 10,
+      "complete": 3,
+      "correct_artifact": 3,
+      "usage": {
+        "prompt_tokens": 149576,
+        "completion_tokens": 2839,
+        "model_seconds": 175.87449395899603,
+        "calls": 73,
+        "failed_calls": 5,
+        "tool_calls": 73,
+        "tool_seconds": 6.219714415899944
+      },
+      "tools": {
+        "schema": 10,
+        "read": 8,
+        "search_history": 8,
+        "save_sql": 22,
+        "malformed-action": 2,
+        "run_saved": 6,
+        "submit": 6,
+        "finish": 7,
+        "sql": 4
+      },
+      "controller_seconds": 208.7621217509586,
+      "checking_seconds": 1.0275921669963282,
+      "ids": [
+        105,
+        108,
+        112,
+        114,
+        115,
+        116,
+        118,
+        119,
+        120,
+        23
+      ],
+      "correct_ids": [
+        114,
+        115,
+        118
+      ],
+      "statuses": {
+        "failed": 4,
+        "succeeded": 6
+      }
+    },
+    "db-06/fresh-stale1": {
+      "n": 10,
+      "complete": 3,
+      "correct_artifact": 3,
+      "usage": {
+        "prompt_tokens": 38320,
+        "completion_tokens": 2404,
+        "model_seconds": 61.908629460958764,
+        "calls": 40,
+        "failed_calls": 26,
+        "tool_calls": 40,
+        "tool_seconds": 2.189048458036268
+      },
+      "tools": {
+        "submit": 31,
+        "finish": 7,
+        "malformed-action": 2
+      },
+      "controller_seconds": 90.77424049799447,
+      "checking_seconds": 1.0324145429913187,
+      "ids": [
+        105,
+        108,
+        112,
+        114,
+        115,
+        116,
+        118,
+        119,
+        120,
+        23
+      ],
+      "correct_ids": [
+        112,
+        114,
+        115
+      ],
+      "statuses": {
+        "succeeded": 7,
+        "failed": 3
+      }
+    },
+    "db-06/preserved-adapter1-228": {
+      "n": 2,
+      "complete": 2,
+      "correct_artifact": 2,
+      "usage": {
+        "prompt_tokens": 2966,
+        "completion_tokens": 107,
+        "model_seconds": 4.197492457999033,
+        "calls": 4,
+        "failed_calls": 0,
+        "tool_calls": 4,
+        "tool_seconds": 1.1445100010023452
+      },
+      "tools": {
+        "submit": 2,
+        "finish": 2
+      },
+      "controller_seconds": 10.699255042010918,
+      "checking_seconds": 0.17458833298587706,
+      "ids": [
+        2,
+        3
+      ],
+      "correct_ids": [
+        2,
+        3
+      ],
+      "statuses": {
+        "succeeded": 2
+      }
+    },
+    "db-06/preserved-base1": {
+      "n": 2,
+      "complete": 2,
+      "correct_artifact": 2,
+      "usage": {
+        "prompt_tokens": 28277,
+        "completion_tokens": 342,
+        "model_seconds": 31.28856125001039,
+        "calls": 14,
+        "failed_calls": 2,
+        "tool_calls": 14,
+        "tool_seconds": 1.1634597079828382
+      },
+      "tools": {
+        "schema": 2,
+        "read": 2,
+        "search_history": 2,
+        "save_sql": 4,
+        "run_saved": 2,
+        "finish": 2
+      },
+      "controller_seconds": 37.73984587499581,
+      "checking_seconds": 0.17365312500623986,
+      "ids": [
+        2,
+        3
+      ],
+      "correct_ids": [
+        2,
+        3
+      ],
+      "statuses": {
+        "succeeded": 2
+      }
+    },
+    "db-06/preserved-stale1": {
+      "n": 2,
+      "complete": 2,
+      "correct_artifact": 2,
+      "usage": {
+        "prompt_tokens": 2966,
+        "completion_tokens": 107,
+        "model_seconds": 4.205289334000554,
+        "calls": 4,
+        "failed_calls": 0,
+        "tool_calls": 4,
+        "tool_seconds": 1.1501606649835594
+      },
+      "tools": {
+        "submit": 2,
+        "finish": 2
+      },
+      "controller_seconds": 10.659288958995603,
+      "checking_seconds": 0.17178229099954478,
+      "ids": [
+        2,
+        3
+      ],
+      "correct_ids": [
+        2,
+        3
+      ],
+      "statuses": {
+        "succeeded": 2
+      }
+    },
+    "db-06/source1": {
+      "n": 7,
+      "complete": 4,
+      "correct_artifact": 5,
+      "usage": {
+        "prompt_tokens": 94329,
+        "completion_tokens": 1834,
+        "model_seconds": 111.14857037297043,
+        "calls": 47,
+        "failed_calls": 2,
+        "tool_calls": 47,
+        "tool_seconds": 51.77491029801604
+      },
+      "tools": {
+        "schema": 7,
+        "sql": 6,
+        "submit": 6,
+        "finish": 5,
+        "read": 6,
+        "search_history": 6,
+        "save_sql": 11
+      },
+      "controller_seconds": 181.58880454002065,
+      "checking_seconds": 22.493218542003888,
+      "ids": [
+        101,
+        103,
+        106,
+        109,
+        110,
+        113,
+        117
+      ],
+      "correct_ids": [
+        101,
+        103,
+        106,
+        117
+      ],
+      "statuses": {
+        "succeeded": 5,
+        "failed": 2
+      }
+    }
+  },
+  "totals": {
+    "task_executions": 229,
+    "complete": 120,
+    "usage": {
+      "prompt_tokens": 1934115,
+      "completion_tokens": 57638,
+      "model_seconds": 2498.6121348890156,
+      "calls": 1207,
+      "failed_calls": 222,
+      "tool_calls": 1207,
+      "tool_seconds": 177.7328562851908
+    },
+    "controller_seconds": 3297.578607880001,
+    "checking_seconds": 98.64156632414961,
+    "training_runs": 4,
+    "training_updates": 516,
+    "training_usage": {
+      "input_tokens": 400308,
+      "loss_tokens": 15360,
+      "update_seconds": 592.5119495789404
+    },
+    "training_elapsed_seconds": 612.1914164990012,
+    "source_reference_replays": 31,
+    "reference_sql_origins": {
+      "executor": 7,
+      "authored-source-correction": 5,
+      "investigator-canonical-source-program": 19
+    },
+    "reference_execution_seconds": 35.40286787497462,
+    "training_attempts": 4,
+    "failed_training_attempts": 0,
+    "training_attempt_controller_seconds": 616.015685041988,
+    "ungraded_started_tasks": [],
+    "partial_usage_lower_bound_tasks": [
+      "continuation/evidence/db-05/runs/check-adapter0-48/q3/grade.json"
+    ],
+    "auxiliary_source_probe_generations": 12,
+    "auxiliary_probe_usage": {
+      "prompt_tokens": 8256,
+      "completion_tokens": 1830,
+      "seconds": 26.66397162397334
+    },
+    "auxiliary_teacher_forced_positions": 8802,
+    "auxiliary_teacher_forced_seconds": 9.27032429103565,
+    "auxiliary_model_load_seconds": 4.52206679097435,
+    "failed_source_teacher_sql_attempts": 1,
+    "failed_source_teacher_seconds": null,
+    "component_audits": [
+      {
+        "path": "continuation/evidence/db-06/component-execution-audit.json",
+        "checks": [
+          {
+            "arm": "base0",
+            "component": "q2:step2",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b"
+          },
+          {
+            "arm": "base0",
+            "component": "q3:step3",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b"
+          },
+          {
+            "arm": "adapter0-144",
+            "component": "q2:step2",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b"
+          },
+          {
+            "arm": "adapter0-144",
+            "component": "q3:step3",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b"
+          },
+          {
+            "arm": "base1",
+            "component": "q101:step1",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+          },
+          {
+            "arm": "base1",
+            "component": "q101:step2",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+          },
+          {
+            "arm": "adapter1-228",
+            "component": "q101:step1",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+          },
+          {
+            "arm": "adapter1-228",
+            "component": "q101:step2",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+          },
+          {
+            "arm": "stale1",
+            "component": "q101:step1",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+          },
+          {
+            "arm": "stale1",
+            "component": "q101:step2",
+            "executed": true,
+            "observed_output_reproduced": true,
+            "history_sha256": "f3599a2a6e0ed03738b519ff8d5808c4396e39712bf410f4d0fa586205fe4a03"
+          }
+        ],
+        "tool_calls": 10,
+        "seconds": 2.339029583003139
+      }
+    ],
+    "component_audit_failures": [
+      {
+        "path": "continuation/evidence/db-06/component-audit-failed-01.json",
+        "scope": "verification-script failure, not a model or report-grade change",
+        "component": "q2:step2",
+        "arm": "base0",
+        "reason": "Compared native SQLite row tuples with the JSON arrays recorded at the public tool boundary. Normalize through JSON before comparison.",
+        "executed_tool_calls": 1,
+        "seconds": null
+      }
+    ],
+    "final_audit_elapsed_seconds": null,
+    "unknown": [
+      "investigator authoring/reasoning time and tokens",
+      "upstream data/code/teacher effort",
+      "energy",
+      "FLOPs",
+      "amortized deployment break-even",
+      "unfinished model generations and unrecorded tool timing in interrupted jobs"
+    ]
+  },
+  "training": [
+    {
+      "path": "continuation/evidence/db-05/adapter0-48/manifest.json",
+      "base_digest": "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e",
+      "lora": {
+        "num_layers": 8,
+        "rank": 8,
+        "scale": 2.0,
+        "dropout": 0.0,
+        "keys": [
+          "self_attn.q_proj",
+          "self_attn.v_proj"
+        ]
+      },
+      "weights_sha256": "826315b03b8d185b1084cc8b602e45ea76f1b1c62d0bf0f9a6ceea070e6e94bb",
+      "initial_tensor_digest": "2c9040b54f180be58b4b992e37f6fe7c0c6bbc65f74457c2194413796e38eb7f",
+      "final_tensor_digest": "c47e8b6318048fa914d6b7a7173d36d5a61689142d86059277a052f2be05ad1b",
+      "base_tensor_digest": "17c5af03677e2d12e47c682db826fa716c9dd2039b445fc3d80fa8b5832a7524",
+      "base_unchanged": true,
+      "tensor_shapes": {
+        "model.layers.28.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.28.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.29.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.29.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.30.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.30.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.31.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.31.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.32.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.32.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.33.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.33.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.34.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.34.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.35.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.35.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ]
+      },
+      "recipe_digest": "3f3a02c4ac2373ead15e6e0f9229a4878c7b99db6cf015b910907929d3c5691c",
+      "training_data_sha256": "d49051566de887029b9369460028b839d83a6f86cd3f7ea7423d4bd3c5ef6f10",
+      "steps": 48,
+      "elapsed_seconds": 59.659292083000764,
+      "usage": {
+        "input_tokens": 37142,
+        "loss_tokens": 1436,
+        "update_seconds": 54.961717919039074
+      },
+      "peak_mlx_bytes": 4454376394,
+      "compute_flops": null,
+      "acquisition_status": "requires complete-task development evaluation"
+    },
+    {
+      "path": "continuation/evidence/db-05/adapter0-96/manifest.json",
+      "base_digest": "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e",
+      "lora": {
+        "num_layers": 8,
+        "rank": 8,
+        "scale": 2.0,
+        "dropout": 0.0,
+        "keys": [
+          "self_attn.q_proj",
+          "self_attn.v_proj"
+        ]
+      },
+      "weights_sha256": "d5d21feeeb42f9b76fed28d2c34b8f8e220e64a89e20fc9a2f4c62547220774d",
+      "initial_tensor_digest": "2c9040b54f180be58b4b992e37f6fe7c0c6bbc65f74457c2194413796e38eb7f",
+      "final_tensor_digest": "a688a47e05f0fd2aaede964876d97d9d771960ae59c6ad9dfcd3f23ac2ac9915",
+      "base_tensor_digest": "17c5af03677e2d12e47c682db826fa716c9dd2039b445fc3d80fa8b5832a7524",
+      "base_unchanged": true,
+      "tensor_shapes": {
+        "model.layers.28.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.28.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.29.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.29.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.30.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.30.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.31.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.31.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.32.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.32.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.33.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.33.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.34.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.34.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.35.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.35.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ]
+      },
+      "recipe_digest": "4f0a1c3d5b177c96e5fd0ad2c311a812deb3397c00f28882b7813d1c51404387",
+      "training_data_sha256": "d49051566de887029b9369460028b839d83a6f86cd3f7ea7423d4bd3c5ef6f10",
+      "steps": 96,
+      "elapsed_seconds": 114.36227783298818,
+      "usage": {
+        "input_tokens": 74284,
+        "loss_tokens": 2872,
+        "update_seconds": 109.55954362396733
+      },
+      "peak_mlx_bytes": 4454361714,
+      "compute_flops": null,
+      "acquisition_status": "requires complete-task development evaluation"
+    },
+    {
+      "path": "continuation/evidence/db-06/adapter0-144/manifest.json",
+      "base_digest": "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e",
+      "lora": {
+        "num_layers": 8,
+        "rank": 8,
+        "scale": 2.0,
+        "dropout": 0.0,
+        "keys": [
+          "self_attn.q_proj",
+          "self_attn.v_proj"
+        ]
+      },
+      "weights_sha256": "bae5f5d20d55081c85fd7edaf2f264e0e902dbbb47659856dc2bfd631885e9ed",
+      "initial_tensor_digest": "2c9040b54f180be58b4b992e37f6fe7c0c6bbc65f74457c2194413796e38eb7f",
+      "final_tensor_digest": "a9e4e4ef1016789c5edbf285a3560fe06abaeaaceda098c32115b3da364dd18f",
+      "base_tensor_digest": "17c5af03677e2d12e47c682db826fa716c9dd2039b445fc3d80fa8b5832a7524",
+      "base_unchanged": true,
+      "tensor_shapes": {
+        "model.layers.28.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.28.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.29.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.29.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.30.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.30.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.31.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.31.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.32.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.32.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.33.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.33.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.34.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.34.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.35.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.35.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ]
+      },
+      "recipe_digest": "0d4f6d8c529e5590713fb942a8d0174228ba21866d9626cea215b875d3abe6d3",
+      "training_data_sha256": "47f959670fdcc1620a93a8f37162d6cdf2d58569a9454e2ad1f4af7b576ba233",
+      "steps": 144,
+      "elapsed_seconds": 170.25572675000876,
+      "usage": {
+        "input_tokens": 111270,
+        "loss_tokens": 4230,
+        "update_seconds": 165.30086104691145
+      },
+      "peak_mlx_bytes": 4460848082,
+      "compute_flops": null,
+      "acquisition_status": "requires complete-task development evaluation"
+    },
+    {
+      "path": "continuation/evidence/db-06/adapter1-228/manifest.json",
+      "base_digest": "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e",
+      "lora": {
+        "num_layers": 8,
+        "rank": 8,
+        "scale": 2.0,
+        "dropout": 0.0,
+        "keys": [
+          "self_attn.q_proj",
+          "self_attn.v_proj"
+        ]
+      },
+      "weights_sha256": "7286ca99b9923e36bb9c6eaaf63d8a36d3feda3095989e550b106bbee444da02",
+      "initial_tensor_digest": "2c9040b54f180be58b4b992e37f6fe7c0c6bbc65f74457c2194413796e38eb7f",
+      "final_tensor_digest": "5a810ccbdf1abfe0e19b774157e25577a58da6c619353d2b70da1733032004be",
+      "base_tensor_digest": "17c5af03677e2d12e47c682db826fa716c9dd2039b445fc3d80fa8b5832a7524",
+      "base_unchanged": true,
+      "tensor_shapes": {
+        "model.layers.28.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.28.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.28.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.29.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.29.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.29.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.30.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.30.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.30.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.31.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.31.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.31.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.32.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.32.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.32.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.33.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.33.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.33.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.34.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.34.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.34.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ],
+        "model.layers.35.self_attn.q_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.q_proj.lora_b": [
+          8,
+          4096
+        ],
+        "model.layers.35.self_attn.v_proj.lora_a": [
+          2560,
+          8
+        ],
+        "model.layers.35.self_attn.v_proj.lora_b": [
+          8,
+          1024
+        ]
+      },
+      "recipe_digest": "2717424f8d471e83403b1a78892fe126a080182eec0cf1d87eabb6ef2ba008ad",
+      "training_data_sha256": "d258a86514d09a7e4ccc99f872fd76f19903db17c092ac4d8be07f85bccc3c95",
+      "steps": 228,
+      "elapsed_seconds": 267.9141198330035,
+      "usage": {
+        "input_tokens": 177612,
+        "loss_tokens": 6822,
+        "update_seconds": 262.68982698902255
+      },
+      "peak_mlx_bytes": 4556842062,
+      "compute_flops": null,
+      "acquisition_status": "requires complete-task development evaluation"
+    }
+  ],
+  "note": "Use-time, search, shared source collection and consolidation remain separated by stage. Controller elapsed includes loading/generation/tools; do not add those nested times again. Includes every graded task; separately inspect worker failures without grades and failed training_attempt events."
+}

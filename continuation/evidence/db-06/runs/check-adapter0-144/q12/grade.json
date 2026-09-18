@@ -1,0 +1,37 @@
+{
+  "stage": "check-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 12,
+  "revision": "before",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        8
+      ]
+    ],
+    "upstream_stored_answer": 8,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM (\n                    SELECT i.ref_id\n                    FROM items_g2 i\n                    JOIN fdbk_g2 f ON i.ref_id = f.ref_id\n                    WHERE i.prc > 5000 AND i.prc IS NOT NULL\n                    GROUP BY i.ref_id\n                    HAVING COUNT(*) >= 5 AND AVG(f.rtg) < 3.0\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 7872,
+      "completion_tokens": 489,
+      "model_seconds": 12.65726420901774,
+      "calls": 8,
+      "failed_calls": 8,
+      "tool_calls": 8,
+      "tool_seconds": 0.016868543039890938
+    },
+    "elapsed_seconds": 14.99924295800156,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 15.363882624995313,
+  "checking_seconds": 0.03654845801065676,
+  "exit_code": 0
+}

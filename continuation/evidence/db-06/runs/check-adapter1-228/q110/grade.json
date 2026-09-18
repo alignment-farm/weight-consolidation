@@ -1,0 +1,42 @@
+{
+  "stage": "check-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 110,
+  "revision": "after",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        1.11
+      ]
+    ],
+    "upstream_stored_answer": 1.11,
+    "tolerance": 0.05,
+    "reference_sql": "SELECT ROUND(\n                    (SELECT COUNT(*) * 1.0 FROM product_attributes_g3)\n                    / (SELECT COUNT(*) FROM attrs_g3_legacy)\n                , 2)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "6d5eb05ba329648133677a81d7ddfcc8beee1919c42fcbe61d013575f8ca7250"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1518,
+      "completion_tokens": 45,
+      "model_seconds": 2.0423740000114776,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.014245749989640899
+    },
+    "elapsed_seconds": 4.368025916002807,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 4.706114291999256,
+  "checking_seconds": 0.005423624999821186,
+  "exit_code": 0
+}

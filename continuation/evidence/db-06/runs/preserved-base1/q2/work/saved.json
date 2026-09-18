@@ -1,0 +1,3 @@
+{
+  "q2_step2": "SELECT ROUND(AVG(r.rating),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.price>50"
+}

@@ -1,0 +1,5 @@
+{
+  "job": "q22",
+  "question": "How many office products have reviews spanning 5 or more distinct calendar years? Exclude reviews with corrupted timestamps (dates in 2031 or later).",
+  "revision": "before"
+}

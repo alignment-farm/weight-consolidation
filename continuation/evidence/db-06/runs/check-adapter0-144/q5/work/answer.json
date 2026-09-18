@@ -1,0 +1,12 @@
+{
+  "query": "SELECT ROUND(MEDIAN(price),2) FROM products WHERE category='electronics' AND price>0",
+  "params": {},
+  "columns": [
+    "ROUND(MEDIAN(price),2)"
+  ],
+  "rows": [
+    [
+      21.99
+    ]
+  ]
+}

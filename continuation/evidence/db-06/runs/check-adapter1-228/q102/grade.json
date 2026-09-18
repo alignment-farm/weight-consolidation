@@ -1,0 +1,37 @@
+{
+  "stage": "check-adapter1-228",
+  "arm": "adapter1-228",
+  "id": 102,
+  "revision": "after",
+  "grade": {
+    "complete": false,
+    "result_correct": false,
+    "expected": [
+      [
+        "Computers & Accessories"
+      ]
+    ],
+    "upstream_stored_answer": "Computers & Accessories",
+    "tolerance": 0.0,
+    "reference_sql": "SELECT cat_nm FROM (\n                    SELECT t.cat_nm, COUNT(DISTINCT i.ref_id) AS c\n                    FROM items_g2 i\n                    JOIN taxn_g2 t ON i.ref_id = t.ref_id\n                    WHERE t.cat_lvl = 1\n                    AND i.prc_v2 IS NOT NULL AND i.prc_v2 > 20000\n                    GROUP BY t.cat_nm\n                    ORDER BY c DESC, t.cat_nm ASC\n                    LIMIT 1\n                )"
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 9127,
+      "completion_tokens": 447,
+      "model_seconds": 13.417818915986572,
+      "calls": 8,
+      "failed_calls": 7,
+      "tool_calls": 8,
+      "tool_seconds": 0.018907624995335937
+    },
+    "elapsed_seconds": 15.772251542002778,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 16.116857542001526,
+  "checking_seconds": 0.01426366699161008,
+  "exit_code": 0
+}

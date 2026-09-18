@@ -1,0 +1,12 @@
+{
+  "query": "SELECT MAX(avg_rating) - MIN(avg_rating) AS gap FROM (SELECT CASE WHEN price < 15 THEN 'under $15' WHEN price BETWEEN 15 AND 30 THEN '$15 to $30' WHEN price BETWEEN 30 AND 60 THEN '$30 to $60' ELSE '$60 or more' END AS price_band, AVG(r.rating) AS avg_rating FROM products p JOIN reviews r ON p.category = r.category AND p.ref_id = r.ref_id WHERE p.category = 'office products' AND p.status = 'active' AND r.verified = 1 GROUP BY CASE WHEN price < 15 THEN 'under $15' WHEN price BETWEEN 15 AND 30 THEN '$15 to $30' WHEN price BETWEEN 30 AND 60 THEN '$30 to $60' ELSE '$60 or more' END, p.price)",
+  "params": {},
+  "columns": [
+    "gap"
+  ],
+  "rows": [
+    [
+      4.0
+    ]
+  ]
+}

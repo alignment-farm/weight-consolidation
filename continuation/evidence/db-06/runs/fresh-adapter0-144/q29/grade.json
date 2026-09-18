@@ -1,0 +1,42 @@
+{
+  "stage": "fresh-adapter0-144",
+  "arm": "adapter0-144",
+  "id": 29,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        6041
+      ]
+    ],
+    "upstream_stored_answer": 6041,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(*) FROM (\n                    SELECT uid FROM fdbk_g1\n                    INTERSECT\n                    SELECT uid FROM fdbk_g2\n                )"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "8af0745fe3ec838114f3c6152c11796a103eb230589ddc2305b784347ca73e03"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1509,
+      "completion_tokens": 83,
+      "model_seconds": 2.4397599160147365,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 2.727685666992329
+    },
+    "elapsed_seconds": 7.457054333994165,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 7.777513124994584,
+  "checking_seconds": 0.18777491700893734,
+  "exit_code": 0
+}

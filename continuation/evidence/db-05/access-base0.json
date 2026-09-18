@@ -1,0 +1,12 @@
+{
+  "arm": "base0",
+  "point": 0,
+  "records_retrievable": 24,
+  "training_sha256": "d49051566de887029b9369460028b839d83a6f86cd3f7ea7423d4bd3c5ef6f10",
+  "inherited": {
+    "history.json": "e0e334848a9b4f544aa1e48de0dc55cd517baf486f2244d8cfca622edd17ba58",
+    "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+    "documentation.txt": "11dc0a3534491828b6b8fd646661436cfe7d1faa64944b530a8412ac836c9f2a"
+  },
+  "exact_match": true
+}

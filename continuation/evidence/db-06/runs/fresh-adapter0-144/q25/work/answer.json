@@ -1,0 +1,12 @@
+{
+  "query": "SELECT category FROM products WHERE price>50 GROUP BY category ORDER BY COUNT(*) DESC LIMIT 1",
+  "params": {},
+  "columns": [
+    "category"
+  ],
+  "rows": [
+    [
+      "musical instruments"
+    ]
+  ]
+}

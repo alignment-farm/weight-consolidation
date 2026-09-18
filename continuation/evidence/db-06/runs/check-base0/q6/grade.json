@@ -1,0 +1,42 @@
+{
+  "stage": "check-base0",
+  "arm": "base0",
+  "id": 6,
+  "revision": "before",
+  "grade": {
+    "complete": true,
+    "result_correct": true,
+    "expected": [
+      [
+        267
+      ]
+    ],
+    "upstream_stored_answer": 267,
+    "tolerance": 0.0,
+    "reference_sql": "SELECT COUNT(DISTINCT f.ref_id)\n                FROM fdbk_g1 f\n                WHERE f.ref_id NOT IN (SELECT DISTINCT ref_id FROM attrs_g1)"
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "answer.json",
+        "sha256": "6ecb8a9378575acf12e98b983fa971651123f3b06a82e8277311baf142853706"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13079,
+      "completion_tokens": 173,
+      "model_seconds": 14.606010044008144,
+      "calls": 7,
+      "failed_calls": 1,
+      "tool_calls": 7,
+      "tool_seconds": 0.1116540420189267
+    },
+    "elapsed_seconds": 17.04546345799463,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "controller_seconds": 17.375046667002607,
+  "checking_seconds": 0.08414504199754447,
+  "exit_code": 0
+}

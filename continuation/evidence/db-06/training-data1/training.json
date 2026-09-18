@@ -1,0 +1,838 @@
+[
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q2",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q2\",\"question\":\"What is the average review rating given to office products that cost more than $50?\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT ROUND(AVG(r.rating),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.price>50\",\"tool\":\"submit\"}",
+    "source_events": "sources/0.jsonl",
+    "source_events_sha256": "c794b0b79af0fafef4092dba5058270b4d8b42b396faab695dc37f9e26b695a3"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q2",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q2\",\"question\":\"What is the average review rating given to office products that cost more than $50?\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT ROUND(AVG(r.rating),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.price>50\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"ROUND(AVG(r.rating),2)\"],\"row_count\":1,\"rows\":[[4.11]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/0.jsonl",
+    "source_events_sha256": "c794b0b79af0fafef4092dba5058270b4d8b42b396faab695dc37f9e26b695a3"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q3",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q3\",\"question\":\"How many office product reviews were posted in calendar year 2022 for products whose catalog list price is strictly between $20 and $200 (exclude products priced exactly at those boundaries)?\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT COUNT(*) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND r.year=2022 AND p.price>20 AND p.price<200\",\"tool\":\"submit\"}",
+    "source_events": "sources/1.jsonl",
+    "source_events_sha256": "5ec7fc346f301b10722ac24f065bcc88d22969cf5cad6d99690e54b2ed382ce8"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q3",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q3\",\"question\":\"How many office product reviews were posted in calendar year 2022 for products whose catalog list price is strictly between $20 and $200 (exclude products priced exactly at those boundaries)?\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT COUNT(*) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND r.year=2022 AND p.price>20 AND p.price<200\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"COUNT(*)\"],\"row_count\":1,\"rows\":[[13766]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/1.jsonl",
+    "source_events_sha256": "5ec7fc346f301b10722ac24f065bcc88d22969cf5cad6d99690e54b2ed382ce8"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q4",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q4\",\"question\":\"For how many office products does the stored average rating differ from the actual mean of its review scores by more than 1 full star?\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p JOIN reviews r USING(category,ref_id) WHERE p.category='office products' GROUP BY p.ref_id HAVING ABS(p.catalog_rating-AVG(r.rating))>1)\",\"tool\":\"submit\"}",
+    "source_events": "sources/2.jsonl",
+    "source_events_sha256": "4fd1c89ba16251989d5d25060eb47ea4e5ad9c0161f85e71fa35a42362fb9e23"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q4",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q4\",\"question\":\"For how many office products does the stored average rating differ from the actual mean of its review scores by more than 1 full star?\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p JOIN reviews r USING(category,ref_id) WHERE p.category='office products' GROUP BY p.ref_id HAVING ABS(p.catalog_rating-AVG(r.rating))>1)\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"COUNT(*)\"],\"row_count\":1,\"rows\":[[2715]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/2.jsonl",
+    "source_events_sha256": "4fd1c89ba16251989d5d25060eb47ea4e5ad9c0161f85e71fa35a42362fb9e23"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q6",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q6\",\"question\":\"How many office products have at least one review in the database but are NOT represented in the attributes data at all?\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT COUNT(DISTINCT r.ref_id) FROM reviews r WHERE r.category='office products' AND NOT EXISTS (SELECT 1 FROM attributes a WHERE a.category=r.category AND a.ref_id=r.ref_id)\",\"tool\":\"submit\"}",
+    "source_events": "sources/3.jsonl",
+    "source_events_sha256": "fadffad876d0d34759d0c61838a73a3fe1a669ff43711ab4838aa4be829f3bd9"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q6",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q6\",\"question\":\"How many office products have at least one review in the database but are NOT represented in the attributes data at all?\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT COUNT(DISTINCT r.ref_id) FROM reviews r WHERE r.category='office products' AND NOT EXISTS (SELECT 1 FROM attributes a WHERE a.category=r.category AND a.ref_id=r.ref_id)\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"COUNT(DISTINCT r.ref_id)\"],\"row_count\":1,\"rows\":[[267]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/3.jsonl",
+    "source_events_sha256": "fadffad876d0d34759d0c61838a73a3fe1a669ff43711ab4838aa4be829f3bd9"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q9",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q9\",\"question\":\"What is the average listed price of electronics products, expressed in dollars?\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT ROUND(AVG(price),2) FROM products WHERE category='electronics' AND price>0\",\"tool\":\"submit\"}",
+    "source_events": "sources/4.jsonl",
+    "source_events_sha256": "74416d7ccd2dbb92c03e547a91af0b56c148637e9764add112c255d807bb2310"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q9",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q9\",\"question\":\"What is the average listed price of electronics products, expressed in dollars?\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT ROUND(AVG(price),2) FROM products WHERE category='electronics' AND price>0\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"ROUND(AVG(price),2)\"],\"row_count\":1,\"rows\":[[96.23]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/4.jsonl",
+    "source_events_sha256": "74416d7ccd2dbb92c03e547a91af0b56c148637e9764add112c255d807bb2310"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q10",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q10\",\"question\":\"How many electronics product reviews were posted in Q4 (October through December) of 2021?\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT COUNT(*) FROM reviews WHERE category='electronics' AND year=2021 AND month BETWEEN 10 AND 12\",\"tool\":\"submit\"}",
+    "source_events": "sources/5.jsonl",
+    "source_events_sha256": "e95a3fd495fa00d1d98c33ba31097238e041e324573640a23cbe56ad53797c04"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q10",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q10\",\"question\":\"How many electronics product reviews were posted in Q4 (October through December) of 2021?\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT COUNT(*) FROM reviews WHERE category='electronics' AND year=2021 AND month BETWEEN 10 AND 12\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"COUNT(*)\"],\"row_count\":1,\"rows\":[[1867]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/5.jsonl",
+    "source_events_sha256": "e95a3fd495fa00d1d98c33ba31097238e041e324573640a23cbe56ad53797c04"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q11",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q11\",\"question\":\"Among electronics reviews with a review body longer than 500 characters, considering only products whose list price is at most $40, what percentage are 1-star? Round to 2 decimal places.\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT ROUND(100.0*SUM(CASE WHEN r.rating=1 THEN 1 ELSE 0 END)/COUNT(*),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='electronics' AND p.price>0 AND p.price<=40 AND LENGTH(r.body)>500\",\"tool\":\"submit\"}",
+    "source_events": "sources/6.jsonl",
+    "source_events_sha256": "a32acc99f8a579cb08140c23e1f5843d17089938ed9c033895f3d7b10046f869"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q11",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q11\",\"question\":\"Among electronics reviews with a review body longer than 500 characters, considering only products whose list price is at most $40, what percentage are 1-star? Round to 2 decimal places.\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT ROUND(100.0*SUM(CASE WHEN r.rating=1 THEN 1 ELSE 0 END)/COUNT(*),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='electronics' AND p.price>0 AND p.price<=40 AND LENGTH(r.body)>500\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"ROUND(100.0*SUM(CASE WHEN r.rating=1 THEN 1 ELSE 0 END)/COUNT(*),2)\"],\"row_count\":1,\"rows\":[[10.22]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/6.jsonl",
+    "source_events_sha256": "a32acc99f8a579cb08140c23e1f5843d17089938ed9c033895f3d7b10046f869"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q13",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q13\",\"question\":\"Among electronics products that have zero reviews, what percentage have a price listed (non-NULL, non-zero)? Round to 2 decimal places.\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT ROUND(100.0*SUM(CASE WHEN p.price>0 THEN 1 ELSE 0 END)/COUNT(*),2) FROM products p WHERE p.category='electronics' AND NOT EXISTS (SELECT 1 FROM reviews r WHERE r.category=p.category AND r.ref_id=p.ref_id)\",\"tool\":\"submit\"}",
+    "source_events": "sources/7.jsonl",
+    "source_events_sha256": "612ffa40f72bdf4045d7ff1c734255ee8885a2183b9f2c22a80dc0983fb217c3"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q13",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q13\",\"question\":\"Among electronics products that have zero reviews, what percentage have a price listed (non-NULL, non-zero)? Round to 2 decimal places.\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT ROUND(100.0*SUM(CASE WHEN p.price>0 THEN 1 ELSE 0 END)/COUNT(*),2) FROM products p WHERE p.category='electronics' AND NOT EXISTS (SELECT 1 FROM reviews r WHERE r.category=p.category AND r.ref_id=p.ref_id)\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"ROUND(100.0*SUM(CASE WHEN p.price>0 THEN 1 ELSE 0 END)/COUNT(*),2)\"],\"row_count\":1,\"rows\":[[29.93]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/7.jsonl",
+    "source_events_sha256": "612ffa40f72bdf4045d7ff1c734255ee8885a2183b9f2c22a80dc0983fb217c3"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q16",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q16\",\"question\":\"In which year-month were the most musical instrument reviews posted? Report as YYYY-MM (e.g. '2020-01').\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT printf('%04d-%02d',year,month) FROM reviews WHERE category='musical instruments' AND year IS NOT NULL GROUP BY year,month ORDER BY COUNT(*) DESC LIMIT 1\",\"tool\":\"submit\"}",
+    "source_events": "sources/8.jsonl",
+    "source_events_sha256": "ca859cdf1707e3c6753679c90b42a273414c9adfe0352ee6f344eb474e9457d4"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q16",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q16\",\"question\":\"In which year-month were the most musical instrument reviews posted? Report as YYYY-MM (e.g. '2020-01').\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT printf('%04d-%02d',year,month) FROM reviews WHERE category='musical instruments' AND year IS NOT NULL GROUP BY year,month ORDER BY COUNT(*) DESC LIMIT 1\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"printf('%04d-%02d',year,month)\"],\"row_count\":1,\"rows\":[[\"2020-01\"]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/8.jsonl",
+    "source_events_sha256": "ca859cdf1707e3c6753679c90b42a273414c9adfe0352ee6f344eb474e9457d4"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q17",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q17\",\"question\":\"What brand is associated with the most musical instrument products?\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT attr_val FROM attributes WHERE category='musical instruments' AND attr_key='Brand' GROUP BY attr_val ORDER BY COUNT(*) DESC LIMIT 1\",\"tool\":\"submit\"}",
+    "source_events": "sources/9.jsonl",
+    "source_events_sha256": "36f7e04c727d5f018c3df8e483e49ffc631624e6746ad0b68b69c794b0e0cf36"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q17",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q17\",\"question\":\"What brand is associated with the most musical instrument products?\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT attr_val FROM attributes WHERE category='musical instruments' AND attr_key='Brand' GROUP BY attr_val ORDER BY COUNT(*) DESC LIMIT 1\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"attr_val\"],\"row_count\":1,\"rows\":[[\"Fender\"]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/9.jsonl",
+    "source_events_sha256": "36f7e04c727d5f018c3df8e483e49ffc631624e6746ad0b68b69c794b0e0cf36"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q18",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q18\",\"question\":\"For musical instruments, how much higher (in star rating) is the average review rating for products with a listed price compared to products without a price? Round to 2 decimal places.\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT ROUND(AVG(CASE WHEN p.price>0 THEN r.rating END)-AVG(CASE WHEN p.price IS NULL OR p.price=0 THEN r.rating END),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='musical instruments'\",\"tool\":\"submit\"}",
+    "source_events": "sources/10.jsonl",
+    "source_events_sha256": "ac133461ab8edea4cb646ddfede65265351a10f70b1c23619e1d99fbed2bdb06"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q18",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q18\",\"question\":\"For musical instruments, how much higher (in star rating) is the average review rating for products with a listed price compared to products without a price? Round to 2 decimal places.\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT ROUND(AVG(CASE WHEN p.price>0 THEN r.rating END)-AVG(CASE WHEN p.price IS NULL OR p.price=0 THEN r.rating END),2) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='musical instruments'\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"ROUND(AVG(CASE WHEN p.price>0 THEN r.rating END)-AVG(CASE WHEN p.price IS NULL OR p.price=0 THEN r.rating END),2)\"],\"row_count\":1,\"rows\":[[0.12]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/10.jsonl",
+    "source_events_sha256": "ac133461ab8edea4cb646ddfede65265351a10f70b1c23619e1d99fbed2bdb06"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q21",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q21\",\"question\":\"Among musical instrument brands with at least 20 products (using the attributes data), which brand has the highest average review rating? Report the brand name.\",\"revision\":\"before\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT a.attr_val FROM attributes a JOIN reviews r USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' GROUP BY a.attr_val HAVING COUNT(DISTINCT a.ref_id)>=20 ORDER BY AVG(r.rating) DESC LIMIT 1\",\"tool\":\"submit\"}",
+    "source_events": "sources/11.jsonl",
+    "source_events_sha256": "bd67649e4fefc6acc9fcaeed15ee62fff0b0535447f43de68f09e408f496f1d3"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q21",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 0 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q21\",\"question\":\"Among musical instrument brands with at least 20 products (using the attributes data), which brand has the highest average review rating? Report the brand name.\",\"revision\":\"before\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT a.attr_val FROM attributes a JOIN reviews r USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' GROUP BY a.attr_val HAVING COUNT(DISTINCT a.ref_id)>=20 ORDER BY AVG(r.rating) DESC LIMIT 1\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"attr_val\"],\"row_count\":1,\"rows\":[[\"WORLDS BEST CABLES\"]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/11.jsonl",
+    "source_events_sha256": "bd67649e4fefc6acc9fcaeed15ee62fff0b0535447f43de68f09e408f496f1d3"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q101",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q101\",\"question\":\"What is the average list price in dollars for electronics products that show at least three images in the catalog? Ignore listings without a positive list price. Round to 2 decimal places.\",\"revision\":\"after\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT ROUND(AVG(price),2) FROM products WHERE category='electronics' AND price>0 AND image_count>=3\",\"tool\":\"submit\"}",
+    "source_events": "sources/12.jsonl",
+    "source_events_sha256": "c9991e7a2708dee1c1a675820ff39e820586b0bed6afe39b0d4219abb19f8f35"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q101",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q101\",\"question\":\"What is the average list price in dollars for electronics products that show at least three images in the catalog? Ignore listings without a positive list price. Round to 2 decimal places.\",\"revision\":\"after\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT ROUND(AVG(price),2) FROM products WHERE category='electronics' AND price>0 AND image_count>=3\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"ROUND(AVG(price),2)\"],\"row_count\":1,\"rows\":[[101.8]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/12.jsonl",
+    "source_events_sha256": "c9991e7a2708dee1c1a675820ff39e820586b0bed6afe39b0d4219abb19f8f35"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q103",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q103\",\"question\":\"How many electronics products have a list price at least 15% higher than the mean list price across all electronics with a positive list price?\",\"revision\":\"after\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT COUNT(*) FROM products WHERE category='electronics' AND price>0 AND price>=1.15*(SELECT AVG(price) FROM products WHERE category='electronics' AND price>0)\",\"tool\":\"submit\"}",
+    "source_events": "sources/13.jsonl",
+    "source_events_sha256": "dc39d3ef05e49fd31867ef3318313468551ddb8f63a4134135b6522ad99113ce"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q103",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q103\",\"question\":\"How many electronics products have a list price at least 15% higher than the mean list price across all electronics with a positive list price?\",\"revision\":\"after\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT COUNT(*) FROM products WHERE category='electronics' AND price>0 AND price>=1.15*(SELECT AVG(price) FROM products WHERE category='electronics' AND price>0)\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"COUNT(*)\"],\"row_count\":1,\"rows\":[[1049]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/13.jsonl",
+    "source_events_sha256": "dc39d3ef05e49fd31867ef3318313468551ddb8f63a4134135b6522ad99113ce"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q106",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q106\",\"question\":\"For office products that are still active in the catalog, compare average review text length in characters between reviews that are missing a text verification label and reviews that have one. Ignore reviews with no body text. Report the unlabeled average minus the labeled average. Round to 1 decimal place.\",\"revision\":\"after\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT ROUND(AVG(CASE WHEN r.verification_label IS NULL THEN LENGTH(r.body) END)-AVG(CASE WHEN r.verification_label IS NOT NULL THEN LENGTH(r.body) END),1) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.status='active' AND r.body IS NOT NULL\",\"tool\":\"submit\"}",
+    "source_events": "sources/14.jsonl",
+    "source_events_sha256": "8a8f5e49e23e3369127a7142b8e2d9231611971eb14b3a637f15ba3b7f99f26f"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q106",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q106\",\"question\":\"For office products that are still active in the catalog, compare average review text length in characters between reviews that are missing a text verification label and reviews that have one. Ignore reviews with no body text. Report the unlabeled average minus the labeled average. Round to 1 decimal place.\",\"revision\":\"after\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT ROUND(AVG(CASE WHEN r.verification_label IS NULL THEN LENGTH(r.body) END)-AVG(CASE WHEN r.verification_label IS NOT NULL THEN LENGTH(r.body) END),1) FROM reviews r JOIN products p USING(category,ref_id) WHERE p.category='office products' AND p.status='active' AND r.body IS NOT NULL\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"ROUND(AVG(CASE WHEN r.verification_label IS NULL THEN LENGTH(r.body) END)-AVG(CASE WHEN r.verification_label IS NOT NULL THEN LENGTH(r.body) END),1)\"],\"row_count\":1,\"rows\":[[1.1]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/14.jsonl",
+    "source_events_sha256": "8a8f5e49e23e3369127a7142b8e2d9231611971eb14b3a637f15ba3b7f99f26f"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q109",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q109\",\"question\":\"How many distinct musical instrument products have brand information in the current product-facts feed but no brand line at all for the same product in the older attribute export we still keep online?\",\"revision\":\"after\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT COUNT(*) FROM (SELECT DISTINCT ref_id FROM attributes WHERE category='musical instruments' AND attr_key='Brand' EXCEPT SELECT ref_id FROM attrs_g3_legacy WHERE attr_key='Brand')\",\"tool\":\"submit\"}",
+    "source_events": "sources/15.jsonl",
+    "source_events_sha256": "3e72e9595a856377031cb28a7fd0edaa628c7c55d57d2ed59b49412cbc62c733"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q109",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q109\",\"question\":\"How many distinct musical instrument products have brand information in the current product-facts feed but no brand line at all for the same product in the older attribute export we still keep online?\",\"revision\":\"after\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT COUNT(*) FROM (SELECT DISTINCT ref_id FROM attributes WHERE category='musical instruments' AND attr_key='Brand' EXCEPT SELECT ref_id FROM attrs_g3_legacy WHERE attr_key='Brand')\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"COUNT(*)\"],\"row_count\":1,\"rows\":[[1145]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/15.jsonl",
+    "source_events_sha256": "3e72e9595a856377031cb28a7fd0edaa628c7c55d57d2ed59b49412cbc62c733"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q110",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q110\",\"question\":\"For musical instruments, what is the ratio of how many lines of product attribute data exist in the current feed to how many exist in the older attribute export? Round to 2 decimal places.\",\"revision\":\"after\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT ROUND((SELECT COUNT(*)*1.0 FROM attributes WHERE category='musical instruments')/(SELECT COUNT(*) FROM attrs_g3_legacy),2)\",\"tool\":\"submit\"}",
+    "source_events": "sources/16.jsonl",
+    "source_events_sha256": "2040bed4931b42b0f332a8edd56aca09a914742c973b2b74a0847d3da7739389"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q110",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q110\",\"question\":\"For musical instruments, what is the ratio of how many lines of product attribute data exist in the current feed to how many exist in the older attribute export? Round to 2 decimal places.\",\"revision\":\"after\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT ROUND((SELECT COUNT(*)*1.0 FROM attributes WHERE category='musical instruments')/(SELECT COUNT(*) FROM attrs_g3_legacy),2)\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"ROUND((SELECT COUNT(*)*1.0 FROM attributes WHERE category='musical instruments')/(SELECT COUNT(*) FROM attrs_g3_legacy),2)\"],\"row_count\":1,\"rows\":[[1.11]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/16.jsonl",
+    "source_events_sha256": "2040bed4931b42b0f332a8edd56aca09a914742c973b2b74a0847d3da7739389"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q113",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q113\",\"question\":\"How many active office products priced above $20 have ONLY unverified reviews (zero verified purchases among all their reviews)?\",\"revision\":\"after\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p JOIN reviews r USING(category,ref_id) WHERE p.category='office products' AND p.status='active' AND p.price>20 GROUP BY p.ref_id HAVING SUM(r.verified)=0)\",\"tool\":\"submit\"}",
+    "source_events": "sources/17.jsonl",
+    "source_events_sha256": "1b5ff09113b90064e7e1cdb3ec65206ceadcf7ed8b17a16624e5be79123b0e55"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q113",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q113\",\"question\":\"How many active office products priced above $20 have ONLY unverified reviews (zero verified purchases among all their reviews)?\",\"revision\":\"after\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT COUNT(*) FROM (SELECT p.ref_id FROM products p JOIN reviews r USING(category,ref_id) WHERE p.category='office products' AND p.status='active' AND p.price>20 GROUP BY p.ref_id HAVING SUM(r.verified)=0)\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"COUNT(*)\"],\"row_count\":1,\"rows\":[[83]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/17.jsonl",
+    "source_events_sha256": "1b5ff09113b90064e7e1cdb3ec65206ceadcf7ed8b17a16624e5be79123b0e55"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q117",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q117\",\"question\":\"How many instrument brands have at least one customer review in each of the calendar years 2019, 2020, and 2021? Infer the review year from the fields that are actually populated on each review after you inspect the data.\",\"revision\":\"after\"}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"query\":\"SELECT COUNT(*) FROM (SELECT a.attr_val FROM attributes a JOIN reviews r USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' AND r.year IN (2019,2020,2021) GROUP BY a.attr_val HAVING COUNT(DISTINCT r.year)=3)\",\"tool\":\"submit\"}",
+    "source_events": "sources/18.jsonl",
+    "source_events_sha256": "2b45dff8fa0dcc9aa7aee4c1ff50a6dd20e3e399b2333de5d9e6160dbc3edea3"
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "q117",
+    "messages": [
+      {
+        "content": "Complete the database report with a correct executable SQL query. One JSON tool action per turn, no prose.\nYou have read-only SQLite, retained SQL and exact source histories. Use ordinary execution to check your work; public SQL errors are repair feedback, not correctness labels. Search relevant retained experience when useful. Current documentation overrides old examples.\nNormalized views are installed automatically:\nproducts(category,ref_id,title,price,catalog_rating,status,image_count)\nreviews(category,ref_id,product_id,user_id,rating,body,review_date,year,month,verified,verification_label,epoch_seconds)\nattributes(category,ref_id,attr_key,attr_val); categories(category,ref_id,cat_lvl,cat_nm).\ncategory is 'office products', 'electronics', or 'musical instruments'. price is DOLLARS; verified is integer 0/1. Join views on category AND ref_id. product_id is NOT the product foreign key. category taxonomy level1 is broad category. Count the requested unit (reviews/products/distinct users), not joined duplicates. For a count of products satisfying a GROUP BY/HAVING condition, count the grouped rows with an outer SELECT COUNT(*) FROM (...); do not output one count per product. Do not confuse catalog_rating with actual review means. Do not drop archived products unless requested. NULL text verification_label means missing label, NOT unverified. Use year/month for available date parts. SQLite dates/years can be NULL for huge corrupt epochs; use numeric epoch_seconds to test far-future timestamps. Raw tables are also available; inspect schemas/docs when needed.\nTools:\n{\"tool\":\"sql\",\"query\":\"SELECT ...\"} executes a read-only query, returns up to 20 preview rows.\n{\"tool\":\"submit\",\"query\":\"SELECT ...\"} executes final SQL and writes the FULL result to answer.json. Use exactly the requested result/column(s). It does not grade correctness.\n{\"tool\":\"schema\"} lists all raw and view columns. Optional table name selects one.\n{\"tool\":\"read\",\"name\":\"documentation.txt\"} reads handbook. name=\"views.py\" reads helper implementation.\n{\"tool\":\"search_history\",\"query\":\"your current need\"} returns the 3 most relevant retained questions and executable SQL, with source IDs.\n{\"tool\":\"read_source\",\"id\":\"source-id\",\"index\":0} reads an exact training record (messages and target); omit index to list metadata and record counts.\n{\"tool\":\"run_saved\",\"id\":\"source-id\",\"params\":{}} executes retained SQL and writes answer.json. This is direct reuse, not query regeneration. Params optional.\n{\"tool\":\"save_sql\",\"name\":\"name\",\"query\":\"SELECT ...\"} retains a query in this job; run_saved may use its name. Useful successful source queries are inherited across sessions by both conditions.\n{\"tool\":\"experience\"} lists shared history metadata. After inspecting successful final execution emit exactly {\"tool\":\"finish\"}. Never finish after a failed submit. No evaluator labels are available.\nController guidance:\nThere are 12 source queries available. Search the history for related work when useful; execute saved queries directly when they answer the current request.\nInherited artifacts available to environment tools: documentation.txt, history.json, views.py",
+        "role": "system"
+      },
+      {
+        "content": "{\"job\":\"q117\",\"question\":\"How many instrument brands have at least one customer review in each of the calendar years 2019, 2020, and 2021? Infer the review year from the fields that are actually populated on each review after you inspect the data.\",\"revision\":\"after\"}",
+        "role": "user"
+      },
+      {
+        "content": "{\"query\":\"SELECT COUNT(*) FROM (SELECT a.attr_val FROM attributes a JOIN reviews r USING(category,ref_id) WHERE a.category='musical instruments' AND a.attr_key='Brand' AND r.year IN (2019,2020,2021) GROUP BY a.attr_val HAVING COUNT(DISTINCT r.year)=3)\",\"tool\":\"submit\"}",
+        "role": "assistant"
+      },
+      {
+        "content": "Tool result: {\"artifact\":\"answer.json\",\"columns\":[\"COUNT(*)\"],\"row_count\":1,\"rows\":[[891]]}",
+        "role": "user"
+      }
+    ],
+    "target": "{\"tool\":\"finish\"}",
+    "source_events": "sources/18.jsonl",
+    "source_events_sha256": "2b45dff8fa0dcc9aa7aee4c1ff50a6dd20e3e399b2333de5d9e6160dbc3edea3"
+  }
+]

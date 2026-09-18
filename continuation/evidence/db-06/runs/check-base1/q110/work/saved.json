@@ -1,0 +1,4 @@
+{
+  "musical_instruments_attributes_current": "SELECT COUNT(*) FROM attributes WHERE category = 'musical instruments'",
+  "musical_instruments_attributes_legacy": "SELECT COUNT(*) FROM attrs_g3_legacy WHERE ref_id IN (SELECT ref_id FROM attributes WHERE category = 'musical instruments')"
+}

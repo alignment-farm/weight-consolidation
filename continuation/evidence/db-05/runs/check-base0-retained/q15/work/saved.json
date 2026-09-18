@@ -1,0 +1,4 @@
+{
+  "electronics_avg_price": "SELECT AVG(price) AS category_avg_price FROM products WHERE category = 'electronics'",
+  "electronics_computers_accessories_products": "SELECT price FROM products WHERE category = 'electronics' AND ref_id IN (SELECT ref_id FROM categories WHERE cat_nm = 'Computers & Accessories' AND cat_lvl = 1)"
+}

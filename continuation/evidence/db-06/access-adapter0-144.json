@@ -1,0 +1,40 @@
+{
+  "arm": "adapter0-144",
+  "point": 0,
+  "records_retrievable": 24,
+  "component_ids_retrievable": [
+    "q2:step2",
+    "q3:step3",
+    "q4:step4",
+    "q4:prior-source-program",
+    "q6:step3",
+    "q6:step5",
+    "q6:prior-source-program",
+    "q9:step1",
+    "q10:step2",
+    "q11:step3",
+    "q11:step4",
+    "q11:step5",
+    "q13:step3",
+    "q13:step4",
+    "q16:step2",
+    "q16:step3",
+    "q16:prior-source-program",
+    "q17:step3",
+    "q17:prior-source-program",
+    "q18:step3",
+    "q18:step4",
+    "q18:step5",
+    "q21:step4",
+    "q21:step5",
+    "q21:step6",
+    "q21:prior-source-program"
+  ],
+  "training_sha256": "47f959670fdcc1620a93a8f37162d6cdf2d58569a9454e2ad1f4af7b576ba233",
+  "inherited": {
+    "history.json": "9215eb94aac70e4b83a8b5e0f45ed4e03e222f248359bd0cdf5567bbba27fb4b",
+    "views.py": "5fe9a25315e4d36480466e567af9761dd1d7225324c34b18dd6d1541a8ba5462",
+    "documentation.txt": "32a0a99749b7a840c9bddfd90d3cfdece236a69dd7ac8a3bdf3e7ea83f7ef374"
+  },
+  "exact_match": true
+}

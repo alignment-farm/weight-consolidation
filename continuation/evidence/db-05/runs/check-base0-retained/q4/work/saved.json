@@ -1,0 +1,3 @@
+{
+  "office_product_rating_diff": "SELECT COUNT(*) FROM (\n                    SELECT i.ref_id\n                    FROM items_g1 i\n                    JOIN fdbk_g1 f ON i.ref_id = f.ref_id\n                    GROUP BY i.ref_id\n                    HAVING ABS(i.avg_rtg - AVG(f.rtg)) > 1.0\n                )"
+}

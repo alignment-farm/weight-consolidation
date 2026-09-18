@@ -1,0 +1,5 @@
+{
+  "job": "q109",
+  "question": "How many distinct musical instrument products have brand information in the current product-facts feed but no brand line at all for the same product in the older attribute export we still keep online?",
+  "revision": "after"
+}

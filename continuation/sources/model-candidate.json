@@ -1,0 +1,70 @@
+{
+  "repository": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+  "revision": "019cc73c45c770444708a6dd8690c66243cc5c80",
+  "card": {
+    "base_model": [
+      "Qwen/Qwen2.5-Coder-7B"
+    ],
+    "language": [
+      "en"
+    ],
+    "library_name": "transformers",
+    "license": "apache-2.0",
+    "license_link": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/LICENSE",
+    "pipeline_tag": "text-generation",
+    "tags": [
+      "code",
+      "codeqwen",
+      "chat",
+      "qwen",
+      "qwen-coder",
+      "mlx"
+    ]
+  },
+  "files": [
+    {
+      "name": ".gitattributes",
+      "size": 1519
+    },
+    {
+      "name": "README.md",
+      "size": 847
+    },
+    {
+      "name": "added_tokens.json",
+      "size": 605
+    },
+    {
+      "name": "config.json",
+      "size": 787
+    },
+    {
+      "name": "merges.txt",
+      "size": 1671853
+    },
+    {
+      "name": "model.safetensors",
+      "size": 4284346255
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": 51711
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": 613
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 7031673
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 7308
+    },
+    {
+      "name": "vocab.json",
+      "size": 2776833
+    }
+  ]
+}

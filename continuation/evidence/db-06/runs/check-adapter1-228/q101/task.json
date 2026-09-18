@@ -1,0 +1,5 @@
+{
+  "job": "q101",
+  "question": "What is the average list price in dollars for electronics products that show at least three images in the catalog? Ignore listings without a positive list price. Round to 2 decimal places.",
+  "revision": "after"
+}
