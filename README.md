@@ -1,7 +1,11 @@
 # Weight consolidation with retained experience
 
 Prepared 17 September 2026 as an independent Construct-2 ancillary study.
-**Status: bounded feasibility and confirmation complete (17 September 2026).**
+**Current assignment — 18 September:** [Continuing work with retained experience](CONTINUING_WORK.md)
+authorizes workload discovery, implementation and experiments in this repository.
+Follow it after the instructions and sources. The previous bounded feasibility
+and confirmation phase is complete (17 September); its findings below remain
+unchanged. Preparation of this follow-up has not started its experiments.
 [Findings and abstract](FINDINGS.md) · [Reproduction](REPRODUCE.md) ·
 [Corrected confirmation audit](evidence/confirmation-01/audit.json) ·
 [All incurred costs](evidence/costs.json).

@@ -1,6 +1,7 @@
 # Independent weight-consolidation study
 
-Read [README.md](README.md) and [sources/README.md](sources/README.md). This project
+Read [README.md](README.md), its current assignment, and
+[sources/README.md](sources/README.md). This project
 owns workload development, methods, protocols, experiments, diagnosis and local
 publication. Construct-2 owns theory, public research and synthesis. In an assigned
 fresh session, proceed autonomously through bounded feasibility and a useful

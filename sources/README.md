@@ -48,3 +48,35 @@ workload execution. See [inspection and reuse boundaries](INSPECTION-01.md),
 [metadata](metadata.xml), and [local findings](../FINDINGS.md). No public paper
 results were reproduced, and no paper code or data were incorporated into the
 synthetic workload. Runtime source remained at the preparation pin without edits.
+
+## Continuing-work discovery leads — 18 September
+
+These support [the follow-up](../CONTINUING_WORK.md). Root inspected project
+overviews and README documentation on 18 September; no benchmark implementation
+or experiment was reproduced and no dataset has been selected. Inspect actual
+tasks and relevant methods, then record exact paper and code/data versions before
+reuse. These leads narrow workload discovery; they do not establish feasibility
+with our models or answer the marginal value of weights.
+
+- [BIRD-INTERACT](https://github.com/bird-bench/BIRD-Interact): database work with
+  documentation, clarification, state-changing operations and executable checks.
+  Its data schema identifies deliberately injected ambiguities. It offers an
+  interaction/evaluation design to inspect, not an existing longitudinal
+  consolidation comparison. Check availability of the required evaluation assets.
+- [Continual Learning Bench](https://github.com/pgasawa/continual-learning-bench):
+  constructed task instances in shared environments, multi-episode schedules,
+  feedback and comparison with stateless operation. Inspect individual tasks
+  for meaningful reuse and affordable model capability; existing continual
+  evaluation narrows what a new local experiment would contribute.
+- [STATE-Bench](https://github.com/microsoft/STATE-Bench): enterprise tool
+  workflows, task-local sandbox databases, simulated users and a learning track.
+  Its README discloses LLM-generated datasets. Inspect scoring and the learning
+  interface before assuming that it supports our matched-history weight comparison.
+
+For changing execution interfaces, root also inspected selected methods in
+[HarnessForge, 2606.01779v1](https://arxiv.org/html/2606.01779v1), §§3.4, 4.3–4.4,
+limitations and Appendix G.1: harness-specific alignment and crossed policy/harness
+evaluation. Those methods and the earlier P42 correction method narrow a possible
+compatibility diagnosis. Public results remain author-reported and do not explain
+the prior local malformed actions by themselves. Generic co-evolution already
+has concrete precedents.
