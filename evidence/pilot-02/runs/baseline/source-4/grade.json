@@ -1,0 +1,41 @@
+{
+  "stage": "baseline",
+  "state": "base",
+  "case_id": "source-4",
+  "split": "source",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 4.872307083001942,
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "7ffc9c7f77406bcd7b93903f5f1ca4bc4fc4f7c92ba54905985cbd2628e03e98"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1872,
+      "completion_tokens": 60,
+      "model_seconds": 2.4162445410038345,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.002409793007245753
+    },
+    "elapsed_seconds": 4.706649084000674,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/baseline/source-4"
+}

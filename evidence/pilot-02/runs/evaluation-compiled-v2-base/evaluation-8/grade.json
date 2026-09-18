@@ -1,0 +1,41 @@
+{
+  "stage": "evaluation-compiled-v2-base",
+  "state": "compiled-v2-base",
+  "case_id": "evaluation-8",
+  "split": "evaluation",
+  "changed": true,
+  "exit_code": 0,
+  "controller_seconds": 4.505641417003062,
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "4d5ae58ff08e774ab05503d09c41899f213f7d41b76158b4c29e407374250e46"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1768,
+      "completion_tokens": 15,
+      "model_seconds": 1.906598916000803,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.0025382919993717223
+    },
+    "elapsed_seconds": 4.330973999996786,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/evaluation-compiled-v2-base/evaluation-8"
+}

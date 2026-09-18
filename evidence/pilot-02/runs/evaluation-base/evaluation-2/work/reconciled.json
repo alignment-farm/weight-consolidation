@@ -1,0 +1,23 @@
+{
+  "job": "evaluation-2",
+  "records": [
+    {
+      "id": "evaluation-2-A",
+      "account": "account-1",
+      "minor": 855500
+    },
+    {
+      "id": "evaluation-2-B",
+      "account": "account-2",
+      "minor": -499900
+    }
+  ],
+  "quarantine": [
+    "evaluation-2-C"
+  ],
+  "excluded": [
+    "evaluation-2-D",
+    "evaluation-2-E"
+  ],
+  "total_minor": 355600
+}

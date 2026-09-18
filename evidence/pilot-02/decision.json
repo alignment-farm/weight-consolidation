@@ -1,0 +1,18 @@
+{
+  "time_ns": 1789687825131966000,
+  "selected_steps": 32,
+  "base_source": 5,
+  "adapter_source": 7,
+  "base_development": 1,
+  "adapter_development": 1,
+  "acquisition_gate_met": true,
+  "deployment_promotion": false,
+  "reason": "Two additional source completions, development total unchanged but different cases. Meets narrow predeclared acquisition gate. Diagnostic only: source-1 syntax collapse and development-1 premature finish after tool error. No 96-step trigger under protocol. Test fresh outcomes and prospectively developed compiler route; no claims of broadly acquired competence.",
+  "evidence": [
+    "runs/baseline",
+    "runs/check-32",
+    "compiler-development-check.json"
+  ],
+  "protocol_sha256": "b76ff80a884d50c1a8ede846354d01ae59e9de966090676d2acb05ab9878a3fc",
+  "training_manifest_sha256": "56ac7c5becee9db25d9433224876b813264fed2863a75f66fb7b3d39a2814acb"
+}

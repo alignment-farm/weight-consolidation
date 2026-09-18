@@ -1,0 +1,41 @@
+{
+  "stage": "recheck-adapter-32",
+  "state": "adapter-32",
+  "case_id": "source-2",
+  "split": "source",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 5.168144625000423,
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "50c0c7bc39f658130aa6823fb86db4ba8c41ecba5918072f87131d47c68fd735"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2129,
+      "completion_tokens": 59,
+      "model_seconds": 2.708442790994013,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.0020082490009372123
+    },
+    "elapsed_seconds": 5.010955457997625,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/recheck-adapter-32/source-2"
+}

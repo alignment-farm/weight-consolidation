@@ -1,0 +1,58 @@
+{
+  "job": "evaluation-4",
+  "contract": "Columns: invoice means id, customer means account, gross means amount, state means status, version means revision, type means kind. Amounts are integer cents. The highest revision wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+  "rows": [
+    {
+      "invoice": "evaluation-4-A",
+      "customer": "c1",
+      "gross": "5508",
+      "state": "posted",
+      "version": 1,
+      "type": "sale"
+    },
+    {
+      "invoice": "evaluation-4-B",
+      "customer": "c2",
+      "gross": "3869",
+      "state": "posted",
+      "version": 1,
+      "type": "credit"
+    },
+    {
+      "invoice": "evaluation-4-A",
+      "customer": "c1",
+      "gross": "7614",
+      "state": "void",
+      "version": 2,
+      "type": "sale"
+    },
+    {
+      "invoice": "evaluation-4-C",
+      "customer": "missing",
+      "gross": "7601",
+      "state": "posted",
+      "version": 1,
+      "type": "sale"
+    },
+    {
+      "invoice": "evaluation-4-D",
+      "customer": "c2",
+      "gross": "5508",
+      "state": "void",
+      "version": 1,
+      "type": "sale"
+    },
+    {
+      "invoice": "evaluation-4-E",
+      "customer": "c1",
+      "gross": "-3869",
+      "state": "settled",
+      "version": 1,
+      "type": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}

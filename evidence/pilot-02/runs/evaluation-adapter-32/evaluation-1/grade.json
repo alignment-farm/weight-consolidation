@@ -1,0 +1,36 @@
+{
+  "stage": "evaluation-adapter-32",
+  "state": "adapter-32",
+  "case_id": "evaluation-1",
+  "split": "evaluation",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 8.920625375001691,
+  "grade": {
+    "complete": false,
+    "components": {
+      "job": false,
+      "records": false,
+      "quarantine": false,
+      "excluded": false,
+      "total_minor": false
+    }
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 5821,
+      "completion_tokens": 83,
+      "model_seconds": 6.456073415996798,
+      "calls": 6,
+      "failed_calls": 6,
+      "tool_calls": 6,
+      "tool_seconds": 0.0016405400019721128
+    },
+    "elapsed_seconds": 8.791497915997752,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/evaluation-adapter-32/evaluation-1"
+}

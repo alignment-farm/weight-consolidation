@@ -1,0 +1,74 @@
+[
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "source-0",
+    "events": "sources/0.jsonl",
+    "reason": "executed investigator reference; source-only teaching irrespective of collector success",
+    "events_sha256": "6a2477005b5b5f7c3e6b2ed4e093bfda797a44e940e0a04a3c47eb1768efc6b9",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "source-1",
+    "events": "sources/1.jsonl",
+    "reason": "executed investigator reference; source-only teaching irrespective of collector success",
+    "events_sha256": "7d28f4149cfbe2fdb3a9265624017502185bdb29ab8fe9227556754fcae3e1cf",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "source-2",
+    "events": "sources/2.jsonl",
+    "reason": "executed investigator reference; source-only teaching irrespective of collector success",
+    "events_sha256": "27f4215b016577051f17da0dbf142e0b0a7509a5a83588ded7789ca1b83bbf05",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "source-3",
+    "events": "sources/3.jsonl",
+    "reason": "executed investigator reference; source-only teaching irrespective of collector success",
+    "events_sha256": "40ec708b40ebf235ff417af01e7dc7d8f377c5c41eea4e7d0a00adf064346674",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "source-4",
+    "events": "sources/4.jsonl",
+    "reason": "executed investigator reference; source-only teaching irrespective of collector success",
+    "events_sha256": "20208c5d107aa416050b84a9c66582121c88d9ac6a312490d0412513969eba49",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "source-5",
+    "events": "sources/5.jsonl",
+    "reason": "executed investigator reference; source-only teaching irrespective of collector success",
+    "events_sha256": "24e9c9e20849b6a34a52fe9b6a7017675b56579fc4cfab7ac69eee4b46d8931a",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "source-6",
+    "events": "sources/6.jsonl",
+    "reason": "executed investigator reference; source-only teaching irrespective of collector success",
+    "events_sha256": "843c367edb23213649d58e84b40872db8f57ebbb64408ceb59acdc1b6107264c",
+    "exported_actions": 2
+  },
+  {
+    "split": "source",
+    "origin": "authored-correction",
+    "case_id": "source-7",
+    "events": "sources/7.jsonl",
+    "reason": "executed investigator reference; source-only teaching irrespective of collector success",
+    "events_sha256": "80797092859fbfb5d7c93e0752b7f7ecce80b57a5097162207f6f9b01715ef4b",
+    "exported_actions": 2
+  }
+]

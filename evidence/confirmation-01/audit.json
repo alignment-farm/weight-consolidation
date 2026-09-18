@@ -1,0 +1,418 @@
+{
+  "exposure": {
+    "evaluation-adapter-32": {
+      "context_exposures": 12,
+      "run_saved": 12
+    },
+    "evaluation-base": {
+      "context_exposures": 12,
+      "run_saved": 12
+    },
+    "evaluation-compiled-adapter-32": {
+      "context_exposures": 12,
+      "run_contract": 12
+    },
+    "evaluation-compiled-base": {
+      "context_exposures": 12,
+      "run_contract": 12
+    },
+    "recheck-adapter-32": {
+      "context_exposures": 12,
+      "run_saved": 13
+    },
+    "recheck-base": {
+      "context_exposures": 12,
+      "run_saved": 12
+    },
+    "recheck-compiled-adapter-32": {
+      "context_exposures": 4,
+      "run_contract": 4
+    },
+    "recheck-compiled-base": {
+      "context_exposures": 4,
+      "run_contract": 4
+    },
+    "reset": {
+      "context_exposures": 1,
+      "run_saved": 1
+    }
+  },
+  "direct_compiler": [
+    {
+      "case_id": "confirmation-0",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 0.0001756249985191971
+    },
+    {
+      "case_id": "confirmation-1",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.662499799858779e-05
+    },
+    {
+      "case_id": "confirmation-10",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.279199831420556e-05
+    },
+    {
+      "case_id": "confirmation-11",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.916699592489749e-05
+    },
+    {
+      "case_id": "confirmation-2",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.17500045336783e-05
+    },
+    {
+      "case_id": "confirmation-3",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.645900091622025e-05
+    },
+    {
+      "case_id": "confirmation-4",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 7.774999539833516e-05
+    },
+    {
+      "case_id": "confirmation-5",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.866699939360842e-05
+    },
+    {
+      "case_id": "confirmation-6",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.341699918266386e-05
+    },
+    {
+      "case_id": "confirmation-7",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 7.070800347719342e-05
+    },
+    {
+      "case_id": "confirmation-8",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.649999366141856e-05
+    },
+    {
+      "case_id": "confirmation-9",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.549999670824036e-05
+    }
+  ],
+  "exact_training_rows_accessible": {
+    "adapter-32": 16,
+    "base": 16,
+    "compiled-adapter-32": 16,
+    "compiled-base": 16
+  },
+  "audited_runs": 81,
+  "outcomes": {
+    "evaluation-adapter-32": {
+      "complete": 5,
+      "tasks": 12,
+      "changed_complete": 2,
+      "changed_tasks": 6,
+      "changed_quarantine": 6,
+      "changed_excluded": 2,
+      "changed_records": 2,
+      "changed_total_minor": 2
+    },
+    "evaluation-base": {
+      "complete": 3,
+      "tasks": 12,
+      "changed_complete": 1,
+      "changed_tasks": 6,
+      "changed_quarantine": 6,
+      "changed_excluded": 6,
+      "changed_records": 1,
+      "changed_total_minor": 1
+    },
+    "evaluation-compiled-adapter-32": {
+      "complete": 12,
+      "tasks": 12,
+      "changed_complete": 6,
+      "changed_tasks": 6,
+      "changed_quarantine": 6,
+      "changed_excluded": 6,
+      "changed_records": 6,
+      "changed_total_minor": 6
+    },
+    "evaluation-compiled-base": {
+      "complete": 12,
+      "tasks": 12,
+      "changed_complete": 6,
+      "changed_tasks": 6,
+      "changed_quarantine": 6,
+      "changed_excluded": 6,
+      "changed_records": 6,
+      "changed_total_minor": 6
+    },
+    "recheck-adapter-32": {
+      "complete": 9,
+      "tasks": 12
+    },
+    "recheck-base": {
+      "complete": 7,
+      "tasks": 12
+    },
+    "recheck-compiled-adapter-32": {
+      "complete": 4,
+      "tasks": 4
+    },
+    "recheck-compiled-base": {
+      "complete": 4,
+      "tasks": 4
+    },
+    "reset": {
+      "complete": 1,
+      "tasks": 1
+    }
+  },
+  "costs": {
+    "evaluation-adapter-32": {
+      "tasks": 12.0,
+      "worker_seconds": 65.9877013759833,
+      "controller_seconds": 67.81037583400757,
+      "prompt_tokens": 30347.0,
+      "completion_tokens": 738.0,
+      "model_seconds": 37.96373150100408,
+      "calls": 28.0,
+      "failed_calls": 6.0,
+      "tool_calls": 28.0,
+      "tool_seconds": 0.02536933496594429
+    },
+    "evaluation-base": {
+      "tasks": 12.0,
+      "worker_seconds": 60.69545649999782,
+      "controller_seconds": 62.549598540012084,
+      "prompt_tokens": 25959.0,
+      "completion_tokens": 738.0,
+      "model_seconds": 32.81680187200254,
+      "calls": 24.0,
+      "failed_calls": 0.0,
+      "tool_calls": 24.0,
+      "tool_seconds": 0.027689835987985134
+    },
+    "evaluation-compiled-adapter-32": {
+      "tasks": 12.0,
+      "worker_seconds": 74.5279880020098,
+      "controller_seconds": 76.49053612398711,
+      "prompt_tokens": 38025.0,
+      "completion_tokens": 842.0,
+      "model_seconds": 46.520428755022294,
+      "calls": 36.0,
+      "failed_calls": 12.0,
+      "tool_calls": 36.0,
+      "tool_seconds": 0.03987900200445438
+    },
+    "evaluation-compiled-base": {
+      "tasks": 12.0,
+      "worker_seconds": 53.82182808199286,
+      "controller_seconds": 55.66260450100526,
+      "prompt_tokens": 24329.0,
+      "completion_tokens": 164.0,
+      "model_seconds": 25.9700697070366,
+      "calls": 24.0,
+      "failed_calls": 0.0,
+      "tool_calls": 24.0,
+      "tool_seconds": 0.029346041003009304
+    },
+    "recheck-adapter-32": {
+      "tasks": 12.0,
+      "worker_seconds": 70.46853454201482,
+      "controller_seconds": 72.31397566699161,
+      "prompt_tokens": 34818.0,
+      "completion_tokens": 811.0,
+      "model_seconds": 42.47965966597985,
+      "calls": 32.0,
+      "failed_calls": 12.0,
+      "tool_calls": 32.0,
+      "tool_seconds": 0.024317830007930752
+    },
+    "recheck-base": {
+      "tasks": 12.0,
+      "worker_seconds": 59.89710362399637,
+      "controller_seconds": 61.63902437600336,
+      "prompt_tokens": 25644.0,
+      "completion_tokens": 720.0,
+      "model_seconds": 32.10917054201127,
+      "calls": 24.0,
+      "failed_calls": 0.0,
+      "tool_calls": 24.0,
+      "tool_seconds": 0.02490608203515876
+    },
+    "recheck-compiled-adapter-32": {
+      "tasks": 4.0,
+      "worker_seconds": 24.680840792003437,
+      "controller_seconds": 25.259065832993656,
+      "prompt_tokens": 12544.0,
+      "completion_tokens": 276.0,
+      "model_seconds": 15.226440957994782,
+      "calls": 12.0,
+      "failed_calls": 4.0,
+      "tool_calls": 12.0,
+      "tool_seconds": 0.01260966600239044
+    },
+    "recheck-compiled-base": {
+      "tasks": 4.0,
+      "worker_seconds": 17.925460708989704,
+      "controller_seconds": 18.530197250001947,
+      "prompt_tokens": 8014.0,
+      "completion_tokens": 58.0,
+      "model_seconds": 8.509879291996185,
+      "calls": 8.0,
+      "failed_calls": 0.0,
+      "tool_calls": 8.0,
+      "tool_seconds": 0.009615041009965353
+    },
+    "reset": {
+      "tasks": 1.0,
+      "worker_seconds": 5.079689917001815,
+      "controller_seconds": 5.240283207996981,
+      "prompt_tokens": 2147.0,
+      "completion_tokens": 60.0,
+      "model_seconds": 2.7443997909940663,
+      "calls": 2.0,
+      "failed_calls": 0.0,
+      "tool_calls": 2.0,
+      "tool_seconds": 0.0021950839945930056
+    }
+  },
+  "training": [
+    {
+      "candidate": "adapter-32",
+      "steps": 32,
+      "usage": {
+        "input_tokens": 30750,
+        "loss_tokens": 944,
+        "update_seconds": 45.510672456992324
+      },
+      "elapsed_seconds": 50.09703974999866,
+      "peak_mlx_bytes": 4853393492,
+      "trained_in_this_run": false
+    }
+  ],
+  "reset_cases": [
+    "source-0"
+  ],
+  "unknown_costs": [
+    "investigator/authoring model tokens and labor",
+    "energy",
+    "FLOPs",
+    "unmeasured setup overhead"
+  ],
+  "limitations": [
+    "single synthetic history",
+    "one training seed",
+    "no OS sandbox claim",
+    "wall times not controlled performance measurements"
+  ]
+}

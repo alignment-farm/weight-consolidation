@@ -1,0 +1,478 @@
+{
+  "exposure": {
+    "baseline": {
+      "context_exposures": 12,
+      "run_saved": 17
+    },
+    "check-32": {
+      "context_exposures": 12,
+      "run_saved": 12
+    },
+    "compiled-check-adapter-32": {
+      "context_exposures": 4,
+      "run_contract": 3,
+      "run_saved": 1
+    },
+    "compiled-check-base": {
+      "context_exposures": 4,
+      "run_contract": 5,
+      "read_procedure": 2,
+      "run_saved": 4,
+      "experience_tool_reads": 3
+    },
+    "compiled-v2-check-adapter-32": {
+      "context_exposures": 4,
+      "run_contract": 4
+    },
+    "compiled-v2-check-base": {
+      "context_exposures": 4,
+      "run_contract": 4
+    },
+    "evaluation-adapter-32": {
+      "context_exposures": 12,
+      "run_saved": 12
+    },
+    "evaluation-base": {
+      "context_exposures": 12,
+      "run_saved": 12
+    },
+    "evaluation-compiled-v2-adapter-32": {
+      "context_exposures": 12,
+      "run_contract": 12
+    },
+    "evaluation-compiled-v2-base": {
+      "context_exposures": 12,
+      "run_contract": 12,
+      "experience_tool_reads": 2
+    },
+    "reset": {
+      "context_exposures": 1,
+      "run_saved": 1
+    },
+    "smoke": {
+      "context_exposures": 1,
+      "run_saved": 1
+    }
+  },
+  "direct_compiler": [
+    {
+      "case_id": "evaluation-0",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 0.00013279099948704243
+    },
+    {
+      "case_id": "evaluation-1",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.541699647437781e-05
+    },
+    {
+      "case_id": "evaluation-10",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.308300023898482e-05
+    },
+    {
+      "case_id": "evaluation-11",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.3165997087489814e-05
+    },
+    {
+      "case_id": "evaluation-2",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.4541997087653726e-05
+    },
+    {
+      "case_id": "evaluation-3",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.97079997533001e-05
+    },
+    {
+      "case_id": "evaluation-4",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.908399569103494e-05
+    },
+    {
+      "case_id": "evaluation-5",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.525000258581713e-05
+    },
+    {
+      "case_id": "evaluation-6",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.774999979417771e-05
+    },
+    {
+      "case_id": "evaluation-7",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.387499939184636e-05
+    },
+    {
+      "case_id": "evaluation-8",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.7458997869398445e-05
+    },
+    {
+      "case_id": "evaluation-9",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.82500030961819e-05
+    }
+  ],
+  "exact_training_rows_accessible": {},
+  "audited_runs": 90,
+  "outcomes": {
+    "baseline": {
+      "complete": 6,
+      "tasks": 12
+    },
+    "check-32": {
+      "complete": 8,
+      "tasks": 12
+    },
+    "compiled-check-adapter-32": {
+      "complete": 4,
+      "tasks": 4
+    },
+    "compiled-check-base": {
+      "complete": 1,
+      "tasks": 4
+    },
+    "compiled-v2-check-adapter-32": {
+      "complete": 4,
+      "tasks": 4
+    },
+    "compiled-v2-check-base": {
+      "complete": 4,
+      "tasks": 4
+    },
+    "evaluation-adapter-32": {
+      "complete": 4,
+      "tasks": 12,
+      "changed_complete": 2,
+      "changed_tasks": 6,
+      "changed_quarantine": 6,
+      "changed_excluded": 6,
+      "changed_records": 2,
+      "changed_total_minor": 2
+    },
+    "evaluation-base": {
+      "complete": 3,
+      "tasks": 12,
+      "changed_complete": 1,
+      "changed_tasks": 6,
+      "changed_quarantine": 6,
+      "changed_excluded": 6,
+      "changed_records": 1,
+      "changed_total_minor": 1
+    },
+    "evaluation-compiled-v2-adapter-32": {
+      "complete": 12,
+      "tasks": 12,
+      "changed_complete": 6,
+      "changed_tasks": 6,
+      "changed_quarantine": 6,
+      "changed_excluded": 6,
+      "changed_records": 6,
+      "changed_total_minor": 6
+    },
+    "evaluation-compiled-v2-base": {
+      "complete": 12,
+      "tasks": 12,
+      "changed_complete": 6,
+      "changed_tasks": 6,
+      "changed_quarantine": 6,
+      "changed_excluded": 6,
+      "changed_records": 6,
+      "changed_total_minor": 6
+    },
+    "reset": {
+      "complete": 1,
+      "tasks": 1
+    },
+    "smoke": {
+      "complete": 1,
+      "tasks": 1
+    }
+  },
+  "costs": {
+    "baseline": {
+      "tasks": 12.0,
+      "worker_seconds": 63.19722075100435,
+      "controller_seconds": 65.01115700001537,
+      "prompt_tokens": 26786.0,
+      "completion_tokens": 984.0,
+      "model_seconds": 35.608831539990206,
+      "calls": 28.0,
+      "failed_calls": 6.0,
+      "tool_calls": 28.0,
+      "tool_seconds": 0.031165794003754854
+    },
+    "check-32": {
+      "tasks": 12.0,
+      "worker_seconds": 76.53503137299413,
+      "controller_seconds": 78.27134625000326,
+      "prompt_tokens": 32466.0,
+      "completion_tokens": 1588.0,
+      "model_seconds": 48.425755625983584,
+      "calls": 32.0,
+      "failed_calls": 12.0,
+      "tool_calls": 32.0,
+      "tool_seconds": 0.023044913999910932
+    },
+    "compiled-check-adapter-32": {
+      "tasks": 4.0,
+      "worker_seconds": 21.860513542000263,
+      "controller_seconds": 22.471961918003217,
+      "prompt_tokens": 10257.0,
+      "completion_tokens": 226.0,
+      "model_seconds": 12.51921862301242,
+      "calls": 12.0,
+      "failed_calls": 4.0,
+      "tool_calls": 12.0,
+      "tool_seconds": 0.010994791984558105
+    },
+    "compiled-check-base": {
+      "tasks": 4.0,
+      "worker_seconds": 33.55102612399787,
+      "controller_seconds": 34.03510616800486,
+      "prompt_tokens": 21714.0,
+      "completion_tokens": 309.0,
+      "model_seconds": 24.147616251008003,
+      "calls": 18.0,
+      "failed_calls": 1.0,
+      "tool_calls": 18.0,
+      "tool_seconds": 0.018770749986288138
+    },
+    "compiled-v2-check-adapter-32": {
+      "tasks": 4.0,
+      "worker_seconds": 22.97386674999143,
+      "controller_seconds": 23.568728581994947,
+      "prompt_tokens": 10918.0,
+      "completion_tokens": 274.0,
+      "model_seconds": 13.654195957009506,
+      "calls": 12.0,
+      "failed_calls": 4.0,
+      "tool_calls": 12.0,
+      "tool_seconds": 0.012094247998902574
+    },
+    "compiled-v2-check-base": {
+      "tasks": 4.0,
+      "worker_seconds": 16.76414837500488,
+      "controller_seconds": 17.312617581999802,
+      "prompt_tokens": 6932.0,
+      "completion_tokens": 54.0,
+      "model_seconds": 7.473903332014743,
+      "calls": 8.0,
+      "failed_calls": 0.0,
+      "tool_calls": 8.0,
+      "tool_seconds": 0.009513665987469722
+    },
+    "evaluation-adapter-32": {
+      "tasks": 12.0,
+      "worker_seconds": 62.12892666600965,
+      "controller_seconds": 63.92284512701008,
+      "prompt_tokens": 26677.0,
+      "completion_tokens": 750.0,
+      "model_seconds": 34.19911191400024,
+      "calls": 28.0,
+      "failed_calls": 6.0,
+      "tool_calls": 28.0,
+      "tool_seconds": 0.024169785996491555
+    },
+    "evaluation-base": {
+      "tasks": 12.0,
+      "worker_seconds": 57.50964025100984,
+      "controller_seconds": 59.29491216700262,
+      "prompt_tokens": 22751.0,
+      "completion_tokens": 738.0,
+      "model_seconds": 29.673697626007197,
+      "calls": 24.0,
+      "failed_calls": 0.0,
+      "tool_calls": 24.0,
+      "tool_seconds": 0.026202498011116404
+    },
+    "evaluation-compiled-v2-adapter-32": {
+      "tasks": 12.0,
+      "worker_seconds": 69.43973425000877,
+      "controller_seconds": 71.26603433501441,
+      "prompt_tokens": 33205.0,
+      "completion_tokens": 839.0,
+      "model_seconds": 41.44655237301049,
+      "calls": 36.0,
+      "failed_calls": 12.0,
+      "tool_calls": 36.0,
+      "tool_seconds": 0.037569540028925985
+    },
+    "evaluation-compiled-v2-base": {
+      "tasks": 12.0,
+      "worker_seconds": 53.04746637599601,
+      "controller_seconds": 54.857005042998935,
+      "prompt_tokens": 23472.0,
+      "completion_tokens": 177.0,
+      "model_seconds": 25.12116916800005,
+      "calls": 26.0,
+      "failed_calls": 0.0,
+      "tool_calls": 26.0,
+      "tool_seconds": 0.030073959002038464
+    },
+    "reset": {
+      "tasks": 1.0,
+      "worker_seconds": 4.717803791994811,
+      "controller_seconds": 4.88962145899859,
+      "prompt_tokens": 1877.0,
+      "completion_tokens": 60.0,
+      "model_seconds": 2.4174452509978437,
+      "calls": 2.0,
+      "failed_calls": 0.0,
+      "tool_calls": 2.0,
+      "tool_seconds": 0.002148542000213638
+    },
+    "smoke": {
+      "tasks": 1.0,
+      "worker_seconds": 5.187620874996355,
+      "controller_seconds": 5.355440458995872,
+      "prompt_tokens": 1877.0,
+      "completion_tokens": 60.0,
+      "model_seconds": 2.895033417000377,
+      "calls": 2.0,
+      "failed_calls": 0.0,
+      "tool_calls": 2.0,
+      "tool_seconds": 0.0023086670043994673
+    }
+  },
+  "training": [
+    {
+      "candidate": "adapter-32",
+      "steps": 32,
+      "usage": {
+        "input_tokens": 30750,
+        "loss_tokens": 944,
+        "update_seconds": 45.510672456992324
+      },
+      "elapsed_seconds": 50.09703974999866,
+      "peak_mlx_bytes": 4853393492,
+      "trained_in_this_run": true
+    }
+  ],
+  "reset_cases": [
+    "source-0"
+  ],
+  "unknown_costs": [
+    "investigator/authoring model tokens and labor",
+    "energy",
+    "FLOPs",
+    "unmeasured setup overhead"
+  ],
+  "limitations": [
+    "single synthetic history",
+    "one training seed",
+    "no OS sandbox claim",
+    "wall times not controlled performance measurements"
+  ]
+}

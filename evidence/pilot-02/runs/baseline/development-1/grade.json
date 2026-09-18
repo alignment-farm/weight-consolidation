@@ -1,0 +1,41 @@
+{
+  "stage": "baseline",
+  "state": "base",
+  "case_id": "development-1",
+  "split": "development",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 4.898203665994515,
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "77c129b8694b1c49a5a7756c46f3d81e415964591bfa80f757e8c304b8e9479e"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1856,
+      "completion_tokens": 60,
+      "model_seconds": 2.430585834001249,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.002267666997795459
+    },
+    "elapsed_seconds": 4.722348167000746,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/baseline/development-1"
+}

@@ -1,0 +1,19 @@
+{
+  "job": "source-6",
+  "records": [
+    {
+      "id": "source-6-B",
+      "account": "account-2",
+      "minor": -4796
+    }
+  ],
+  "quarantine": [
+    "source-6-C"
+  ],
+  "excluded": [
+    "source-6-A",
+    "source-6-D",
+    "source-6-E"
+  ],
+  "total_minor": -4796
+}

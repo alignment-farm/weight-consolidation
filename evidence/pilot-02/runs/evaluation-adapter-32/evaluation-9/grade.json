@@ -1,0 +1,41 @@
+{
+  "stage": "evaluation-adapter-32",
+  "state": "adapter-32",
+  "case_id": "evaluation-9",
+  "split": "evaluation",
+  "changed": true,
+  "exit_code": 0,
+  "controller_seconds": 5.026950624996971,
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "6e8af7cc1cfc47e7b2306cbfcf03003fc53f4d3f362d160dc0c76a1a81305e14"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1910,
+      "completion_tokens": 62,
+      "model_seconds": 2.551810500001011,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.0019549580028979108
+    },
+    "elapsed_seconds": 4.879209124999761,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/evaluation-adapter-32/evaluation-9"
+}

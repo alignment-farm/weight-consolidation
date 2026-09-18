@@ -1,7 +1,27 @@
 # Weight consolidation with retained experience
 
 Prepared 17 September 2026 as an independent Construct-2 ancillary study.
-**Status: ready for an assigned investigator; no experiments launched.**
+**Status: bounded feasibility and confirmation complete (17 September 2026).**
+[Findings and abstract](FINDINGS.md) · [Reproduction](REPRODUCE.md) ·
+[Corrected confirmation audit](evidence/confirmation-01/audit.json) ·
+[All incurred costs](evidence/costs.json).
+
+With full source evidence accessible to both arms, adapter learning improves
+manual use of retained transformation code from **3/12 to 5/12** complete fresh
+tasks. A developed explicit contract compiler yields **12/12 with either model**,
+including six changed-contract jobs. The adapter adds twelve malformed-action
+repairs in that stronger harness. Direct compiler execution also scores 12/12.
+This demonstrates a limit of the finite synthetic workload, not a general negative
+result about weight consolidation. No adapter is promoted; the broader question
+remains open.
+
+The complete record preserves 172 model task executions, one 32-update training
+run, all failed attempts, and an exploratory comparison corrected after a
+source-access audit. [Protocol 01](methods/PROTOCOL-01.md) records acquisition and
+harness development; [Protocol 02](methods/PROTOCOL-02.md) fixes full-source parity
+before new confirmation payloads. Original WC1–WC3 below remain unchanged; see
+[their assessments](FINDINGS.md#incurred-work-and-interpretation).
+
 Read [AGENTS.md](AGENTS.md) for responsibilities and available resources.
 
 ## Question

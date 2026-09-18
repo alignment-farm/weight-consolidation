@@ -1,0 +1,41 @@
+{
+  "stage": "recheck-base",
+  "state": "base",
+  "case_id": "source-6",
+  "split": "source",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 5.091227291995892,
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "665af58dd09f5e5b5add9aa877e8730ee4ccee68faf3ed151aa3e9467efa0e6b"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2132,
+      "completion_tokens": 60,
+      "model_seconds": 2.6481786250005825,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.0017350820053252392
+    },
+    "elapsed_seconds": 4.947869040996011,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/recheck-base/source-6"
+}

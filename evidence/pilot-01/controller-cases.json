@@ -1,0 +1,1198 @@
+[
+  {
+    "id": "source-0",
+    "split": "source",
+    "changed": false,
+    "task": {
+      "job": "source-0",
+      "contract": "Columns: invoice means id, customer means account, gross means amount, state means status, version means revision, type means kind. Amounts are decimal dollars. The first occurrence wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "invoice": "source-0-A",
+          "customer": "c1",
+          "gross": "82.54",
+          "state": "posted",
+          "version": 1,
+          "type": "sale"
+        },
+        {
+          "invoice": "source-0-B",
+          "customer": "c2",
+          "gross": "17.60",
+          "state": "posted",
+          "version": 1,
+          "type": "credit"
+        },
+        {
+          "invoice": "source-0-A",
+          "customer": "c1",
+          "gross": "71.07",
+          "state": "void",
+          "version": 2,
+          "type": "sale"
+        },
+        {
+          "invoice": "source-0-C",
+          "customer": "missing",
+          "gross": "46.88",
+          "state": "posted",
+          "version": 1,
+          "type": "sale"
+        },
+        {
+          "invoice": "source-0-D",
+          "customer": "c2",
+          "gross": "82.54",
+          "state": "void",
+          "version": 1,
+          "type": "sale"
+        },
+        {
+          "invoice": "source-0-E",
+          "customer": "c1",
+          "gross": "-17.60",
+          "state": "settled",
+          "version": 1,
+          "type": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "invoice",
+        "account": "customer",
+        "amount": "gross",
+        "status": "state",
+        "revision": "version",
+        "kind": "type"
+      },
+      "units": "major",
+      "dedup": "first",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "source-0",
+      "records": [
+        {
+          "id": "source-0-A",
+          "account": "account-1",
+          "minor": 8254
+        },
+        {
+          "id": "source-0-B",
+          "account": "account-2",
+          "minor": -1760
+        }
+      ],
+      "quarantine": [
+        "source-0-C"
+      ],
+      "excluded": [
+        "source-0-D",
+        "source-0-E"
+      ],
+      "total_minor": 6494
+    }
+  },
+  {
+    "id": "source-1",
+    "split": "source",
+    "changed": false,
+    "task": {
+      "job": "source-1",
+      "contract": "Columns: document means id, client means account, value means amount, stage means status, revision means revision, category means kind. Amounts are integer cents. The highest revision wins per document. All amounts already carry their proper sign; preserve it even for credit-kind rows. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "document": "source-1-A",
+          "client": "c1",
+          "value": "8122",
+          "stage": "posted",
+          "revision": 1,
+          "category": "sale"
+        },
+        {
+          "document": "source-1-B",
+          "client": "c2",
+          "value": "1694",
+          "stage": "posted",
+          "revision": 1,
+          "category": "credit"
+        },
+        {
+          "document": "source-1-A",
+          "client": "c1",
+          "value": "6941",
+          "stage": "void",
+          "revision": 2,
+          "category": "sale"
+        },
+        {
+          "document": "source-1-C",
+          "client": "missing",
+          "value": "6745",
+          "stage": "posted",
+          "revision": 1,
+          "category": "sale"
+        },
+        {
+          "document": "source-1-D",
+          "client": "c2",
+          "value": "8122",
+          "stage": "void",
+          "revision": 1,
+          "category": "sale"
+        },
+        {
+          "document": "source-1-E",
+          "client": "c1",
+          "value": "-1694",
+          "stage": "settled",
+          "revision": 1,
+          "category": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "document",
+        "account": "client",
+        "amount": "value",
+        "status": "stage",
+        "revision": "revision",
+        "kind": "category"
+      },
+      "units": "minor",
+      "dedup": "latest",
+      "credit_negative": false,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "source-1",
+      "records": [
+        {
+          "id": "source-1-B",
+          "account": "account-2",
+          "minor": 1694
+        }
+      ],
+      "quarantine": [
+        "source-1-C"
+      ],
+      "excluded": [
+        "source-1-A",
+        "source-1-D",
+        "source-1-E"
+      ],
+      "total_minor": 1694
+    }
+  },
+  {
+    "id": "source-2",
+    "split": "source",
+    "changed": false,
+    "task": {
+      "job": "source-2",
+      "contract": "Columns: ref means id, buyer means account, amount means amount, status means status, seq means revision, kind means kind. Amounts are decimal dollars. The highest revision wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "ref": "source-2-A",
+          "buyer": "c1",
+          "amount": "41.90",
+          "status": "posted",
+          "seq": 1,
+          "kind": "sale"
+        },
+        {
+          "ref": "source-2-B",
+          "buyer": "c2",
+          "amount": "57.02",
+          "status": "posted",
+          "seq": 1,
+          "kind": "credit"
+        },
+        {
+          "ref": "source-2-A",
+          "buyer": "c1",
+          "amount": "6.82",
+          "status": "void",
+          "seq": 2,
+          "kind": "sale"
+        },
+        {
+          "ref": "source-2-C",
+          "buyer": "missing",
+          "amount": "27.36",
+          "status": "posted",
+          "seq": 1,
+          "kind": "sale"
+        },
+        {
+          "ref": "source-2-D",
+          "buyer": "c2",
+          "amount": "41.90",
+          "status": "void",
+          "seq": 1,
+          "kind": "sale"
+        },
+        {
+          "ref": "source-2-E",
+          "buyer": "c1",
+          "amount": "-57.02",
+          "status": "settled",
+          "seq": 1,
+          "kind": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "ref",
+        "account": "buyer",
+        "amount": "amount",
+        "status": "status",
+        "revision": "seq",
+        "kind": "kind"
+      },
+      "units": "major",
+      "dedup": "latest",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "source-2",
+      "records": [
+        {
+          "id": "source-2-B",
+          "account": "account-2",
+          "minor": -5702
+        }
+      ],
+      "quarantine": [
+        "source-2-C"
+      ],
+      "excluded": [
+        "source-2-A",
+        "source-2-D",
+        "source-2-E"
+      ],
+      "total_minor": -5702
+    }
+  },
+  {
+    "id": "source-3",
+    "split": "source",
+    "changed": false,
+    "task": {
+      "job": "source-3",
+      "contract": "Columns: number means id, account means account, balance means amount, flag means status, update means revision, class means kind. Amounts are integer cents. The first occurrence wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "number": "source-3-A",
+          "account": "c1",
+          "balance": "1532",
+          "flag": "posted",
+          "update": 1,
+          "class": "sale"
+        },
+        {
+          "number": "source-3-B",
+          "account": "c2",
+          "balance": "6749",
+          "flag": "posted",
+          "update": 1,
+          "class": "credit"
+        },
+        {
+          "number": "source-3-A",
+          "account": "c1",
+          "balance": "153",
+          "flag": "void",
+          "update": 2,
+          "class": "sale"
+        },
+        {
+          "number": "source-3-C",
+          "account": "missing",
+          "balance": "8583",
+          "flag": "posted",
+          "update": 1,
+          "class": "sale"
+        },
+        {
+          "number": "source-3-D",
+          "account": "c2",
+          "balance": "1532",
+          "flag": "void",
+          "update": 1,
+          "class": "sale"
+        },
+        {
+          "number": "source-3-E",
+          "account": "c1",
+          "balance": "-6749",
+          "flag": "settled",
+          "update": 1,
+          "class": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "number",
+        "account": "account",
+        "amount": "balance",
+        "status": "flag",
+        "revision": "update",
+        "kind": "class"
+      },
+      "units": "minor",
+      "dedup": "first",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "source-3",
+      "records": [
+        {
+          "id": "source-3-A",
+          "account": "account-1",
+          "minor": 1532
+        },
+        {
+          "id": "source-3-B",
+          "account": "account-2",
+          "minor": -6749
+        }
+      ],
+      "quarantine": [
+        "source-3-C"
+      ],
+      "excluded": [
+        "source-3-D",
+        "source-3-E"
+      ],
+      "total_minor": -5217
+    }
+  },
+  {
+    "id": "source-4",
+    "split": "source",
+    "changed": false,
+    "task": {
+      "job": "source-4",
+      "contract": "Columns: invoice means id, customer means account, gross means amount, state means status, version means revision, type means kind. Amounts are decimal dollars. The first occurrence wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "invoice": "source-4-A",
+          "customer": "c1",
+          "gross": "8.13",
+          "state": "posted",
+          "version": 1,
+          "type": "sale"
+        },
+        {
+          "invoice": "source-4-B",
+          "customer": "c2",
+          "gross": "31.24",
+          "state": "posted",
+          "version": 1,
+          "type": "credit"
+        },
+        {
+          "invoice": "source-4-A",
+          "customer": "c1",
+          "gross": "76.27",
+          "state": "void",
+          "version": 2,
+          "type": "sale"
+        },
+        {
+          "invoice": "source-4-C",
+          "customer": "missing",
+          "gross": "17.43",
+          "state": "posted",
+          "version": 1,
+          "type": "sale"
+        },
+        {
+          "invoice": "source-4-D",
+          "customer": "c2",
+          "gross": "8.13",
+          "state": "void",
+          "version": 1,
+          "type": "sale"
+        },
+        {
+          "invoice": "source-4-E",
+          "customer": "c1",
+          "gross": "-31.24",
+          "state": "settled",
+          "version": 1,
+          "type": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "invoice",
+        "account": "customer",
+        "amount": "gross",
+        "status": "state",
+        "revision": "version",
+        "kind": "type"
+      },
+      "units": "major",
+      "dedup": "first",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "source-4",
+      "records": [
+        {
+          "id": "source-4-A",
+          "account": "account-1",
+          "minor": 813
+        },
+        {
+          "id": "source-4-B",
+          "account": "account-2",
+          "minor": -3124
+        }
+      ],
+      "quarantine": [
+        "source-4-C"
+      ],
+      "excluded": [
+        "source-4-D",
+        "source-4-E"
+      ],
+      "total_minor": -2311
+    }
+  },
+  {
+    "id": "source-5",
+    "split": "source",
+    "changed": false,
+    "task": {
+      "job": "source-5",
+      "contract": "Columns: document means id, client means account, value means amount, stage means status, revision means revision, category means kind. Amounts are integer cents. The highest revision wins per document. All amounts already carry their proper sign; preserve it even for credit-kind rows. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "document": "source-5-A",
+          "client": "c1",
+          "value": "6997",
+          "stage": "posted",
+          "revision": 1,
+          "category": "sale"
+        },
+        {
+          "document": "source-5-B",
+          "client": "c2",
+          "value": "6931",
+          "stage": "posted",
+          "revision": 1,
+          "category": "credit"
+        },
+        {
+          "document": "source-5-A",
+          "client": "c1",
+          "value": "6578",
+          "stage": "void",
+          "revision": 2,
+          "category": "sale"
+        },
+        {
+          "document": "source-5-C",
+          "client": "missing",
+          "value": "5051",
+          "stage": "posted",
+          "revision": 1,
+          "category": "sale"
+        },
+        {
+          "document": "source-5-D",
+          "client": "c2",
+          "value": "6997",
+          "stage": "void",
+          "revision": 1,
+          "category": "sale"
+        },
+        {
+          "document": "source-5-E",
+          "client": "c1",
+          "value": "-6931",
+          "stage": "settled",
+          "revision": 1,
+          "category": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "document",
+        "account": "client",
+        "amount": "value",
+        "status": "stage",
+        "revision": "revision",
+        "kind": "category"
+      },
+      "units": "minor",
+      "dedup": "latest",
+      "credit_negative": false,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "source-5",
+      "records": [
+        {
+          "id": "source-5-B",
+          "account": "account-2",
+          "minor": 6931
+        }
+      ],
+      "quarantine": [
+        "source-5-C"
+      ],
+      "excluded": [
+        "source-5-A",
+        "source-5-D",
+        "source-5-E"
+      ],
+      "total_minor": 6931
+    }
+  },
+  {
+    "id": "source-6",
+    "split": "source",
+    "changed": false,
+    "task": {
+      "job": "source-6",
+      "contract": "Columns: ref means id, buyer means account, amount means amount, status means status, seq means revision, kind means kind. Amounts are decimal dollars. The highest revision wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "ref": "source-6-A",
+          "buyer": "c1",
+          "amount": "17.97",
+          "status": "posted",
+          "seq": 1,
+          "kind": "sale"
+        },
+        {
+          "ref": "source-6-B",
+          "buyer": "c2",
+          "amount": "47.96",
+          "status": "posted",
+          "seq": 1,
+          "kind": "credit"
+        },
+        {
+          "ref": "source-6-A",
+          "buyer": "c1",
+          "amount": "89.83",
+          "status": "void",
+          "seq": 2,
+          "kind": "sale"
+        },
+        {
+          "ref": "source-6-C",
+          "buyer": "missing",
+          "amount": "67.42",
+          "status": "posted",
+          "seq": 1,
+          "kind": "sale"
+        },
+        {
+          "ref": "source-6-D",
+          "buyer": "c2",
+          "amount": "17.97",
+          "status": "void",
+          "seq": 1,
+          "kind": "sale"
+        },
+        {
+          "ref": "source-6-E",
+          "buyer": "c1",
+          "amount": "-47.96",
+          "status": "settled",
+          "seq": 1,
+          "kind": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "ref",
+        "account": "buyer",
+        "amount": "amount",
+        "status": "status",
+        "revision": "seq",
+        "kind": "kind"
+      },
+      "units": "major",
+      "dedup": "latest",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "source-6",
+      "records": [
+        {
+          "id": "source-6-B",
+          "account": "account-2",
+          "minor": -4796
+        }
+      ],
+      "quarantine": [
+        "source-6-C"
+      ],
+      "excluded": [
+        "source-6-A",
+        "source-6-D",
+        "source-6-E"
+      ],
+      "total_minor": -4796
+    }
+  },
+  {
+    "id": "source-7",
+    "split": "source",
+    "changed": false,
+    "task": {
+      "job": "source-7",
+      "contract": "Columns: number means id, account means account, balance means amount, flag means status, update means revision, class means kind. Amounts are integer cents. The first occurrence wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "number": "source-7-A",
+          "account": "c1",
+          "balance": "7315",
+          "flag": "posted",
+          "update": 1,
+          "class": "sale"
+        },
+        {
+          "number": "source-7-B",
+          "account": "c2",
+          "balance": "4441",
+          "flag": "posted",
+          "update": 1,
+          "class": "credit"
+        },
+        {
+          "number": "source-7-A",
+          "account": "c1",
+          "balance": "3974",
+          "flag": "void",
+          "update": 2,
+          "class": "sale"
+        },
+        {
+          "number": "source-7-C",
+          "account": "missing",
+          "balance": "1652",
+          "flag": "posted",
+          "update": 1,
+          "class": "sale"
+        },
+        {
+          "number": "source-7-D",
+          "account": "c2",
+          "balance": "7315",
+          "flag": "void",
+          "update": 1,
+          "class": "sale"
+        },
+        {
+          "number": "source-7-E",
+          "account": "c1",
+          "balance": "-4441",
+          "flag": "settled",
+          "update": 1,
+          "class": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "number",
+        "account": "account",
+        "amount": "balance",
+        "status": "flag",
+        "revision": "update",
+        "kind": "class"
+      },
+      "units": "minor",
+      "dedup": "first",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "source-7",
+      "records": [
+        {
+          "id": "source-7-A",
+          "account": "account-1",
+          "minor": 7315
+        },
+        {
+          "id": "source-7-B",
+          "account": "account-2",
+          "minor": -4441
+        }
+      ],
+      "quarantine": [
+        "source-7-C"
+      ],
+      "excluded": [
+        "source-7-D",
+        "source-7-E"
+      ],
+      "total_minor": 2874
+    }
+  },
+  {
+    "id": "development-0",
+    "split": "development",
+    "changed": false,
+    "task": {
+      "job": "development-0",
+      "contract": "Columns: invoice means id, customer means account, gross means amount, state means status, version means revision, type means kind. Amounts are integer cents. The highest revision wins per document. All amounts already carry their proper sign; preserve it even for credit-kind rows. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "invoice": "development-0-A",
+          "customer": "c1",
+          "gross": "6699",
+          "state": "posted",
+          "version": 1,
+          "type": "sale"
+        },
+        {
+          "invoice": "development-0-B",
+          "customer": "c2",
+          "gross": "980",
+          "state": "posted",
+          "version": 1,
+          "type": "credit"
+        },
+        {
+          "invoice": "development-0-A",
+          "customer": "c1",
+          "gross": "2621",
+          "state": "void",
+          "version": 2,
+          "type": "sale"
+        },
+        {
+          "invoice": "development-0-C",
+          "customer": "missing",
+          "gross": "4841",
+          "state": "posted",
+          "version": 1,
+          "type": "sale"
+        },
+        {
+          "invoice": "development-0-D",
+          "customer": "c2",
+          "gross": "6699",
+          "state": "void",
+          "version": 1,
+          "type": "sale"
+        },
+        {
+          "invoice": "development-0-E",
+          "customer": "c1",
+          "gross": "-980",
+          "state": "settled",
+          "version": 1,
+          "type": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "invoice",
+        "account": "customer",
+        "amount": "gross",
+        "status": "state",
+        "revision": "version",
+        "kind": "type"
+      },
+      "units": "minor",
+      "dedup": "latest",
+      "credit_negative": false,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "development-0",
+      "records": [
+        {
+          "id": "development-0-B",
+          "account": "account-2",
+          "minor": 980
+        }
+      ],
+      "quarantine": [
+        "development-0-C"
+      ],
+      "excluded": [
+        "development-0-A",
+        "development-0-D",
+        "development-0-E"
+      ],
+      "total_minor": 980
+    }
+  },
+  {
+    "id": "development-1",
+    "split": "development",
+    "changed": false,
+    "task": {
+      "job": "development-1",
+      "contract": "Columns: document means id, client means account, value means amount, stage means status, revision means revision, category means kind. Amounts are decimal dollars. The highest revision wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "document": "development-1-A",
+          "client": "c1",
+          "value": "6.72",
+          "stage": "posted",
+          "revision": 1,
+          "category": "sale"
+        },
+        {
+          "document": "development-1-B",
+          "client": "c2",
+          "value": "65.35",
+          "stage": "posted",
+          "revision": 1,
+          "category": "credit"
+        },
+        {
+          "document": "development-1-A",
+          "client": "c1",
+          "value": "31.23",
+          "stage": "void",
+          "revision": 2,
+          "category": "sale"
+        },
+        {
+          "document": "development-1-C",
+          "client": "missing",
+          "value": "8.39",
+          "stage": "posted",
+          "revision": 1,
+          "category": "sale"
+        },
+        {
+          "document": "development-1-D",
+          "client": "c2",
+          "value": "6.72",
+          "stage": "void",
+          "revision": 1,
+          "category": "sale"
+        },
+        {
+          "document": "development-1-E",
+          "client": "c1",
+          "value": "-65.35",
+          "stage": "settled",
+          "revision": 1,
+          "category": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "document",
+        "account": "client",
+        "amount": "value",
+        "status": "stage",
+        "revision": "revision",
+        "kind": "category"
+      },
+      "units": "major",
+      "dedup": "latest",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "development-1",
+      "records": [
+        {
+          "id": "development-1-B",
+          "account": "account-2",
+          "minor": -6535
+        }
+      ],
+      "quarantine": [
+        "development-1-C"
+      ],
+      "excluded": [
+        "development-1-A",
+        "development-1-D",
+        "development-1-E"
+      ],
+      "total_minor": -6535
+    }
+  },
+  {
+    "id": "development-2",
+    "split": "development",
+    "changed": false,
+    "task": {
+      "job": "development-2",
+      "contract": "Columns: ref means id, buyer means account, amount means amount, status means status, seq means revision, kind means kind. Amounts are integer cents. The first occurrence wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "ref": "development-2-A",
+          "buyer": "c1",
+          "amount": "3474",
+          "status": "posted",
+          "seq": 1,
+          "kind": "sale"
+        },
+        {
+          "ref": "development-2-B",
+          "buyer": "c2",
+          "amount": "6611",
+          "status": "posted",
+          "seq": 1,
+          "kind": "credit"
+        },
+        {
+          "ref": "development-2-A",
+          "buyer": "c1",
+          "amount": "3588",
+          "status": "void",
+          "seq": 2,
+          "kind": "sale"
+        },
+        {
+          "ref": "development-2-C",
+          "buyer": "missing",
+          "amount": "3978",
+          "status": "posted",
+          "seq": 1,
+          "kind": "sale"
+        },
+        {
+          "ref": "development-2-D",
+          "buyer": "c2",
+          "amount": "3474",
+          "status": "void",
+          "seq": 1,
+          "kind": "sale"
+        },
+        {
+          "ref": "development-2-E",
+          "buyer": "c1",
+          "amount": "-6611",
+          "status": "settled",
+          "seq": 1,
+          "kind": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "ref",
+        "account": "buyer",
+        "amount": "amount",
+        "status": "status",
+        "revision": "seq",
+        "kind": "kind"
+      },
+      "units": "minor",
+      "dedup": "first",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "development-2",
+      "records": [
+        {
+          "id": "development-2-A",
+          "account": "account-1",
+          "minor": 3474
+        },
+        {
+          "id": "development-2-B",
+          "account": "account-2",
+          "minor": -6611
+        }
+      ],
+      "quarantine": [
+        "development-2-C"
+      ],
+      "excluded": [
+        "development-2-D",
+        "development-2-E"
+      ],
+      "total_minor": -3137
+    }
+  },
+  {
+    "id": "development-3",
+    "split": "development",
+    "changed": false,
+    "task": {
+      "job": "development-3",
+      "contract": "Columns: number means id, account means account, balance means amount, flag means status, update means revision, class means kind. Amounts are decimal dollars. The highest revision wins per document. All amounts already carry their proper sign; preserve it even for credit-kind rows. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+      "rows": [
+        {
+          "number": "development-3-A",
+          "account": "c1",
+          "balance": "75.05",
+          "flag": "posted",
+          "update": 1,
+          "class": "sale"
+        },
+        {
+          "number": "development-3-B",
+          "account": "c2",
+          "balance": "15.22",
+          "flag": "posted",
+          "update": 1,
+          "class": "credit"
+        },
+        {
+          "number": "development-3-A",
+          "account": "c1",
+          "balance": "45.71",
+          "flag": "void",
+          "update": 2,
+          "class": "sale"
+        },
+        {
+          "number": "development-3-C",
+          "account": "missing",
+          "balance": "52.11",
+          "flag": "posted",
+          "update": 1,
+          "class": "sale"
+        },
+        {
+          "number": "development-3-D",
+          "account": "c2",
+          "balance": "75.05",
+          "flag": "void",
+          "update": 1,
+          "class": "sale"
+        },
+        {
+          "number": "development-3-E",
+          "account": "c1",
+          "balance": "-15.22",
+          "flag": "settled",
+          "update": 1,
+          "class": "credit"
+        }
+      ],
+      "accounts": {
+        "c1": "account-1",
+        "c2": "account-2"
+      }
+    },
+    "config": {
+      "fields": {
+        "id": "number",
+        "account": "account",
+        "amount": "balance",
+        "status": "flag",
+        "revision": "update",
+        "kind": "class"
+      },
+      "units": "major",
+      "dedup": "latest",
+      "credit_negative": false,
+      "accept": [
+        "posted"
+      ]
+    },
+    "expected": {
+      "job": "development-3",
+      "records": [
+        {
+          "id": "development-3-B",
+          "account": "account-2",
+          "minor": 1522
+        }
+      ],
+      "quarantine": [
+        "development-3-C"
+      ],
+      "excluded": [
+        "development-3-A",
+        "development-3-D",
+        "development-3-E"
+      ],
+      "total_minor": 1522
+    }
+  }
+]

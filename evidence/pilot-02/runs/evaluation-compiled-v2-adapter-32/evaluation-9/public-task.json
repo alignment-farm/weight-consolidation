@@ -1,0 +1,58 @@
+{
+  "job": "evaluation-9",
+  "contract": "Columns: document means id, client means account, value means amount, stage means status, revision means revision, category means kind. Amounts are decimal dollars. The first occurrence wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted, settled only. All other statuses are excluded. Unknown accounts are quarantined. This revised contract supersedes old examples; retain every other obligation.",
+  "rows": [
+    {
+      "document": "evaluation-9-A",
+      "client": "c1",
+      "value": "13.72",
+      "stage": "posted",
+      "revision": 1,
+      "category": "sale"
+    },
+    {
+      "document": "evaluation-9-B",
+      "client": "c2",
+      "value": "1.43",
+      "stage": "posted",
+      "revision": 1,
+      "category": "credit"
+    },
+    {
+      "document": "evaluation-9-A",
+      "client": "c1",
+      "value": "26.14",
+      "stage": "void",
+      "revision": 2,
+      "category": "sale"
+    },
+    {
+      "document": "evaluation-9-C",
+      "client": "missing",
+      "value": "24.97",
+      "stage": "posted",
+      "revision": 1,
+      "category": "sale"
+    },
+    {
+      "document": "evaluation-9-D",
+      "client": "c2",
+      "value": "13.72",
+      "stage": "void",
+      "revision": 1,
+      "category": "sale"
+    },
+    {
+      "document": "evaluation-9-E",
+      "client": "c1",
+      "value": "-1.43",
+      "stage": "settled",
+      "revision": 1,
+      "category": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "job": "development-3",
+  "contract": "Columns: number means id, account means account, balance means amount, flag means status, update means revision, class means kind. Amounts are decimal dollars. The highest revision wins per document. All amounts already carry their proper sign; preserve it even for credit-kind rows. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+  "rows": [
+    {
+      "number": "development-3-A",
+      "account": "c1",
+      "balance": "75.05",
+      "flag": "posted",
+      "update": 1,
+      "class": "sale"
+    },
+    {
+      "number": "development-3-B",
+      "account": "c2",
+      "balance": "15.22",
+      "flag": "posted",
+      "update": 1,
+      "class": "credit"
+    },
+    {
+      "number": "development-3-A",
+      "account": "c1",
+      "balance": "45.71",
+      "flag": "void",
+      "update": 2,
+      "class": "sale"
+    },
+    {
+      "number": "development-3-C",
+      "account": "missing",
+      "balance": "52.11",
+      "flag": "posted",
+      "update": 1,
+      "class": "sale"
+    },
+    {
+      "number": "development-3-D",
+      "account": "c2",
+      "balance": "75.05",
+      "flag": "void",
+      "update": 1,
+      "class": "sale"
+    },
+    {
+      "number": "development-3-E",
+      "account": "c1",
+      "balance": "-15.22",
+      "flag": "settled",
+      "update": 1,
+      "class": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}

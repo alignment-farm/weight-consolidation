@@ -1,0 +1,41 @@
+{
+  "stage": "evaluation-compiled-base",
+  "state": "compiled-base",
+  "case_id": "confirmation-1",
+  "split": "confirmation",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 4.584629124998173,
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "d8f952656117d97b74f9b5b69f43535c41560dc01601c88ec1dd43c3b6026721"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1999,
+      "completion_tokens": 13,
+      "model_seconds": 2.129876625003817,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.002427375002298504
+    },
+    "elapsed_seconds": 4.449860207998427,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/evaluation-compiled-base/confirmation-1"
+}

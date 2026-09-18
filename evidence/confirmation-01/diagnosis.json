@@ -1,0 +1,2731 @@
+[
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-0",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": false,
+          "dedup": "latest",
+          "fields": {
+            "account": "customer",
+            "amount": "gross",
+            "id": "invoice",
+            "kind": "type",
+            "revision": "version",
+            "status": "state"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-1",
+    "complete": false,
+    "components": {
+      "job": false,
+      "records": false,
+      "quarantine": false,
+      "excluded": false,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "latest",
+          "fields": {
+            "account": "client",
+            "amount": "value",
+            "id": "document",
+            "kind": "category",
+            "revision": "revision",
+            "status": "stage"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      },
+      {
+        "tool": "finish"
+      },
+      {
+        "tool": "finish"
+      },
+      {
+        "tool": "finish"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "nonintegral minor units",
+      "required output artifacts must exist before finish",
+      "required output artifacts must exist before finish",
+      "required output artifacts must exist before finish",
+      "required output artifacts must exist before finish",
+      "required output artifacts must exist before finish"
+    ],
+    "generated_tokens": 83
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-10",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": false,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": false,
+          "dedup": "first",
+          "fields": {
+            "account": "buyer",
+            "amount": "amount",
+            "id": "ref",
+            "kind": "kind",
+            "revision": "seq",
+            "status": "status"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-11",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": false,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": false,
+          "dedup": "latest",
+          "fields": {
+            "account": "account",
+            "amount": "balance",
+            "id": "number",
+            "kind": "class",
+            "revision": "update",
+            "status": "flag"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-2",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "buyer",
+            "amount": "amount",
+            "id": "ref",
+            "kind": "kind",
+            "revision": "seq",
+            "status": "status"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-3",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": false,
+          "dedup": "latest",
+          "fields": {
+            "account": "account",
+            "amount": "balance",
+            "id": "number",
+            "kind": "class",
+            "revision": "update",
+            "status": "flag"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-4",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "latest",
+          "fields": {
+            "account": "customer",
+            "amount": "gross",
+            "id": "invoice",
+            "kind": "type",
+            "revision": "version",
+            "status": "state"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-5",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "client",
+            "amount": "value",
+            "id": "document",
+            "kind": "category",
+            "revision": "revision",
+            "status": "stage"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-6",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted",
+            "settled"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "buyer",
+            "amount": "amount",
+            "id": "ref",
+            "kind": "kind",
+            "revision": "seq",
+            "status": "status"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 62
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-7",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": false,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "account",
+            "amount": "balance",
+            "id": "number",
+            "kind": "class",
+            "revision": "update",
+            "status": "flag"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-8",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": false,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": false,
+          "dedup": "latest",
+          "fields": {
+            "account": "customer",
+            "amount": "gross",
+            "id": "invoice",
+            "kind": "type",
+            "revision": "version",
+            "status": "state"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "evaluation-adapter-32",
+    "case_id": "confirmation-9",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted",
+            "settled"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "client",
+            "amount": "value",
+            "id": "document",
+            "kind": "category",
+            "revision": "revision",
+            "status": "stage"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 62
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-0",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "invoice",
+            "account": "customer",
+            "amount": "gross",
+            "status": "state",
+            "revision": "version",
+            "kind": "type"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-1",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "document",
+            "account": "client",
+            "amount": "value",
+            "status": "stage",
+            "revision": "revision",
+            "kind": "category"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-10",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "ref",
+            "account": "buyer",
+            "amount": "amount",
+            "status": "status",
+            "revision": "seq",
+            "kind": "kind"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted",
+            "settled"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 63
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-11",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "number",
+            "account": "account",
+            "amount": "balance",
+            "status": "flag",
+            "revision": "update",
+            "kind": "class"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted",
+            "settled"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 63
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-2",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "ref",
+            "account": "buyer",
+            "amount": "amount",
+            "status": "status",
+            "revision": "seq",
+            "kind": "kind"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-3",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "number",
+            "account": "account",
+            "amount": "balance",
+            "status": "flag",
+            "revision": "update",
+            "kind": "class"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-4",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "invoice",
+            "account": "customer",
+            "amount": "gross",
+            "status": "state",
+            "revision": "version",
+            "kind": "type"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-5",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "document",
+            "account": "client",
+            "amount": "value",
+            "status": "stage",
+            "revision": "revision",
+            "kind": "category"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-6",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "ref",
+            "account": "buyer",
+            "amount": "amount",
+            "status": "status",
+            "revision": "seq",
+            "kind": "kind"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted",
+            "settled"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 63
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-7",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "number",
+            "account": "account",
+            "amount": "balance",
+            "status": "flag",
+            "revision": "update",
+            "kind": "class"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted",
+            "settled"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 63
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-8",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "invoice",
+            "account": "customer",
+            "amount": "gross",
+            "status": "state",
+            "revision": "version",
+            "kind": "type"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted",
+            "settled"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 63
+  },
+  {
+    "stage": "evaluation-base",
+    "case_id": "confirmation-9",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "document",
+            "account": "client",
+            "amount": "value",
+            "status": "stage",
+            "revision": "revision",
+            "kind": "category"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted",
+            "settled"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 63
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-0",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\"],\"credit_negative\":true,\"dedup\":\"latest\",\"fields\":{\"account\":\"customer\",\"amount\":\"gross\",\"id\":\"invoice\",\"kind\":\"type\",\"revision\":\"version\",\"status\":\"state\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 69
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-1",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\"],\"credit_negative\":true,\"dedup\":\"latest\",\"fields\":{\"account\":\"client\",\"amount\":\"value\",\"id\":\"document\",\"kind\":\"category\",\"revision\":\"revision\",\"status\":\"stage\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 69
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-10",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\",\"settled\"],\"credit_negative\":true,\"dedup\":\"first\",\"fields\":{\"account\":\"buyer\",\"amount\":\"amount\",\"id\":\"ref\",\"kind\":\"kind\",\"revision\":\"seq\",\"status\":\"status\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 72
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-11",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\\\"accept\":[\"posted\",\"settled\"],\"credit_negative\":true,\\\"dedup\\\":\\\"latest\\\",\\\"fields\\\":{\\\"account\\\":\\\"account\\\",\\\"amount\\\":\\\"balance\\\",\\\"id\\\":\\\"number\\\",\\\"kind\\\":\\\"class\\\",\\\"revision\\\":\\\"update\\\",\\\"status\\\":\\\"flag\\\"},\\\"units\\\":\\\"major\\\"}\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 22 (char 21)"
+    ],
+    "generated_tokens": 70
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-2",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\"],\"credit_negative\":true,\"dedup\":\"first\",\"fields\":{\"account\":\"buyer\",\"amount\":\"amount\",\"id\":\"ref\",\"kind\":\"kind\",\"revision\":\"seq\",\"status\":\"status\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 69
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-3",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\\\"accept\":[\"posted\"],\"credit_negative\":true,\\\"dedup\\\":\\\"latest\\\",\\\"fields\\\":{\\\"account\\\":\\\"account\\\",\\\"amount\\\":\\\"balance\\\",\\\"id\\\":\\\"number\\\",\\\"kind\\\":\\\"class\\\",\\\"revision\\\":\\\"update\\\",\\\"status\\\":\\\"flag\\\"},\\\"units\\\":\\\"major\\\"}\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 22 (char 21)"
+    ],
+    "generated_tokens": 67
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-4",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\"],\"credit_negative\":true,\"dedup\":\"latest\",\"fields\":{\"account\":\"customer\",\"amount\":\"gross\",\"id\":\"invoice\",\"kind\":\"type\",\"revision\":\"version\",\"status\":\"state\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 69
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-5",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\"],\"credit_negative\":true,\"dedup\":\"first\",\"fields\":{\"account\":\"client\",\"amount\":\"value\",\"id\":\"document\",\"kind\":\"category\",\"revision\":\"revision\",\"status\":\"stage\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 69
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-6",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\",\"settled\"],\"credit_negative\":true,\"dedup\":\"first\",\"fields\":{\"account\":\"buyer\",\"amount\":\"amount\",\"id\":\"ref\",\"kind\":\"kind\",\"revision\":\"seq\",\"status\":\"status\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 72
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-7",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\",\"settled\"],\"credit_negative\":true,\"dedup\":\"first\",\"fields\":{\"account\":\"account\",\"amount\":\"balance\",\"id\":\"number\",\"kind\":\"class\",\"revision\":\"update\",\"status\":\"flag\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 72
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-8",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\",\"settled\"],\"credit_negative\":true,\"dedup\":\"latest\",\"fields\":{\"account\":\"customer\",\"amount\":\"gross\",\"id\":\"invoice\",\"kind\":\"type\",\"revision\":\"version\",\"status\":\"state\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 72
+  },
+  {
+    "stage": "evaluation-compiled-adapter-32",
+    "case_id": "confirmation-9",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\",\"settled\"],\"credit_negative\":true,\"dedup\":\"first\",\"fields\":{\"account\":\"client\",\"amount\":\"value\",\"id\":\"document\",\"kind\":\"category\",\"revision\":\"revision\",\"status\":\"stage\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 72
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-0",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 13
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-1",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 13
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-10",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 13
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-11",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 13
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-2",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 13
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-3",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 15
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-4",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 15
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-5",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 13
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-6",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 13
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-7",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 13
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-8",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 15
+  },
+  {
+    "stage": "evaluation-compiled-base",
+    "case_id": "confirmation-9",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 15
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "development-0",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": false,
+          "dedup": "latest",
+          "fields": {
+            "account": "customer",
+            "amount": "gross",
+            "id": "invoice",
+            "kind": "type",
+            "revision": "version",
+            "status": "state"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "development-1",
+    "complete": false,
+    "components": {
+      "job": false,
+      "records": false,
+      "quarantine": false,
+      "excluded": false,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "latest",
+          "fields": {
+            "account": "client",
+            "amount": "value",
+            "id": "document",
+            "kind": "category",
+            "revision": "revision",
+            "status": "stage"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      },
+      {
+        "tool": "finish"
+      },
+      {
+        "tool": "finish"
+      },
+      {
+        "tool": "finish"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "nonintegral minor units",
+      "required output artifacts must exist before finish",
+      "required output artifacts must exist before finish",
+      "required output artifacts must exist before finish",
+      "required output artifacts must exist before finish",
+      "required output artifacts must exist before finish"
+    ],
+    "generated_tokens": 83
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "development-2",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "buyer",
+            "amount": "amount",
+            "id": "ref",
+            "kind": "kind",
+            "revision": "seq",
+            "status": "status"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "development-3",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": false,
+          "dedup": "latest",
+          "fields": {
+            "account": "account",
+            "amount": "balance",
+            "id": "number",
+            "kind": "class",
+            "revision": "update",
+            "status": "flag"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "source-0",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "customer",
+            "amount": "gross",
+            "id": "invoice",
+            "kind": "type",
+            "revision": "version",
+            "status": "state"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "source-1",
+    "complete": false,
+    "components": {
+      "job": false,
+      "records": false,
+      "quarantine": false,
+      "excluded": false,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": false,
+          "dedup": "latest",
+          "fields": {
+            "account": "client",
+            "amount": "value",
+            "id": "document",
+            "kind": "category",
+            "revision": "revision"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "run_saved",
+        "config": {
+          "tools": "run_saved",
+          "config": {
+            "accept": [
+              "posted"
+            ],
+            "credit_negative": false,
+            "dedup": "latest",
+            "fields": {
+              "account": "client",
+              "amount": "value",
+              "id": "document",
+              "kind": "category",
+              "revision": "revision"
+            },
+            "units": "minor"
+          },
+          "tool": "run_run"
+        }
+      },
+      {
+        "tool": "run_run"
+      },
+      {
+        "tool": "run_run"
+      },
+      {
+        "tool": "run_run"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "fields must map id/account/amount/status/revision/kind",
+      "'fields'",
+      "unknown or disabled tool",
+      "unknown or disabled tool",
+      "unknown or disabled tool",
+      "required output artifacts must exist before finish"
+    ],
+    "generated_tokens": 138
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "source-2",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "latest",
+          "fields": {
+            "account": "buyer",
+            "amount": "amount",
+            "id": "ref",
+            "kind": "kind",
+            "revision": "seq",
+            "status": "status"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "source-3",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "account",
+            "amount": "balance",
+            "id": "number",
+            "kind": "class",
+            "revision": "update",
+            "status": "flag"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "source-4",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "customer",
+            "amount": "gross",
+            "id": "invoice",
+            "kind": "type",
+            "revision": "version",
+            "status": "state"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "source-5",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": false,
+          "dedup": "latest",
+          "fields": {
+            "account": "client",
+            "amount": "value",
+            "id": "document",
+            "kind": "category",
+            "revision": "revision",
+            "status": "stage"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "source-6",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "latest",
+          "fields": {
+            "account": "buyer",
+            "amount": "amount",
+            "id": "ref",
+            "kind": "kind",
+            "revision": "seq",
+            "status": "status"
+          },
+          "units": "major"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-adapter-32",
+    "case_id": "source-7",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "config": {
+          "accept": [
+            "posted"
+          ],
+          "credit_negative": true,
+          "dedup": "first",
+          "fields": {
+            "account": "account",
+            "amount": "balance",
+            "id": "number",
+            "kind": "class",
+            "revision": "update",
+            "status": "flag"
+          },
+          "units": "minor"
+        },
+        "tool": "run_saved"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 59
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "development-0",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "invoice",
+            "account": "customer",
+            "amount": "gross",
+            "status": "state",
+            "revision": "version",
+            "kind": "type"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "development-1",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "document",
+            "account": "client",
+            "amount": "value",
+            "status": "stage",
+            "revision": "revision",
+            "kind": "category"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "development-2",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "ref",
+            "account": "buyer",
+            "amount": "amount",
+            "status": "status",
+            "revision": "seq",
+            "kind": "kind"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "development-3",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "number",
+            "account": "account",
+            "amount": "balance",
+            "status": "flag",
+            "revision": "update",
+            "kind": "class"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "source-0",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "invoice",
+            "account": "customer",
+            "amount": "gross",
+            "status": "state",
+            "revision": "version",
+            "kind": "type"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "source-1",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "document",
+            "account": "client",
+            "amount": "value",
+            "status": "stage",
+            "revision": "revision",
+            "kind": "category"
+          },
+          "units": "minor",
+          "dedup": "latest",
+          "credit_negative": false,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "source-2",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "ref",
+            "account": "buyer",
+            "amount": "amount",
+            "status": "status",
+            "revision": "seq",
+            "kind": "kind"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "source-3",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "number",
+            "account": "account",
+            "amount": "balance",
+            "status": "flag",
+            "revision": "update",
+            "kind": "class"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "source-4",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "invoice",
+            "account": "customer",
+            "amount": "gross",
+            "status": "state",
+            "revision": "version",
+            "kind": "type"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "source-5",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "document",
+            "account": "client",
+            "amount": "value",
+            "status": "stage",
+            "revision": "revision",
+            "kind": "category"
+          },
+          "units": "minor",
+          "dedup": "latest",
+          "credit_negative": false,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "source-6",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "ref",
+            "account": "buyer",
+            "amount": "amount",
+            "status": "status",
+            "revision": "seq",
+            "kind": "kind"
+          },
+          "units": "major",
+          "dedup": "latest",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-base",
+    "case_id": "source-7",
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": false
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "number",
+            "account": "account",
+            "amount": "balance",
+            "status": "flag",
+            "revision": "update",
+            "kind": "class"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  },
+  {
+    "stage": "recheck-compiled-adapter-32",
+    "case_id": "development-0",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\"],\"credit_negative\":true,\"dedup\":\"latest\",\"fields\":{\"account\":\"customer\",\"amount\":\"gross\",\"id\":\"invoice\",\"kind\":\"type\",\"revision\":\"version\",\"status\":\"state\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 69
+  },
+  {
+    "stage": "recheck-compiled-adapter-32",
+    "case_id": "development-1",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\"],\"credit_negative\":true,\"dedup\":\"latest\",\"fields\":{\"account\":\"client\",\"amount\":\"value\",\"id\":\"document\",\"kind\":\"category\",\"revision\":\"revision\",\"status\":\"stage\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 69
+  },
+  {
+    "stage": "recheck-compiled-adapter-32",
+    "case_id": "development-2",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\"],\"credit_negative\":true,\"dedup\":\"first\",\"fields\":{\"account\":\"buyer\",\"amount\":\"amount\",\"id\":\"ref\",\"kind\":\"kind\",\"revision\":\"seq\",\"status\":\"status\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 69
+  },
+  {
+    "stage": "recheck-compiled-adapter-32",
+    "case_id": "development-3",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "invalid_json": "{\"config\":\"{\"accept\":[\"posted\"],\"credit_negative\":true,\"dedup\":\"latest\",\"fields\":{\"account\":\"account\",\"amount\":\"balance\",\"id\":\"number\",\"kind\":\"class\",\"revision\":\"update\",\"status\":\"flag\"},\"units\":\"major\"}\"}{\"tool\":\"run_contract\"}"
+      },
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [
+      "Expecting ',' delimiter: line 1 column 14 (char 13)"
+    ],
+    "generated_tokens": 69
+  },
+  {
+    "stage": "recheck-compiled-base",
+    "case_id": "development-0",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 15
+  },
+  {
+    "stage": "recheck-compiled-base",
+    "case_id": "development-1",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 15
+  },
+  {
+    "stage": "recheck-compiled-base",
+    "case_id": "development-2",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 13
+  },
+  {
+    "stage": "recheck-compiled-base",
+    "case_id": "development-3",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_contract"
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 15
+  },
+  {
+    "stage": "reset",
+    "case_id": "source-0",
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    },
+    "actions": [
+      {
+        "tool": "run_saved",
+        "config": {
+          "fields": {
+            "id": "invoice",
+            "account": "customer",
+            "amount": "gross",
+            "status": "state",
+            "revision": "version",
+            "kind": "type"
+          },
+          "units": "major",
+          "dedup": "first",
+          "credit_negative": true,
+          "accept": [
+            "posted"
+          ]
+        }
+      },
+      {
+        "tool": "finish"
+      }
+    ],
+    "errors": [],
+    "generated_tokens": 60
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "job": "source-6",
+  "contract": "Columns: ref means id, buyer means account, amount means amount, status means status, seq means revision, kind means kind. Amounts are decimal dollars. The highest revision wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+  "rows": [
+    {
+      "ref": "source-6-A",
+      "buyer": "c1",
+      "amount": "17.97",
+      "status": "posted",
+      "seq": 1,
+      "kind": "sale"
+    },
+    {
+      "ref": "source-6-B",
+      "buyer": "c2",
+      "amount": "47.96",
+      "status": "posted",
+      "seq": 1,
+      "kind": "credit"
+    },
+    {
+      "ref": "source-6-A",
+      "buyer": "c1",
+      "amount": "89.83",
+      "status": "void",
+      "seq": 2,
+      "kind": "sale"
+    },
+    {
+      "ref": "source-6-C",
+      "buyer": "missing",
+      "amount": "67.42",
+      "status": "posted",
+      "seq": 1,
+      "kind": "sale"
+    },
+    {
+      "ref": "source-6-D",
+      "buyer": "c2",
+      "amount": "17.97",
+      "status": "void",
+      "seq": 1,
+      "kind": "sale"
+    },
+    {
+      "ref": "source-6-E",
+      "buyer": "c1",
+      "amount": "-47.96",
+      "status": "settled",
+      "seq": 1,
+      "kind": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}

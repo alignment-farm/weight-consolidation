@@ -1,0 +1,58 @@
+{
+  "job": "confirmation-1",
+  "contract": "Columns: document means id, client means account, value means amount, stage means status, revision means revision, category means kind. Amounts are decimal dollars. The highest revision wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+  "rows": [
+    {
+      "document": "confirmation-1-A",
+      "client": "c1",
+      "value": "53.83",
+      "stage": "posted",
+      "revision": 1,
+      "category": "sale"
+    },
+    {
+      "document": "confirmation-1-B",
+      "client": "c2",
+      "value": "49.59",
+      "stage": "posted",
+      "revision": 1,
+      "category": "credit"
+    },
+    {
+      "document": "confirmation-1-A",
+      "client": "c1",
+      "value": "38.06",
+      "stage": "void",
+      "revision": 2,
+      "category": "sale"
+    },
+    {
+      "document": "confirmation-1-C",
+      "client": "missing",
+      "value": "6.25",
+      "stage": "posted",
+      "revision": 1,
+      "category": "sale"
+    },
+    {
+      "document": "confirmation-1-D",
+      "client": "c2",
+      "value": "53.83",
+      "stage": "void",
+      "revision": 1,
+      "category": "sale"
+    },
+    {
+      "document": "confirmation-1-E",
+      "client": "c1",
+      "value": "-49.59",
+      "stage": "settled",
+      "revision": 1,
+      "category": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}

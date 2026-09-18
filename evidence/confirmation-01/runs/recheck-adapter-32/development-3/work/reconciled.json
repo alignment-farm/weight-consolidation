@@ -1,0 +1,19 @@
+{
+  "job": "development-3",
+  "records": [
+    {
+      "id": "development-3-B",
+      "account": "account-2",
+      "minor": 1522
+    }
+  ],
+  "quarantine": [
+    "development-3-C"
+  ],
+  "excluded": [
+    "development-3-A",
+    "development-3-D",
+    "development-3-E"
+  ],
+  "total_minor": 1522
+}

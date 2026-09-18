@@ -1,0 +1,12 @@
+check-32 source-0 True
+check-32 source-1 False
+check-32 source-2 True
+check-32 source-3 True
+check-32 source-4 True
+check-32 source-5 True
+check-32 source-6 True
+check-32 source-7 True
+check-32 development-0 False
+check-32 development-1 False
+check-32 development-2 True
+check-32 development-3 False

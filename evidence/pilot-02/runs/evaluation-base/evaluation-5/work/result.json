@@ -1,0 +1,21 @@
+{
+  "status": "succeeded",
+  "artifacts": [
+    {
+      "name": "reconciled.json",
+      "sha256": "8dcf2ad891d4e0f50426f55ccebda04d4121f8cf1c73852f8c7c4d906caab20d"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1877,
+    "completion_tokens": 60,
+    "model_seconds": 2.429645416996209,
+    "calls": 2,
+    "failed_calls": 0,
+    "tool_calls": 2,
+    "tool_seconds": 0.00218620800296776
+  },
+  "elapsed_seconds": 4.749679291002394,
+  "compute_flops": null,
+  "quality": "not evaluated by runtime"
+}

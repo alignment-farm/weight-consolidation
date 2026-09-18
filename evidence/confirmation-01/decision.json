@@ -1,0 +1,8 @@
+{
+  "time_ns": 1789688229818718000,
+  "selected_steps": 32,
+  "deployment_promotion": false,
+  "reason": "fixed confirmation of candidate selected before pilot fresh outcomes; no reselection",
+  "protocol_sha256": "ecc99fabf6269e255ba9e6edfd52d577d7a19257569df370345d90ed4ca24ee7",
+  "source_access_verified": true
+}

@@ -1,0 +1,740 @@
+{
+  "model_execution_totals": {
+    "tasks": 172.0,
+    "worker_seconds": 930.6926125849932,
+    "controller_seconds": 956.6057811730425,
+    "prompt_tokens": 426743.0,
+    "completion_tokens": 10626.0,
+    "model_seconds": 529.7701392050731,
+    "calls": 424.0,
+    "failed_calls": 84.0,
+    "tool_calls": 424.0,
+    "tool_seconds": 0.4268230319939903
+  },
+  "stages": [
+    {
+      "pilot": "confirmation-01",
+      "stage": "evaluation-adapter-32",
+      "tasks": 12.0,
+      "worker_seconds": 65.9877013759833,
+      "controller_seconds": 67.81037583400757,
+      "prompt_tokens": 30347.0,
+      "completion_tokens": 738.0,
+      "model_seconds": 37.96373150100408,
+      "calls": 28.0,
+      "failed_calls": 6.0,
+      "tool_calls": 28.0,
+      "tool_seconds": 0.02536933496594429
+    },
+    {
+      "pilot": "confirmation-01",
+      "stage": "evaluation-base",
+      "tasks": 12.0,
+      "worker_seconds": 60.69545649999782,
+      "controller_seconds": 62.549598540012084,
+      "prompt_tokens": 25959.0,
+      "completion_tokens": 738.0,
+      "model_seconds": 32.81680187200254,
+      "calls": 24.0,
+      "failed_calls": 0.0,
+      "tool_calls": 24.0,
+      "tool_seconds": 0.027689835987985134
+    },
+    {
+      "pilot": "confirmation-01",
+      "stage": "evaluation-compiled-adapter-32",
+      "tasks": 12.0,
+      "worker_seconds": 74.5279880020098,
+      "controller_seconds": 76.49053612398711,
+      "prompt_tokens": 38025.0,
+      "completion_tokens": 842.0,
+      "model_seconds": 46.520428755022294,
+      "calls": 36.0,
+      "failed_calls": 12.0,
+      "tool_calls": 36.0,
+      "tool_seconds": 0.03987900200445438
+    },
+    {
+      "pilot": "confirmation-01",
+      "stage": "evaluation-compiled-base",
+      "tasks": 12.0,
+      "worker_seconds": 53.82182808199286,
+      "controller_seconds": 55.66260450100526,
+      "prompt_tokens": 24329.0,
+      "completion_tokens": 164.0,
+      "model_seconds": 25.9700697070366,
+      "calls": 24.0,
+      "failed_calls": 0.0,
+      "tool_calls": 24.0,
+      "tool_seconds": 0.029346041003009304
+    },
+    {
+      "pilot": "confirmation-01",
+      "stage": "recheck-adapter-32",
+      "tasks": 12.0,
+      "worker_seconds": 70.46853454201482,
+      "controller_seconds": 72.31397566699161,
+      "prompt_tokens": 34818.0,
+      "completion_tokens": 811.0,
+      "model_seconds": 42.47965966597985,
+      "calls": 32.0,
+      "failed_calls": 12.0,
+      "tool_calls": 32.0,
+      "tool_seconds": 0.024317830007930752
+    },
+    {
+      "pilot": "confirmation-01",
+      "stage": "recheck-base",
+      "tasks": 12.0,
+      "worker_seconds": 59.89710362399637,
+      "controller_seconds": 61.63902437600336,
+      "prompt_tokens": 25644.0,
+      "completion_tokens": 720.0,
+      "model_seconds": 32.10917054201127,
+      "calls": 24.0,
+      "failed_calls": 0.0,
+      "tool_calls": 24.0,
+      "tool_seconds": 0.02490608203515876
+    },
+    {
+      "pilot": "confirmation-01",
+      "stage": "recheck-compiled-adapter-32",
+      "tasks": 4.0,
+      "worker_seconds": 24.680840792003437,
+      "controller_seconds": 25.259065832993656,
+      "prompt_tokens": 12544.0,
+      "completion_tokens": 276.0,
+      "model_seconds": 15.226440957994782,
+      "calls": 12.0,
+      "failed_calls": 4.0,
+      "tool_calls": 12.0,
+      "tool_seconds": 0.01260966600239044
+    },
+    {
+      "pilot": "confirmation-01",
+      "stage": "recheck-compiled-base",
+      "tasks": 4.0,
+      "worker_seconds": 17.925460708989704,
+      "controller_seconds": 18.530197250001947,
+      "prompt_tokens": 8014.0,
+      "completion_tokens": 58.0,
+      "model_seconds": 8.509879291996185,
+      "calls": 8.0,
+      "failed_calls": 0.0,
+      "tool_calls": 8.0,
+      "tool_seconds": 0.009615041009965353
+    },
+    {
+      "pilot": "confirmation-01",
+      "stage": "reset",
+      "tasks": 1.0,
+      "worker_seconds": 5.079689917001815,
+      "controller_seconds": 5.240283207996981,
+      "prompt_tokens": 2147.0,
+      "completion_tokens": 60.0,
+      "model_seconds": 2.7443997909940663,
+      "calls": 2.0,
+      "failed_calls": 0.0,
+      "tool_calls": 2.0,
+      "tool_seconds": 0.0021950839945930056
+    },
+    {
+      "pilot": "pilot-01",
+      "stage": "smoke",
+      "tasks": 1.0,
+      "worker_seconds": 10.695009915994888,
+      "controller_seconds": 10.853343750000931,
+      "prompt_tokens": 5984.0,
+      "completion_tokens": 160.0,
+      "model_seconds": 7.847026042996731,
+      "calls": 6.0,
+      "failed_calls": 5.0,
+      "tool_calls": 6.0,
+      "tool_seconds": 0.0028379589784890413
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "baseline",
+      "tasks": 12.0,
+      "worker_seconds": 63.19722075100435,
+      "controller_seconds": 65.01115700001537,
+      "prompt_tokens": 26786.0,
+      "completion_tokens": 984.0,
+      "model_seconds": 35.608831539990206,
+      "calls": 28.0,
+      "failed_calls": 6.0,
+      "tool_calls": 28.0,
+      "tool_seconds": 0.031165794003754854
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "check-32",
+      "tasks": 12.0,
+      "worker_seconds": 76.53503137299413,
+      "controller_seconds": 78.27134625000326,
+      "prompt_tokens": 32466.0,
+      "completion_tokens": 1588.0,
+      "model_seconds": 48.425755625983584,
+      "calls": 32.0,
+      "failed_calls": 12.0,
+      "tool_calls": 32.0,
+      "tool_seconds": 0.023044913999910932
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "compiled-check-adapter-32",
+      "tasks": 4.0,
+      "worker_seconds": 21.860513542000263,
+      "controller_seconds": 22.471961918003217,
+      "prompt_tokens": 10257.0,
+      "completion_tokens": 226.0,
+      "model_seconds": 12.51921862301242,
+      "calls": 12.0,
+      "failed_calls": 4.0,
+      "tool_calls": 12.0,
+      "tool_seconds": 0.010994791984558105
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "compiled-check-base",
+      "tasks": 4.0,
+      "worker_seconds": 33.55102612399787,
+      "controller_seconds": 34.03510616800486,
+      "prompt_tokens": 21714.0,
+      "completion_tokens": 309.0,
+      "model_seconds": 24.147616251008003,
+      "calls": 18.0,
+      "failed_calls": 1.0,
+      "tool_calls": 18.0,
+      "tool_seconds": 0.018770749986288138
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "compiled-v2-check-adapter-32",
+      "tasks": 4.0,
+      "worker_seconds": 22.97386674999143,
+      "controller_seconds": 23.568728581994947,
+      "prompt_tokens": 10918.0,
+      "completion_tokens": 274.0,
+      "model_seconds": 13.654195957009506,
+      "calls": 12.0,
+      "failed_calls": 4.0,
+      "tool_calls": 12.0,
+      "tool_seconds": 0.012094247998902574
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "compiled-v2-check-base",
+      "tasks": 4.0,
+      "worker_seconds": 16.76414837500488,
+      "controller_seconds": 17.312617581999802,
+      "prompt_tokens": 6932.0,
+      "completion_tokens": 54.0,
+      "model_seconds": 7.473903332014743,
+      "calls": 8.0,
+      "failed_calls": 0.0,
+      "tool_calls": 8.0,
+      "tool_seconds": 0.009513665987469722
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "evaluation-adapter-32",
+      "tasks": 12.0,
+      "worker_seconds": 62.12892666600965,
+      "controller_seconds": 63.92284512701008,
+      "prompt_tokens": 26677.0,
+      "completion_tokens": 750.0,
+      "model_seconds": 34.19911191400024,
+      "calls": 28.0,
+      "failed_calls": 6.0,
+      "tool_calls": 28.0,
+      "tool_seconds": 0.024169785996491555
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "evaluation-base",
+      "tasks": 12.0,
+      "worker_seconds": 57.50964025100984,
+      "controller_seconds": 59.29491216700262,
+      "prompt_tokens": 22751.0,
+      "completion_tokens": 738.0,
+      "model_seconds": 29.673697626007197,
+      "calls": 24.0,
+      "failed_calls": 0.0,
+      "tool_calls": 24.0,
+      "tool_seconds": 0.026202498011116404
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "evaluation-compiled-v2-adapter-32",
+      "tasks": 12.0,
+      "worker_seconds": 69.43973425000877,
+      "controller_seconds": 71.26603433501441,
+      "prompt_tokens": 33205.0,
+      "completion_tokens": 839.0,
+      "model_seconds": 41.44655237301049,
+      "calls": 36.0,
+      "failed_calls": 12.0,
+      "tool_calls": 36.0,
+      "tool_seconds": 0.037569540028925985
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "evaluation-compiled-v2-base",
+      "tasks": 12.0,
+      "worker_seconds": 53.04746637599601,
+      "controller_seconds": 54.857005042998935,
+      "prompt_tokens": 23472.0,
+      "completion_tokens": 177.0,
+      "model_seconds": 25.12116916800005,
+      "calls": 26.0,
+      "failed_calls": 0.0,
+      "tool_calls": 26.0,
+      "tool_seconds": 0.030073959002038464
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "reset",
+      "tasks": 1.0,
+      "worker_seconds": 4.717803791994811,
+      "controller_seconds": 4.88962145899859,
+      "prompt_tokens": 1877.0,
+      "completion_tokens": 60.0,
+      "model_seconds": 2.4174452509978437,
+      "calls": 2.0,
+      "failed_calls": 0.0,
+      "tool_calls": 2.0,
+      "tool_seconds": 0.002148542000213638
+    },
+    {
+      "pilot": "pilot-02",
+      "stage": "smoke",
+      "tasks": 1.0,
+      "worker_seconds": 5.187620874996355,
+      "controller_seconds": 5.355440458995872,
+      "prompt_tokens": 1877.0,
+      "completion_tokens": 60.0,
+      "model_seconds": 2.895033417000377,
+      "calls": 2.0,
+      "failed_calls": 0.0,
+      "tool_calls": 2.0,
+      "tool_seconds": 0.0023086670043994673
+    }
+  ],
+  "training": [
+    {
+      "pilot": "pilot-02",
+      "candidate": "adapter-32",
+      "steps": 32,
+      "usage": {
+        "input_tokens": 30750,
+        "loss_tokens": 944,
+        "update_seconds": 45.510672456992324
+      },
+      "elapsed_seconds": 50.09703974999866,
+      "peak_mlx_bytes": 4853393492,
+      "trained_in_this_run": true
+    }
+  ],
+  "remote_smoke": {
+    "usage": {
+      "completion_tokens": 10,
+      "prompt_tokens": 22,
+      "total_tokens": 32,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 22,
+      "prompt_ms": 174.955,
+      "prompt_per_token_ms": 7.952500000000001,
+      "prompt_per_second": 125.74662055957245,
+      "predicted_n": 10,
+      "predicted_ms": 141.729,
+      "predicted_per_token_ms": 14.172900000000002,
+      "predicted_per_second": 70.55719013046024
+    },
+    "matched_comparison": false
+  },
+  "authored_reference_actions": 16,
+  "authored_reference_trajectories": 8,
+  "reference_execution_seconds": null,
+  "direct_compiler_evaluation": [
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-0",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 0.0001756249985191971
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-1",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.662499799858779e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-10",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.279199831420556e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-11",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.916699592489749e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-2",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.17500045336783e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-3",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.645900091622025e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-4",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 7.774999539833516e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-5",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.866699939360842e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-6",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.341699918266386e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-7",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 7.070800347719342e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-8",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.649999366141856e-05
+    },
+    {
+      "pilot": "confirmation-01",
+      "case_id": "confirmation-9",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.549999670824036e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-0",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 0.00013279099948704243
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-1",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.541699647437781e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-10",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.308300023898482e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-11",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.3165997087489814e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-2",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.4541997087653726e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-3",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 5.97079997533001e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-4",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.908399569103494e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-5",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.525000258581713e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-6",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.774999979417771e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-7",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.387499939184636e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-8",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 4.7458997869398445e-05
+    },
+    {
+      "pilot": "pilot-02",
+      "case_id": "evaluation-9",
+      "grade": {
+        "complete": true,
+        "components": {
+          "job": true,
+          "records": true,
+          "quarantine": true,
+          "excluded": true,
+          "total_minor": true
+        }
+      },
+      "execution_seconds": 6.82500030961819e-05
+    }
+  ],
+  "download": {
+    "model_weight_bytes": 2263022417,
+    "snapshot_progress_reported_seconds": 244,
+    "hashing_seconds": null
+  },
+  "unknown": [
+    "authoring-agent tokens",
+    "investigator labor",
+    "compiler development effort",
+    "energy",
+    "FLOPs",
+    "total setup/checking overhead"
+  ],
+  "accounting": "evaluation stages are the prospective use horizon; all other model runs are experimental acquisition/development/search, including failures and reset; model/tool seconds are components of worker seconds, not additive to it; native token and time units not interchangeable"
+}

@@ -1,0 +1,58 @@
+{
+  "job": "evaluation-2",
+  "contract": "Columns: ref means id, buyer means account, amount means amount, status means status, seq means revision, kind means kind. Amounts are integer cents. The first occurrence wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+  "rows": [
+    {
+      "ref": "evaluation-2-A",
+      "buyer": "c1",
+      "amount": "8555",
+      "status": "posted",
+      "seq": 1,
+      "kind": "sale"
+    },
+    {
+      "ref": "evaluation-2-B",
+      "buyer": "c2",
+      "amount": "4999",
+      "status": "posted",
+      "seq": 1,
+      "kind": "credit"
+    },
+    {
+      "ref": "evaluation-2-A",
+      "buyer": "c1",
+      "amount": "8840",
+      "status": "void",
+      "seq": 2,
+      "kind": "sale"
+    },
+    {
+      "ref": "evaluation-2-C",
+      "buyer": "missing",
+      "amount": "6411",
+      "status": "posted",
+      "seq": 1,
+      "kind": "sale"
+    },
+    {
+      "ref": "evaluation-2-D",
+      "buyer": "c2",
+      "amount": "8555",
+      "status": "void",
+      "seq": 1,
+      "kind": "sale"
+    },
+    {
+      "ref": "evaluation-2-E",
+      "buyer": "c1",
+      "amount": "-4999",
+      "status": "settled",
+      "seq": 1,
+      "kind": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}

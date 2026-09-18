@@ -1,0 +1,58 @@
+{
+  "job": "source-5",
+  "contract": "Columns: document means id, client means account, value means amount, stage means status, revision means revision, category means kind. Amounts are integer cents. The highest revision wins per document. All amounts already carry their proper sign; preserve it even for credit-kind rows. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+  "rows": [
+    {
+      "document": "source-5-A",
+      "client": "c1",
+      "value": "6997",
+      "stage": "posted",
+      "revision": 1,
+      "category": "sale"
+    },
+    {
+      "document": "source-5-B",
+      "client": "c2",
+      "value": "6931",
+      "stage": "posted",
+      "revision": 1,
+      "category": "credit"
+    },
+    {
+      "document": "source-5-A",
+      "client": "c1",
+      "value": "6578",
+      "stage": "void",
+      "revision": 2,
+      "category": "sale"
+    },
+    {
+      "document": "source-5-C",
+      "client": "missing",
+      "value": "5051",
+      "stage": "posted",
+      "revision": 1,
+      "category": "sale"
+    },
+    {
+      "document": "source-5-D",
+      "client": "c2",
+      "value": "6997",
+      "stage": "void",
+      "revision": 1,
+      "category": "sale"
+    },
+    {
+      "document": "source-5-E",
+      "client": "c1",
+      "value": "-6931",
+      "stage": "settled",
+      "revision": 1,
+      "category": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}

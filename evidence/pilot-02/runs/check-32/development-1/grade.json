@@ -1,0 +1,36 @@
+{
+  "stage": "check-32",
+  "state": "adapter-32",
+  "case_id": "development-1",
+  "split": "development",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 9.014223999998649,
+  "grade": {
+    "complete": false,
+    "components": {
+      "job": false,
+      "records": false,
+      "quarantine": false,
+      "excluded": false,
+      "total_minor": false
+    }
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 5803,
+      "completion_tokens": 83,
+      "model_seconds": 6.447959541997989,
+      "calls": 6,
+      "failed_calls": 6,
+      "tool_calls": 6,
+      "tool_seconds": 0.0016222919948631898
+    },
+    "elapsed_seconds": 8.841816000000108,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/check-32/development-1"
+}

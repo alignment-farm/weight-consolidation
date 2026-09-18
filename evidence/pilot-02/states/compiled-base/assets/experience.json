@@ -1,0 +1,78 @@
+[
+  {
+    "source_id": "source-0",
+    "reference_config": {
+      "fields": {
+        "id": "invoice",
+        "account": "customer",
+        "amount": "gross",
+        "status": "state",
+        "revision": "version",
+        "kind": "type"
+      },
+      "units": "major",
+      "dedup": "first",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    }
+  },
+  {
+    "source_id": "source-1",
+    "reference_config": {
+      "fields": {
+        "id": "document",
+        "account": "client",
+        "amount": "value",
+        "status": "stage",
+        "revision": "revision",
+        "kind": "category"
+      },
+      "units": "minor",
+      "dedup": "latest",
+      "credit_negative": false,
+      "accept": [
+        "posted"
+      ]
+    }
+  },
+  {
+    "source_id": "source-2",
+    "reference_config": {
+      "fields": {
+        "id": "ref",
+        "account": "buyer",
+        "amount": "amount",
+        "status": "status",
+        "revision": "seq",
+        "kind": "kind"
+      },
+      "units": "major",
+      "dedup": "latest",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    }
+  },
+  {
+    "source_id": "source-3",
+    "reference_config": {
+      "fields": {
+        "id": "number",
+        "account": "account",
+        "amount": "balance",
+        "status": "flag",
+        "revision": "update",
+        "kind": "class"
+      },
+      "units": "minor",
+      "dedup": "first",
+      "credit_negative": true,
+      "accept": [
+        "posted"
+      ]
+    }
+  }
+]

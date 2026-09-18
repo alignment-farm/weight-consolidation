@@ -1,0 +1,160 @@
+{
+  "base_digest": "f4dd4012ffdd7ec8729e3dace93c15c5af589e5b15833524f1ea4df30aaf449e",
+  "lora": {
+    "num_layers": 8,
+    "rank": 8,
+    "scale": 2.0,
+    "dropout": 0.0,
+    "keys": [
+      "self_attn.q_proj",
+      "self_attn.v_proj"
+    ]
+  },
+  "weights_sha256": "285d90928ba783838d20f4751bd08d425c5fb9b14e57701658b09aa8d456cb69",
+  "initial_tensor_digest": "2c9040b54f180be58b4b992e37f6fe7c0c6bbc65f74457c2194413796e38eb7f",
+  "final_tensor_digest": "b12d87aca8cd70f8f2394f0df13b83a502f001f1f7a19c02d7ba7624f9340f57",
+  "base_tensor_digest": "17c5af03677e2d12e47c682db826fa716c9dd2039b445fc3d80fa8b5832a7524",
+  "base_unchanged": true,
+  "tensor_shapes": {
+    "model.layers.28.self_attn.q_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.28.self_attn.q_proj.lora_b": [
+      8,
+      4096
+    ],
+    "model.layers.28.self_attn.v_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.28.self_attn.v_proj.lora_b": [
+      8,
+      1024
+    ],
+    "model.layers.29.self_attn.q_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.29.self_attn.q_proj.lora_b": [
+      8,
+      4096
+    ],
+    "model.layers.29.self_attn.v_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.29.self_attn.v_proj.lora_b": [
+      8,
+      1024
+    ],
+    "model.layers.30.self_attn.q_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.30.self_attn.q_proj.lora_b": [
+      8,
+      4096
+    ],
+    "model.layers.30.self_attn.v_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.30.self_attn.v_proj.lora_b": [
+      8,
+      1024
+    ],
+    "model.layers.31.self_attn.q_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.31.self_attn.q_proj.lora_b": [
+      8,
+      4096
+    ],
+    "model.layers.31.self_attn.v_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.31.self_attn.v_proj.lora_b": [
+      8,
+      1024
+    ],
+    "model.layers.32.self_attn.q_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.32.self_attn.q_proj.lora_b": [
+      8,
+      4096
+    ],
+    "model.layers.32.self_attn.v_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.32.self_attn.v_proj.lora_b": [
+      8,
+      1024
+    ],
+    "model.layers.33.self_attn.q_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.33.self_attn.q_proj.lora_b": [
+      8,
+      4096
+    ],
+    "model.layers.33.self_attn.v_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.33.self_attn.v_proj.lora_b": [
+      8,
+      1024
+    ],
+    "model.layers.34.self_attn.q_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.34.self_attn.q_proj.lora_b": [
+      8,
+      4096
+    ],
+    "model.layers.34.self_attn.v_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.34.self_attn.v_proj.lora_b": [
+      8,
+      1024
+    ],
+    "model.layers.35.self_attn.q_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.35.self_attn.q_proj.lora_b": [
+      8,
+      4096
+    ],
+    "model.layers.35.self_attn.v_proj.lora_a": [
+      2560,
+      8
+    ],
+    "model.layers.35.self_attn.v_proj.lora_b": [
+      8,
+      1024
+    ]
+  },
+  "recipe_digest": "7d871d99f6467551b79f3c6edeb8bdbfdaaaf5d11a876654e56409d06aadef56",
+  "training_data_sha256": "ff142235c4245f8b7cb9710b7ccff198828eec233a4565e90045e58854a8994b",
+  "steps": 32,
+  "elapsed_seconds": 50.09703974999866,
+  "usage": {
+    "input_tokens": 30750,
+    "loss_tokens": 944,
+    "update_seconds": 45.510672456992324
+  },
+  "peak_mlx_bytes": 4853393492,
+  "compute_flops": null,
+  "acquisition_status": "requires complete-task development evaluation"
+}

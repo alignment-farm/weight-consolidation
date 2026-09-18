@@ -1,0 +1,36 @@
+{
+  "stage": "recheck-adapter-32",
+  "state": "adapter-32",
+  "case_id": "source-1",
+  "split": "source",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 10.436481750002713,
+  "grade": {
+    "complete": false,
+    "components": {
+      "job": false,
+      "records": false,
+      "quarantine": false,
+      "excluded": false,
+      "total_minor": false
+    }
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [],
+    "usage": {
+      "prompt_tokens": 6849,
+      "completion_tokens": 138,
+      "model_seconds": 7.973644249985227,
+      "calls": 6,
+      "failed_calls": 6,
+      "tool_calls": 6,
+      "tool_seconds": 0.002194207008869853
+    },
+    "elapsed_seconds": 10.287152500000957,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/recheck-adapter-32/source-1"
+}

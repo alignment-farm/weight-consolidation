@@ -1,0 +1,19 @@
+{
+  "job": "confirmation-4",
+  "records": [
+    {
+      "id": "confirmation-4-B",
+      "account": "account-2",
+      "minor": -610800
+    }
+  ],
+  "quarantine": [
+    "confirmation-4-C"
+  ],
+  "excluded": [
+    "confirmation-4-A",
+    "confirmation-4-D",
+    "confirmation-4-E"
+  ],
+  "total_minor": -610800
+}

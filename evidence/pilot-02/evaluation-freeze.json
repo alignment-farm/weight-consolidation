@@ -1,0 +1,25 @@
+{
+  "time_ns": 1789687967397089000,
+  "selected_steps": 32,
+  "compiler_harness": "v2",
+  "compiler_development_base": 4,
+  "compiler_development_adapter": 4,
+  "protocol_sha256": "da05df426da93895aaafea2ad20d26659060283c53e2df6d1f1989de8d63b07d",
+  "files": {
+    "evidence/pilot-02/evaluation-snapshot/methods/PROTOCOL-01.md": "da05df426da93895aaafea2ad20d26659060283c53e2df6d1f1989de8d63b07d",
+    "evidence/pilot-02/evaluation-snapshot/scripts/audit.py": "b559b3d74bb78d89a9a1214d319033adcd9abda158dd269a3c9d6f8ff86807e6",
+    "evidence/pilot-02/evaluation-snapshot/scripts/capture_resources.py": "4e81d59dcfa8715aa15b3aee3f7194b7b66f838d5645491013a068ab438cf6f7",
+    "evidence/pilot-02/evaluation-snapshot/scripts/diagnose.py": "a1bcaa108d5bab541137f1916d12446ea03e70c21ad0c36d8620f1ccf5432811",
+    "evidence/pilot-02/evaluation-snapshot/scripts/extension.py": "65651021f35ffa023c8fe324424e41671d21fa1fb36a3d6deb17de014303a5ca",
+    "evidence/pilot-02/evaluation-snapshot/scripts/study.py": "d462eaa6b627ae6c763858d431179786fe930c31940ba2e568eae88c0fefbdba",
+    "evidence/pilot-02/evaluation-snapshot/scripts/train.py": "dd2e75c450aff5527247fa6d504f3739b84431db3319d8d6e0b06c827ec1f3e6",
+    "evidence/pilot-02/evaluation-snapshot/scripts/worker.py": "7467ff6ead962dc0fc87d7dd90307262aa4ff19cbf11c3091d45379d41fbb151",
+    "evidence/pilot-02/evaluation-snapshot/workload/compile_contract.py": "1af33a99a016c4601ff9134bb4e1e615ab4ebb1bfded5d595100a636e6dc92ed",
+    "evidence/pilot-02/evaluation-snapshot/workload/environment.py": "f450510f5981aeda1c51b4dccefa177fc9577f5731d11ad823904fe7dc841c36",
+    "evidence/pilot-02/evaluation-snapshot/workload/environment_compiled.py": "a9bf3225fabbedc80ccce885238d3ef6a3702075f91da5e2f4abc0875665fb0a",
+    "evidence/pilot-02/evaluation-snapshot/workload/environment_compiled_v2.py": "17d06b8edaf36999ca1a4b105bbb5ee47532c0ca24a2f078e26807c3bcc30bee",
+    "evidence/pilot-02/evaluation-snapshot/workload/fixtures.py": "2ba3c24561a504517be24fea0fb2ae30edbf43cfd7b9db086f025b9a63df13dc",
+    "evidence/pilot-02/evaluation-snapshot/workload/transform.py": "56fa38e1c56538ca2d7c1ca4dd9490dc79b17b40921aece95b58c0b3548adcda"
+  },
+  "no_further_selection_or_prompt_edits": true
+}

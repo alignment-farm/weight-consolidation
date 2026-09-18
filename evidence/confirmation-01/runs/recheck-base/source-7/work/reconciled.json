@@ -1,0 +1,23 @@
+{
+  "job": "source-7",
+  "records": [
+    {
+      "id": "source-7-A",
+      "account": "account-1",
+      "minor": 731500
+    },
+    {
+      "id": "source-7-B",
+      "account": "account-2",
+      "minor": -444100
+    }
+  ],
+  "quarantine": [
+    "source-7-C"
+  ],
+  "excluded": [
+    "source-7-D",
+    "source-7-E"
+  ],
+  "total_minor": 287400
+}

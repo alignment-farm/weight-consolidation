@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/H8sS/4wPELR11qT8Sz36A6M5ULM</id>
+  <title>arXiv Query: search_query=&amp;id_list=2606.24893v1,2606.02461v1,2609.09134v1&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-17T23:00:03Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2606.24893v1,2606.02461v1,2609.09134v1" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.02461v1</id>
+    <title>AGENTCL: Toward Rigorous Evaluation of Continual Learning in Language Agents</title>
+    <updated>2026-06-01T16:32:59Z</updated>
+    <link href="https://arxiv.org/abs/2606.02461v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.02461v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language agents spend substantial inference time solving individual tasks, yet the experience acquired in one episode is often underutilized in future episodes. Continual learning expects an agent to accumulate reusable experience across a stream of tasks, improve over time, and avoid interference from irrelevant experiences. Unfortunately, existing benchmarks struggle to evaluate continual learning in language agents rigorously. Most efforts focus on retrieval and reasoning over long-context conversations or documents, while recent lifelong-adaptation benchmarks often rely on naive task streams with limited analysis of cross-task relationships, making it difficult to understand what an agent learns and reuses over time. This paper presents an evaluation framework AgentCL for continual learning in agents, centered on controlled task streams and metrics for transfer gains. AGENTCL constructs compositional streams where earlier sub-solutions, evidence, or workflows are intentionally reusable in later tasks, and contrasts them with naive streams where such reusability is not guaranteed. We use the benchmark to evaluate non-parametric memory designs for continual learning. To diagnose how memory design choices affect continual learning, we develop MemProbe, a probing method that stores interactions, insights, and skills, while filtering unreliable experiences during consolidation. Empirical analysis across coding, deep research, and language understanding/reasoning tasks shows that naive streams offer limited ability to distinguish memory designs, whereas controlled streams more clearly distinguish their plasticity. Meanwhile, naive and held-out settings often yield limited gains and can expose memory-induced degradation. These results highlight the need for stronger memory designs that balance plasticity and stable reuse.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-01T16:32:59Z</published>
+    <arxiv:comment>10 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yiheng Shu</name>
+    </author>
+    <author>
+      <name>Bernal Jiménez Gutiérrez</name>
+    </author>
+    <author>
+      <name>Saisri Padmaja Jonnalagedda</name>
+    </author>
+    <author>
+      <name>Yuguang Yao</name>
+    </author>
+    <author>
+      <name>Huan Sun</name>
+    </author>
+    <author>
+      <name>Yu Su</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.24893v1</id>
+    <title>AgentOdyssey: Open-Ended Long-Horizon Text Game Generation for Test-Time Continual Learning Agents</title>
+    <updated>2026-05-29T22:40:51Z</updated>
+    <link href="https://arxiv.org/abs/2606.24893v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.24893v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For agents to learn continuously from interaction with the world at test time, they must be able to explore effectively, acquire new world knowledge and skills, retain relevant episodic experiences, and plan over long horizons. To evaluate these key abilities of test-time continual learning agents, we introduce AgentOdyssey, a novel evaluation framework that procedurally generates open-ended text games with rich entities, world dynamics, and long-horizon tasks. Critically, AgentOdyssey goes beyond the conventional machine learning assumption that learning does not occur at test time by placing agents in a continuous, long-horizon setting that interleaves learning and inference throughout deployment. We further propose a multifaceted evaluation methodology that measures not only game progress but also offers diagnostic tests on world knowledge acquisition, episodic memory, object and action exploration, action diversity, and model cost. We evaluate diverse agent paradigms in the generated games. Our experimental results reveal critical limits in agents' key abilities, as well as factors that influence their meaningful horizon. Although performance scales with stronger base models, even the top agent remains far below human performance, leaving substantial headroom for improvement. Among agent mechanisms, we find that short-term memory benefits multiple agent paradigms and is an important component of agent test-time training.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-29T22:40:51Z</published>
+    <arxiv:comment>Project page: https://agentodyssey.github.io/</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zheyuan Zhang</name>
+    </author>
+    <author>
+      <name>Zehao Wen</name>
+    </author>
+    <author>
+      <name>Alvin Zhang</name>
+    </author>
+    <author>
+      <name>Andrew Wang</name>
+    </author>
+    <author>
+      <name>Jianwen Xie</name>
+    </author>
+    <author>
+      <name>Daniel Khashabi</name>
+    </author>
+    <author>
+      <name>Tianmin Shu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.09134v1</id>
+    <title>Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails</title>
+    <updated>2026-09-08T17:53:49Z</updated>
+    <link href="https://arxiv.org/abs/2609.09134v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.09134v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agent harnesses (the system prompt, tool set, execution hooks, and context-management scaffolding around a model) are a critical determinant of agentic task success. Automated harness evolution can enable smaller models to perform well on domain-specific tasks at a fraction of frontier-model cost. Since both the harness and model weights shape behavior, we ask how harness evolution and lightweight fine-tuning should be combined. Across seven enterprise agent tasks, we first evolve a harness with the weaker model, then find that a stronger expert often uses it more effectively, suggesting expert supervision could close the remaining gap. However, training the weaker model on the expert's complete trajectories under the evolved harness backfires: performance regresses on all seven tasks by 4 to 30 points across Qwen3-Coder and Gemma 4, even though the same procedure helps under the unevolved harness. Our analysis shows that imitation transfers knowledge and increases scaffold usage, but disrupts model-harness fit: the weaker model adopts the expert's planning strategy without the competence to execute it and no longer matches the harness evolved around its native planning style. We therefore develop an on-policy expert-correction pipeline, automated by a meta-level MLE agent, that localizes the failing turn in the weaker model's own rollout and asks the expert to rewrite only that turn. This preserves the model's planning style and combines the gains of harness evolution and model adaptation. Our results identify and resolve a source of contention between harness and weight updates, yielding a compatibility-preserving recipe for economical co-evolution on domain-specific enterprise tasks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-08T17:53:49Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhou Yu</name>
+    </author>
+    <author>
+      <name>Bin Bi</name>
+    </author>
+    <author>
+      <name>Shiva Kumar Pentyala</name>
+    </author>
+    <author>
+      <name>Shubham Mehrotra</name>
+    </author>
+    <author>
+      <name>Sougata Chaudhuri</name>
+    </author>
+    <author>
+      <name>Shilpa Bhagavath</name>
+    </author>
+    <author>
+      <name>Zeyuan Chen</name>
+    </author>
+    <author>
+      <name>Ran Xu</name>
+    </author>
+    <author>
+      <name>Phil Mui</name>
+    </author>
+    <author>
+      <name>James Zhu</name>
+    </author>
+    <author>
+      <name>Sitaram Asur</name>
+    </author>
+  </entry>
+</feed>

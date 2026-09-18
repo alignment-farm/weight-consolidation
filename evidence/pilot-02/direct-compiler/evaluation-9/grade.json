@@ -1,0 +1,14 @@
+{
+  "case_id": "evaluation-9",
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "execution_seconds": 6.82500030961819e-05
+}

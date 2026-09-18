@@ -1,0 +1,27 @@
+{
+  "status": "exploratory: exact training trajectories were not exposed externally; see protocol02",
+  "summary": {
+    "evaluation-adapter-32": {
+      "complete": 4,
+      "tasks": 12,
+      "changed_complete": 2
+    },
+    "evaluation-base": {
+      "complete": 3,
+      "tasks": 12,
+      "changed_complete": 1
+    },
+    "evaluation-compiled-v2-adapter-32": {
+      "complete": 12,
+      "tasks": 12,
+      "changed_complete": 6
+    },
+    "evaluation-compiled-v2-base": {
+      "complete": 12,
+      "tasks": 12,
+      "changed_complete": 6
+    }
+  },
+  "retained_in_costs": true,
+  "candidate_reselected_on_these_results": false
+}

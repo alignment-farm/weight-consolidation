@@ -1,0 +1,41 @@
+{
+  "stage": "smoke",
+  "state": "base",
+  "case_id": "source-0",
+  "split": "source",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 10.853343750000931,
+  "grade": {
+    "complete": false,
+    "components": {
+      "job": true,
+      "records": false,
+      "quarantine": true,
+      "excluded": false,
+      "total_minor": false
+    }
+  },
+  "result": {
+    "status": "failed",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "c62b6b7618555a6576f0a5b223f622925f101d6a0ebfeab91deb4cfed44d594f"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5984,
+      "completion_tokens": 160,
+      "model_seconds": 7.847026042996731,
+      "calls": 6,
+      "failed_calls": 5,
+      "tool_calls": 6,
+      "tool_seconds": 0.0028379589784890413
+    },
+    "elapsed_seconds": 10.695009915994888,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/smoke/source-0"
+}

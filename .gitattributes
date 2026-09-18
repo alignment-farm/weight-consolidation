@@ -1,0 +1,3 @@
+# Preserve captured HTTP headers byte-for-byte, including CRLF and final blank line.
+evidence/remote-headers.txt -text -whitespace
+sources/arxiv-headers.txt -text -whitespace

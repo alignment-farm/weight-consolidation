@@ -1,0 +1,58 @@
+{
+  "job": "evaluation-8",
+  "contract": "Columns: invoice means id, customer means account, gross means amount, state means status, version means revision, type means kind. Amounts are integer cents. The highest revision wins per document. All amounts already carry their proper sign; preserve it even for credit-kind rows. Accept statuses posted, settled only. All other statuses are excluded. Unknown accounts are quarantined. This revised contract supersedes old examples; retain every other obligation.",
+  "rows": [
+    {
+      "invoice": "evaluation-8-A",
+      "customer": "c1",
+      "gross": "4916",
+      "state": "posted",
+      "version": 1,
+      "type": "sale"
+    },
+    {
+      "invoice": "evaluation-8-B",
+      "customer": "c2",
+      "gross": "1936",
+      "state": "posted",
+      "version": 1,
+      "type": "credit"
+    },
+    {
+      "invoice": "evaluation-8-A",
+      "customer": "c1",
+      "gross": "3134",
+      "state": "void",
+      "version": 2,
+      "type": "sale"
+    },
+    {
+      "invoice": "evaluation-8-C",
+      "customer": "missing",
+      "gross": "5410",
+      "state": "posted",
+      "version": 1,
+      "type": "sale"
+    },
+    {
+      "invoice": "evaluation-8-D",
+      "customer": "c2",
+      "gross": "4916",
+      "state": "void",
+      "version": 1,
+      "type": "sale"
+    },
+    {
+      "invoice": "evaluation-8-E",
+      "customer": "c1",
+      "gross": "-1936",
+      "state": "settled",
+      "version": 1,
+      "type": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "base": [
+    {
+      "case_id": "confirmation-6",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-7",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-8",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-9",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-10",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-11",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    }
+  ],
+  "adapter-32": [
+    {
+      "case_id": "confirmation-6",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-7",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-8",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-9",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-10",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-11",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    }
+  ],
+  "compiled-base": [
+    {
+      "case_id": "confirmation-6",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-7",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-8",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-9",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-10",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-11",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    }
+  ],
+  "compiled-adapter-32": [
+    {
+      "case_id": "confirmation-6",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-7",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-8",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-9",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-10",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    },
+    {
+      "case_id": "confirmation-11",
+      "unknown_quarantined": true,
+      "void_excluded": true
+    }
+  ]
+}

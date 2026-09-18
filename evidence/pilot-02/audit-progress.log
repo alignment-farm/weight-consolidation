@@ -1,0 +1,145 @@
+{
+  "audited_runs": 40,
+  "outcomes": {
+    "baseline": {
+      "complete": 6,
+      "tasks": 12
+    },
+    "check-32": {
+      "complete": 8,
+      "tasks": 12
+    },
+    "compiled-check-adapter-32": {
+      "complete": 4,
+      "tasks": 4
+    },
+    "compiled-check-base": {
+      "complete": 1,
+      "tasks": 4
+    },
+    "compiled-v2-check-adapter-32": {
+      "complete": 3,
+      "tasks": 3
+    },
+    "compiled-v2-check-base": {
+      "complete": 4,
+      "tasks": 4
+    },
+    "smoke": {
+      "complete": 1,
+      "tasks": 1
+    }
+  },
+  "costs": {
+    "baseline": {
+      "tasks": 12.0,
+      "worker_seconds": 63.19722075100435,
+      "controller_seconds": 65.01115700001537,
+      "prompt_tokens": 26786.0,
+      "completion_tokens": 984.0,
+      "model_seconds": 35.608831539990206,
+      "calls": 28.0,
+      "failed_calls": 6.0,
+      "tool_calls": 28.0,
+      "tool_seconds": 0.031165794003754854
+    },
+    "check-32": {
+      "tasks": 12.0,
+      "worker_seconds": 76.53503137299413,
+      "controller_seconds": 78.27134625000326,
+      "prompt_tokens": 32466.0,
+      "completion_tokens": 1588.0,
+      "model_seconds": 48.425755625983584,
+      "calls": 32.0,
+      "failed_calls": 12.0,
+      "tool_calls": 32.0,
+      "tool_seconds": 0.023044913999910932
+    },
+    "compiled-check-adapter-32": {
+      "tasks": 4.0,
+      "worker_seconds": 21.860513542000263,
+      "controller_seconds": 22.471961918003217,
+      "prompt_tokens": 10257.0,
+      "completion_tokens": 226.0,
+      "model_seconds": 12.51921862301242,
+      "calls": 12.0,
+      "failed_calls": 4.0,
+      "tool_calls": 12.0,
+      "tool_seconds": 0.010994791984558105
+    },
+    "compiled-check-base": {
+      "tasks": 4.0,
+      "worker_seconds": 33.55102612399787,
+      "controller_seconds": 34.03510616800486,
+      "prompt_tokens": 21714.0,
+      "completion_tokens": 309.0,
+      "model_seconds": 24.147616251008003,
+      "calls": 18.0,
+      "failed_calls": 1.0,
+      "tool_calls": 18.0,
+      "tool_seconds": 0.018770749986288138
+    },
+    "compiled-v2-check-adapter-32": {
+      "tasks": 3.0,
+      "worker_seconds": 17.254430541994225,
+      "controller_seconds": 17.71678170699306,
+      "prompt_tokens": 8173.0,
+      "completion_tokens": 207.0,
+      "model_seconds": 10.260885582007177,
+      "calls": 9.0,
+      "failed_calls": 3.0,
+      "tool_calls": 9.0,
+      "tool_seconds": 0.009074956004042178
+    },
+    "compiled-v2-check-base": {
+      "tasks": 4.0,
+      "worker_seconds": 16.76414837500488,
+      "controller_seconds": 17.312617581999802,
+      "prompt_tokens": 6932.0,
+      "completion_tokens": 54.0,
+      "model_seconds": 7.473903332014743,
+      "calls": 8.0,
+      "failed_calls": 0.0,
+      "tool_calls": 8.0,
+      "tool_seconds": 0.009513665987469722
+    },
+    "smoke": {
+      "tasks": 1.0,
+      "worker_seconds": 5.187620874996355,
+      "controller_seconds": 5.355440458995872,
+      "prompt_tokens": 1877.0,
+      "completion_tokens": 60.0,
+      "model_seconds": 2.895033417000377,
+      "calls": 2.0,
+      "failed_calls": 0.0,
+      "tool_calls": 2.0,
+      "tool_seconds": 0.0023086670043994673
+    }
+  },
+  "training": [
+    {
+      "candidate": "adapter-32",
+      "steps": 32,
+      "usage": {
+        "input_tokens": 30750,
+        "loss_tokens": 944,
+        "update_seconds": 45.510672456992324
+      },
+      "elapsed_seconds": 50.09703974999866,
+      "peak_mlx_bytes": 4853393492
+    }
+  ],
+  "reset_cases": [],
+  "unknown_costs": [
+    "investigator/authoring model tokens and labor",
+    "energy",
+    "FLOPs",
+    "unmeasured setup overhead"
+  ],
+  "limitations": [
+    "single synthetic history",
+    "one training seed",
+    "no OS sandbox claim",
+    "wall times not controlled performance measurements"
+  ]
+}

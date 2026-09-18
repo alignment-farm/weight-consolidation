@@ -1,0 +1,41 @@
+{
+  "stage": "compiled-v2-check-adapter-32",
+  "state": "compiled-v2-adapter-32",
+  "case_id": "development-3",
+  "split": "development",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 5.851946875001886,
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "e8bc956e8d96c1d0bca54b5ef3e6ad9935972c06251854e5deb727cf808a0c9d"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2745,
+      "completion_tokens": 67,
+      "model_seconds": 3.3933103750023292,
+      "calls": 3,
+      "failed_calls": 1,
+      "tool_calls": 3,
+      "tool_seconds": 0.003019291994860396
+    },
+    "elapsed_seconds": 5.719436207997205,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/compiled-v2-check-adapter-32/development-3"
+}

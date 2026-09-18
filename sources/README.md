@@ -40,3 +40,11 @@ layout. They contained uncommitted root work; the root Git HEAD alone does not
 identify them. [preparation.json](preparation.json) records content hashes and
 the runtime pin. This README and the study brief are self-contained starting
 instructions; a remote clone does not require those sibling paths to exist.
+
+## Local execution follow-through
+
+The study inspected the pinned methods and cached one arXiv API query before
+workload execution. See [inspection and reuse boundaries](INSPECTION-01.md),
+[metadata](metadata.xml), and [local findings](../FINDINGS.md). No public paper
+results were reproduced, and no paper code or data were incorporated into the
+synthetic workload. Runtime source remained at the preparation pin without edits.

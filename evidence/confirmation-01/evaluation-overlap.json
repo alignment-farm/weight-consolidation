@@ -1,0 +1,74 @@
+[
+  {
+    "case_id": "confirmation-0",
+    "changed": false,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": true
+  },
+  {
+    "case_id": "confirmation-1",
+    "changed": false,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": true
+  },
+  {
+    "case_id": "confirmation-2",
+    "changed": false,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": true
+  },
+  {
+    "case_id": "confirmation-3",
+    "changed": false,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": true
+  },
+  {
+    "case_id": "confirmation-4",
+    "changed": false,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": false
+  },
+  {
+    "case_id": "confirmation-5",
+    "changed": false,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": false
+  },
+  {
+    "case_id": "confirmation-6",
+    "changed": true,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": false
+  },
+  {
+    "case_id": "confirmation-7",
+    "changed": true,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": false
+  },
+  {
+    "case_id": "confirmation-8",
+    "changed": true,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": false
+  },
+  {
+    "case_id": "confirmation-9",
+    "changed": true,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": false
+  },
+  {
+    "case_id": "confirmation-10",
+    "changed": true,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": false
+  },
+  {
+    "case_id": "confirmation-11",
+    "changed": true,
+    "exact_source_config_seen": false,
+    "exact_development_config_seen": false
+  }
+]

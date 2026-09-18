@@ -1,0 +1,41 @@
+{
+  "stage": "reset",
+  "state": "base",
+  "case_id": "source-0",
+  "split": "source",
+  "changed": false,
+  "exit_code": 0,
+  "controller_seconds": 5.240283207996981,
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "result": {
+    "status": "succeeded",
+    "artifacts": [
+      {
+        "name": "reconciled.json",
+        "sha256": "762c9282cdb5ca55ac601a3eb5637ac11c2ffa4e1bef77ce9493d3cd2ea2a5ca"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2147,
+      "completion_tokens": 60,
+      "model_seconds": 2.7443997909940663,
+      "calls": 2,
+      "failed_calls": 0,
+      "tool_calls": 2,
+      "tool_seconds": 0.0021950839945930056
+    },
+    "elapsed_seconds": 5.079689917001815,
+    "compute_flops": null,
+    "quality": "not evaluated by runtime"
+  },
+  "folder": "runs/reset/source-0"
+}

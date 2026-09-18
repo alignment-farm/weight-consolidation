@@ -1,0 +1,14 @@
+{
+  "case_id": "confirmation-10",
+  "grade": {
+    "complete": true,
+    "components": {
+      "job": true,
+      "records": true,
+      "quarantine": true,
+      "excluded": true,
+      "total_minor": true
+    }
+  },
+  "execution_seconds": 5.279199831420556e-05
+}

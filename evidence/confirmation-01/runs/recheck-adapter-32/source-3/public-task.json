@@ -1,0 +1,58 @@
+{
+  "job": "source-3",
+  "contract": "Columns: number means id, account means account, balance means amount, flag means status, update means revision, class means kind. Amounts are integer cents. The first occurrence wins per document. Credit-kind values must become negative absolute amounts. Accept statuses posted only. All other statuses are excluded. Unknown accounts are quarantined. Apply this current contract.",
+  "rows": [
+    {
+      "number": "source-3-A",
+      "account": "c1",
+      "balance": "1532",
+      "flag": "posted",
+      "update": 1,
+      "class": "sale"
+    },
+    {
+      "number": "source-3-B",
+      "account": "c2",
+      "balance": "6749",
+      "flag": "posted",
+      "update": 1,
+      "class": "credit"
+    },
+    {
+      "number": "source-3-A",
+      "account": "c1",
+      "balance": "153",
+      "flag": "void",
+      "update": 2,
+      "class": "sale"
+    },
+    {
+      "number": "source-3-C",
+      "account": "missing",
+      "balance": "8583",
+      "flag": "posted",
+      "update": 1,
+      "class": "sale"
+    },
+    {
+      "number": "source-3-D",
+      "account": "c2",
+      "balance": "1532",
+      "flag": "void",
+      "update": 1,
+      "class": "sale"
+    },
+    {
+      "number": "source-3-E",
+      "account": "c1",
+      "balance": "-6749",
+      "flag": "settled",
+      "update": 1,
+      "class": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}

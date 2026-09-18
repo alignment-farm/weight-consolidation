@@ -1,0 +1,58 @@
+{
+  "job": "confirmation-10",
+  "contract": "Columns: ref means id, buyer means account, amount means amount, status means status, seq means revision, kind means kind. Amounts are integer cents. The first occurrence wins per document. All amounts already carry their proper sign; preserve it even for credit-kind rows. Accept statuses posted, settled only. All other statuses are excluded. Unknown accounts are quarantined. This revised contract supersedes old examples; retain every other obligation.",
+  "rows": [
+    {
+      "ref": "confirmation-10-A",
+      "buyer": "c1",
+      "amount": "395",
+      "status": "posted",
+      "seq": 1,
+      "kind": "sale"
+    },
+    {
+      "ref": "confirmation-10-B",
+      "buyer": "c2",
+      "amount": "6222",
+      "status": "posted",
+      "seq": 1,
+      "kind": "credit"
+    },
+    {
+      "ref": "confirmation-10-A",
+      "buyer": "c1",
+      "amount": "3749",
+      "status": "void",
+      "seq": 2,
+      "kind": "sale"
+    },
+    {
+      "ref": "confirmation-10-C",
+      "buyer": "missing",
+      "amount": "3200",
+      "status": "posted",
+      "seq": 1,
+      "kind": "sale"
+    },
+    {
+      "ref": "confirmation-10-D",
+      "buyer": "c2",
+      "amount": "395",
+      "status": "void",
+      "seq": 1,
+      "kind": "sale"
+    },
+    {
+      "ref": "confirmation-10-E",
+      "buyer": "c1",
+      "amount": "-6222",
+      "status": "settled",
+      "seq": 1,
+      "kind": "credit"
+    }
+  ],
+  "accounts": {
+    "c1": "account-1",
+    "c2": "account-2"
+  }
+}
